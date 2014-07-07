@@ -11,7 +11,7 @@ class CfgVehicleClasses
 {
 	class Cars
 	{
-		displayName = "AČR Technika";
+		displayName = "Vehicles"; //v editore v jako vehicles ACR Technika puvodne
 	};
 };
 class CfgVehicles
