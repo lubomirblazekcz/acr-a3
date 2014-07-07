@@ -867,7 +867,7 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_blackMED","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1313,7 +1313,7 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_blackMED","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1639,7 +1639,7 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_sandMED","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1795,125 +1795,11 @@ class cfgWeapons
 	class Uniform_Base;
 	class VestItem;
 	class BagItem;
-	class H_HelmetB_light_sand: ItemCore
+    class ACR_Vesta: ItemCore //tady jsem mozna neco pomrdal
 	{
 		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba ACR";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sand.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class H_HelmetB_light_sandA: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba Alpha";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sandA.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class H_HelmetB_light_sandB: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba Bravo";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sandB.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class H_HelmetB_light_sandC: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba Charlie";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sandC.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class H_HelmetB_light_sandD: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba Delta";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sandD.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class H_HelmetB_light_sandMED: ItemCore
-	{
-		scope = 2;
-		weaponPoolAvailable = 1;
-		displayName = "Přilba Medic";
-		picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
-		model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\H_HelmetB_light_sandMed.paa"};
-		class ItemInfo: HeadGearItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-			mass = 70;
-			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
-			hiddenSelections[] = {"camo"};
-		};
-	};
-	class ACR_Vesta: ItemCore
-	{
-		scope = 2;
-		model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
-		picture = "\A3\Characters_F\data\ui\icon_v_plate_carrier_2_ca.paa";
+		model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
+		picture = "\A3\Characters_F_beta\data\ui\icon_v_i_vest_01_ca.paa";
 		displayName = "AČR Vesta";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta.paa"};
