@@ -42,7 +42,7 @@ class CfgVehicles
 		side = 1;
 		faction = "ACR";
 		vehicleclass = "Cars";
-		displayName = "Hunter .50 HMG";
+		displayName = "Oshkosh M-ATV .50 HMG";
 		crew = "ACR_MOUT_Vojak01";
 		attendant = 1;
 		hiddenSelectionsTextures[] = {"\ACR_Offroad\Hunter\data\Hunter_Kastle.paa","\ACR_Offroad\Hunter\data\Hunter_ostatni.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};

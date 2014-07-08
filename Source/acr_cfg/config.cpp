@@ -12,15 +12,15 @@ class CfgVehicleClasses
 {
 	class ACRX0
 	{
-		displayName = "Men (Recon)"; //Maj bonnie hatku a co ja vim
+		displayName = "Men (vz. 95 Recon)"; //Maj bonnie hatku a co ja vim
 	};
 	class ACRX00
 	{
-		displayName = "Men (Empty)"; //vz. 95 zakladni vojaci a pilot
+		displayName = "$STR_MEN"; //vz. 95 zakladni vojaci a pilot STRINGTABLETEXT: Men
 	};
 	class ACRX01
 	{
-		displayName = "Men (vz. 95)"; //lesni kokoti
+		displayName = "$STR_MENVZ95"; //lesni kokoti STRINGTABLETEXT: Men (vz. 95)
 	};
 	class ACRX02
 	{
@@ -44,7 +44,7 @@ class cfgFactionClasses
 {
 	class ACR //class pod jakou frakci budou
 	{
-		displayName = "AČR"; //jmeno frakce v editoru
+		displayName = "$STR_ACR"; //jmeno frakce v editoru STRINGTABLETEXT: ACR
 		priority = 3;
 		side = "TWest";
 		icon = "ACR\data\ACR_odznak.paa";
@@ -72,7 +72,7 @@ class cfgVehicles
 	class ACRbatoh: B_Carryall_mcamo
 	{
 		scope = 2;
-		displayName = "ACR Batoh"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
+		displayName = "Batoh vz.95"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
 		picture = "\ACR\data\ikona_ACR_batoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\Batoh02_ACR.paa"};
@@ -1795,17 +1795,35 @@ class cfgWeapons
 	class Uniform_Base;
 	class VestItem;
 	class BagItem;
-    class ACR_Vesta: ItemCore //tady jsem mozna neco pomrdal
+    class ACR_Vesta: ItemCore //Vesta
 	{
 		scope = 2;
 		model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
 		picture = "\ACR\data\ikona_ACR_Vesta.paa";
-		displayName = "Vesta vz.95";
+		displayName = "Vesta (vz.95)";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta.paa"};
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
+			containerClass = "Supply200";
+			mass = 50;
+			armor = "5*0.5";
+			passThrough = 0.7;
+			hiddenSelections[] = {"camo"};
+		};
+	};
+	class ACR_Vesta2: ItemCore //Vesta2
+	{
+		scope = 2;
+		model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
+		picture = "\ACR\data\ikona_ACR_Vesta2.paa";
+		displayName = "Vesta2 (vz.95)";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta2.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
 			containerClass = "Supply200";
 			mass = 50;
 			armor = "5*0.5";

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Army of Czech Republic">
+	<Package name="ACR mod">
+		<Key ID="STR_ACR">
+			<Original>ACR</Original>
+			<Czech>AČR</Czech>
+		</Key>
+		<Key ID="STR_MEN">
+			<Original>Men</Original>
+			<Czech>Muži</Czech>
+		</Key>
+		<Key ID="STR_MENVZ95">
+			<Original>Men (vz. 95)</Original>
+			<Czech>Muži (vz. 95)</Czech>
+		</Key>
+	</Package>
+</Project>
