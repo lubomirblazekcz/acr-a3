@@ -167,7 +167,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
@@ -207,7 +207,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
@@ -247,7 +247,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
@@ -287,7 +287,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
@@ -329,7 +329,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -369,7 +369,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", ,"insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -409,7 +409,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -459,7 +459,7 @@ class cfgVehicles
 		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", ,"insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
@@ -493,7 +493,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
@@ -534,7 +534,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -574,7 +574,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
@@ -615,7 +615,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -656,7 +656,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -696,7 +696,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -736,7 +736,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -786,7 +786,7 @@ class cfgVehicles
 		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
@@ -820,7 +820,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
@@ -861,7 +861,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -900,7 +900,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -941,7 +941,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
@@ -981,7 +981,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -1022,7 +1022,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -1063,7 +1063,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1102,7 +1102,7 @@ class cfgVehicles
 		displayName = "Střelec";
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1142,7 +1142,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1182,7 +1182,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1232,7 +1232,7 @@ class cfgVehicles
 		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
@@ -1266,7 +1266,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
@@ -1307,7 +1307,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1347,7 +1347,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
@@ -1388,7 +1388,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -1428,7 +1428,7 @@ class cfgVehicles
 		displayName = "Střelec";
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1468,7 +1468,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1508,7 +1508,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1558,7 +1558,7 @@ class cfgVehicles
 		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
@@ -1592,7 +1592,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
@@ -1633,7 +1633,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
@@ -1673,7 +1673,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
@@ -1714,7 +1714,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
@@ -1755,7 +1755,7 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "ACR_Uniform_Pilot";
-		hiddenSelections[] = {"Camo"};
+		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Pilot.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
