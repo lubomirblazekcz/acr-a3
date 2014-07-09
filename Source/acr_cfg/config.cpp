@@ -12,27 +12,27 @@ class CfgVehicleClasses
 {
 	class ACRX0
 	{
-		displayName = "Men (vz. 95 Recon)"; //Maj bonnie hatku a co ja vim
+		displayName = "$STR_ACR_MENVZ95REC"; //Maj bonnie hatku a co ja vim
 	};
 	class ACRX00
 	{
-		displayName = "$STR_MEN"; //vz. 95 zakladni vojaci a pilot STRINGTABLETEXT: Men
+		displayName = "$STR_ACR_MEN"; //vz. 95 zakladni vojaci a pilot STRINGTABLETEXT: Men
 	};
 	class ACRX01
 	{
-		displayName = "$STR_MENVZ95"; //lesni kokoti STRINGTABLETEXT: Men (vz. 95)
+		displayName = "$STR_ACR_MENVZ95"; //lesni kokoti STRINGTABLETEXT: Men (vz. 95)
 	};
 	class ACRX02
 	{
-		displayName = "Men (MOUT)"; //MOUT kokoti
+		displayName = "$STR_ACR_MEN_MOUT"; //MOUT kokoti
 	};
 	class ACRX03
 	{
-		displayName = "Men (Desert)"; //poustni curaci
+		displayName = "$STR_ACR_MEN_DESERT"; //poustni curaci
 	};
 	class ACRX04
 	{
-		displayName = "Men (Sniper)"; //sniperi se krovim
+		displayName = "$STR_ACR_SNIP"; //sniperi se krovim
 	};
 };
 class UniformSlotInfo
@@ -72,10 +72,11 @@ class cfgVehicles
 	class ACRbatoh: B_Carryall_mcamo
 	{
 		scope = 2;
-		displayName = "Batoh vz.95"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
+		displayName = "$STR_ACR_BACKPACK"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
 		picture = "\ACR\data\ikona_ACR_batoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\Batoh02_ACR.paa"};
+		author = "$STR_ACR";
 	};
 	class ACR_Vojak_Base: SoldierGB
 	{
@@ -1800,9 +1801,10 @@ class cfgWeapons
 		scope = 2;
 		model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
 		picture = "\ACR\data\ikona_ACR_Vesta.paa";
-		displayName = "Vesta (vz.95)";
+		displayName = "$STR_ACR_VEST";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta.paa"};
+		author = "$STR_ACR";
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
@@ -1818,9 +1820,10 @@ class cfgWeapons
 		scope = 2;
 		model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
 		picture = "\ACR\data\ikona_ACR_Vesta2.paa";
-		displayName = "Vesta2 (vz.95)";
+		displayName = "$STR_ACR_VEST2";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta2.paa"};
+		author = "$STR_ACR";
 		class ItemInfo: VestItem
 		{
 			uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
@@ -1835,11 +1838,12 @@ class cfgWeapons
 	{
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "MICH 2000 (vz.95)";
+		displayName = "$STR_ACR_MICH2000";
 		picture = "\ACR\data\ikona_ACR_Prilba.paa";
 		model = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Prilba.paa"};
+		author = "$STR_ACR";
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
@@ -1854,11 +1858,12 @@ class cfgWeapons
 	{
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Klobouk vz.95";
+		displayName = "$STR_ACR_BOONIEHAT";
 		picture = "\ACR\data\Klobouk_95icon.paa";
 		model = "\A3\Characters_F\Common\booniehat";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\Klobouk_95.paa"};
+		author = "$STR_ACR";
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F\Common\booniehat";
@@ -1873,11 +1878,12 @@ class cfgWeapons
 	{
 		scope = 2;
 		weaponPoolAvailable = 1;
-		displayName = "Kšiltovka 505.skss";
+		displayName = "$STR_ACR_CAP";
 		picture = "\A3\Characters_F\data\ui\icon_h_cap_grn_ca.paa";
 		model = "\A3\Characters_F\Common\capb";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\ACR\data\Ksiltovka_95.paa"};
+		author = "$STR_ACR";
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F\Common\capb";
@@ -1891,10 +1897,11 @@ class cfgWeapons
 	class CombatUniform_ACR: Uniform_Base
 	{
 		scope = 2;
-		displayName = "AČR Uniforma";
+		displayName = "$STR_ACR_UNIFORM";
 		texture = "\ACR\data\ACR\data\ACR_Uniforma.paa";
 		picture = "\ACR\data\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -1906,10 +1913,11 @@ class cfgWeapons
 	class CombatUniform_ACR_MOUT: Uniform_Base
 	{
 		scope = 2;
-		displayName = "AČR MOUT Uniforma";
+		displayName = "$STR_ACR_UNIFORM_MOUT";
 		texture = "\ACR\data\ACR_Uniforma_MOUT.paa";
 		picture = "\ACR\data\ikona_ACR_MOUT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -1921,10 +1929,11 @@ class cfgWeapons
 	class CombatUniform_ACR_Des: Uniform_Base
 	{
 		scope = 2;
-		displayName = "AČR Pouštní Uniforma";
+		displayName = "$STR_ACR_UNIFORM_DESERT";
 		texture = "\ACR\data\ACR_Uniforma_Des.paa";
 		picture = "\ACR\data\ikona_ACR_DESERT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -1936,10 +1945,11 @@ class cfgWeapons
 	class ACR_Uniform_Pilot: Uniform_Base
 	{
 		scope = 2;
-		displayName = "AČR Pilotní Uniforma";
+		displayName = "$STR_ACR_UNIFORM_PILOT";
 		texture = "\ACR\data\ACR_Uniforma_Pilot.paa";
 		picture = "\ACR\data\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
+		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -1954,20 +1964,20 @@ class CfgUnitInsignia
 {
 	class ACR_Logo1
 	{
-		displayName = "AČR Odznak";
+		displayName = "$STR_ACR_LOGO1";
 		texture = "\acr\data\insignia\acr_logo.paa";
-		author = "Armáda České Republiky";
+		author = "$STR_ACR";
 	};
   class ACR_Logo2
 	{
-		displayName = "AČR Nášivka";
+		displayName = "$STR_ACR_LOGO2";
 		texture = "\acr\data\insignia\acr_logo2.paa";
-		author = "Armáda České Republiky";
+		author = "$STR_ACR";
 	};
   class ACR_Logo3
 	{
-		displayName = "AČR Nášivka (červená)";
+		displayName = "$STR_ACR_LOGO3";
 		texture = "\acr\data\insignia\acr_logo3.paa";
-		author = "Armáda České Republiky";
+		author = "$STR_ACR";
 	};
 };

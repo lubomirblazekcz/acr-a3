@@ -2,16 +2,88 @@
 <Project name="Army of Czech Republic">
 	<Package name="ACR mod">
 		<Key ID="STR_ACR">
-			<Original>ACR</Original>
+			<English>ACR</English>
 			<Czech>AČR</Czech>
 		</Key>
-		<Key ID="STR_MEN">
-			<Original>Men</Original>
+		<Key ID="STR_ACR_MEN">
+			<English>Men</English>
 			<Czech>Muži</Czech>
 		</Key>
-		<Key ID="STR_MENVZ95">
-			<Original>Men (vz. 95)</Original>
+		<Key ID="STR_ACR_MENVZ95">
+			<English>Men (vz. 95)</English>
 			<Czech>Muži (vz. 95)</Czech>
 		</Key>
+        <Key ID="STR_ACR_MENVZ95REC">
+            <English>Men (vz. 95, recon)</English>
+            <Czech>Muži (vz. 95, průzkumníci)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEN_MOUT">
+            <English>Men (MOUT)</English>
+            <Czech>Muži (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEN_DESERT">
+            <English>Men (desert)</English>
+            <Czech>Muži (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIP">
+            <English>Men (sniper)</English>
+            <Czech>Muži (odstřelovači)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BACKPACK">
+            <English>ACR Backpack (vz.95)</English>
+            <Czech>AČR Batoh (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST">
+            <English>ACR Vest (vz.95)</English>
+            <Czech>AČR Vesta (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2">
+            <English>ACR Tactical Vest (vz.95)</English>
+            <Czech>AČR Taktická Vesta (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2">
+            <English>ACR Tactical Vest (vz.95)</English>
+            <Czech>AČR Taktická Vesta (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MICH2000">
+            <English>ACR MICH 2000 (vz.95)</English>
+            <Czech>AČR MICH 2000 (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BOONIEHAT">
+            <English>ACR Booniehat (vz.95)</English>
+            <Czech>AČR Klobouk (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_CAP">
+            <English>ACR Cap (vz.95)</English>
+            <Czech>AČR Kšiltovka</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM">
+            <English>ACR Uniform (vz.95)</English>
+            <Czech>AČR Uniforma (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT">
+            <English>ACR Uniform (MOUT)</English>
+            <Czech>AČR Uniforma (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_DESERT">
+            <English>ACR Uniform (desert)</English>
+            <Czech>AČR Uniforma (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_PILOT">
+            <English>ACR Uniform (pilot)</English>
+            <Czech>AČR Uniforma (pilotní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO1">
+            <English>ACR Badge</English>
+            <Czech>AČR Odznak</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO2">
+            <English>ACR Patch</English>
+            <Czech>AČR Nášivka</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO3">
+            <English>ACR Patch (red)</English>
+            <Czech>AČR Nášivka (červená)</Czech>
+        </Key>
 	</Package>
 </Project>
