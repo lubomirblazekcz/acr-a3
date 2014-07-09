@@ -1949,3 +1949,25 @@ class cfgWeapons
 		};
 	};
 };
+
+class CfgUnitInsignia
+{
+	class ACR_Logo1
+	{
+		displayName = "AČR Odznak";
+		texture = "\acr\data\insignia\acr_logo.paa";
+		author = "Armáda České Republiky";
+	};
+  class ACR_Logo2
+	{
+		displayName = "AČR Nášivka";
+		texture = "\acr\data\insignia\acr_logo2.paa";
+		author = "Armáda České Republiky";
+	};
+  class ACR_Logo3
+	{
+		displayName = "AČR Nášivka (červená)";
+		texture = "\acr\data\insignia\acr_logo3.paa";
+		author = "Armáda České Republiky";
+	};
+};
