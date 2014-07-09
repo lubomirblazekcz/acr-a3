@@ -1786,6 +1786,46 @@ class cfgVehicles
 			};
 		};
 	};
+	class ACR_Dustojnik: ACR_Vojak_Base //znackablabla
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		vehicleClass = "ACRX00"; //zaklad
+		displayName = "Důstojník";
+		model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "ACR_Uniform_Officer";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
 };
 class cfgWeapons
 {
@@ -1958,8 +1998,24 @@ class cfgWeapons
 			mass = 30;
 		};
 	};
+	class ACR_Uniform_Officer: Uniform_Base //pracuju na tom
+	{
+		scope = 2;
+		displayName = "Důstojník uniforma (vz. 95)"; //WIP
+		texture = "\ACR\data\ACR_Uniforma_Offic.paa";
+		picture = "\ACR\data\ikona_ACR_vz95.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "$STR_ACR";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "ACR_Dustojnik"; //znackablabla
+			containerClass = "Supply20";
+			mass = 30;
+			hiddenSelections[] = {"Camo1","Camo2"};hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa","\ACR\data\ACR_Uniforma_Offic.paa"};
+		};
+	};
 };
-
 class CfgUnitInsignia
 {
     class ACR_Flag

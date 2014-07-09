@@ -14,20 +14,20 @@
 			<Czech>Muži (vz. 95)</Czech>
 		</Key>
         <Key ID="STR_ACR_MENVZ95REC">
-            <English>Men (vz. 95, recon)</English>
-            <Czech>Muži (vz. 95, průzkumníci)</Czech>
+            <English>Men (vz. 95, Recon)</English>
+            <Czech>Muži (vz. 95, Průzkumníci)</Czech>
         </Key>
         <Key ID="STR_ACR_MEN_MOUT">
             <English>Men (MOUT)</English>
             <Czech>Muži (MOUT)</Czech>
         </Key>
         <Key ID="STR_ACR_MEN_DESERT">
-            <English>Men (desert)</English>
-            <Czech>Muži (pouštní)</Czech>
+            <English>Men (Desert)</English>
+            <Czech>Muži (Pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_SNIP">
-            <English>Men (sniper)</English>
-            <Czech>Muži (odstřelovači)</Czech>
+            <English>Men (Sniper)</English>
+            <Czech>Muži (Odstřelovači)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
             <English>ACR Backpack (vz.95)</English>
@@ -66,12 +66,12 @@
             <Czech>AČR Uniforma (MOUT)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_DESERT">
-            <English>ACR Uniform (desert)</English>
-            <Czech>AČR Uniforma (pouštní)</Czech>
+            <English>ACR Uniform (Desert)</English>
+            <Czech>AČR Uniforma (Pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_PILOT">
-            <English>ACR Uniform (pilot)</English>
-            <Czech>AČR Uniforma (pilotní)</Czech>
+            <English>ACR Uniform (Pilot)</English>
+            <Czech>AČR Uniforma (Pilotní)</Czech>
         </Key>
         <Key ID="STR_ACR_FLAG">
             <English>ACR Patch (flag)</English>
@@ -86,8 +86,8 @@
             <Czech>AČR Nášivka</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO3">
-            <English>ACR Patch (red)</English>
-            <Czech>AČR Nášivka (červená)</Czech>
+            <English>ACR Patch (Red)</English>
+            <Czech>AČR Nášivka (Červená)</Czech>
         </Key>
 	</Package>
 </Project>
