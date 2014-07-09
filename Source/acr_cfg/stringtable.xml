@@ -73,9 +73,13 @@
             <English>ACR Uniform (pilot)</English>
             <Czech>AČR Uniforma (pilotní)</Czech>
         </Key>
+        <Key ID="STR_ACR_FLAG">
+            <English>ACR Patch (flag)</English>
+            <Czech>AČR Nášivka (vlajka)</Czech>
+        </Key>
         <Key ID="STR_ACR_LOGO1">
-            <English>ACR Badge</English>
-            <Czech>AČR Odznak</Czech>
+            <English>ACR Label</English>
+            <Czech>AČR Nápis</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO2">
             <English>ACR Patch</English>

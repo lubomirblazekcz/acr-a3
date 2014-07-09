@@ -1962,22 +1962,29 @@ class cfgWeapons
 
 class CfgUnitInsignia
 {
-	class ACR_Logo1
+    class ACR_Flag
+    {
+        displayName = "$STR_ACR_FLAG";
+        texture = "\acr\data\insignia\acr_flag.paa";
+        author = "$STR_ACR";
+    };
+	class ACR_Patch
 	{
 		displayName = "$STR_ACR_LOGO1";
-		texture = "\acr\data\insignia\acr_logo.paa";
+		texture = "\acr\data\insignia\acr_patch.paa";
 		author = "$STR_ACR";
 	};
-  class ACR_Logo2
+    class ACR_Patch2
 	{
 		displayName = "$STR_ACR_LOGO2";
-		texture = "\acr\data\insignia\acr_logo2.paa";
+		texture = "\acr\data\insignia\acr_patch2.paa";
 		author = "$STR_ACR";
 	};
-  class ACR_Logo3
+    class ACR_Patch3
 	{
 		displayName = "$STR_ACR_LOGO3";
-		texture = "\acr\data\insignia\acr_logo3.paa";
+		texture = "\acr\data\insignia\acr_patch3.paa";
 		author = "$STR_ACR";
 	};
+
 };
