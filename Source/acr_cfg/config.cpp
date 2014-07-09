@@ -1831,6 +1831,25 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+	class ACR_Prilba: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "MICH 2000 (vz.95)";
+		picture = "\ACR\data\ikona_ACR_Prilba.paa";
+		model = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Prilba.paa"};
+		class ItemInfo: HeadGearItem
+		{
+			uniformModel = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
+			mass = 70;
+			modelSides[] = {3,1};
+			armor = "3*0.5";
+			passThrough = 0.8;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	class Klobouk_95: ItemCore
 	{
 		scope = 2;
