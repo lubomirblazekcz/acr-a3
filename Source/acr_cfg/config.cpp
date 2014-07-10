@@ -1796,8 +1796,6 @@ class cfgVehicles
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
 		uniformClass = "ACR_Uniform_Officer";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa"};
 		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
@@ -1807,6 +1805,8 @@ class cfgVehicles
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
+		hiddenSelections[] = {"Camo1","Camo2","insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa","\ACR\data\ACR_Uniforma_Svetr"};
 		class UniformInfo
 		{
 			class SlotsInfo
@@ -2005,6 +2005,8 @@ class cfgWeapons
 		texture = "\ACR\data\ACR_Uniforma_Offic.paa";
 		picture = "\ACR\data\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[] = {"Camo1","Camo2"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa","\ACR\data\ACR_Uniforma_Svetr"};
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
@@ -2012,7 +2014,7 @@ class cfgWeapons
 			uniformClass = "ACR_Dustojnik"; //znackablabla
 			containerClass = "Supply20";
 			mass = 30;
-			hiddenSelections[] = {"Camo1","Camo2"};hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa","\ACR\data\ACR_Uniforma_Offic.paa"};
+			hiddenSelections[] = {"Camo1","Camo2"};
 		};
 	};
 };
