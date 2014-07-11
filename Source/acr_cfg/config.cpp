@@ -48,6 +48,7 @@ class cfgFactionClasses
 		priority = 3;
 		side = "TWest";
 		icon = "ACR\data\ACR_odznak.paa";
+		primarylanguage = "CZ"; //potreba addon @Kae_SZ_Lang
 	};
 };
 class cfgVehicles
