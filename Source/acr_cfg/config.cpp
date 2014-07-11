@@ -50,1790 +50,18 @@ class cfgFactionClasses
 		icon = "ACR\data\ACR_odznak.paa";
 	};
 };
-class cfgVehicles
-{
-	class Man;
-	class CAManBase: Man
-	{
-		class AnimationSources;
-		class HitPoints
-		{
-			class HitHead;
-			class HitBody;
-			class HitHands;
-			class HitLegs;
-		};
-	};
-	class SoldierGB: CAManBase
-	{
-		threat[] = {1,0.1,0.1};
-	};
-	class B_Carryall_mcamo;
-	class ACRbatoh: B_Carryall_mcamo
-	{
-		scope = 2;
-		displayName = "$STR_ACR_BACKPACK"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
-		picture = "\ACR\data\ikona_ACR_batoh02.paa"; //ikona
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\ACR\data\Batoh02_ACR.paa"};
-		author = "$STR_ACR";
-	};
-	class ACR_Vojak_Base: SoldierGB
-	{
-		_generalMacro = "B_Soldier_base_F";
-		expansion = 1;
-		identityTypes[] = {"Language_EN_EP1","Head_Euro","G_NATO_default"};
-		faceType = "Man_A3";
-		side = 1;
-		faction = "ACR";
-		genericNames = "NATOMen";
-		vehicleClass = "Men";
-		portrait = "";
-		picture = "";
-		icon = "iconMan";
-		accuracy = 2.3;
-		sensitivity = 3;
-		threat[] = {1,0.1,0.1};
-		camouflage = 1.4;
-		minFireTime = 7;
-		cost = 40000;
-		canCarryBackPack = 1;
-		scope = 0;
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {"A3\Characters_F\BLUFOR\Data\clothing1.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat","A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\characters_f\common\data\coveralls.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Common\Data\coveralls_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
-		};
-		model = "\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-		modelSides[] = {3,1};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_vest";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Googles: UniformSlotInfo
-				{
-					slotType = 603;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-		class HitPoints: HitPoints
-		{
-			class HitHead: HitHead
-			{
-				armor = "0.3*3";
-			};
-			class HitBody: HitBody
-			{
-				armor = "0.5*10";
-			};
-			class HitHands: HitHands
-			{
-				armor = "0.8*5";
-			};
-			class HitLegs: HitLegs
-			{
-				armor = "0.8*5";
-			};
-		};
-		class EventHandlers;
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-	};
-	class ACR_Vojak00Z: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Velitel";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"Throw","Put"};
-		respawnWeapons[] = {"Throw","Put"};
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {};
-		respawnlinkedItems[] = {};
-		Items[] = {};
-		respawnItems[] = {};
-		canDeactivateMines = "true";
-		icon = "iconManLeader";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak01Z: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Střelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"Throw","Put"};
-		respawnWeapons[] = {"Throw","Put"};
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {};
-		respawnlinkedItems[] = {};
-		Items[] = {};
-		respawnItems[] = {};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak02Z: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		attendant = "true";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Zdravotník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"Throw","Put"};
-		respawnWeapons[] = {"Throw","Put"};
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {};
-		respawnlinkedItems[] = {};
-		Items[] = {};
-		respawnItems[] = {};
-		canDeactivateMines = "true";
-		icon = "iconManMedic";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak03Z: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Ženista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"Throw","Put"};
-		respawnWeapons[] = {"Throw","Put"};
-		magazines[] = {};
-		respawnMagazines[] = {};
-		linkedItems[] = {};
-		respawnlinkedItems[] = {};
-		Items[] = {};
-		respawnItems[] = {};
-		canDeactivateMines = "true";
-		engineer = 1;
-		icon = "iconManEngineer";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak01: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "ACRbatoh";
-		displayName = "Střelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak02: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_GL_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "ACRbatoh";
-		displayName = "Radista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", ,"insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC119"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak07: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_exp_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "B_Bergen_sgg";
-		displayName = "Ženista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		engineer = 1;
-		icon = "iconManEngineer";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak03: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_AR_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		displayName = "Kulometčík";
-		backpack = "ACRbatoh";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo", ,"insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		icon = "iconManMG";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak04: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "ACRbatoh";
-		head = "Klobouk_95";
-		displayName = "Ostrostřelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak05: ACR_Vojak_Base
-	{
-		_generalMacro = "B_medic_F";
-		attendant = "true";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "B_AssaultPack_rgr_Medic";
-		displayName = "Zdravotník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		icon = "iconManMedic";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak10: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "ACRbatoh";
-		displayName = "Střelec - AT";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		linkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		respawnlinkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManAT";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACRP_Vojak06: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX0"; //RECON
-		backpack = "ACRbatoh";
-		displayName = "Velitel";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManLeader";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak01: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Střelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak02: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_GL_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Radista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC119"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak07: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_exp_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_Bergen_sgg";
-		displayName = "Ženista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		engineer = 1;
-		icon = "iconManEngineer";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak03: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_AR_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		displayName = "Kulometčík";
-		backpack = "B_AssaultPack_rgr";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		icon = "iconManMG";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak04: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_AssaultPack_rgr";
-		head = "H_HelmetB_light_black";
-		displayName = "Ostrostřelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak05: ACR_Vojak_Base
-	{
-		_generalMacro = "B_medic_F";
-		attendant = "true";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_AssaultPack_rgr_Medic";
-		displayName = "Zdravotník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		icon = "iconManMedic";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak09: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX04"; //SNIPERI
-		displayName = "Spotter";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "U_B_GhillieSuit";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		linkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		canDeactivateMines = "true";
-		camouflage = 0.6;
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak10: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "B_Kitbag_Base";
-		displayName = "Střelec - AT";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManAT";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak11: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		vehicleClass = "ACRX04"; //SNIPERI
-		scope = 2;
-		displayName = "Odstřelovač";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "U_B_GhillieSuit";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		linkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		canDeactivateMines = "true";
-		camouflage = 0.6;
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak06: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "ACRbatoh";
-		displayName = "Velitel";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManLeader";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Vojak12: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX01"; //LESNI
-		backpack = "ACRbatoh";
-		displayName = "Průzkumník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak01: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Střelec";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak02: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_GL_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Radista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC119"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak07: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_exp_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_Bergen_sgg";
-		displayName = "Ženista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		engineer = 1;
-		icon = "iconManEngineer";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak03: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_AR_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		displayName = "Kulometčík";
-		backpack = "B_AssaultPack_rgr";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		icon = "iconManMG";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak04: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_AssaultPack_rgr";
-		head = "H_HelmetB_light_black";
-		displayName = "Ostrostřelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak05: ACR_Vojak_Base
-	{
-		_generalMacro = "B_medic_F";
-		attendant = "true";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_AssaultPack_rgr_Medic";
-		displayName = "Zdravotník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		icon = "iconManMedic";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak10: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_Kitbag_Base";
-		displayName = "Střelec - AT";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManAT";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_MOUT_Vojak06: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX02"; //MOUT
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Velitel";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_MOUT";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_MOUT.paa"};
-		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManLeader";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak01: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Střelec";
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak02: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_GL_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Radista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC119"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak07: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_exp_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_Bergen_sgg";
-		displayName = "Ženista";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		engineer = 1;
-		icon = "iconManEngineer";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak03: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_AR_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		displayName = "Kulometčík";
-		backpack = "B_AssaultPack_rgr";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		icon = "iconManMG";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak04: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_AssaultPack_rgr";
-		head = "H_HelmetB_light_sand";
-		displayName = "Ostrostřelec";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak05: ACR_Vojak_Base
-	{
-		_generalMacro = "B_medic_F";
-		attendant = "true";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_AssaultPack_rgr_Medic";
-		displayName = "Zdravotník";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		icon = "iconManMedic";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak10: ACR_Vojak_Base
-	{
-		_generalMacro = "B_soldier_M_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_Kitbag_Base";
-		displayName = "Střelec - AT";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		linkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		respawnlinkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManAT";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Des_Vojak06: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX03"; //POUST
-		backpack = "B_AssaultPack_rgr";
-		displayName = "Velitel";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "CombatUniform_ACR_Des";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"ACR\data\ACR_Uniforma_Des.paa"};
-		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		icon = "iconManLeader";
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Pilot: ACR_Vojak_Base
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Pilot";
-		model = "\A3\Characters_F\Common\coveralls.p3d";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "ACR_Uniform_Pilot";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Pilot.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-	class ACR_Dustojnik: ACR_Vojak_Base //znackablabla
-	{
-		_generalMacro = "B_Soldier_F";
-		scope = 2;
-		vehicleClass = "ACRX00"; //zaklad
-		displayName = "Důstojník";
-		model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		uniformClass = "ACR_Uniform_Officer";
-		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa"};
-		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
-		canDeactivateMines = "true";
-		class UniformInfo
-		{
-			class SlotsInfo
-			{
-				class NVG: UniformSlotInfo
-				{
-					slotType = 602;
-				};
-				class Scuba: UniformSlotInfo
-				{
-					slotType = 604;
-				};
-				class Headgear: UniformSlotInfo
-				{
-					slotType = 605;
-				};
-			};
-		};
-	};
-};
 class cfgWeapons
 {
 	class ItemCore;
+    class V_PlateCarrier1_rgr;
+    class V_PlateCarrier2_rgr;
 	class HeadGearItem;
-	class UniformItem;
+    class UniformItem;
+    class Uniform_Base;
+    class U_B_CombatUniform_mcam;
+    class U_B_CombatUniform_mcam_tshirt;
+    class U_B_CombatUniform_mcam_vest;
 	class ItemInfo;
-	class Uniform_Base;
 	class VestItem;
 	class BagItem;
     class ACR_Vesta: ItemCore //Vesta
@@ -1855,10 +83,9 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	class ACR_Vesta2: ItemCore //Vesta2
+	class ACR_Vesta2: V_PlateCarrier1_rgr //Vesta2
 	{
 		scope = 2;
-		model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
 		picture = "\ACR\data\ikona_ACR_Vesta2.paa";
 		displayName = "$STR_ACR_VEST2";
 		hiddenSelections[] = {"camo"};
@@ -1874,6 +101,92 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+    class ACR_Vesta2_H: V_PlateCarrier2_rgr //Vesta2
+    {
+        scope = 2;
+        picture = "\ACR\data\ikona_ACR_Vesta2.paa";
+        displayName = "AČR Taktická Vesta (vz.95, těžká)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta2.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
+            containerClass = "Supply200";
+            mass = 50;
+            armor = "5*0.5";
+            passThrough = 0.7;
+            hiddenSelections[] = {"camo"};
+        };
+    };
+    class ACR_Vesta_Olive: V_PlateCarrier1_rgr
+    {
+        picture = "\ACR\data\ikona_ACR_Vesta_olive.paa";
+        displayName = "AČR Taktická Vesta (zelená)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta_olive.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            armor = 20;
+            containerclass = "Supply140";
+            mass = 60;
+            passthrough = 0.5;
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
+            hiddenSelections[] = {"camo"};
+        };
+    };
+    class ACR_Vesta_Olive_H: V_PlateCarrier2_rgr
+    {
+        picture = "\ACR\data\ikona_ACR_Vesta_olive.paa";
+        displayName = "AČR Taktická Vesta (zelená, těžká)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta_olive.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            armor = 30;
+            containerclass = "Supply120";
+            mass = 80;
+            passthrough = 0.5;
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
+            hiddenSelections[] = {"camo"};
+        };
+    };
+    class ACR_Vesta_khk: V_PlateCarrier1_rgr
+    {
+        picture = "\ACR\data\ikona_ACR_Vesta_khk.paa";
+        displayName = "AČR Taktická Vesta (khaki)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta_khk.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            armor = 20;
+            containerclass = "Supply140";
+            mass = 60;
+            passthrough = 0.5;
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
+            hiddenSelections[] = {"camo"};
+        };
+    };
+    class ACR_Vesta_khk_H: V_PlateCarrier2_rgr
+    {
+        picture = "\ACR\data\ikona_ACR_Vesta_khk.paa";
+        displayName = "AČR Taktická Vesta (khaki, těžká)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Vesta_khk.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            armor = 30;
+            containerclass = "Supply120";
+            mass = 80;
+            passthrough = 0.5;
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
+            hiddenSelections[] = {"camo"};
+        };
+    };
 	class ACR_Prilba: ItemCore
 	{
 		scope = 2;
@@ -1934,11 +247,14 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-	class CombatUniform_ACR: Uniform_Base
+
+	// vz. 95 Lesní Uniformy
+	class CombatUniform_ACR: Uniform_Base // Klasická
 	{
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM";
-		texture = "\ACR\data\ACR\data\ACR_Uniforma.paa";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
 		picture = "\ACR\data\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
@@ -1950,11 +266,46 @@ class cfgWeapons
 			mass = 30;
 		};
 	};
+    class CombatUniform_ACR_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
+    {
+        displayName = "AČR Uniforma (vz.95, triko)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+        picture = "\ACR\data\ikona_ACR_vz95.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_Vojak02";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
+    class CombatUniform_ACR_vest: U_B_CombatUniform_mcam_vest // Rukávy
+    {
+        displayName = "AČR Uniforma (vz.95, rukávy)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+        picture = "\ACR\data\ikona_ACR_vz95.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_Vojak03";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
+
+    // MOUT Uniformy
 	class CombatUniform_ACR_MOUT: Uniform_Base
 	{
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_MOUT";
-		texture = "\ACR\data\ACR_Uniforma_MOUT.paa";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
 		picture = "\ACR\data\ikona_ACR_MOUT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
@@ -1966,11 +317,46 @@ class cfgWeapons
 			mass = 30;
 		};
 	};
+    class CombatUniform_ACR_MOUT_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
+    {
+        displayName = "AČR Uniforma (MOUT, triko)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+        picture = "\ACR\data\ikona_ACR_MOUT.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_MOUT_Vojak02";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
+    class CombatUniform_ACR_MOUT_vest: U_B_CombatUniform_mcam_vest // Rukávy
+    {
+        displayName = "AČR Uniforma (MOUT, rukávy)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+        picture = "\ACR\data\ikona_ACR_MOUT.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_MOUT_Vojak03";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
+
+    // vz.95 Pouštní Uniformy
 	class CombatUniform_ACR_Des: Uniform_Base
 	{
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_DESERT";
-		texture = "\ACR\data\ACR_Uniforma_Des.paa";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
 		picture = "\ACR\data\ikona_ACR_DESERT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
@@ -1982,11 +368,44 @@ class cfgWeapons
 			mass = 30;
 		};
 	};
+    class CombatUniform_ACR_Des_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
+    {
+        displayName = "AČR Uniforma (Pouštní, triko)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+        picture = "\ACR\data\ikona_ACR_DESERT.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_Des_Vojak02";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
+    class CombatUniform_ACR_Des_vest: U_B_CombatUniform_mcam_vest // Rukávy
+    {
+        displayName = "AČR Uniforma (Pouštní, rukávy)";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+        picture = "\ACR\data\ikona_ACR_DESERT.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+        author = "$STR_ACR";
+        class ItemInfo: UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_Des_Vojak03";
+            containerClass = "Supply20";
+            mass = 30;
+        };
+    };
 	class ACR_Uniform_Pilot: Uniform_Base
 	{
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_PILOT";
-		texture = "\ACR\data\ACR_Uniforma_Pilot.paa";
+        hiddenSelections[] = {"Camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
 		picture = "\ACR\data\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
 		author = "$STR_ACR";
@@ -2013,6 +432,1566 @@ class cfgWeapons
 			containerClass = "Supply20";
 			mass = 30;
 			hiddenSelections[] = {"Camo1","Camo2"};hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa","\ACR\data\ACR_Uniforma_Offic.paa"};
+		};
+	};
+};
+class cfgVehicles
+{
+	class B_Soldier_F;
+    class B_Soldier_02_f;
+    class B_Soldier_03_f;
+    class Man;
+	class B_Carryall_mcamo;
+	class ACRbatoh: B_Carryall_mcamo
+	{
+		scope = 2;
+		displayName = "$STR_ACR_BACKPACK"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
+		picture = "\ACR\data\ikona_ACR_batoh02.paa"; //ikona
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\ACR\data\Batoh02_ACR.paa"};
+		author = "$STR_ACR";
+	};
+	class ACRP_Vojak01: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "ACRbatoh";
+		displayName = "Střelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak02: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_GL_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "ACRbatoh";
+		displayName = "Radista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", ,"insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC119"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak07: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_exp_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "B_Bergen_sgg";
+		displayName = "Ženista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		engineer = 1;
+		icon = "iconManEngineer";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak03: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_AR_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		displayName = "Kulometčík";
+		backpack = "ACRbatoh";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		hiddenSelections[] = {"Camo", ,"insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		icon = "iconManMG";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak04: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "ACRbatoh";
+		head = "Klobouk_95";
+		displayName = "Ostrostřelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak05: B_Soldier_F
+	{
+		_generalMacro = "B_medic_F";
+		attendant = "true";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "B_AssaultPack_rgr_Medic";
+		displayName = "Zdravotník";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		icon = "iconManMedic";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak10: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "ACRbatoh";
+		displayName = "Střelec - AT";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		linkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		respawnlinkedItems[] = {"Klobouk_95","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManAT";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACRP_Vojak06: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX0"; //RECON
+		backpack = "ACRbatoh";
+		displayName = "Velitel";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManLeader";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak01: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Střelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak02: B_Soldier_02_f
+	{
+		_generalMacro = "B_Soldier_GL_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Radista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_tshirt";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR", "ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC119"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak07: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_exp_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_Bergen_sgg";
+		displayName = "Ženista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		engineer = 1;
+		icon = "iconManEngineer";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak03: B_Soldier_03_f
+	{
+		_generalMacro = "B_soldier_AR_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		displayName = "Kulometčík";
+		backpack = "B_AssaultPack_rgr";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_vest";
+		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		icon = "iconManMG";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak04: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_AssaultPack_rgr";
+		head = "H_HelmetB_light_black";
+		displayName = "Ostrostřelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak05: B_Soldier_F
+	{
+		_generalMacro = "B_medic_F";
+		attendant = "true";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_AssaultPack_rgr_Medic";
+		displayName = "Zdravotník";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		icon = "iconManMedic";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak09: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX04"; //SNIPERI
+		displayName = "Spotter";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "U_B_GhillieSuit";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		linkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		canDeactivateMines = "true";
+		camouflage = 0.6;
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak10: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "B_Kitbag_Base";
+		displayName = "Střelec - AT";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManAT";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak11: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		faction = "ACR";
+		vehicleClass = "ACRX04"; //SNIPERI
+		scope = 2;
+		displayName = "Odstřelovač";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "U_B_GhillieSuit";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"srifle_LRR_SOS_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","7Rnd_408_Mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		linkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"H_Cap_headphones","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		canDeactivateMines = "true";
+		camouflage = 0.6;
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak06: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "ACRbatoh";
+		displayName = "Velitel";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManLeader";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Vojak12: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX01"; //LESNI
+		backpack = "ACRbatoh";
+		displayName = "Průzkumník";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","Klobouk_95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak01: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Střelec";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak02: B_Soldier_02_f
+	{
+		_generalMacro = "B_Soldier_GL_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Radista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT_tshirt";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC119"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak07: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_exp_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_Bergen_sgg";
+		displayName = "Ženista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		engineer = 1;
+		icon = "iconManEngineer";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak03: B_Soldier_03_f
+	{
+		_generalMacro = "B_soldier_AR_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		displayName = "Kulometčík";
+		backpack = "B_AssaultPack_rgr";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT_vest";
+		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		icon = "iconManMG";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak04: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_AssaultPack_rgr";
+		head = "H_HelmetB_light_black";
+		displayName = "Ostrostřelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak05: B_Soldier_F
+	{
+		_generalMacro = "B_medic_F";
+		attendant = "true";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_AssaultPack_rgr_Medic";
+		displayName = "Zdravotník";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		icon = "iconManMedic";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak10: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_Kitbag_Base";
+		displayName = "Střelec - AT";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		linkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		respawnlinkedItems[] = {"H_HelmetB_light_black","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManAT";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_MOUT_Vojak06: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX02"; //MOUT
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Velitel";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_MOUT";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_MOUT.paa"};
+		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_black","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManLeader";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak01: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Střelec";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak02: B_Soldier_02_f
+	{
+		_generalMacro = "B_Soldier_GL_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Radista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des_tshirt";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC119"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak07: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_exp_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_Bergen_sgg";
+		displayName = "Ženista";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		engineer = 1;
+		icon = "iconManEngineer";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak03: B_Soldier_03_f
+	{
+		_generalMacro = "B_soldier_AR_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		displayName = "Kulometčík";
+		backpack = "B_AssaultPack_rgr";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des_vest";
+		weapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		icon = "iconManMG";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak04: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_AssaultPack_rgr";
+		head = "H_HelmetB_light_sand";
+		displayName = "Ostrostřelec";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak05: B_Soldier_F
+	{
+		_generalMacro = "B_medic_F";
+		attendant = "true";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_AssaultPack_rgr_Medic";
+		displayName = "Zdravotník";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		icon = "iconManMedic";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak10: B_Soldier_F
+	{
+		_generalMacro = "B_soldier_M_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_Kitbag_Base";
+		displayName = "Střelec - AT";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
+		linkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		respawnlinkedItems[] = {"H_HelmetB_light_sand","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManAT";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Des_Vojak06: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX03"; //POUST
+		backpack = "B_AssaultPack_rgr";
+		displayName = "Velitel";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CombatUniform_ACR_Des";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Des.paa"};
+		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		icon = "iconManLeader";
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Pilot: B_Soldier_F
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX00"; //zaklad
+		displayName = "Pilot";
+		model = "\A3\Characters_F\Common\coveralls.p3d";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "ACR_Uniform_Pilot";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Pilot.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
+		};
+	};
+	class ACR_Dustojnik: B_Soldier_F //znackablabla
+	{
+		_generalMacro = "B_Soldier_F";
+		scope = 2;
+		faction = "ACR";
+		vehicleClass = "ACRX00"; //zaklad
+		displayName = "Důstojník";
+		model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		uniformClass = "ACR_Uniform_Officer";
+		hiddenSelections[] = {"Camo", "insignia"};
+		hiddenSelectionsTextures[] = {"\ACR\data\ACR_Uniforma_Offic.paa"};
+		weapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
+		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		linkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","V_BandollierB_blk","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
+		canDeactivateMines = "true";
+		class UniformInfo
+		{
+			class SlotsInfo
+			{
+				class NVG: UniformSlotInfo
+				{
+					slotType = 602;
+				};
+				class Scuba: UniformSlotInfo
+				{
+					slotType = 604;
+				};
+				class Headgear: UniformSlotInfo
+				{
+					slotType = 605;
+				};
+			};
 		};
 	};
 };
