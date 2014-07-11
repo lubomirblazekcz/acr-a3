@@ -207,6 +207,25 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+    class ACR_Prilba2: ItemCore
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "AČR Taktická Helma (zelená)";
+        picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
+        model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\ACR\data\ACR_Prilba2.paa"};
+        class ItemInfo: HeadGearItem
+        {
+            uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+            mass = 70;
+            modelSides[] = {3,1};
+            armor = "3*0.5";
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"};
+        };
+    };
 	class Klobouk_95: ItemCore
 	{
 		scope = 2;
@@ -1303,8 +1322,8 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC119"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC119"};
 		canDeactivateMines = "true";
@@ -1344,8 +1363,8 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1385,8 +1404,8 @@ class cfgVehicles
 		respawnWeapons[] = {"LMG_Zafir_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"150Rnd_762x51_Box","150Rnd_762x51_Box","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		hiddenSelections[] = {"Camo", "insignia"};
@@ -1419,7 +1438,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr";
-		head = "ACR_Prilba";
+		head = "ACR_Prilba2";
 		displayName = "Ostrostřelec";
 		uniformAccessories[] = {};
 		nakedUniform = "U_BasicBody";
@@ -1430,8 +1449,8 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"ACR_Prilba","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"ACR_Prilba","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"ACR_Prilba2","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"ACR_Prilba2","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"optic_hamr","FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1472,7 +1491,7 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		canDeactivateMines = "true";
@@ -1513,8 +1532,8 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
-		linkedItems[] = {"ACR_Prilba","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
-		respawnlinkedItems[] = {"ACR_Prilba","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		linkedItems[] = {"ACR_Prilba2","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
+		respawnlinkedItems[] = {"ACR_Prilba2","NVGoggles_OPFOR","ACR_Vesta","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio","UU_TSW_H_Optic"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		icon = "iconManAT";
@@ -1555,8 +1574,8 @@ class cfgVehicles
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
 		respawnMagazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"NVGoggles_OPFOR","ACR_Vesta","ACR_Prilba2","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		respawnItems[] = {"FirstAidKit","ACRE_PRC148_UHF"};
 		icon = "iconManLeader";
