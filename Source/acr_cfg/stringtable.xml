@@ -30,36 +30,36 @@
             <Czech>Muži (Odstřelovači)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
-            <English>ACR Backpack (vz.95)</English>
-            <Czech>AČR Batoh (vz.95)</Czech>
+            <English>ACR Backpack (vz. 95)</English>
+            <Czech>AČR Batoh (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_VEST">
-            <English>ACR Vest (vz.95)</English>
-            <Czech>AČR Vesta (vz.95)</Czech>
+            <English>ACR Vest (vz. 95)</English>
+            <Czech>AČR Vesta (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_VEST2">
-            <English>ACR Tactical Vest (vz.95)</English>
+            <English>ACR Tactical Vest (vz. 95)</English>
             <Czech>AČR Taktická Vesta (vz.95)</Czech>
         </Key>
         <Key ID="STR_ACR_VEST2">
-            <English>ACR Tactical Vest (vz.95)</English>
-            <Czech>AČR Taktická Vesta (vz.95)</Czech>
+            <English>ACR Tactical Vest (vz. 95)</English>
+            <Czech>AČR Taktická Vesta (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_MICH2000">
-            <English>ACR MICH 2000 (vz.95)</English>
-            <Czech>AČR MICH 2000 (vz.95)</Czech>
+            <English>ACR MICH 2000 (vz. 95)</English>
+            <Czech>AČR MICH 2000 (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_BOONIEHAT">
-            <English>ACR Booniehat (vz.95)</English>
-            <Czech>AČR Klobouk (vz.95)</Czech>
+            <English>ACR Booniehat (vz. 95)</English>
+            <Czech>AČR Klobouk (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_CAP">
             <English>ACR Cap (vz.95)</English>
             <Czech>AČR Kšiltovka</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM">
-            <English>ACR Uniform (vz.95)</English>
-            <Czech>AČR Uniforma (vz.95)</Czech>
+            <English>ACR Uniform (vz. 95)</English>
+            <Czech>AČR Uniforma (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_MOUT">
             <English>ACR Uniform (MOUT)</English>
@@ -74,8 +74,8 @@
             <Czech>AČR Uniforma (Pilotní)</Czech>
         </Key>
         <Key ID="STR_ACR_FLAG">
-            <English>ACR Patch (flag)</English>
-            <Czech>AČR Nášivka (vlajka)</Czech>
+            <English>ACR Patch (Flag)</English>
+            <Czech>AČR Nášivka (Vlajka)</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO1">
             <English>ACR Label</English>
