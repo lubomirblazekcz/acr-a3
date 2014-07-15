@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class ACR_Kamaz
 	{
-		units[] = {"ACR_Kamaz"};
+		units[] = {"ACR_Kamaz", "ACR_Kamaz02", "ACR_Kamaz03", "ACR_Kamaz04"};
 		author[] = {"Filipsons"};
 		authorUrl = "http://505skss.team-forum.net/";
 	};

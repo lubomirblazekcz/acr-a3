@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class ACR
+	class ACR_Cfg
 	{
-		units[] = {};
-		weapons[] = {};
+		units[] = {"ACRbatoh","ACRP_Vojak01","ACRP_Vojak02","ACRP_Vojak07","ACRP_Vojak03","ACRP_Vojak04","ACRP_Vojak05","ACRP_Vojak10","ACRP_Vojak06","ACR_Vojak01","ACR_Vojak02","ACR_Vojak07","ACR_Vojak03","ACR_Vojak04","ACR_Vojak05","ACR_Vojak09","ACR_Vojak10","ACR_Vojak11","ACR_Vojak06","ACR_Vojak12","ACR_MOUT_Vojak01","ACR_MOUT_Vojak02","ACR_MOUT_Vojak07","ACR_MOUT_Vojak03","ACR_MOUT_Vojak04","ACR_MOUT_Vojak05","ACR_MOUT_Vojak10","ACR_MOUT_Vojak06","ACR_Des_Vojak01","ACR_Des_Vojak02","ACR_Des_Vojak07","ACR_Des_Vojak03","ACR_Des_Vojak04","ACR_Des_Vojak05","ACR_Des_Vojak10","ACR_Des_Vojak06","ACR_Pilot","ACR_Dustojnik","ACR_Neozbrojeny"};
+		weapons[] = {"ACR_Vesta","ACR_Vesta2","ACR_Vesta2_H","ACR_Vesta_Olive","ACR_Vesta_Olive_H","ACR_Vesta_khk","ACR_Vesta_khk_H","ACR_Prilba","ACR_Prilba_des","ACR_Prilba2","ACR_Baret","ACR_Klobouk_95","ACR_Ksiltovka_95","CombatUniform_ACR","CombatUniform_ACR_tshirt","CombatUniform_ACR_vest","CombatUniform_ACR_MOUT","CombatUniform_ACR_MOUT_tshirt","CombatUniform_ACR_MOUT_vest","CombatUniform_ACR_Des","CombatUniform_ACR_Des_tshirt","CombatUniform_ACR_Des_vest","ACR_Uniform_Pilot","ACR_Uniform_Officer","ACR_Uniform_Svetr"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Weapons_F","A3_Characters_F_BLUFOR"};
 	};
@@ -47,7 +47,7 @@ class cfgFactionClasses
 		displayName = "$STR_ACR"; //jmeno frakce v editoru STRINGTABLETEXT: ACR
 		priority = 3;
 		side = "TWest";
-		icon = "ACR\data\ACR_odznak.paa";
+		icon = "\acr_data\data\ACR_odznak.paa";
 	};
 };
 class cfgWeapons
