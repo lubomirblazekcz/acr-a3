@@ -254,7 +254,6 @@ class cfgWeapons
         displayName = "AČR Baret (červený)";
         picture = "\acr_data\data\Klobouk_95icon.paa";
         model = "\a3\characters_f\Common\headgear_beret01";
-        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_data\data\ACR_Baret.paa"};
         class ItemInfo: HeadgearItem
         {
