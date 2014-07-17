@@ -162,7 +162,7 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\side";
 				compatibleItems[] = {"RH_A26"};
 			};
-            class asdg_FrontSideRail_acr_a3_Sa58RIS1: asdg_FrontSideRail {};
+            class asdg_FrontSideRail_acr_a3_P07Duty: asdg_FrontSideRail {};
 		};
 		inertia = 0.100000;
 

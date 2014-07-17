@@ -35,8 +35,8 @@ class CfgWeapons
 	class KLT_SP01 : Pistol_Base_F
 	{
 		scope = 2;
-		model = "\klt_SP01Phantom\Phantom.p3d.p3d";
-		picture = "\klt_SP01Phantom\Data\UI\phantom_ca.paa";
+		model = "acr_a3_weapons\acr_a3_SP01Phantom\Phantom.p3d";
+		picture = "acr_a3_weapons\acr_a3_SP01Phantom\Data\UI\phantom_ca.paa";
 		//UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[] = {"16Rnd_9x21_Mag"};
 		reloadAction = "GestureReloadPistol";
@@ -162,7 +162,7 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\side";
 				compatibleItems[] = {"RH_A26"};
 			};
-            class asdg_FrontSideRail_KLT_Sa58RIS1: asdg_FrontSideRail {};
+            class asdg_FrontSideRail_acr_a3_SP01Phantom: asdg_FrontSideRail {};
 		};
 		inertia = 0.100000;
 
