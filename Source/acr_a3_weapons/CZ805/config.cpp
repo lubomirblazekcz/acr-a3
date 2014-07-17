@@ -72,8 +72,8 @@ class CfgWeapons
 			class PointerSlot: PointerSlot 
 			{
 			};
-            class asdg_FrontSideRail_KLT_Sa58RIS1: asdg_FrontSideRail {};
-            class asdg_OpticRail_KLT_Sa58RIS1: asdg_OpticRail1913_short {};			
+            class asdg_FrontSideRail_ACR_A3_Sa58RIS1: asdg_FrontSideRail {};
+            class asdg_OpticRail_ACR_A3_Sa58RIS1: asdg_OpticRail1913_short {};
 		};
 		
 /////////////////////////////////////////////////////  I R O N S I G H T S  /////////////////////////////////////////////////////
@@ -324,7 +324,7 @@ class CfgWeapons
 			aiRateOfFireDistance = 700;
 		};
 
-	class KLT_CZ_805_G1 : UGL_F
+	class ACR_A3_CZ_805_G1 : UGL_F
 		{
 			displayName = "CZ 805 G1";
 			descriptionShort = "CZ 805 G1 Grenade launcher";
@@ -396,7 +396,7 @@ class CfgWeapons
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
 
-		muzzles[] = {"this", "KLT_CZ_805_G1"}; /// to be able to switch between bullet muzzle and TGL
+		muzzles[] = {"this", "ACR_A3_CZ_805_G1"}; /// to be able to switch between bullet muzzle and TGL
 
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
