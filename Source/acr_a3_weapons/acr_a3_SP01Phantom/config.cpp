@@ -34,13 +34,13 @@ class CfgWeapons
 
 	class KLT_SP01 : Pistol_Base_F
 	{
-		scope = 0;
+		scope = 2;
 		model = "\klt_SP01Phantom\Phantom.p3d.p3d";
 		picture = "\klt_SP01Phantom\Data\UI\phantom_ca.paa";
 		//UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 		magazines[] = {"16Rnd_9x21_Mag"};
 		reloadAction = "GestureReloadPistol";
-		displayname = "CZ 75 P-07 Duty";
+		displayname = "CZ 75 SP-01 Phantom";
 		dexterity = 2;
 		bullet1[] = {
 				"A3\sounds_f\weapons\shells\9mm\metal_9mm_01", 0.501187, 1, 15
