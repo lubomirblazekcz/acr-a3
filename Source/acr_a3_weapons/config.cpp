@@ -1,10 +1,11 @@
-class CfgPatches
+class CfgPatches 
 {
-	class ACR_A3_Weapons
+
+	class acr_a3_weapons 
 	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		units[] = { };
+		weapons[] = { };
+		requiredVersion = 0.100000;
+		requiredAddons[] = { };
 	};
 };
