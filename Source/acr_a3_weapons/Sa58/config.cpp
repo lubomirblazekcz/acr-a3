@@ -1,10 +1,10 @@
 #include "basicdefines_A3.hpp"
 class CfgPatches
 {
-        class KLT_Sa58
+        class ACR_A3_Weapons_Sa58
         {
                 units[]={};
-                weapons[]={"KLT_Sa58P"};
+                weapons[]={"ACR_A3_Sa58P"};
                 requiredVersion=0.1;
                 requiredAddons[]={"A3_Weapons_F","asdg_jointrails"};
         };
@@ -35,9 +35,9 @@ class CfgWeapons
                 class GunParticles;
         };
  
-        class KLT_Sa58_base: Rifle_Base_F /// Just basic values common for all testing rifle variants
+        class ACR_A3_Sa58_base: Rifle_Base_F /// Just basic values common for all testing rifle variants
         {
-                magazines[] = {klt_30Rnd_Sa58_mag_TracerG, klt_30Rnd_Sa58_mag_TracerR, klt_30Rnd_Sa58_mag_TracerY, klt_30Rnd_Sa58_mag}; /// original custom made magazines
+                magazines[] = {ACR_A3_30Rnd_Sa58_mag_TracerG, ACR_A3_30Rnd_Sa58_mag_TracerR, ACR_A3_30Rnd_Sa58_mag_TracerY, ACR_A3_30Rnd_Sa58_mag}; /// original custom made magazines
                 reloadAction = "HLC_GestureReloadAK"; /// MX hand animation actually fits this rifle well (GestureReloadMX)
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
                 discreteDistanceInitIndex = 3; /// Ironsight zeroing is the lowest value by default
@@ -67,7 +67,7 @@ class CfgWeapons
 
  
                 descriptionShort = "Samočinný automat vz. 58"; /// displayed on mouseOver in Inventory
-                handAnim[] = {"OFP2_ManSkeleton", "\klt_Sa58\Data\Anim\AK.rtm"}; /// MX hand animation actually fits this rifle well
+                handAnim[] = {"OFP2_ManSkeleton", "\acr_a3_weapons\Sa58\Data\Anim\AK.rtm"}; /// MX hand animation actually fits this rifle well
                 dexterity = 1.8;
  
                 changeFiremodeSound[] = {"A3\sounds_f\weapons\closure\firemode_changer_1", 0.562341, 1, 20};
@@ -234,13 +234,13 @@ class CfgWeapons
                 "A3\sounds_f\weapons\reloads\new_ebr", 1.000000, 1, 10
         };
 };
-        class KLT_Sa58P: KLT_Sa58_base
+        class ACR_A3_Sa58P: ACR_A3_Sa58_base
         {
                 scope = 2; /// should be visible and useable in game
                 displayName = "vz. 58 P"; /// some name
-                model = "\klt_Sa58\sa58p.p3d"; /// path to model
+                model = "\acr_a3_weapons\sa58\sa58p.p3d"; /// path to model
  
-                picture = "\klt_Sa58\Data\UI\sa58p_ca.paa"; /// different accessories have M, S, T instead of X
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58p_ca.paa"; /// different accessories have M, S, T instead of X
                 //UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa"; /// weapon with grenade launcher should be marked such way
  
                 weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
@@ -265,47 +265,47 @@ class CfgWeapons
 				
 				sections[]={"camo"};
 				hiddenSelections[] = {"camo"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58_co.paa"};
         };
 		
-		class KLT_Sa58P_camo: KLT_Sa58P
+		class ACR_A3_Sa58P_camo: ACR_A3_Sa58P
         {
                 scope = 2; /// should be visible and useable in game
                 displayName = "vz. 58 P Desert"; /// some name				
 				sections[]={"camo"};
 				hiddenSelections[] = {"camo"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58camo_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58camo_co.paa"};
         };
  
-        class KLT_Sa58V: KLT_Sa58P
+        class ACR_A3_Sa58V: ACR_A3_Sa58P
         {
                 displayName = "vz. 58 V"; /// some name
-                model = "\klt_Sa58\sa58V.p3d"; /// path to model
-                picture = "\klt_Sa58\Data\UI\sa58v_ca.paa"; /// different accessories have M, S, T instead of X
+                model = "\acr_a3_weapons\sa58\sa58V.p3d"; /// path to model
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58v_ca.paa"; /// different accessories have M, S, T instead of X
 				sections[]={"camo"};
 				hiddenSelections[] = {"camo"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58_co.paa"};
  
         };
 		
-		class KLT_Sa58V_camo: KLT_Sa58V
+		class ACR_A3_Sa58V_camo: ACR_A3_Sa58V
         {
                 displayName = "vz. 58 V Desert"; /// some name
-                picture = "\klt_Sa58\Data\UI\sa58v_ca.paa"; /// different accessories have M, S, T instead of X
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58v_ca.paa"; /// different accessories have M, S, T instead of X
 				sections[]={"camo"};
 				hiddenSelections[] = {"camo"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58camo_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58camo_co.paa"};
         };
  
-        class KLT_Sa58RIS1: KLT_Sa58_base
+        class ACR_A3_Sa58RIS1: ACR_A3_Sa58_base
         {
                 scope = 2;
                 displayName = "vz. 58 RIS";
-                model = "\klt_Sa58\sa58ris.p3d";
+                model = "\acr_a3_weapons\sa58\sa58ris.p3d";
  
-                handAnim[] = {"OFP2_ManSkeleton", "\klt_Sa58\Data\Anim\Mk48.rtm"}; /// MX hand animation actually fits this rifle well
+                handAnim[] = {"OFP2_ManSkeleton", "\acr_a3_weapons\sa58\Data\Anim\Mk48.rtm"}; /// MX hand animation actually fits this rifle well
  
-                picture = "\klt_Sa58\Data\UI\sa58ref_ca.paa";
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58ref_ca.paa";
  
                 weaponInfoType = "RscWeaponZeroing";
  
@@ -313,8 +313,8 @@ class CfgWeapons
                 {
                         mass = 100;
                         allowedSlots[] = {901};
-                    class asdg_FrontSideRail_KLT_Sa58RIS1: asdg_FrontSideRail {};
-                    class asdg_OpticRail_KLT_Sa58RIS1: asdg_OpticRail1913_short {};
+                    class asdg_FrontSideRail_ACR_A3_Sa58RIS1: asdg_FrontSideRail {};
+                    class asdg_OpticRail_ACR_A3_Sa58RIS1: asdg_OpticRail1913_short {};
                     class MuzzleSlot: SlotInfo
                         {
                                 linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE"; /// this can be set, but having some common helps a bit
@@ -328,34 +328,34 @@ class CfgWeapons
                 };
 				sections[]={"camo","RIS"};
 				hiddenSelections[] = {"camo","RIS"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58_co.paa", "\klt_sa58\data\sa58sfcamo1_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58_co.paa", "\acr_a3_weapons\sa58\data\sa58sfcamo1_co.paa"};
         };
 		
-		class KLT_Sa58RIS1_camo: KLT_Sa58RIS1
+		class ACR_A3_Sa58RIS1_camo: ACR_A3_Sa58RIS1
         {
                 displayName = "vz. 58 RIS Desert"; /// some name
-                picture = "\klt_Sa58\Data\UI\sa58acog_ca.paa"; /// different accessories have M, S, T instead of X
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58acog_ca.paa"; /// different accessories have M, S, T instead of X
 				sections[]={"camo","RIS"};
 				hiddenSelections[] = {"camo","RIS"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58camo_co.paa", "\klt_sa58\data\sa58sfcamo_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58camo_co.paa", "\acr_a3_weapons\sa58\data\sa58sfcamo_co.paa"};
         };
  
-        class KLT_Sa58RIS2: KLT_Sa58RIS1
+        class ACR_A3_Sa58RIS2: ACR_A3_Sa58RIS1
         {
                 displayName = "vz. 58 RIS2"; /// some name
-                model = "\klt_Sa58\sa58ris_back.p3d"; /// path to model
-                picture = "\klt_Sa58\Data\UI\sa58acog_ca.paa"; /// different accessories have M, S, T instead of X
+                model = "\acr_a3_weapons\sa58\sa58ris_back.p3d"; /// path to model
+                picture = "\acr_a3_weapons\sa58\Data\UI\sa58acog_ca.paa"; /// different accessories have M, S, T instead of X
 				sections[]={"camo","RIS"};
 				hiddenSelections[] = {"camo","RIS"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58_co.paa", "\klt_sa58\data\sa58sfcamo1_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58_co.paa", "\acr_a3_weapons\sa58\data\sa58sfcamo1_co.paa"};
         };
 		
-		class KLT_Sa58RIS2_camo: KLT_Sa58RIS2
+		class ACR_A3_Sa58RIS2_camo: ACR_A3_Sa58RIS2
         {
                 displayName = "vz. 58 RIS2 Desert"; /// some name
 				sections[]={"camo","RIS"};
 				hiddenSelections[] = {"camo","RIS"}; 
-				hiddenSelectionsTextures[] = {"\klt_sa58\data\sa58camo_co.paa", "\klt_sa58\data\sa58sfcamo_co.paa"};
+				hiddenSelectionsTextures[] = {"\acr_a3_weapons\sa58\data\sa58camo_co.paa", "\acr_a3_weapons\sa58\data\sa58sfcamo_co.paa"};
         };       
         /// include accessory from separate file to not clutter this one
         //#include "accessory.hpp"

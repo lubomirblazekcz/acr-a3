@@ -1,10 +1,10 @@
 #include "basicdefines_A3.hpp"
 class CfgPatches
 {
-	class KLT_CZ805
+	class ACR_A3_Weapons_CZ805
 	{
 		units[]={};
-		weapons[]={"KLT_CZ805_GL", "KLT_CZ805_A1", "KLT_CZ805_A2", "KLT_CZ805_A2_Holo_Laser"};
+		weapons[]={"ACR_A3_CZ805_GL", "ACR_A3_CZ805_A1", "ACR_A3_CZ805_A2", "ACR_A3_CZ805_A2_Holo_Laser"};
 		requiredVersion=0.1;
 		requiredAddons[]={"A3_Weapons_F","asdg_jointrails"};
 	};
@@ -33,7 +33,7 @@ class CfgWeapons
 		class GunParticles;
 	};
 
-	class KLT_CZ805_Base: Rifle_Base_F /// Just basic values common for all testing rifle variants
+	class ACR_A3_CZ805_Base: Rifle_Base_F /// Just basic values common for all testing rifle variants
 	{
 		magazines[] =  {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow"}; /// original custom made magazines
 		reloadAction = "GestureReloadMX"; /// MX hand animation actually fits this rifle well
@@ -85,7 +85,7 @@ class CfgWeapons
 		distanceZoomMax = 300;
 /////////////////////////////////////////////////////  I R O N S I G H T S  /////////////////////////////////////////////////////
 
-		handAnim[] = {"OFP2_ManSkeleton", "KLT_CZ805\data\anims\CZ805.rtm"}; /// MX hand animation actually fits this rifle well
+		handAnim[] = {"OFP2_ManSkeleton", "\acr_a3_weapons\CZ805\data\anims\CZ805.rtm"}; /// MX hand animation actually fits this rifle well
 		dexterity = 1.7;
 		selectionFireAnim = "muzzleFlash";
 		modes[] = {Single, Burst, FullAuto, fullauto_medium, single_medium_optics1, single_far_optics2}; /// Includes fire modes for AI
@@ -348,14 +348,14 @@ class CfgWeapons
 		reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_MX",db-8,1, 30}; /// custom made sounds
 	};
 
-	class KLT_CZ805_A2: KLT_CZ805_Base
+	class ACR_A3_CZ805_A2: ACR_A3_CZ805_Base
 	{
 		scope = 2; /// should be visible and useable in game
 		displayName = "CZ 805 A2"; /// some name
-		model = "KLT_CZ805\CZ_805_A2.p3d"; /// path to model
+		model = "\acr_a3_weapons\CZ805\CZ_805_A2.p3d"; /// path to model
 		
 		descriptionShort = "CZ 805 A2 BREN Carabine"; /// displayed on mouseOver in Inventory
-		picture = "\KLT_CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa"; /// weapon with grenade launcher should be marked such way
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
@@ -365,14 +365,14 @@ class CfgWeapons
 			mass = 4; /// some rough estimate
 		};
 	};
-	class KLT_CZ805_A1: KLT_CZ805_Base
+	class ACR_A3_CZ805_A1: ACR_A3_CZ805_Base
 	{
 		scope = 2; /// should be visible and useable in game
 		displayName = "CZ 805 A1"; /// some name
-		model = "KLT_CZ805\CZ_805_A1.p3d"; /// path to model
+		model = "\acr_a3_weapons\CZ805\CZ_805_A1.p3d"; /// path to model
 		
 		descriptionShort = "CZ 805 A1 BREN"; /// displayed on mouseOver in Inventory
-		picture = "\KLT_CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa"; /// weapon with grenade launcher should be marked such way
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
@@ -382,16 +382,16 @@ class CfgWeapons
 			mass = 4; /// some rough estimate
 		};
 	};
-	class KLT_CZ805_GL: KLT_CZ805_Base
+	class ACR_A3_CZ805_GL: ACR_A3_CZ805_Base
 	{
 		scope = 2; /// should be visible and useable in game
 		displayName = "CZ 805 A1 GL"; /// some name
-		model = "KLT_CZ805\CZ_805_GL.p3d"; /// path to model
+		model = "\acr_a3_weapons\CZ805\CZ_805_GL.p3d"; /// path to model
 		
-		handAnim[] = {"OFP2_ManSkeleton", "KLT_CZ805\data\anims\CZ805GL.rtm"}; /// MX hand animation actually fits this rifle well
+		handAnim[] = {"OFP2_ManSkeleton", "\acr_a3_weapons\CZ805\data\anims\CZ805GL.rtm"}; /// MX hand animation actually fits this rifle well
 
 		descriptionShort = "CZ 805 A1 GL BREN"; /// displayed on mouseOver in Inventory
-		picture = "\KLT_CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa"; /// different accessories have M, S, T instead of X
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa"; /// weapon with grenade launcher should be marked such way
 
 		weaponInfoType = "RscWeaponZeroing"; /// display with zeroing is good for iron sights
@@ -406,7 +406,7 @@ class CfgWeapons
 
 	/**** SLOTABLE WEAPONS ****/
 
-	class KLT_CZ805_A2_Holo_Laser: KLT_CZ805_A2 /// standard issue variant with holo optics and laser pointer
+	class ACR_A3_CZ805_A2_Holo_Laser: ACR_A3_CZ805_A2 /// standard issue variant with holo optics and laser pointer
 	{
 		class LinkedItems
 		{
@@ -422,7 +422,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class KLT_CZ805_A1_Holo_Laser: KLT_CZ805_A1 /// standard issue variant with holo optics and laser pointer
+	class ACR_A3_CZ805_A1_Holo_Laser: ACR_A3_CZ805_A1 /// standard issue variant with holo optics and laser pointer
 	{
 		class LinkedItems
 		{
