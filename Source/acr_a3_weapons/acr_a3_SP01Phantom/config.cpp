@@ -148,21 +148,22 @@ class CfgWeapons
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 20;
-			class MuzzleSlot : SlotInfo
+			class MuzzleSlot
 			{
-				compatibleItems[] ={};
 			};
 
-			class CowsSlot: CowsSlot 
+			class CowsSlot 
 			{
-				compatibleItems[] ={};
 			};
-			class PointerSlot: PointerSlot 
+			
+			class PointerSlot : SlotInfo
 			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\side";
-				compatibleItems[] = {"RH_A26"};
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				displayName = "$STR_A3_PointerSlot0";
+				compatibleItems[] = {
+						"RH_x2", "RH_m6x", "RH_x300"
+				};
 			};
-            class asdg_FrontSideRail_acr_a3_SP01Phantom: asdg_FrontSideRail {};
 		};
 		inertia = 0.100000;
 

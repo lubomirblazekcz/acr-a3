@@ -161,7 +161,7 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				displayName = "$STR_A3_PointerSlot0";
 				compatibleItems[] = {
-						"RH_A26"
+						"RH_x2", "RH_m6x", "RH_x300"
 				};
 			};
 		};
