@@ -21,7 +21,7 @@ class cfgVehicles
 		displayName = "ACR CH49";
 		crew = "ACR_Pilot";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"acr_mohawk\Data\blu_mohawk_co.paa","acr_mohawk\Data\blu_mohawk2_co.paa","acr_mohawk\Data\blu_mohawk3_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\acr_mohawk\Data\blu_mohawk_co.paa","\acr_a3_vehicles\acr_mohawk\Data\blu_mohawk2_co.paa","\acr_a3_vehicles\acr_mohawk\Data\blu_mohawk3_co.paa"};
 		typicalCargo[] = {"ACR_Pilot"};
 		availableForSupportTypes[] = {"Drop","Transport"};
 	};

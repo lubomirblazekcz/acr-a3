@@ -8,6 +8,6 @@ if (isServer) then {
 	_this animate ["HideServices", 1];
 };
 
-_this setObjectTexture [0, "\ACR_Offroad\Offroad\data\offroad01.paa"];
+_this setObjectTexture [0, "\acr_a3_vehicles\ACR_Offroad\Offroad\data\offroad01.paa"];
 
-_this setObjectTexture [1, "\ACR_Offroad\Offroad\data\offroad01.paa"];
+_this setObjectTexture [1, "\acr_a3_vehicles\ACR_Offroad\Offroad\data\offroad01.paa"];

@@ -66,7 +66,7 @@ class CfgVehicles
 		transportAmmo = 0;
 		transportRepair = 0;
 		supplyRadius = 6.3;
-		hiddenSelectionsTextures[] = {"\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Plachta.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Plachta.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
@@ -110,7 +110,7 @@ class CfgVehicles
 		transportAmmo = 0;
 		transportRepair = 0;
 		supplyRadius = 6.3;
-		hiddenSelectionsTextures[] = {"\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Plachta.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Plachta.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
@@ -154,7 +154,7 @@ class CfgVehicles
 		transportAmmo = 0;
 		transportRepair = 100000;
 		supplyRadius = 6.3;
-		hiddenSelectionsTextures[] = {"\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Kabina.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz_Kabina.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
@@ -198,7 +198,7 @@ class CfgVehicles
 		transportAmmo = 0;
 		transportRepair = 0;
 		supplyRadius = 6.3;
-		hiddenSelectionsTextures[] = {"\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\ACR_Kamaz\Kamaz\data\ACR_Kamaz_cisterna.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\ACR_Kamaz\Kamaz\data\ACR_Kamaz_cisterna.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag

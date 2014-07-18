@@ -18,7 +18,7 @@ class CfgVehicles
 		displayName = "Hunter";
 		crew = "ACR_MOUT_Vojak01";
 		attendant = 1;
-		hiddenSelectionsTextures[] = {"\ACR_Offroad\Hunter\data\Hunter_Kastle.paa","\ACR_Offroad\Hunter\data\Hunter_ostatni.paa",""};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Offroad\Hunter\data\Hunter_Kastle.paa","\acr_a3_vehicles\ACR_Offroad\Hunter\data\Hunter_ostatni.paa",""};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
@@ -45,7 +45,7 @@ class CfgVehicles
 		displayName = "Oshkosh M-ATV .50 HMG";
 		crew = "ACR_MOUT_Vojak01";
 		attendant = 1;
-		hiddenSelectionsTextures[] = {"\ACR_Offroad\Hunter\data\Hunter_Kastle.paa","\ACR_Offroad\Hunter\data\Hunter_ostatni.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Offroad\Hunter\data\Hunter_Kastle.paa","\acr_a3_vehicles\ACR_Offroad\Hunter\data\Hunter_ostatni.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
@@ -73,7 +73,7 @@ class CfgVehicles
 		displayName = "Offroad ACR";
 		crew = "ACR_MOUT_Vojak01";
 		typicalCargo[] = {"crew=""ACR_MOUT_Vojak01"""};
-		hiddenSelectionsTextures[] = {"\ACR_Offroad\Offroad\data\Offroad01.paa","\ACR_Offroad\Offroad\data\Offroad01.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Offroad\Offroad\data\Offroad01.paa","\acr_a3_vehicles\ACR_Offroad\Offroad\data\Offroad01.paa"};
 		supplyRadius = 10;
 		attendant = "true";
 		maximumLoad = 10000;
@@ -83,7 +83,7 @@ class CfgVehicles
 		class EventHandlersF;
 		class EventHandlers: EventHandlersF
 		{
-			init = "(_this select 0) execVM ""\ACR_Offroad\Offroad\data\randomize_IG.sqf""";
+			init = "(_this select 0) execVM ""\acr_a3_vehicles\ACR_Offroad\Offroad\data\randomize_IG.sqf""";
 			killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled'); _this select 0 animate [""DamageUnHideConstruction"",0];";
 		};
 	};

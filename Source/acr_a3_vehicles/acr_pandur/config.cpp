@@ -28,7 +28,7 @@ class CfgVehicles
 		transportAmmo = 0;
 		transportRepair = 100000;
 		supplyRadius = 6.3;
-		hiddenSelectionsTextures[] = {"\ACR_Pandur\Pandur\data\Pandur01.paa","\ACR_Pandur\Pandur\data\Pandur02.paa","\ACR_Pandur\Pandur\data\Pandur03.paa","\ACR_Pandur\Pandur\data\Pandur04.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\ACR_Pandur\Pandur\data\Pandur01.paa","\acr_a3_vehicles\ACR_Pandur\Pandur\data\Pandur02.paa","\acr_a3_vehicles\ACR_Pandur\Pandur\data\Pandur03.paa","\acr_a3_vehicles\ACR_Pandur\Pandur\data\Pandur04.paa"};
 		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
