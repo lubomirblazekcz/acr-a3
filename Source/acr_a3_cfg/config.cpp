@@ -443,7 +443,7 @@ class cfgWeapons
     };
     class U_ACR_A3_CombatUniform_Des_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
-        displayName = "STR_ACR_UNIFORM_DESERT_vest";
+        displayName = "$STR_ACR_UNIFORM_DESERT_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
         picture = "\acr_a3_characters\data\ikona_ACR_DESERT.paa";
