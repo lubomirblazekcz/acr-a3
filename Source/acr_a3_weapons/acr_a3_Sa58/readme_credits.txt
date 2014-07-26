@@ -1,1 +1,0 @@
-Kudos to Kiory!
