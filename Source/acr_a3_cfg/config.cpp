@@ -10,7 +10,6 @@ class CfgPatches
 };
 class CfgVehicleClasses
 {
-	//units
     class ACRX0
 	{
 		displayName = "$STR_ACR_MENVZ95REC"; //Maj bonnie hatku a co ja vim
