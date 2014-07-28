@@ -1,7 +1,7 @@
 class CfgPatches 
 {
 
-	class acr_a3_characters_pbo 
+	class acr_a3_characters 
 	{
 		units[] = { };
 		weapons[] = { };
