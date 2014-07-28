@@ -213,7 +213,7 @@ class cfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_ACR_MICH2000_Des";
-        picture = "\acr_a3_characters\data\ikona_ACR_Prilba.paa";
+        picture = "\acr_a3_characters\data\ikona_ACR_Prilba_Des.paa";
         model = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Prilba_Des.paa"};
