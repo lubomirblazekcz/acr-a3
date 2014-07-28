@@ -43,11 +43,11 @@
         </Key>
         <Key ID="STR_ACR_VEST2">
             <English>ACR Tactical Vest (vz. 95)</English>
-            <Czech>AČR Taktická Vesta (vz.95)</Czech>
+            <Czech>AČR Taktická Vesta (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_VEST2_H">
             <English>ACR Tactical Vest (vz. 95, heavy)</English>
-            <Czech>AČR Taktická Vesta (vz.95, těžká)</Czech>
+            <Czech>AČR Taktická Vesta (vz. 95, těžká)</Czech>
         </Key>
         <Key ID="STR_ACR_VEST2_rgr">
             <English>ACR Tactical Vest (Green)</English>
@@ -86,7 +86,7 @@
             <Czech>AČR Klobouk (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_CAP">
-            <English>ACR Cap (vz.95)</English>
+            <English>ACR Cap (vz. 95)</English>
             <Czech>AČR Kšiltovka</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM">
@@ -95,11 +95,11 @@
         </Key>
         <Key ID="STR_ACR_UNIFORM_tshirt">
             <English>ACR Uniform (vz. 95, tshirt)</English>
-            <Czech>AČR Uniforma (vz.95, triko)</Czech>
+            <Czech>AČR Uniforma (vz. 95, triko)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_vest">
             <English>ACR Uniform (vz. 95, sleeves)</English>
-            <Czech>AČR Uniforma (vz.95, rukávy)</Czech>
+            <Czech>AČR Uniforma (vz. 95, rukávy)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_MOUT">
             <English>ACR Uniform (MOUT)</English>
