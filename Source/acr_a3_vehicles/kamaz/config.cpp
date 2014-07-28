@@ -9,77 +9,33 @@
 //Class P:\acr_a3_vehicles\kamaz\config.bin{
 class CfgPatches
 {
-	class ACR_Kamaz
+	class acr_a3_Kamaz
 	{
 		units[] = {"ACR_Kamaz","ACR_Kamaz02","ACR_Kamaz03","ACR_Kamaz04","ACR_Kamaz_Base","ACR_Kamaz2_Base","ACR_Kamaz3_Base","ACR_Kamaz4_Base"};
-		author[] = {"Filipsons"};
-		authorUrl = "http://505skss.team-forum.net/";
+		author = "$STR_ACR";
+//		authorUrl = "http://505skss.team-forum.net/";
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
 	};
 };
-class CfgVehicleClasses
-{
-	class Cars
-	{
-		displayName = "Vehicles";
-	};
-};
 class CfgVehicles
 {
 	class O_Truck_02_covered_F;
-	class ACR_Kamaz_Base: O_Truck_02_covered_F
-	{
-		scope = 1;
-		side = 1;
-		faction = "ACR";
-		vehicleclass = "Cars";
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"",""};
-	};
 	class O_Truck_02_transport_F;
-	class ACR_Kamaz2_Base: O_Truck_02_transport_F
-	{
-		scope = 1;
-		side = 1;
-		faction = "ACR";
-		vehicleclass = "Cars";
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"",""};
-	};
 	class O_Truck_02_box_F;
-	class ACR_Kamaz3_Base: O_Truck_02_box_F
-	{
-		scope = 1;
-		side = 1;
-		faction = "ACR";
-		vehicleclass = "Cars";
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"",""};
-	};
 	class O_Truck_02_fuel_F;
-	class ACR_Kamaz4_Base: O_Truck_02_fuel_F
+
+	class ACR_Kamaz: O_Truck_02_covered_F
 	{
-		scope = 1;
 		side = 1;
-		faction = "ACR";
-		vehicleclass = "Cars";
+		faction = "$STR_ACR_FACTION";
+		displayName = "$STR_ACR_KAMAZ_COVERED";
+		author = "$STR_ACR";
+		crew = "ACR_MOUT_Vojak01";
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"",""};
-	};
-	class ACR_Kamaz: ACR_Kamaz_Base
-	{
-		scope = 2;
-		displayName = "Kamaz - zakrytý";
-		author = "Filipsons";
-		crew = "ACR_MOUT_Vojak01";
-		transportFuel = 0;
-		transportAmmo = 0;
-		transportRepair = 0;
-		supplyRadius = 6.3;
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Plachta.paa"};
-		class TransportMagazines
+/*		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
 			{
@@ -111,19 +67,18 @@ class CfgVehicles
 				count = 2;
 			};
 		};
+		*/
 	};
-	class ACR_Kamaz02: ACR_Kamaz2_Base
+	class ACR_Kamaz02: O_Truck_02_transport_F
 	{
-		scope = 2;
-		displayName = "Kamaz - odkrytý";
-		author = "Filipsons";
+		side = 1;
+		faction = "$STR_ACR_FACTION";
+		displayName = "$STR_ACR_KAMAZ_TRANSPORT";
+		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		transportFuel = 0;
-		transportAmmo = 0;
-		transportRepair = 0;
-		supplyRadius = 6.3;
+		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Plachta.paa"};
-		class TransportMagazines
+/*		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
 			{
@@ -155,19 +110,17 @@ class CfgVehicles
 				count = 2;
 			};
 		};
-	};
-	class ACR_Kamaz03: ACR_Kamaz3_Base
+*/	};
+	class ACR_Kamaz03: O_Truck_02_box_F
 	{
-		scope = 2;
-		displayName = "Kamaz - technik";
-		author = "Filipsons";
+		side = 1;
+		faction = "$STR_ACR_FACTION";	
+		displayName = "$STR_ACR_KAMAZ_BOX";
+		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		transportFuel = 0;
-		transportAmmo = 0;
-		transportRepair = 100000;
-		supplyRadius = 6.3;
+		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Kabina.paa"};
-		class TransportMagazines
+/*		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
 			{
@@ -199,19 +152,17 @@ class CfgVehicles
 				count = 2;
 			};
 		};
-	};
-	class ACR_Kamaz04: ACR_Kamaz4_Base
+*/	};
+	class ACR_Kamaz04: O_Truck_02_fuel_F
 	{
-		scope = 2;
-		displayName = "Kamaz - cisterna";
-		author = "Filipsons";
+		side = 1;
+		faction = "$STR_ACR_FACTION";
+		displayName = "$STR_ACR_KAMAZ_FUEL";
+		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		transportFuel = 100000;
-		transportAmmo = 0;
-		transportRepair = 0;
-		supplyRadius = 6.3;
+		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3_vehicles\kamaz\data\ACR_Kamaz_cisterna.paa"};
-		class TransportMagazines
+/*		class TransportMagazines
 		{
 			class _xx_30Rnd_65x39_caseless_mag
 			{
@@ -243,6 +194,6 @@ class CfgVehicles
 				count = 2;
 			};
 		};
-	};
+*/	};
 };
 //};

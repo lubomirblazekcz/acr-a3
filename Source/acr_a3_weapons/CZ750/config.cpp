@@ -43,7 +43,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "7.62x51mm 10rnd CZ 750 Mag";
-		picture = "acr_a3_weapons\CZ750\data\cz750_mag_ca.paa";
+		picture = "acr_a3_weapons\CZ750\data\UI\cz750_mag_ca.paa";
 		ammo = "B_762x51_Ball";
 		count = 10;
 		initSpeed = 790;
@@ -56,7 +56,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 10;
 		displayName = "7.62x51mm 10rnd CZ 750 Tracer Mag";
-		picture = "acr_a3_weapons\CZ750\data\cz750_tracer_mag_ca.paa";
+		picture = "acr_a3_weapons\CZ750\data\UI\cz750_tracer_mag_ca.paa";
 		descriptionShort = "7.62x51mm CZ750 Tracer magazine";
 		displaynameshort = "Tracers";
 	};
@@ -185,7 +185,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "CZ 750 S1 M1";
 		model = "acr_a3_weapons\CZ750\CZ750.p3d";
-		picture = "acr_a3_weapons\CZ750\data\cz750_ca.paa";
+		picture = "acr_a3_weapons\CZ750\data\UI\cz750_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

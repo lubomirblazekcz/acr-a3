@@ -157,5 +157,22 @@
             <English>Radio Operator</English>
             <Czech>Radista</Czech>
         </Key>
+        <Key ID="STR_ACR_KAMAZ_COVERED">
+            <English>Kamaz Transport (Covered)</English>
+            <Czech>Kamaz Valník (krytý)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_TRANSPORT">
+            <English>Kamaz Transport (Covered)</English>
+            <Czech>Kamaz Valník</Czech>
+        </Key>
+
+        <Key ID="STR_ACR_KAMAZ_BOX">
+            <English>Kamaz Repair</English>
+            <Czech>Kamaz Opravárenský</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_FUEL">
+            <English>Kamaz Fuel</English>
+            <Czech>Kamaz Cisterna</Czech>
+        </Key>        
 	</Package>
 </Project>
