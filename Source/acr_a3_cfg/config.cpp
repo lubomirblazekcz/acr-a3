@@ -10,7 +10,7 @@ class CfgPatches
 };
 class CfgVehicleClasses
 {
-    class ACRX0
+	class ACRX0
 	{
 		displayName = "$STR_ACR_MENVZ95REC"; //Maj bonnie hatku a co ja vim
 	};
@@ -69,7 +69,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
-		picture = "\acr_a3_characters\data\ikona_ACR_Vesta.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
 		displayName = "$STR_ACR_VEST";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta.paa"};
@@ -87,7 +87,7 @@ class cfgWeapons
 	class V_ACR_A3_PlateCarrier1_vz95: V_PlateCarrier1_rgr //Vesta2
 	{
 		scope = 2;
-		picture = "\acr_a3_characters\data\ikona_ACR_Vesta2.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta2.paa";
 		displayName = "$STR_ACR_VEST2";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta2.paa"};
@@ -105,7 +105,7 @@ class cfgWeapons
     class V_ACR_A3_PlateCarrier2_vz95: V_PlateCarrier2_rgr //Vesta2
     {
         scope = 2;
-        picture = "\acr_a3_characters\data\ikona_ACR_Vesta2.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta2.paa";
         displayName = "$STR_ACR_VEST2_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta2.paa"};
@@ -122,7 +122,7 @@ class cfgWeapons
     };
     class V_ACR_A3_PlateCarrier1_rgr: V_PlateCarrier1_rgr
     {
-        picture = "\acr_a3_characters\data\ikona_ACR_Vesta_olive.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta_olive.paa";
         displayName = "$STR_ACR_VEST2_rgr";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta_olive.paa"};
@@ -139,7 +139,7 @@ class cfgWeapons
     };
     class V_ACR_A3_PlateCarrier2_rgr: V_PlateCarrier2_rgr
     {
-        picture = "\acr_a3_characters\data\ikona_ACR_Vesta_olive.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta_olive.paa";
         displayName = "$STR_ACR_VEST2_rgr_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta_olive.paa"};
@@ -156,7 +156,7 @@ class cfgWeapons
     };
     class V_ACR_A3_PlateCarrier1_khk: V_PlateCarrier1_rgr
     {
-        picture = "\acr_a3_characters\data\ikona_ACR_Vesta_khk.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta_khk.paa";
         displayName = "$STR_ACR_VEST2_khk";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta_khk.paa"};
@@ -173,7 +173,7 @@ class cfgWeapons
     };
     class V_ACR_A3_PlateCarrier2_khk: V_PlateCarrier2_rgr
     {
-        picture = "\acr_a3_characters\data\ikona_ACR_Vesta_khk.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Vesta_khk.paa";
         displayName = "$STR_ACR_VEST2_khk_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta_khk.paa"};
@@ -193,7 +193,7 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "$STR_ACR_MICH2000";
-		picture = "\acr_a3_characters\data\ikona_ACR_Prilba.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_Prilba.paa";
 		model = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Prilba.paa"};
@@ -213,7 +213,7 @@ class cfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_ACR_MICH2000_Des";
-        picture = "\acr_a3_characters\data\ikona_ACR_Prilba.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Prilba_Des.paa";
         model = "\A3\Characters_F_beta\Indep\headgear_helmet_canvas";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Prilba_Des.paa"};
@@ -252,7 +252,7 @@ class cfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_ACR_Beret_red";
-        picture = "\acr_a3_characters\data\Klobouk_95icon.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa";
         model = "\a3\characters_f\Common\headgear_beret01";
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Baret.paa"};
         class ItemInfo: HeadgearItem
@@ -269,10 +269,10 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "$STR_ACR_BOONIEHAT";
-		picture = "\acr_a3_characters\data\Klobouk_95icon.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa";
 		model = "\A3\Characters_F\Common\booniehat";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Klobouk_95.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Klobouk95.paa"};
 		author = "$STR_ACR";
 		class ItemInfo: HeadGearItem
 		{
@@ -292,7 +292,7 @@ class cfgWeapons
 		picture = "\A3\Characters_F\data\ui\icon_h_cap_grn_ca.paa";
 		model = "\A3\Characters_F\Common\capb";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Ksiltovka_95.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Ksiltovka95.paa"};
 		author = "$STR_ACR";
 		class ItemInfo: HeadGearItem
 		{
@@ -312,7 +312,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		picture = "\acr_a3_characters\data\ikona_ACR_vz95.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
@@ -328,7 +328,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_tshirt";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_vz95.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -344,7 +344,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_vz95.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -363,7 +363,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_MOUT";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
-		picture = "\acr_a3_characters\data\ikona_ACR_MOUT.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
@@ -379,7 +379,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_MOUT_tshirt";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_MOUT.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -395,7 +395,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_MOUT_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_MOUT.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -414,7 +414,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_DESERT";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		picture = "\acr_a3_characters\data\ikona_ACR_DESERT.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
@@ -430,7 +430,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_DESERT_tshirt";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_DESERT.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -446,7 +446,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_DESERT_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-        picture = "\acr_a3_characters\data\ikona_ACR_DESERT.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
@@ -463,7 +463,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_PILOT";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Pilot.paa"};
-		picture = "\acr_a3_characters\data\ikona_ACR_vz95.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
@@ -479,7 +479,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_OFFICER"; //WIP
 		texture = "\acr_a3_characters\data\ACR_Uniforma_Offic.paa";
-		picture = "\acr_a3_characters\data\ikona_ACR_vz95.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Offic.paa","\acr_a3_characters\data\ACR_Uniforma_Svetr"};
@@ -522,9 +522,9 @@ class cfgVehicles
 	{
 		scope = 2;
 		displayName = "$STR_ACR_BACKPACK"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
-		picture = "\acr_a3_characters\data\ikona_ACR_batoh02.paa"; //ikona
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_batoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Batoh02_ACR.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Batoh02.paa"};
 		author = "$STR_ACR";
 	};
 	class ACRP_Vojak01: B_Soldier_F
