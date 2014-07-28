@@ -9,11 +9,11 @@
 //Class P:\acr_a3_vehicles\pandur\config.bin{
 class CfgPatches
 {
-	class acr_a3_Kamaz
+	class ACR_Kamaz
 	{
-		units[] = {"ACR_Pandur"};
-		author = "$STR_ACR";
-//		authorUrl = "http://505skss.team-forum.net/";
+		units[] = {"Pandur II","ACR_Pandur_Base","ACR_Pandur"};
+		author[] = {"Filipsons"};
+		authorUrl = "http://505skss.team-forum.net/";
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -22,15 +22,24 @@ class CfgPatches
 class CfgVehicles
 {
 	class I_APC_Wheeled_03_cannon_F;
-	class ACR_Pandur: I_APC_Wheeled_03_cannon_F
+	class ACR_Pandur_Base: I_APC_Wheeled_03_cannon_F
+	{
+		scope = 1;
+		side = 1;
+		faction = "ACR";
+		vehicleclass = "Cars";
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		hiddenSelectionsTextures[] = {"",""};
+	};
+	class ACR_Pandur: ACR_Pandur_Base
 	{
 		scope = 2;
-		side = 1;
-		faction = "$STR_ACR_FACTION";
-		vehicleclass = "Armored";
 		displayName = "Pandur II";
-		author = "$STR_ACR";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		author = "Filipsons";
+		transportFuel = 0;
+		transportAmmo = 0;
+		transportRepair = 100000;
+		supplyRadius = 6.3;
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\pandur\data\Pandur01.paa","\acr_a3_vehicles\pandur\data\Pandur02.paa","\acr_a3_vehicles\pandur\data\Pandur03.paa","\acr_a3_vehicles\pandur\data\Pandur04.paa"};
 		class TransportMagazines
 		{

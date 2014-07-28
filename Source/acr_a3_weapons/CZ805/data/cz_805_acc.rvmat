@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="a3\data_f\default_ti_ca.tga";
+	texture="acr_a3_weapons\CZ805\data\Default_TI_CA.tga";
 };
 ambient[]={1,1,1,1};
 diffuse[]={0.70999998,0.70999998,0.70999998,1};
