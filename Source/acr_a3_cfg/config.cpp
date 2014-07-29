@@ -65,6 +65,21 @@ class cfgWeapons
 	class VestItem;
 	class BagItem;
 	class H_HelmetB;
+    class ACR_blk_BasicBody: Uniform_Base
+    {
+        scope = 2;
+        displayName = "ACR_blk_BasicBody";
+        picture = "\A3\characters_f\data\ui\icon_U_BasicBody_ca.paa";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
+
+        class ItemInfo : UniformItem
+        {
+            uniformModel = "-";
+            uniformClass = "ACR_Underwear_Character";
+            containerClass = "Supply0";
+            mass = 1;
+        };
+    };
     class V_ACR_A3_PlateCarrierIA2_vz95: ItemCore //Vesta
 	{
 		scope = 2;
@@ -514,6 +529,7 @@ class cfgWeapons
 class cfgVehicles
 {
 	class B_Soldier_F;
+    class B_Soldier_base_F;
     class B_Soldier_02_f;
     class B_Soldier_03_f;
     class Man;
@@ -527,6 +543,27 @@ class cfgVehicles
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Batoh02.paa"};
 		author = "$STR_ACR";
 	};
+    class ACR_Underwear_Character: B_Soldier_base_F //The soldier who appears wearing your underwear class
+    {
+        scope = 1;//1 = private and ensures it doesnt list as a character in the editor
+        displayName = "ACR Example Underwear Character";
+        model = "\A3\Characters_F\Common\basicbody";
+        uniformClass = "ACR_blk_BasicBody"; //Your underwear class in cfgweapons
+        weapons[] = {};
+        magazines[] = {};
+        respawnWeapons[] = {};
+        respawnMagazines[] = {};
+        items[] = {};
+        linkeditems[] = {};
+        respawnlinkeditems[] = {};
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\basicbody_black_co.paa"};
+        class Wounds
+        {
+            tex[] = {};
+            mat[] = {"A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+        };
+    };
 	class ACRP_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
@@ -537,7 +574,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
