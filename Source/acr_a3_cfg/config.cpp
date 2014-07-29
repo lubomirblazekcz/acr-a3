@@ -616,7 +616,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_ACR_MEN_COM";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", ,"insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -658,7 +658,7 @@ class cfgVehicles
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -702,7 +702,7 @@ class cfgVehicles
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		weapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
@@ -746,7 +746,7 @@ class cfgVehicles
 		head = "H_ACR_A3_Booniehat_vz95";
 		displayName = "$STR_B_SOLDIER_M_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -789,7 +789,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -831,7 +831,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_AT_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -874,7 +874,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_TL_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -917,7 +917,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -959,7 +959,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_tshirt";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1001,7 +1001,7 @@ class cfgVehicles
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1045,7 +1045,7 @@ class cfgVehicles
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_vest";
 		weapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
@@ -1089,7 +1089,7 @@ class cfgVehicles
 		head = "H_ACR_A3_HelmetIA_vz95";
 		displayName = "$STR_B_SOLDIER_M_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1132,7 +1132,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1173,7 +1173,7 @@ class cfgVehicles
 		vehicleClass = "ACRX04"; //SNIPERI
 		displayName = "$STR_B_SPOTTER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1216,7 +1216,7 @@ class cfgVehicles
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1258,7 +1258,7 @@ class cfgVehicles
 		scopeCurator = 2;
 		displayName = "$STR_B_SNIPER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1301,7 +1301,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_TL_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1344,7 +1344,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_RECON_BASE0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
@@ -1385,7 +1385,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1427,7 +1427,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT_tshirt";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1469,7 +1469,7 @@ class cfgVehicles
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1513,7 +1513,7 @@ class cfgVehicles
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT_vest";
 		weapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
@@ -1557,7 +1557,7 @@ class cfgVehicles
 		head = "H_ACR_A3_HelmetB_rgr";
 		displayName = "$STR_B_SOLDIER_M_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1600,7 +1600,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1642,7 +1642,7 @@ class cfgVehicles
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1685,7 +1685,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_B_SOLDIER_TL_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
@@ -1727,7 +1727,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -1769,7 +1769,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -1811,7 +1811,7 @@ class cfgVehicles
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -1855,7 +1855,7 @@ class cfgVehicles
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
 		weapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"hlc_lmg_M60E4","RH_cz75","Throw","Put","Binocular"};
@@ -1899,7 +1899,7 @@ class cfgVehicles
 		head = "H_HelmetB_light_sand";
 		displayName = "$STR_B_SOLDIER_M_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -1942,7 +1942,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -1985,7 +1985,7 @@ class cfgVehicles
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -2028,7 +2028,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_B_SOLDIER_TL_F0";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
@@ -2071,7 +2071,7 @@ class cfgVehicles
 		displayName = "$STR_B_HELIPILOT_F0";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_HeliPilotCoveralls_rgr";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Pilot.paa"};
@@ -2113,7 +2113,7 @@ class cfgVehicles
 		displayName = "$STR_B_OFFICER_F0";
 		model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
 		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
+		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_OfficerUniform_vz95";
 		weapons[] = {"RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"RH_cz75","Throw","Put","Rangefinder"};
@@ -2156,7 +2156,7 @@ class cfgVehicles
         displayName = "$STR_B_SOLDIER_LITE_F0";
         model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
         uniformAccessories[] = {};
-        nakedUniform = "U_BasicBody";
+        nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_SweaterUniform_vz95";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
