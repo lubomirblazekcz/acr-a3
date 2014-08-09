@@ -20,9 +20,9 @@ class CfgVehicles
 	class ACR_Hunter_Unarmed: B_MRAP_01_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		vehicleclass = "Car";
-		displayName = "Oshkosh M-ATV";
+		displayName = "M-ATV";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\acr_a3_vehicles\hunter\data\Hunter_ostatni.paa",""};
@@ -46,9 +46,9 @@ class CfgVehicles
 	class ACR_Hunter_HMG: B_MRAP_01_hmg_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		vehicleclass = "Car";
-		displayName = "Oshkosh M-ATV HMG";
+		displayName = "M-ATV HMG";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\acr_a3_vehicles\hunter\data\Hunter_ostatni.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
@@ -72,9 +72,9 @@ class CfgVehicles
 	class ACR_Hunter_GMG: B_MRAP_01_gmg_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		vehicleclass = "Car";
-		displayName = "Oshkosh M-ATV GMG";
+		displayName = "M-ATV GMG";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
 		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\acr_a3_vehicles\hunter\data\Hunter_ostatni.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};

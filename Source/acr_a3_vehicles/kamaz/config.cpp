@@ -29,7 +29,7 @@ class CfgVehicles
 	class ACR_Kamaz: O_Truck_02_covered_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		displayName = "$STR_ACR_KAMAZ_COVERED";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
@@ -72,7 +72,7 @@ class CfgVehicles
 	class ACR_Kamaz02: O_Truck_02_transport_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		displayName = "$STR_ACR_KAMAZ_TRANSPORT";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
@@ -114,7 +114,7 @@ class CfgVehicles
 	class ACR_Kamaz03: O_Truck_02_box_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";	
+		faction = "ACR";
 		displayName = "$STR_ACR_KAMAZ_BOX";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
@@ -156,7 +156,7 @@ class CfgVehicles
 	class ACR_Kamaz04: O_Truck_02_fuel_F
 	{
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		displayName = "$STR_ACR_KAMAZ_FUEL";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";

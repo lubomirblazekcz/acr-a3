@@ -26,7 +26,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		vehicleclass = "Armored";
 		displayName = "Pandur II";
 		author = "$STR_ACR";

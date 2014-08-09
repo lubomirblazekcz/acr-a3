@@ -26,7 +26,7 @@ class CfgVehicles
 	{
 		side = 1;
 		author = "$STR_ACR";
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		displayName = "Offroad";
 		crew = "ACR_MOUT_Vojak01";
 		typicalCargo[] = {"crew=""ACR_MOUT_Vojak01"""};

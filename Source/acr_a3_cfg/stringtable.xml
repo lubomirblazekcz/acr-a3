@@ -172,6 +172,22 @@
         <Key ID="STR_ACR_KAMAZ_FUEL">
             <English>Kamaz Fuel</English>
             <Czech>Kamaz Cisterna</Czech>
-        </Key>        
-	</Package>
+        </Key>
+        <Key ID="STR_ACR_ALCA_CAS">
+            <English>L159 ALCA (CAS)</English>
+            <Czech>L159 ALCA (CAS)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALCA_AA">
+            <English>L159 ALCA (AA)</English>
+            <Czech>L159 ALCA (AA)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALBATROS_CAS">
+            <English>L39 ALBATROS (CAS)</English>
+            <Czech>L39 ALBATROS (CAS)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALBATROS_AA">
+            <English>L39 ALBATROS (AA)</English>
+            <Czech>L39 ALBATROS (AA)</Czech>
+        </Key>
+    </Package>
 </Project>

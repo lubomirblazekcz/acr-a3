@@ -21,7 +21,7 @@ class cfgVehicles
 		_generalMacro = "B_Heli_Transport_02_base_F";
 		author = "$STR_ACR";
 		side = 1;
-		faction = "$STR_ACR_FACTION";
+		faction = "ACR";
 		vehicleclass = "Air";
 		displayName = "AW101 Merlin";
 		crew = "ACR_Pilot";
