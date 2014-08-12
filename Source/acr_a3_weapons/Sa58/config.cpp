@@ -45,7 +45,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Mag";
-		picture = "\acr_a3_weapons\Sa58\data\UI\m_sa58_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_ca.paa";
 		ammo = "B_762x39mm_KLT";
 		count = 30;
 		initSpeed = 705;
@@ -58,21 +58,21 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 30;
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer G Mag";
-		picture = "\acr_a3_weapons\Sa58\data\UI\m_sa58_green_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_green_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer G magazine";
 		displaynameshort = "Tracers";
 	};
 	class acr_a3_30Rnd_Sa58_mag_TracerR: acr_a3_30Rnd_Sa58_mag_TracerG
 	{
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer R Mag";
-		picture = "\acr_a3_weapons\Sa58\data\UI\m_sa58_red_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_red_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer R magazine";
 		ammo = "B_762x39_TRACER_R_KLT";
 	};
 	class acr_a3_30Rnd_Sa58_mag_TracerY: acr_a3_30Rnd_Sa58_mag_TracerG
 	{
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer Y Mag";
-		picture = "\acr_a3_weapons\Sa58\data\UI\m_sa58_yellow_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_yellow_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer Y magazine";
 		ammo = "B_762x39_TRACER_Y_KLT";
 	};
@@ -283,7 +283,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "vz. 58 P";
 		model = "acr_a3_weapons\Sa58\sa58p.p3d";
-		picture = "\acr_a3_weapons\Sa58\data\UI\sa58p_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58p_x_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -310,15 +310,16 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "vz. 58 P Desert";
+		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58p_x_ca.paa"; taurus fix it
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
+		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\gear_sa58p_x_ca.paa"};
 	};
 	class acr_a3_Sa58V: acr_a3_Sa58P
 	{
 		displayName = "vz. 58 V";
 		model = "acr_a3_weapons\Sa58\sa58V.p3d";
-		picture = "\acr_a3_weapons\Sa58\data\UI\sa58v_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58v_x_ca.paa";
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58_co.paa"};
@@ -326,10 +327,10 @@ class CfgWeapons
 	class acr_a3_Sa58V_camo: acr_a3_Sa58V
 	{
 		displayName = "vz. 58 V Desert";
-		//picture = "\acr_a3_weapons\Sa58\data\UI\sa58v_ca.paa";
+		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58v_x_ca.paa"; taurus fix it
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
+		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\gear_sa58v_x_ca.paa"};
 	};
 	class acr_a3_Sa58RIS1: acr_a3_Sa58_base
 	{
@@ -337,7 +338,7 @@ class CfgWeapons
 		displayName = "vz. 58 RIS";
 		model = "acr_a3_weapons\Sa58\sa58ris.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","acr_a3_weapons\Sa58\Anims\Mk48.rtm"};
-		picture = "\acr_a3_weapons\Sa58\data\UI\sa58ref_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_f_x_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -363,7 +364,7 @@ class CfgWeapons
 	class acr_a3_Sa58RIS1_camo: acr_a3_Sa58RIS1
 	{
 		displayName = "vz. 58 RIS Desert";
-		//picture = "\acr_a3_weapons\Sa58\data\UI\sa58ref_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_camo_f_x_ca.paa";
 		sections[] = {"camo","RIS"};
 		hiddenSelections[] = {"camo","RIS"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa","acr_a3_weapons\Sa58\data\sa58sfcamo_co.paa"};
@@ -372,7 +373,7 @@ class CfgWeapons
 	{
 		displayName = "vz. 58 RIS2";
 		model = "acr_a3_weapons\Sa58\sa58ris_back.p3d";
-		//picture = "\acr_a3_weapons\Sa58\data\UI\sa58ref_ca.paa";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_r_x_ca.paa";
 		sections[] = {"camo","RIS"};
 		hiddenSelections[] = {"camo","RIS"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58_co.paa","acr_a3_weapons\Sa58\data\sa58sfcamo1_co.paa"};
@@ -380,6 +381,7 @@ class CfgWeapons
 	class acr_a3_Sa58RIS2_camo: acr_a3_Sa58RIS2
 	{
 		displayName = "vz. 58 RIS2 Desert";
+		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_camo_r_x_ca.paa";
 		sections[] = {"camo","RIS"};
 		hiddenSelections[] = {"camo","RIS"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa","acr_a3_weapons\Sa58\data\sa58sfcamo_co.paa"};
