@@ -268,11 +268,11 @@ class cfgWeapons
         weaponPoolAvailable = 1;
         displayName = "$STR_ACR_Beret_red";
         picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa";
-        model = "acr_a3_characters\beret.p3d";
+        model = "acr_a3_characters\beret_ACR.p3d";
         class ItemInfo: HeadgearItem
         {
             mass = 6;
-            uniformModel = "acr_a3_characters\beret.p3d";
+            uniformModel = "acr_a3_characters\beret_ACR.p3d";
             modelSides[] = {6};
             armor = 0;
             passThrough = 1;
