@@ -470,7 +470,7 @@ class cfgWeapons
     {
         displayName = "$STR_ACR_UNIFORM_DESERT_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
-        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody_des.paa"};
         picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -1826,7 +1826,7 @@ class cfgVehicles
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody_des.paa"};
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
 		weapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
