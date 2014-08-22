@@ -412,23 +412,7 @@ class cfgWeapons
 			mass = 30;
 		};
 	};
-    class U_ACR_A3_CombatUniform_MOUT_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
-    {
-        displayName = "$STR_ACR_UNIFORM_MOUT_tshirt";
-		hiddenSelections[] = {"camo", "camo2", "insignia"};
-        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
-        author = "$STR_ACR";
-        class ItemInfo: UniformItem
-        {
-            uniformModel = "-";
-            uniformClass = "ACR_MOUT_Vojak02";
-            containerClass = "Supply20";
-            mass = 30;
-        };
-    };
+
     class U_ACR_A3_CombatUniform_MOUT_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
         displayName = "$STR_ACR_UNIFORM_MOUT_vest";
@@ -576,6 +560,7 @@ class cfgVehicles
         scope = 1;//1 = private and ensures it doesnt list as a character in the editor
         displayName = "ACR Example Underwear Character";
         model = "\A3\Characters_F\Common\basicbody";
+		genericNames = "CzechMen";
         uniformClass = "ACR_blk_BasicBody"; //Your underwear class in cfgweapons
         weapons[] = {};
         magazines[] = {};
@@ -601,6 +586,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -644,6 +630,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_ACR_MEN_COM";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -687,6 +674,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -731,6 +719,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX0"; //RECON
 		displayName = "$STR_B_SOLDIER_AR_F0";
+		genericNames = "CzechMen";
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -777,6 +766,7 @@ class cfgVehicles
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		head = "H_ACR_A3_Booniehat_vz95";
 		displayName = "$STR_B_SOLDIER_M_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -821,6 +811,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -864,6 +855,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_AT_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -908,6 +900,7 @@ class cfgVehicles
 		vehicleClass = "ACRX0"; //RECON
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_TL_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -952,6 +945,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -995,6 +989,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_tshirt";
@@ -1038,6 +1033,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1082,6 +1078,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_B_SOLDIER_AR_F0";
+		genericNames = "CzechMen";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -1128,6 +1125,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		head = "H_ACR_A3_HelmetIA_vz95";
 		displayName = "$STR_B_SOLDIER_M_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1172,6 +1170,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1214,6 +1213,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX04"; //SNIPERI
 		displayName = "$STR_B_SPOTTER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
@@ -1257,6 +1257,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1300,6 +1301,7 @@ class cfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "$STR_B_SNIPER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_B_GhillieSuit";
@@ -1343,6 +1345,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_TL_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1387,6 +1390,7 @@ class cfgVehicles
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_RECON_BASE0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
@@ -1430,6 +1434,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
+		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
 		hiddenSelections[] = {"Camo", "insignia"};
@@ -1472,9 +1477,10 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
-		uniformClass = "U_ACR_A3_CombatUniform_MOUT_tshirt";
+		uniformClass = "U_ACR_A3_CombatUniform_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_MOUT.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -1515,6 +1521,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
@@ -1559,6 +1566,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX02"; //MOUT
 		displayName = "$STR_B_SOLDIER_AR_F0";
+		genericNames = "CzechMen";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -1605,6 +1613,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		head = "H_ACR_A3_HelmetB_rgr";
 		displayName = "$STR_B_SOLDIER_M_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
@@ -1649,6 +1658,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
@@ -1692,6 +1702,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
@@ -1736,6 +1747,7 @@ class cfgVehicles
 		vehicleClass = "ACRX02"; //MOUT
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_B_SOLDIER_TL_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_MOUT";
@@ -1780,6 +1792,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0";
+		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
@@ -1822,6 +1835,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_ACR_MEN_COM";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
@@ -1865,6 +1879,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_Bergen_sgg";
 		displayName = "$STR_B_ENGINEER_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
@@ -1909,6 +1924,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_AR_F0";
+		genericNames = "CzechMen";
 		backpack = "B_AssaultPack_rgr";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -1955,6 +1971,7 @@ class cfgVehicles
 		backpack = "B_AssaultPack_rgr";
 		head = "H_HelmetB_light_sand";
 		displayName = "$STR_B_SOLDIER_M_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
@@ -1999,6 +2016,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr_Medic";
 		displayName = "$STR_B_MEDIC_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
@@ -2043,6 +2061,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_Kitbag_Base";
 		displayName = "$STR_B_SOLDIER_AT_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
@@ -2087,6 +2106,7 @@ class cfgVehicles
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr";
 		displayName = "$STR_B_SOLDIER_TL_F0";
+		genericNames = "CzechMen";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
@@ -2130,6 +2150,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_HELIPILOT_F0";
+		genericNames = "CzechMen";
 		model = "\A3\Characters_F\Common\coveralls.p3d";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -2172,6 +2193,7 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_OFFICER_F0";
+		genericNames = "CzechMen";
 		model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
 		uniformAccessories[] = {};
 		nakedUniform = "ACR_blk_BasicBody";
@@ -2215,6 +2237,7 @@ class cfgVehicles
         faction = "ACR";
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_B_SOLDIER_LITE_F0";
+		genericNames = "CzechMen";
         model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
         uniformAccessories[] = {};
         nakedUniform = "ACR_blk_BasicBody";
