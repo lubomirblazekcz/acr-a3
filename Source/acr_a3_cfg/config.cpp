@@ -8,6 +8,11 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F","A3_Characters_F_BLUFOR"};
 	};
 };
+class GenericNames
+{
+    #include "CzechMen.hpp"
+};
+};
 class CfgVehicleClasses
 {
 	class ACRX0
