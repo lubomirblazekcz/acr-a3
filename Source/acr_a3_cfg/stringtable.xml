@@ -34,6 +34,10 @@
             <Czech>Muži (Odstřelovači)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
+            <English>ACR Carryall Backpack (vz. 95)</English>
+            <Czech>AČR Torna (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KITBAG">
             <English>ACR Backpack (vz. 95)</English>
             <Czech>AČR Batoh (vz. 95)</Czech>
         </Key>
@@ -129,33 +133,61 @@
             <English>ACR Uniform (Pilot)</English>
             <Czech>AČR Uniforma (Pilotní)</Czech>
         </Key>
+        <Key ID="STR_ACR_UNIFORM_PILOT_DES">
+            <English>ACR Uniform (Pilot, desert)</English>
+            <Czech>AČR Uniforma (Pilotní, pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_UNIFORM_OFFICER">
             <English>ACR Uniform (Officer, vz. 95)</English>
             <Czech>AČR Uniforma (Důstojnická, vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_OFFICER_DES">
+            <English>ACR Uniform (Officer, desert)</English>
+            <Czech>AČR Uniforma (Důstojnická, pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_SWEATER">
             <English>ACR Uniform (Sweater, vz. 95)</English>
             <Czech>AČR Uniforma (Svetr, vz. 95)</Czech>
         </Key>
+        <Key ID="STR_ACR_UNIFORM_SWEATER_DES">
+            <English>ACR Uniform (Sweater, desert)</English>
+            <Czech>AČR Uniforma (Svetr, pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_FLAG">
-            <English>ACR Patch (Flag)</English>
-            <Czech>AČR Nášivka (Vlajka)</Czech>
+            <English>[ACR] Patch (Flag)</English>
+            <Czech>[AČR] Nášivka (Vlajka)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEDIC">
+            <English>[ACR] Medic</English>
+            <Czech>[AČR] Medik</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO1">
-            <English>ACR Label</English>
-            <Czech>AČR Nápis</Czech>
+            <English>[ACR] Label</English>
+            <Czech>[AČR] Nápis</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO2">
-            <English>ACR Patch</English>
-            <Czech>AČR Nášivka</Czech>
+            <English>[ACR] Patch</English>
+            <Czech>[AČR] Nášivka</Czech>
         </Key>
         <Key ID="STR_ACR_LOGO3">
-            <English>ACR Patch (Red)</English>
-            <Czech>AČR Nášivka (Červená)</Czech>
+            <English>[ACR] Patch (Red)</English>
+            <Czech>[AČR] Nášivka (Červená)</Czech>
         </Key>
         <Key ID="STR_ACR_MEN_COM">
             <English>Radio Operator</English>
             <Czech>Radista</Czech>
+        </Key>
+        <Key ID="STR_ACR_HELIPILOT_DES">
+            <English>Helicopter Pilot (Desert)</English>
+            <Czech>Pilot helikoptéry (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_OFFICER_DES">
+            <English>Officer (Desert)</English>
+            <Czech>Důstojník (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SOLDIER_LITE_DES">
+            <English>Rifleman (Light, desert)</English>
+            <Czech>Střelec (lehká výzbroj, pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_KAMAZ_COVERED">
             <English>Kamaz Transport (Covered)</English>
