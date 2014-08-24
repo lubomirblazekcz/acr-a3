@@ -24,7 +24,7 @@ class CfgVehicles
 		displayName = "M-ATV";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","",""};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\A3\soft_F\MRAP_01\data\MRAP_01_adds_CO.paa",""};
 	};
 	class ACR_Hunter_HMG: B_MRAP_01_hmg_F
 	{
@@ -34,7 +34,7 @@ class CfgVehicles
 		displayName = "M-ATV HMG";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","","\A3\Data_F\Vehicles\Turret_CO.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\A3\soft_F\MRAP_01\data\MRAP_01_adds_CO.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
 	};
 	class ACR_Hunter_GMG: B_MRAP_01_gmg_F
 	{
@@ -44,7 +44,7 @@ class CfgVehicles
 		displayName = "M-ATV GMG";
 		author = "$STR_ACR";
 		crew = "ACR_MOUT_Vojak01";
-		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_vehicles\hunter\data\Hunter_Kastle.paa","\A3\soft_F\MRAP_01\data\MRAP_01_adds_CO.paa","\A3\Data_F\Vehicles\Turret_CO.paa"};
 	};
 };
 
