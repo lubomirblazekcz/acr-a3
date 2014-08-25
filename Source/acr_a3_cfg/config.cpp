@@ -52,6 +52,7 @@ class cfgFactionClasses
 		displayName = "$STR_ACR_FACTION"; //jmeno frakce v editoru STRINGTABLETEXT: ACR
 		priority = 6;
 		side = "TWest";
+		genericNames = "CzechMen";
 		icon = "\acr_a3_characters\data\ACR_odznak.paa";
 	};
 };
@@ -252,8 +253,9 @@ class cfgWeapons
         {
         scope = 2; /// scope needs to be 2 to have a visible class
         displayName  = "$STR_ACR_MICH2000_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip1_co.paa","\acr_a3_characters\data\equip2_co.paa","\acr_a3_characters\data\equip3_co.paa","\acr_a3_characters\data\tactical_ca.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
@@ -274,6 +276,7 @@ class cfgWeapons
         displayName = "$STR_ACR_ECH_rgr";
         picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa";
         model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+		author = "$STR_ACR";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Prilba2.paa"};
         class ItemInfo: HeadGearItem
@@ -292,6 +295,7 @@ class cfgWeapons
         displayName  = "$STR_ACR_Beret_red"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3_characters\data\UI\ikona_ACR_beret.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\beret_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
@@ -349,8 +353,9 @@ class cfgWeapons
         {
         scope = 2; /// scope needs to be 2 to have a visible class
         displayName  = "$STR_ACR_PAKOL_GREY"; /// how would the stuff be displayed in inventory and on ground
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_pakol.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\pakol_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip4_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
@@ -368,8 +373,9 @@ class cfgWeapons
         {
         scope = 2; /// scope needs to be 2 to have a visible class
         displayName  = "$STR_ACR_BOONIEHAT_FOLD"; /// how would the stuff be displayed in inventory and on ground
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_booniefold.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\boonie_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
