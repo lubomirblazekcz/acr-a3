@@ -535,7 +535,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_PILOT";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Pilot.paa"};
-		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_pilot.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
@@ -552,7 +552,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_PILOT_DES";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Pilot_des.paa"};
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_pilot_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
