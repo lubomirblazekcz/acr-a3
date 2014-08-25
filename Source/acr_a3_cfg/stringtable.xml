@@ -81,6 +81,10 @@
             <English>ACR MICH 2000 (desert, goggles)</English>
             <Czech>AČR MICH 2000 (pouštní, brýle)</Czech>
         </Key>
+		<Key ID="STR_ACR_MICH2000_GOGGLES">
+            <English>ACR MICH 2000 (vz. 95, goggles)</English>
+            <Czech>AČR MICH 2000 (vz. 95, brýle)</Czech>
+        </Key>
         <Key ID="STR_ACR_ECH_rgr">
             <English>ACR Equipped MICH 2000 (Green)</English>
             <Czech>AČR Taktická MICH 2000 (zelená)</Czech>

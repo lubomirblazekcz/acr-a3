@@ -249,6 +249,26 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
         };
     };
+	class H_ACR_A3_HelmetIA_Goggles_vz95: ItemCore //KLRTEEEEEEE NEJDE MI LESNI RETEXTURE
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip1_co.paa","\acr_a3_characters\data\equip2_copy_co.paa","\acr_a3_characters\data\equip3_co.paa","\acr_a3_characters\data\tactical_ca.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = "3*0.5";
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
     class H_ACR_A3_HelmetIA_Goggles_vz95_des: ItemCore
         {
         scope = 2; /// scope needs to be 2 to have a visible class
@@ -264,8 +284,8 @@ class cfgWeapons
             uniformModel = "acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
             modelSides[] = {6}; /// available for all sides
-            armor = 0;  /// this cap doesn't provide any protection
-            passThrough = 1; /// this cap doesn't provide any protection
+            armor = "3*0.5";
+            passThrough = 0.8;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         };
     };
@@ -324,7 +344,7 @@ class cfgWeapons
 			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
 			mass = 10;
 			modelSides[] = {3,1};
-			armor = "3*0.5";
+			armor = "0";
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
 		};
@@ -344,7 +364,7 @@ class cfgWeapons
 			uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
 			mass = 10;
 			modelSides[] = {3,1};
-			armor = "3*0.5";
+			armor = "0";
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
 		};
@@ -414,7 +434,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95_tricko.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
         author = "$STR_ACR";
