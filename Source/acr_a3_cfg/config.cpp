@@ -568,7 +568,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_OFFICER"; //WIP
 		texture = "\acr_a3_characters\data\ACR_Uniforma_Offic.paa";
-		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_officer.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Offic.paa","\acr_a3_characters\data\ACR_Uniforma_Svetr"};
@@ -587,7 +587,7 @@ class cfgWeapons
         scope = 2;
         displayName = "$STR_ACR_UNIFORM_OFFICER_DES"; //WIP
         texture = "\acr_a3_characters\data\ACR_Uniforma_Offic_des.paa";
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_officer_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         hiddenSelections[] = {"Camo1","Camo2"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Offic_des.paa","\acr_a3_characters\data\ACR_Uniforma_Svetr_des"};
