@@ -271,7 +271,7 @@ class cfgWeapons
         {
         scope = 2; /// scope needs to be 2 to have a visible class
         displayName  = "$STR_ACR_Beret_red"; /// how would the stuff be displayed in inventory and on ground
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_beret.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\beret_ACR.p3d"; /// what model does the cap use
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
