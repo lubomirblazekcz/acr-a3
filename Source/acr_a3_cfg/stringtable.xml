@@ -74,8 +74,12 @@
             <Czech>AČR MICH 2000 (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_MICH2000_Des">
-            <English>ACR MICH 2000 (vz. 95)</English>
+            <English>ACR MICH 2000 (desert)</English>
             <Czech>AČR MICH 2000 (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MICH2000_GOGGLES_Des">
+            <English>ACR MICH 2000 (desert, goggles)</English>
+            <Czech>AČR MICH 2000 (pouštní, brýle)</Czech>
         </Key>
         <Key ID="STR_ACR_ECH_rgr">
             <English>ACR Equipped MICH 2000 (Green)</English>
@@ -91,7 +95,15 @@
         </Key>
         <Key ID="STR_ACR_CAP">
             <English>ACR Cap (vz. 95)</English>
-            <Czech>AČR Kšiltovka</Czech>
+            <Czech>AČR Kšiltovka (olivová)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BOONIEHAT_FOLD">
+            <English>ACR Booniehat (vz. 95, fold)</English>
+            <Czech>AČR Klobouk (vz. 95, sklopený)</Czech>
+        </Key>
+        <Key ID="STR_ACR_PAKOL_GREY">
+            <English>ACR Pakol (grey)</English>
+            <Czech>AČR Pakol (šedý)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM">
             <English>ACR Uniform (vz. 95)</English>

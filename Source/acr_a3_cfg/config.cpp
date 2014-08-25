@@ -248,6 +248,25 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
         };
     };
+    class H_ACR_A3_HelmetIA_Goggles_vz95_des: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip1_co.paa","\acr_a3_characters\data\equip2_co.paa","\acr_a3_characters\data\equip3_co.paa","\acr_a3_characters\data\tactical_ca.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = 0;  /// this cap doesn't provide any protection
+            passThrough = 1; /// this cap doesn't provide any protection
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
     class H_ACR_A3_HelmetB_rgr: ItemCore
     {
         scope = 2;
@@ -326,6 +345,44 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+    class H_ACR_A3_Pakol_grey: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_PAKOL_GREY"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\pakol_ACR.p3d"; /// what model does the cap use
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip4_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\pakol_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = 0;  /// this cap doesn't provide any protection
+            passThrough = 1; /// this cap doesn't provide any protection
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
+    class H_ACR_A3_Booniehat_fold_vz95: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_BOONIEHAT_FOLD"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\boonie_ACR.p3d"; /// what model does the cap use
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\boonie_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = 0;  /// this cap doesn't provide any protection
+            passThrough = 1; /// this cap doesn't provide any protection
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
 
 	// vz. 95 Lesní Uniformy
 	class U_ACR_A3_CombatUniform: Uniform_Base // Klasická

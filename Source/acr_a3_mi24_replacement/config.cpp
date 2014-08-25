@@ -25,7 +25,7 @@ class CfgVehicles
             side = 1;
             crew = "ACR_Pilot";
             faction = "ACR";
-            hiddenSelectionsTextures[] = {"\acr_a3_air_replacement\data\mi35_acr_1_co.paa","\acr_a3_air_replacement\data\mi35_acr_2_co.paa"};
+            hiddenSelectionsTextures[] = {"\acr_a3_mi24_replacement\data\mi35_acr_1_co.paa","\acr_a3_mi24_replacement\data\mi35_acr_2_co.paa"};
         };
         class ACR_A3_Mi_24v_aa: Kae_Mi_24v_CDF_aa
         {
@@ -34,7 +34,7 @@ class CfgVehicles
             side = 1;
             crew = "ACR_Pilot";
             faction = "ACR";
-            hiddenSelectionsTextures[] = {"\acr_a3_air_replacement\data\mi35_acr_1_co.paa","\acr_a3_air_replacement\data\mi35_acr_2_co.paa"};
+            hiddenSelectionsTextures[] = {"\acr_a3_mi24_replacement\data\mi35_acr_1_co.paa","\acr_a3_mi24_replacement\data\mi35_acr_2_co.paa"};
         };
         class ACR_A3_Mi_24v_bmb: Kae_Mi_24v_CDF_bmb
         {
@@ -43,7 +43,7 @@ class CfgVehicles
             side = 1;
             crew = "ACR_Pilot";
             faction = "ACR";
-            hiddenSelectionsTextures[] = {"\acr_a3_air_replacement\data\mi35_acr_1_co.paa","\acr_a3_air_replacement\data\mi35_acr_2_co.paa"};
+            hiddenSelectionsTextures[] = {"\acr_a3_mi24_replacement\data\mi35_acr_1_co.paa","\acr_a3_mi24_replacement\data\mi35_acr_2_co.paa"};
         };
         class ACR_A3_Mi_24p: Kae_Mi_24p_CDF
         {
@@ -52,7 +52,7 @@ class CfgVehicles
             side = 1;
             crew = "ACR_Pilot";
             faction = "ACR";
-            hiddenSelectionsTextures[] = {"\acr_a3_air_replacement\data\mi35_acr_1_co.paa","\acr_a3_air_replacement\data\mi35_acr_2_co.paa"};
+            hiddenSelectionsTextures[] = {"\acr_a3_mi24_replacement\data\mi35_acr_1_co.paa","\acr_a3_mi24_replacement\data\mi35_acr_2_co.paa"};
         };
         class ACR_A3_Mi_24vp: Kae_Mi_24vp_CDF
         {
@@ -61,6 +61,6 @@ class CfgVehicles
             side = 1;
             crew = "ACR_Pilot";
             faction = "ACR";
-            hiddenSelectionsTextures[] = {"\acr_a3_air_replacement\data\mi35_acr_1_co.paa","\acr_a3_air_replacement\data\mi35_acr_2_co.paa"};
+            hiddenSelectionsTextures[] = {"\acr_a3_mi24_replacement\data\mi35_acr_1_co.paa","\acr_a3_mi24_replacement\data\mi35_acr_2_co.paa"};
         };
 };
