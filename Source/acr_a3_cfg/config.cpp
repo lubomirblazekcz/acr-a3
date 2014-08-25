@@ -408,7 +408,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95_tricko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
         author = "$STR_ACR";
@@ -500,7 +500,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_DESERT_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody_des.paa"};
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
         author = "$STR_ACR";
