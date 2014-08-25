@@ -313,7 +313,7 @@ class CfgWeapons
 		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58p_x_ca.paa"; taurus fix it
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa.paa"};
+		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
 	};
 	class acr_a3_Sa58V: acr_a3_Sa58P
 	{
@@ -330,7 +330,7 @@ class CfgWeapons
 		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58v_x_ca.paa"; taurus fix it
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa.paa"};
+		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
 	};
 	class acr_a3_Sa58RIS1: acr_a3_Sa58_base
 	{
