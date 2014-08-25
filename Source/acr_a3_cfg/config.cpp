@@ -256,8 +256,8 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
-        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
-        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip1_co.paa","\acr_a3_characters\data\equip2_copy_co.paa","\acr_a3_characters\data\equip3_co.paa","\acr_a3_characters\data\tactical_ca.paa"}; /// what texture is going to be used
+        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_copy_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
@@ -276,8 +276,8 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
-        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
-        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip1_co.paa","\acr_a3_characters\data\equip2_co.paa","\acr_a3_characters\data\equip3_co.paa","\acr_a3_characters\data\tactical_ca.paa"}; /// what texture is going to be used
+        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
