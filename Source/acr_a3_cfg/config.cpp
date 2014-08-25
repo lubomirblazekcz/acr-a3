@@ -606,7 +606,7 @@ class cfgWeapons
         scope = 2;
         author = "$STR_ACR";
         displayName = "$STR_ACR_UNIFORM_SWEATER";
-        picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
@@ -623,7 +623,7 @@ class cfgWeapons
         scope = 2;
         author = "$STR_ACR";
         displayName = "$STR_ACR_UNIFORM_SWEATER_DES";
-        picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
