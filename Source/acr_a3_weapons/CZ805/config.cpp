@@ -237,8 +237,9 @@ class CfgWeapons
 			useExternalOptic = 0;
 			magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
 			cameraDir = "GL_look";
-			discreteDistance[] = {50,100,150,175,200,225,250,275,300,325,350,375,400};
-			discreteDistanceCameraPoint[] = {"GL_eye","GL_eye","GL_eye","GL_eye","GL_eye"};
+			discreteDistance[] = {100, 200, 300, 400};
+//			discreteDistance[] = {50,100,150,175,200,225,250,275,300,325,350,375,400};
+			discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
 			discreteDistanceInitIndex = 1;
 		};
 		aiDispersionCoefY = 6.0;

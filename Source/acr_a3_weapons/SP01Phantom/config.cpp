@@ -44,7 +44,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		model = "acr_a3_weapons\SP01Phantom\Phantom.p3d";
-		picture = "\acr_a3_weapons\SP01Phantom\data\UI\phantom_ca.paa";
+		picture = "\acr_a3_weapons\SP01Phantom\data\UI\gear_phantom_x_ca.paa";
 		magazines[] = {"16Rnd_9x21_Mag"};
 		reloadAction = "GestureReloadPistol";
 		displayname = "CZ 75 SP-01 Phantom";

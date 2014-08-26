@@ -44,7 +44,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		model = "acr_a3_weapons\P07Duty\Duty.p3d";
-		picture = "\acr_a3_weapons\P07Duty\data\UI\duty_ca.paa";
+		picture = "\acr_a3_weapons\P07Duty\data\UI\gear_duty_x_ca.paa";
 		magazines[] = {"16Rnd_9x21_Mag"};
 		reloadAction = "GestureReloadPistol";
 		displayname = "CZ 75 P-07 Duty";
