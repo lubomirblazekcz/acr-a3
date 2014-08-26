@@ -185,7 +185,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "CZ 750 S1 M1";
 		model = "acr_a3_weapons\CZ750\CZ750.p3d";
-		picture = "\acr_a3_weapons\CZ750\data\UI\cz750_ca.paa";
+		picture = "\acr_a3_weapons\CZ750\data\UI\gear_cz750_x_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{

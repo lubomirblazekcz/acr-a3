@@ -252,7 +252,7 @@ class CfgWeapons
 		displayName = "CZ 805 A2";
 		model = "acr_a3_weapons\CZ805\CZ_805_A2.p3d";
 		descriptionShort = "CZ 805 A2 BREN Carabine";
-		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa";
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a2_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -266,7 +266,7 @@ class CfgWeapons
 		displayName = "CZ 805 A1";
 		model = "acr_a3_weapons\CZ805\CZ_805_A1.p3d";
 		descriptionShort = "CZ 805 A1 BREN";
-		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa";
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a1_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -276,12 +276,12 @@ class CfgWeapons
 	};
 	class acr_a3_CZ805_GL: acr_a3_CZ805_Base
 	{
-		scope = 0;
+		scope = 2;
 		displayName = "CZ 805 A1 GL";
 		model = "acr_a3_weapons\CZ805\CZ_805_GL.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","acr_a3_weapons\CZ805\Anims\CZ805GL.rtm"};
 		descriptionShort = "CZ 805 A1 GL BREN";
-		picture = "\acr_a3_weapons\CZ805\data\UI\gear_test_weapon_01_x_ca.paa";
+		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a1gl_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		muzzles[] = {"this","acr_a3_CZ_805_G1"};
