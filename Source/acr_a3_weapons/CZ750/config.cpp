@@ -191,16 +191,16 @@ class CfgWeapons
 		{
 			mass = 100;
 			allowedSlots[] = {901};
-			class MuzzleSlot: SlotInfo{};
-			class CowsSlot: CowsSlot
+			class MuzzleSlot: SlotInfo
 			{
 				compatibleItems[] = {};
 			};
+			class CowsSlot: CowsSlot{};
 			class PointerSlot: PointerSlot
 			{
 				compatibleItems[] = {};
 			};
-			class asdg_OpticRail_acr_a3_CZ750RIS1: asdg_OpticRail1913_short{};
+			class asdg_OpticRail_acr_a3_CZ750: asdg_OpticRail1913_short{};
 		};
 	};
 };
