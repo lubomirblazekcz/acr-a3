@@ -249,11 +249,11 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
         };
     };
-	class H_ACR_A3_HelmetIA_Goggles_vz95: ItemCore //KLRTEEEEEEE NEJDE MI LESNI RETEXTURE
+	class H_ACR_A3_HelmetIA_Goggles_vz95: ItemCore 
         {
         scope = 2; /// scope needs to be 2 to have a visible class
         displayName  = "$STR_ACR_MICH2000_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
         hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
@@ -417,6 +417,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -434,6 +435,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
         picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -451,6 +453,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
         picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -509,6 +512,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_DESERT";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -526,6 +530,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_DESERT_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody_des.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
         picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -543,6 +548,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_DESERT_vest";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
         picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
@@ -589,10 +595,10 @@ class cfgWeapons
             mass = 30;
         };
     };
-	class U_ACR_A3_OfficerUniform_vz95: Uniform_Base //pracuju na tom
+	class U_ACR_A3_OfficerUniform_vz95: Uniform_Base
 	{
 		scope = 2;
-		displayName = "$STR_ACR_UNIFORM_OFFICER"; //WIP
+		displayName = "$STR_ACR_UNIFORM_OFFICER";
 		texture = "\acr_a3_characters\data\ACR_Uniforma_Offic.paa";
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_officer.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -608,10 +614,10 @@ class cfgWeapons
 			hiddenSelections[] = {"Camo1","Camo2"};
 		};
 	};
-    class U_ACR_A3_OfficerUniform_des: Uniform_Base //pracuju na tom
+    class U_ACR_A3_OfficerUniform_des: Uniform_Base
     {
         scope = 2;
-        displayName = "$STR_ACR_UNIFORM_OFFICER_DES"; //WIP
+        displayName = "$STR_ACR_UNIFORM_OFFICER_DES";
         texture = "\acr_a3_characters\data\ACR_Uniforma_Offic_des.paa";
         picture = "\acr_a3_characters\data\UI\ikona_ACR_officer_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -727,7 +733,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -775,7 +781,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", ,"insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -823,7 +829,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -881,7 +887,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","ItemRadio"};
 		hiddenSelections[] = {"Camo", ,"insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
         class eventHandlers
@@ -923,7 +929,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -972,7 +978,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1020,7 +1026,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
@@ -1069,7 +1075,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
@@ -1118,7 +1124,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1166,7 +1172,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa","\acr_a3_characters\data\ACR_Basicbody.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS2","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS2","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1214,7 +1220,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1272,7 +1278,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","ItemRadio"};
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
         class eventHandlers
@@ -1314,7 +1320,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1363,7 +1369,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -1458,7 +1464,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS2","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS2","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
@@ -1554,7 +1560,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
@@ -1603,7 +1609,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2040,7 +2046,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2088,7 +2094,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
 		hiddenSelections[] = {"camo", "camo2", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3_characters\data\ACR_Basicbody_des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2136,7 +2142,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2194,7 +2200,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","ItemRadio"};
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		icon = "iconManMG";
 		canDeactivateMines = "true";
         class eventHandlers
@@ -2236,7 +2242,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"arifle_MXM_Black_F","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2285,7 +2291,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS1_camo","RH_cz75","Throw","Put","Binocular"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2334,7 +2340,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		respawnWeapons[] = {"ACR_A3_Sa58RIS2_camo","RH_cz75","Throw","Put","Binocular","launch_NLAW_F"};
 		magazines[] = {"ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","ACR_A3_30Rnd_Sa58_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","NLAW_F","NLAW_F"};
@@ -2383,7 +2389,7 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		hiddenSelections[] = {"Camo", "insignia"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-		material = "\acr_a3_characters\data\ACR_Uniforma.rvmat";
+		hiddenSelectionsMaterials[] = {"\acr_a3_characters\data\LESPOUST.rvmat"};
 		weapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"arifle_MX_GL_Black_Hamr_pointer_F","RH_cz75","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","RH_16Rnd_9x19_cz","RH_16Rnd_9x19_cz","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
