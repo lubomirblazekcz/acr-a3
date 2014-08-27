@@ -75,3 +75,15 @@ class Stage6
 	texture="#(ai,64,64,1)fresnel(1,0.7)";
 	uvSource="none";
 };
+class Stage7
+{
+	texture="a3\data_f\env_co.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
