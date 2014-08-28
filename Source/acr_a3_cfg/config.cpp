@@ -359,7 +359,7 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "$STR_ACR_CAP";
-		picture = "\A3\Characters_F\data\ui\icon_h_cap_grn_ca.paa";
+    	picture = "\acr_a3_characters\data\UI\ikona_ACR_rgrhatheadset.paa";
 		model = "\A3\Characters_F_epb\Common\capb_hs";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Ksiltovka95.paa"};
@@ -374,6 +374,26 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+		class H_ACR_A3_Cap_khk: ItemCore
+    	{
+    		scope = 2;
+    		weaponPoolAvailable = 1;
+    		displayName = "$STR_ACR_CAP_DES";
+    		picture = "\acr_a3_characters\data\UI\ikona_ACR_tanhatheadset.paa";
+    		model = "\A3\Characters_F_epb\Common\capb_hs";
+    		hiddenSelections[] = {"camo"};
+    		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\data\capb_tan_co.paa"};
+    		author = "$STR_ACR";
+    		class ItemInfo: HeadGearItem
+    		{
+    			uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
+    			mass = 10;
+    			modelSides[] = {3,1};
+    			armor = "0";
+    			passThrough = 0.8;
+    			hiddenSelections[] = {"camo"};
+    		};
+    	};
 	class H_ACR_A3_Pakol_grey: ItemCore
         {
         scope = 2; /// scope needs to be 2 to have a visible class

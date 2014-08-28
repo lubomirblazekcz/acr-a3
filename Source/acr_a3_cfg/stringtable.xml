@@ -98,8 +98,12 @@
             <Czech>AČR Klobouk (vz. 95)</Czech>
         </Key>
         <Key ID="STR_ACR_CAP">
-            <English>ACR Cap (vz. 95)</English>
+            <English>ACR Cap (olive)</English>
             <Czech>AČR Kšiltovka (olivová)</Czech>
+        </Key>
+        <Key ID="STR_ACR_CAP_DES">
+            <English>ACR Cap (tan)</English>
+            <Czech>AČR Kšiltovka (žluto hnědá)</Czech>
         </Key>
         <Key ID="STR_ACR_BOONIEHAT_FOLD">
             <English>ACR Booniehat (vz. 95, fold)</English>
