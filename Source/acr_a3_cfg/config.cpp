@@ -536,10 +536,10 @@ class cfgWeapons
             mass = 30;
         };
     };
-    class U_ACR_A3_SniperGhillie: U_B_GhillieSuit // Rukávy
+    class U_ACR_A3_SniperGhillie: U_B_GhillieSuit // Sniper ghillie
     {
         displayName = "$STR_ACR_UNIFORM_GHILLIE";
-		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_ghillie.paa";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -549,10 +549,10 @@ class cfgWeapons
             mass = 60;
         };
     };
-    class U_ACR_A3_SniperGhillie_Des: U_B_GhillieSuit // Rukávy
+    class U_ACR_A3_SniperGhillie_Des: U_B_GhillieSuit // Sniper ghillie poust
     {
         displayName = "$STR_ACR_UNIFORM_GHILLIE_DES";
-		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_ghillie_des.paa";
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -2313,7 +2313,7 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SniperGhillie";
 		model = "\A3\characters_f\Common\ghillie.p3d";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"\A3\characters_f\Common\data\ghillie_2_ca.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_ghillie.paa"};
         weapons[] = {"arifle_MXM_Black_F","acr_a3_P07","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"arifle_MXM_Black_F","acr_a3_P07","Throw","Put","Rangefinder"};
         magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
@@ -2406,7 +2406,7 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SniperGhillie_des";
         model = "\A3\characters_f\Common\ghillie.p3d";
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A3\characters_f\Common\data\ghillie_3_ca.paa"};
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_ghillie_des.paa"};
         weapons[] = {"arifle_MXM_Black_F","acr_a3_P07","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"arifle_MXM_Black_F","acr_a3_P07","Throw","Put","Rangefinder"};
         magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
