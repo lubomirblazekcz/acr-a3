@@ -169,6 +169,14 @@
             <English>ACR Uniform (Sweater, desert)</English>
             <Czech>AČR Uniforma (Svetr, pouštní)</Czech>
         </Key>
+        <Key ID="STR_ACR_UNIFORM_GHILLIE">
+            <English>ACR Ghillie Suit</English>
+            <Czech>AČR Hejkal</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_GHILLIE_DES">
+            <English>ACR Ghillie Suit (Desert)</English>
+            <Czech>AČR Hejkal (pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_FLAG">
             <English>[ACR] Patch (Flag)</English>
             <Czech>[AČR] Nášivka (Vlajka)</Czech>
@@ -192,6 +200,14 @@
         <Key ID="STR_ACR_MEN_COM">
             <English>Radio Operator</English>
             <Czech>Radista</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPER_DES">
+            <English>Sniper (Desert)</English>
+            <Czech>Odstřelovač (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SPOTTER_DES">
+            <English>Spotter (Desert)</English>
+            <Czech>Pozorovatel (pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_HELIPILOT_DES">
             <English>Helicopter Pilot (Desert)</English>
