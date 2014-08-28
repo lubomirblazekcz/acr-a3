@@ -219,7 +219,7 @@ class cfgWeapons
 		scope = 2;
 		weaponPoolAvailable = 1;
 		displayName = "$STR_ACR_MICH2000";
-		picture = "\acr_a3_characters\data\UI\ikona_ACR_Prilba.paa";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_helma.paa";
         model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
 		author = "$STR_ACR";
         hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
@@ -239,7 +239,7 @@ class cfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "$STR_ACR_MICH2000_Des";
-        picture = "\acr_a3_characters\data\UI\ikona_ACR_Prilba_Des.paa";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helma_poust.paa";
         model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
         author = "$STR_ACR";
         hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
