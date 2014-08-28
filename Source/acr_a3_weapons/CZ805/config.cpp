@@ -1,21 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: Produced from mikero's Dos Tools Dll version 4.55
-//Sat Jul 26 23:12:19 2014 : Source 'file' date Sat Jul 26 23:12:19 2014
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-//ndefs=5
-enum {
-	StabilizedInAxesNone = 0,
-	StabilizedInAxisX = 1,
-	StabilizedInAxisY = 2,
-	StabilizedInAxesBoth = 3,
-	StabilizedInAxesXYZ = 4
-};
-
-//Class P:\acr_a3_weapons\CZ805\config.bin{
 class CfgPatches
 {
 	class acr_a3_CZ805
@@ -233,6 +215,7 @@ class CfgWeapons
 		{
 			displayName = "CZ 805 G1";
 			descriptionShort = "CZ 805 G1 Grenade launcher";
+			author = "$STR_ACR";
 			useModelOptics = 0;
 			useExternalOptic = 0;
 			magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
@@ -253,6 +236,7 @@ class CfgWeapons
 		displayName = "CZ 805 A2";
 		model = "acr_a3_weapons\CZ805\CZ_805_A2.p3d";
 		descriptionShort = "CZ 805 A2 BREN Carabine";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a2_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -267,6 +251,7 @@ class CfgWeapons
 		displayName = "CZ 805 A1";
 		model = "acr_a3_weapons\CZ805\CZ_805_A1.p3d";
 		descriptionShort = "CZ 805 A1 BREN";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a1_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -282,6 +267,7 @@ class CfgWeapons
 		model = "acr_a3_weapons\CZ805\CZ_805_GL.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","acr_a3_weapons\CZ805\Anims\CZ805GL.rtm"};
 		descriptionShort = "CZ 805 A1 GL BREN";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\CZ805\data\UI\gear_cz805_a1gl_x_ca.paa";
 		UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -324,4 +310,3 @@ class CfgWeapons
 		};
 	};
 };
-//};

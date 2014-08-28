@@ -1,21 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: Produced from mikero's Dos Tools Dll version 4.55
-//Sat Jul 26 23:19:29 2014 : Source 'file' date Sat Jul 26 23:19:29 2014
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-//ndefs=5
-enum {
-	StabilizedInAxesNone = 0,
-	StabilizedInAxisX = 1,
-	StabilizedInAxisY = 2,
-	StabilizedInAxesBoth = 3,
-	StabilizedInAxesXYZ = 4
-};
-
-//Class P:\acr_a3_weapons\CZ750\config.bin{
 class CfgPatches
 {
 	class acr_a3_CZ750_srifle
@@ -43,6 +25,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "7.62x51mm 10rnd CZ 750 Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\CZ750\data\UI\cz750_mag_ca.paa";
 		ammo = "B_762x51_Ball";
 		count = 10;
@@ -56,6 +39,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 10;
 		displayName = "7.62x51mm 10rnd CZ 750 Tracer Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\CZ750\data\UI\cz750_tracer_mag_ca.paa";
 		descriptionShort = "7.62x51mm CZ750 Tracer magazine";
 		displaynameshort = "Tracers";
@@ -184,6 +168,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "CZ 750 S1 M1";
+		author = "$STR_ACR";
 		model = "acr_a3_weapons\CZ750\CZ750.p3d";
 		picture = "\acr_a3_weapons\CZ750\data\UI\gear_cz750_x_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -204,4 +189,3 @@ class CfgWeapons
 		};
 	};
 };
-//};

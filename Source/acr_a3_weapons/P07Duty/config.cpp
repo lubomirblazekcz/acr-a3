@@ -1,21 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: Produced from mikero's Dos Tools Dll version 4.55
-//Sat Jul 26 23:12:56 2014 : Source 'file' date Sat Jul 26 23:12:56 2014
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-//ndefs=5
-enum {
-	StabilizedInAxesNone = 0,
-	StabilizedInAxisX = 1,
-	StabilizedInAxisY = 2,
-	StabilizedInAxesBoth = 3,
-	StabilizedInAxesXYZ = 4
-};
-
-//Class P:\acr_a3_weapons\P07Duty\config.bin{
 class CfgPatches
 {
 	class acr_a3_P07Duty
@@ -48,6 +30,7 @@ class CfgWeapons
 		magazines[] = {"16Rnd_9x21_Mag"};
 		reloadAction = "GestureReloadPistol";
 		displayname = "CZ 75 P-07 Duty";
+		author = "$STR_ACR";
 		dexterity = 2;
 		bullet1[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_01",0.501187,1,15};
 		bullet2[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_02",0.501187,1,15};
@@ -109,4 +92,3 @@ class CfgWeapons
 		};
 	};
 };
-//};

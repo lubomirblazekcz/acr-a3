@@ -1,21 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: Produced from mikero's Dos Tools Dll version 4.55
-//Sat Jul 26 23:13:09 2014 : Source 'file' date Sat Jul 26 23:13:09 2014
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
-
-#define _ARMA_
-
-//ndefs=5
-enum {
-	StabilizedInAxesNone = 0,
-	StabilizedInAxisX = 1,
-	StabilizedInAxisY = 2,
-	StabilizedInAxesBoth = 3,
-	StabilizedInAxesXYZ = 4
-};
-
-//Class P:\acr_a3_weapons\Sa58\config.bin{
 class CfgPatches
 {
 	class acr_a3_Sa58
@@ -45,6 +27,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_ca.paa";
 		ammo = "B_762x39mm_KLT";
 		count = 30;
@@ -58,6 +41,7 @@ class CfgMagazines
 		tracersEvery = 1;
 		lastRoundsTracer = 30;
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer G Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_green_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer G magazine";
 		displaynameshort = "Tracers";
@@ -65,6 +49,7 @@ class CfgMagazines
 	class acr_a3_30Rnd_Sa58_mag_TracerR: acr_a3_30Rnd_Sa58_mag_TracerG
 	{
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer R Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_red_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer R magazine";
 		ammo = "B_762x39_TRACER_R_KLT";
@@ -72,6 +57,7 @@ class CfgMagazines
 	class acr_a3_30Rnd_Sa58_mag_TracerY: acr_a3_30Rnd_Sa58_mag_TracerG
 	{
 		displayName = "7.62x39mm 30rnd Sa vz. 58 Tracer Y Mag";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\m_30rnd_sa58_yellow_ca.paa";
 		descriptionShort = "7.62x39mm 30rnd Sa vz. 58 Tracer Y magazine";
 		ammo = "B_762x39_TRACER_Y_KLT";
@@ -282,6 +268,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "vz. 58 P";
+		author = "$STR_ACR";
 		model = "acr_a3_weapons\Sa58\sa58p.p3d";
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58p_x_ca.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -310,7 +297,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "vz. 58 P Desert";
-		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58p_x_ca.paa"; taurus fix it
+		author = "$STR_ACR";
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
@@ -318,6 +305,7 @@ class CfgWeapons
 	class acr_a3_Sa58V: acr_a3_Sa58P
 	{
 		displayName = "vz. 58 V";
+		author = "$STR_ACR";
 		model = "acr_a3_weapons\Sa58\sa58V.p3d";
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58v_x_ca.paa";
 		sections[] = {"camo"};
@@ -327,7 +315,7 @@ class CfgWeapons
 	class acr_a3_Sa58V_camo: acr_a3_Sa58V
 	{
 		displayName = "vz. 58 V Desert";
-		//picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58v_x_ca.paa"; taurus fix it
+		author = "$STR_ACR";
 		sections[] = {"camo"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa"};
@@ -336,6 +324,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		displayName = "vz. 58 RIS";
+		author = "$STR_ACR";
 		model = "acr_a3_weapons\Sa58\sa58ris.p3d";
 		handAnim[] = {"OFP2_ManSkeleton","acr_a3_weapons\Sa58\Anims\Mk48.rtm"};
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_f_x_ca.paa";
@@ -364,6 +353,7 @@ class CfgWeapons
 	class acr_a3_Sa58RIS1_camo: acr_a3_Sa58RIS1
 	{
 		displayName = "vz. 58 RIS Desert";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_camo_f_x_ca.paa";
 		sections[] = {"camo","RIS"};
 		hiddenSelections[] = {"camo","RIS"};
@@ -372,6 +362,7 @@ class CfgWeapons
 	class acr_a3_Sa58RIS2: acr_a3_Sa58RIS1
 	{
 		displayName = "vz. 58 RIS2";
+		author = "$STR_ACR";
 		model = "acr_a3_weapons\Sa58\sa58ris_back.p3d";
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_r_x_ca.paa";
 		sections[] = {"camo","RIS"};
@@ -381,10 +372,10 @@ class CfgWeapons
 	class acr_a3_Sa58RIS2_camo: acr_a3_Sa58RIS2
 	{
 		displayName = "vz. 58 RIS2 Desert";
+		author = "$STR_ACR";
 		picture = "\acr_a3_weapons\Sa58\data\UI\gear_sa58ris_camo_r_x_ca.paa";
 		sections[] = {"camo","RIS"};
 		hiddenSelections[] = {"camo","RIS"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa","acr_a3_weapons\Sa58\data\sa58sfcamo_co.paa"};
 	};
 };
-//};
