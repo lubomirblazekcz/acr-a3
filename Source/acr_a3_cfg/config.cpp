@@ -2814,55 +2814,55 @@ class CfgUnitInsignia
         displayName = "A_Neg";
         texture = "\acr_a3_characters\data\insignia\blood\A_Neg.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_A_Pos
     {
         displayName = "A_Pos";
         texture = "\acr_a3_characters\data\insignia\blood\A_Pos.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_B_Neg
     {
         displayName = "B_Neg";
         texture = "\acr_a3_characters\data\insignia\blood\B_Neg.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_B_Pos
     {
         displayName = "B_Pos";
         texture = "\acr_a3_characters\data\insignia\blood\B_Pos.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_AB_Neg
     {
         displayName = "AB_Neg";
         texture = "\acr_a3_characters\data\insignia\blood\AB_Neg.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_AB_Pos
     {
         displayName = "AB_Pos";
         texture = "\acr_a3_characters\data\insignia\blood\AB_Pos.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_O_Neg
     {
         displayName = "O_Neg";
         texture = "\acr_a3_characters\data\insignia\blood\O_Neg.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
     class ACR_Patch_O_Pos
     {
         displayName = "O_Pos";
         texture = "\acr_a3_characters\data\insignia\blood\O_Pos.paa";
         author = "$STR_ACR";
-        scope = 1;
+        scope = 0;
     };
 };
