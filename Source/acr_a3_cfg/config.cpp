@@ -294,6 +294,46 @@ class cfgWeapons
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         };
     };
+	class H_ACR_A3_HelmetIA_nogoggles_vz95_des: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = "3*0.5";
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
+	class H_ACR_A3_HelmetIA_nogoggles_vz95: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_copy_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = "3*0.5";
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
     class H_ACR_A3_HelmetB_rgr: ItemCore
     {
         scope = 2;
@@ -387,6 +427,26 @@ class cfgWeapons
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "acr_a3_characters\pakol_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = 0;  /// this cap doesn't provide any protection
+            passThrough = 1; /// this cap doesn't provide any protection
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
+	class H_ACR_A3_Pakol_mic_grey: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_PAKOL_GREY"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_pakol.paa"; /// this looks fairly similar
+        model   = "acr_a3_characters\pakol_mic_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip4_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "acr_a3_characters\pakol_mic_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
             modelSides[] = {6}; /// available for all sides
             armor = 0;  /// this cap doesn't provide any protection
