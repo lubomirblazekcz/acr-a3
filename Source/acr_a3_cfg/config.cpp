@@ -700,6 +700,8 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_SWEATER";
         picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -715,6 +717,8 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_SWEATER_DES";
         picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
