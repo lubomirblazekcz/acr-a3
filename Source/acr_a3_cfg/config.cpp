@@ -2856,56 +2856,56 @@ class CfgUnitInsignia
     // Krev
     class ACR_Patch_A_Neg
     {
-        displayName = "[AČR] A Neg";
+        displayName = "$STR_ACR_A_NEG";
         texture = "\acr_a3_characters\data\insignia\blood\A_Neg.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_A_Pos
     {
-        displayName = "[AČR] A Pos";
+        displayName = "$STR_ACR_A_POS";
         texture = "\acr_a3_characters\data\insignia\blood\A_Pos.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_B_Neg
     {
-        displayName = "[AČR] B Neg";
+        displayName = "$STR_ACR_B_NEG";
         texture = "\acr_a3_characters\data\insignia\blood\B_Neg.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_B_Pos
     {
-        displayName = "[AČR] B Pos";
+        displayName = "$STR_ACR_B_POS";
         texture = "\acr_a3_characters\data\insignia\blood\B_Pos.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_AB_Neg
     {
-        displayName = "[AČR] AB Neg";
+        displayName = "$STR_ACR_AB_NEG";
         texture = "\acr_a3_characters\data\insignia\blood\AB_Neg.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_AB_Pos
     {
-        displayName = "[AČR] AB Pos";
+        displayName = "$STR_ACR_AB_POS";
         texture = "\acr_a3_characters\data\insignia\blood\AB_Pos.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_O_Neg
     {
-        displayName = "[AČR] O Neg";
+        displayName = "$STR_ACR_O_NEG";
         texture = "\acr_a3_characters\data\insignia\blood\O_Neg.paa";
         author = "$STR_ACR";
         scope = 0;
     };
     class ACR_Patch_O_Pos
     {
-        displayName = "[AČR] O Pos";
+        displayName = "$STR_ACR_O_POS";
         texture = "\acr_a3_characters\data\insignia\blood\O_Pos.paa";
         author = "$STR_ACR";
         scope = 0;
