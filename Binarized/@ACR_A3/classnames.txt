@@ -13,6 +13,7 @@ H_ACR_A3_HelmetIA_Goggles_vz95_des
 H_ACR_A3_HelmetB_rgr
 H_ACR_A3_Beret_red
 H_ACR_A3_Booniehat_vz95
+H_ACR_A3_Booniehat_vz95_des
 H_ACR_A3_Booniehat_fold_vz95
 H_ACR_A3_Cap_rgr
 H_ACR_A3_Cap_khk

@@ -21,6 +21,10 @@
             <English>Men (vz. 95, Recon)</English>
             <Czech>Muži (vz. 95, průzkumníci)</Czech>
         </Key>
+        <Key ID="STR_ACR_MENVZ95REC_DES">
+            <English>Men (desert, Recon)</English>
+            <Czech>Muži (pouštní, průzkumníci)</Czech>
+        </Key>
         <Key ID="STR_ACR_MEN_MOUT">
             <English>Men (MOUT)</English>
             <Czech>Muži (MOUT)</Czech>
@@ -36,6 +40,30 @@
         <Key ID="STR_ACR_RECON_VZ95">
             <English>Recon Team (vz.95)</English>
             <Czech>Průzkumný tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_DES">
+            <English>Recon Team (Desert)</English>
+            <Czech>Průzkumný tým (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_VZ95">
+            <English>Infantry Squad (vz.95)</English>
+            <Czech>Družstvo střelců (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_DES">
+            <English>Infantry Squad (Desert)</English>
+            <Czech>Družstvo střelců (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT">
+            <English>Infantry Squad (MOUT)</English>
+            <Czech>Družstvo střelců (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPERS">
+            <English>Sniper Team</English>
+            <Czech>Odstřelovačský tým</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPERS_DES">
+            <English>Sniper Team (Desert)</English>
+            <Czech>Odstřelovačský tým (pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
             <English>ACR Carryall Backpack (vz. 95)</English>
@@ -216,10 +244,6 @@
         <Key ID="STR_ACR_LOGO3">
             <English>[ACR] Patch (Red)</English>
             <Czech>[AČR] Nášivka (Červená)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MEN_COM">
-            <English>Radio Operator</English>
-            <Czech>Radista</Czech>
         </Key>
         <Key ID="STR_ACR_KULOMET_F">
             <English>Recon - Machinegunner</English>

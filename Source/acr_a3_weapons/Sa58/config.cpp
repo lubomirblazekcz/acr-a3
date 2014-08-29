@@ -378,4 +378,70 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","RIS"};
 		hiddenSelectionsTextures[] = {"acr_a3_weapons\Sa58\data\sa58camo_co.paa","acr_a3_weapons\Sa58\data\sa58sfcamo_co.paa"};
 	};
+
+    class acr_a3_Sa58RIS1_Aco_Laser: acr_a3_Sa58RIS1
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Aco";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+    class acr_a3_Sa58RIS2_Arco_Laser: acr_a3_Sa58RIS2
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Arco";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class acr_a3_Sa58RIS1_camo_Aco_Laser: acr_a3_Sa58RIS1_camo
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Aco";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+    class acr_a3_Sa58RIS2_camo_Arco_Laser: acr_a3_Sa58RIS2_camo
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Arco";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
 };

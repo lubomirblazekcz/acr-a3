@@ -188,4 +188,15 @@ class CfgWeapons
 			class asdg_OpticRail_acr_a3_CZ750: asdg_OpticRail1913_short{};
 		};
 	};
+    class acr_a3_CZ750_SOS: acr_a3_CZ750
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_SOS";
+            };
+        };
+    };
 };
