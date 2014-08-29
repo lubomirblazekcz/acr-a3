@@ -167,8 +167,8 @@ class CfgWeapons
 				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
 			reloadTime = 0.075;
-			recoil = "recoil_single_ebr";
-			recoilProne = "recoil_single_prone_ebr";
+			recoil = "recoil_single_ktb";
+			recoilProne = "recoil_single_prone_ktb";
 			dispersion = 0.00087;
 			minRange = 2;
 			minRangeProbab = 0.3;
@@ -201,8 +201,8 @@ class CfgWeapons
 				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
 			reloadTime = 0.075;
-			recoil = "recoil_auto_ebr";
-			recoilProne = "recoil_auto_prone_ebr";
+			recoil = "recoil_auto_ktb";
+			recoilProne = "recoil_auto_prone_trg";
 			dispersion = 0.00087;
 			minRange = 0;
 			minRangeProbab = 0.9;

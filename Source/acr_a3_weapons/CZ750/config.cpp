@@ -104,15 +104,16 @@ class CfgWeapons
 			class BaseSoundModeType
 			{
 				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_2",1.778279,1,10};
-				closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.778279,1,10};
+				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3",1.122018,1.2,30};
+				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3",1.122018,1,30};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\sounds_f\weapons\M320\M320_st_1",1.0,1,1200};
-				begin2[] = {"A3\sounds_f\weapons\M320\M320_st_2",1.0,1,1200};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,1200};
+				begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,1200};
+				begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,1200};
+				soundBegin[] = {"begin1",0.34,"begin2",0.33,"begin3",0.33};
 			};
 			minRange = 2;
 			minRangeProbab = 0.1;
@@ -183,7 +184,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot{};
 			class PointerSlot: PointerSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"acr_a3_cz750bipod"};
 			};
 			class asdg_OpticRail_acr_a3_CZ750: asdg_OpticRail1913_short{};
 		};
@@ -199,4 +200,5 @@ class CfgWeapons
             };
         };
     };
+	#include "accessory.h"
 };
