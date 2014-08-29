@@ -22,8 +22,8 @@
             <Czech>Muži (vz. 95, průzkumníci)</Czech>
         </Key>
         <Key ID="STR_ACR_MENVZ95REC_DES">
-            <English>Men (desert, Recon)</English>
-            <Czech>Muži (pouštní, průzkumníci)</Czech>
+            <English>Men (Desert, Recon)</English>
+            <Czech>Muži (Pouštní, průzkumníci)</Czech>
         </Key>
         <Key ID="STR_ACR_MEN_MOUT">
             <English>Men (MOUT)</English>
@@ -51,7 +51,7 @@
         </Key>
         <Key ID="STR_ACR_INF_DES">
             <English>Infantry Squad (Desert)</English>
-            <Czech>Družstvo střelců (pouštní)</Czech>
+            <Czech>Družstvo střelců (Pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_INF_MOUT">
             <English>Infantry Squad (MOUT)</English>
