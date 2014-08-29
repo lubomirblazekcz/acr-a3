@@ -468,7 +468,7 @@ class cfgWeapons
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
@@ -484,7 +484,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -500,7 +500,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -519,7 +519,7 @@ class cfgWeapons
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
@@ -535,7 +535,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT_triko.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -551,7 +551,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -570,7 +570,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_MOUT.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -587,7 +587,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_MOUT.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -663,7 +663,7 @@ class cfgWeapons
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_officer.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
 		author = "$STR_ACR";
 		class ItemInfo: UniformItem
 		{
@@ -682,7 +682,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_officer_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
         author = "$STR_ACR";
         class ItemInfo: UniformItem
         {
@@ -701,7 +701,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -718,7 +718,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_svetr_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_soldier_blufor_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
