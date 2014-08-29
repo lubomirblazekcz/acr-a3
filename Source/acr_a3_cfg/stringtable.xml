@@ -19,7 +19,7 @@
 		</Key>
         <Key ID="STR_ACR_MENVZ95REC">
             <English>Men (vz. 95, Recon)</English>
-            <Czech>Muži (vz. 95, Průzkumníci)</Czech>
+            <Czech>Muži (vz. 95, průzkumníci)</Czech>
         </Key>
         <Key ID="STR_ACR_MEN_MOUT">
             <English>Men (MOUT)</English>
@@ -32,6 +32,10 @@
         <Key ID="STR_ACR_SNIP">
             <English>Men (Sniper)</English>
             <Czech>Muži (Odstřelovači)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_VZ95">
+            <English>Recon Team (vz.95)</English>
+            <Czech>Průzkumný tým (vz.95)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
             <English>ACR Carryall Backpack (vz. 95)</English>
@@ -216,6 +220,10 @@
         <Key ID="STR_ACR_MEN_COM">
             <English>Radio Operator</English>
             <Czech>Radista</Czech>
+        </Key>
+        <Key ID="STR_ACR_KULOMET_F">
+            <English>Recon - Machinegunner</English>
+            <Czech>Průzkumník - kulometčík</Czech>
         </Key>
         <Key ID="STR_ACR_SNIPER_DES">
             <English>Sniper (Desert)</English>
