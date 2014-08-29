@@ -52,6 +52,7 @@ class cfgFactionClasses
 		priority = 6;
 		side = "TWest";
 		genericNames = "CzechMen";
+		identitytypes[] = {"Head_Euro"};
 		icon = "\acr_a3_characters\data\ACR_odznak.paa";
 	};
 };
@@ -713,6 +714,7 @@ class cfgVehicles
     {
         scope = 0;//1 = private and ensures it doesnt list as a character in the editor
         displayName = "ACR Example Underwear Character";
+		identitytypes[] = {"Head_Euro"};
         model = "\A3\Characters_F\Common\basicbody";
 		genericNames = "CzechMen";
         uniformClass = "ACR_blk_BasicBody"; //Your underwear class in cfgweapons
@@ -736,6 +738,7 @@ class cfgVehicles
 	class ACRP_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -781,6 +784,7 @@ class cfgVehicles
 	class ACRP_Vojak02: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_GL_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -826,6 +830,7 @@ class cfgVehicles
 	class ACRP_Vojak03: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_AR_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -872,6 +877,7 @@ class cfgVehicles
 	class ACRP_Vojak04: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -918,6 +924,7 @@ class cfgVehicles
 	class ACRP_Vojak05: B_Soldier_F
 	{
 		_generalMacro = "B_medic_F";
+		identitytypes[] = {"Head_Euro"};
 		attendant = "true";
 		scope = 2;
 		scopeCurator = 2;
@@ -964,6 +971,7 @@ class cfgVehicles
 	class ACRP_Vojak06: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1010,6 +1018,7 @@ class cfgVehicles
 	class ACRP_Vojak07: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_exp_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1057,6 +1066,7 @@ class cfgVehicles
 	class ACRP_Vojak10: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1106,6 +1116,7 @@ class cfgVehicles
 	class ACR_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1159,6 +1170,7 @@ class cfgVehicles
 	class ACR_Vojak02: B_Soldier_02_f
 	{
 		_generalMacro = "B_Soldier_GL_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1212,6 +1224,7 @@ class cfgVehicles
 	class ACR_Vojak03: B_Soldier_03_f
 	{
 		_generalMacro = "B_soldier_AR_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1266,6 +1279,7 @@ class cfgVehicles
 	class ACR_Vojak04: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1312,6 +1326,7 @@ class cfgVehicles
 	class ACR_Vojak05: B_Soldier_F
 	{
 		_generalMacro = "B_medic_F";
+		identitytypes[] = {"Head_Euro"};
 		attendant = "true";
 		scope = 2;
 		scopeCurator = 2;
@@ -1358,6 +1373,7 @@ class cfgVehicles
 	class ACR_Vojak06: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1404,6 +1420,7 @@ class cfgVehicles
 	class ACR_Vojak07: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_exp_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1451,6 +1468,7 @@ class cfgVehicles
 	class ACR_Vojak10: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1497,6 +1515,7 @@ class cfgVehicles
 	class ACR_Vojak12: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1545,6 +1564,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1597,6 +1617,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak02: B_Soldier_02_f
 	{
 		_generalMacro = "B_Soldier_GL_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1642,6 +1663,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak03: B_Soldier_03_f
 	{
 		_generalMacro = "B_soldier_AR_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1696,6 +1718,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak04: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1742,6 +1765,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak05: B_Soldier_F
 	{
 		_generalMacro = "B_medic_F";
+		identitytypes[] = {"Head_Euro"};
 		attendant = "true";
 		scope = 2;
 		scopeCurator = 2;
@@ -1788,6 +1812,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak06: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1834,6 +1859,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak07: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_exp_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1881,6 +1907,7 @@ class cfgVehicles
 	class ACR_MOUT_Vojak10: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1929,6 +1956,7 @@ class cfgVehicles
 	class ACR_Des_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -1981,6 +2009,7 @@ class cfgVehicles
 	class ACR_Des_Vojak02: B_Soldier_02_f
 	{
 		_generalMacro = "B_Soldier_GL_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2034,6 +2063,7 @@ class cfgVehicles
 	class ACR_Des_Vojak03: B_Soldier_03_f
 	{
 		_generalMacro = "B_soldier_AR_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2088,6 +2118,7 @@ class cfgVehicles
 	class ACR_Des_Vojak04: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2134,6 +2165,7 @@ class cfgVehicles
 	class ACR_Des_Vojak05: B_Soldier_F
 	{
 		_generalMacro = "B_medic_F";
+		identitytypes[] = {"Head_Euro"};
 		attendant = "true";
 		scope = 2;
 		scopeCurator = 2;
@@ -2181,6 +2213,7 @@ class cfgVehicles
 	class ACR_Des_Vojak06: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2227,6 +2260,7 @@ class cfgVehicles
 	class ACR_Des_Vojak07: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_exp_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2274,6 +2308,7 @@ class cfgVehicles
 	class ACR_Des_Vojak10: B_Soldier_F
 	{
 		_generalMacro = "B_soldier_M_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2322,6 +2357,7 @@ class cfgVehicles
     class ACR_Sniper: B_spotter_F
     {
         _generalMacro = "B_spotter_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR";
@@ -2370,6 +2406,7 @@ class cfgVehicles
     class ACR_Sniper2: B_sniper_F
     {
         _generalMacro = "B_sniper_F";
+		identitytypes[] = {"Head_Euro"};
         faction = "ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         scope = 2;
@@ -2415,6 +2452,7 @@ class cfgVehicles
     class ACR_Sniper_Des: B_spotter_F
     {
         _generalMacro = "B_spotter_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR";
@@ -2463,6 +2501,7 @@ class cfgVehicles
     class ACR_Sniper2_Des: B_sniper_F
     {
         _generalMacro = "B_sniper_F";
+		identitytypes[] = {"Head_Euro"};
         faction = "ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         scope = 2;
@@ -2509,6 +2548,7 @@ class cfgVehicles
 	class ACR_Pilot: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2552,6 +2592,7 @@ class cfgVehicles
     class ACR_Pilot_des: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR";
@@ -2595,6 +2636,7 @@ class cfgVehicles
 	class ACR_Dustojnik: B_Soldier_F //znackablabla
 	{
 		_generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
 		scope = 2;
 		scopeCurator = 2;
 		faction = "ACR";
@@ -2639,6 +2681,7 @@ class cfgVehicles
     class ACR_Dustojnik_des: B_Soldier_F //znackablabla
     {
         _generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR";
@@ -2683,6 +2726,7 @@ class cfgVehicles
     class ACR_Neozbrojeny: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
 		scopeCurator = 2;
         faction = "ACR";
@@ -2730,6 +2774,7 @@ class cfgVehicles
     class ACR_Neozbrojeny_des: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
+		identitytypes[] = {"Head_Euro"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR";
