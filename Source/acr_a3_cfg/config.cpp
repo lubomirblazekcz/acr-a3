@@ -355,6 +355,26 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
+    class H_ACR_A3_Booniehat_vz95_des: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "$STR_ACR_BOONIEHAT_DES";
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_Klobouk95_des.paa";
+    	model = "\A3\Characters_F_epb\Common\booniehat_hs";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Klobouk95_des.paa"};
+		author = "$STR_ACR";
+		class ItemInfo: HeadGearItem
+		{
+			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
+			mass = 10;
+			modelSides[] = {3,1};
+			armor = "0";
+			passThrough = 0.8;
+			hiddenSelections[] = {"camo"};
+		};
+	};
 	class H_ACR_A3_Cap_rgr: ItemCore
 	{
 		scope = 2;
@@ -3015,6 +3035,11 @@ class cfgVehicles
             class _xx_H_ACR_A3_Booniehat_vz95
             {
                 name = "H_ACR_A3_Booniehat_vz95";
+                count = 30;
+            };
+			class _xx_H_ACR_A3_Booniehat_vz95_des
+            {
+                name = "H_ACR_A3_Booniehat_vz95_des";
                 count = 30;
             };
             class _xx_H_ACR_A3_Booniehat_fold_vz95

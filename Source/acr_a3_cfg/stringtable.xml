@@ -105,6 +105,10 @@
             <English>ACR Booniehat (vz. 95)</English>
             <Czech>AČR Klobouk (vz. 95)</Czech>
         </Key>
+		<Key ID="STR_ACR_BOONIEHAT_DES">
+            <English>ACR Booniehat (vz. 95, Desert)</English>
+            <Czech>AČR Klobouk (vz. 95, pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_CAP">
             <English>ACR Cap (Olive)</English>
             <Czech>AČR Kšiltovka (olivová)</Czech>
