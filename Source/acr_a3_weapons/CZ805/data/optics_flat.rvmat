@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="Ca\Data\env_land_co.tga";
+	texture="a3\data_f\env_land_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -92,5 +92,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="CA\weapons_E\Data\Default_TI_CA.tga";
+	texture="a3\data_f\default_ti_ca.tga";
 };
