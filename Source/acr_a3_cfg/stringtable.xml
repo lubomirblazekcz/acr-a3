@@ -257,5 +257,37 @@
             <English>L39 ALBATROS (AA)</English>
             <Czech>L39 ALBATROS (AA)</Czech>
         </Key>
+        <Key ID="STR_ACR_A_NEG">
+            <English>[ACR] A Neg</English>
+            <Czech>[AČR] A Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_A_POS">
+            <English>[ACR] A Pos</English>
+            <Czech>[AČR] A Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_B_POS">
+            <English>[ACR] B Pos</English>
+            <Czech>[AČR] B Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_B_NEG">
+            <English>[ACR] B Neg</English>
+            <Czech>[AČR] B Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_AB_NEG">
+            <English>[ACR] AB Neg</English>
+            <Czech>[AČR] AB Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_AB_POS">
+            <English>[ACR] AB Pos</English>
+            <Czech>[AČR] AB Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_O_NEG">
+            <English>[ACR] O Neg</English>
+            <Czech>[AČR] O Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_O_POS">
+            <English>[ACR] O Pos</English>
+            <Czech>[AČR] O Pos</Czech>
+        </Key>
     </Package>
 </Project>
