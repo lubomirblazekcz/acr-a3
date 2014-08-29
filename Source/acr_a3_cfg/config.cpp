@@ -375,26 +375,26 @@ class cfgWeapons
 			hiddenSelections[] = {"camo"};
 		};
 	};
-		class H_ACR_A3_Cap_khk: ItemCore
-    	{
-    		scope = 2;
-    		weaponPoolAvailable = 1;
-    		displayName = "$STR_ACR_CAP_DES";
-    		picture = "\acr_a3_characters\data\UI\ikona_ACR_tanhatheadset.paa";
-    		model = "\A3\Characters_F_epb\Common\capb_hs";
-    		hiddenSelections[] = {"camo"};
-    		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\data\capb_tan_co.paa"};
-    		author = "$STR_ACR";
-    		class ItemInfo: HeadGearItem
-    		{
-    			uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
-    			mass = 10;
-    			modelSides[] = {3,1};
-    			armor = "0";
-    			passThrough = 0.8;
-    			hiddenSelections[] = {"camo"};
-    		};
-    	};
+    class H_ACR_A3_Cap_khk: ItemCore
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_ACR_CAP_DES";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_tanhatheadset.paa";
+        model = "\A3\Characters_F_epb\Common\capb_hs";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\data\capb_tan_co.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: HeadGearItem
+        {
+            uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
+            mass = 10;
+            modelSides[] = {3,1};
+            armor = "0";
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"};
+        };
+    };
 	class H_ACR_A3_Pakol_grey: ItemCore
         {
         scope = 2; /// scope needs to be 2 to have a visible class
@@ -689,6 +689,7 @@ class cfgVehicles
 	class B_Kitbag_cbr;
 	class B_spotter_F;
 	class B_sniper_F;
+	class B_supplyCrate_F;
 	class ACR_A3_Backpack_Carryall_vz95: B_Carryall_mcamo
 	{
 		scope = 2;
@@ -2816,6 +2817,292 @@ class cfgVehicles
                 {
                     slotType = 605;
                 };
+            };
+        };
+    };
+
+    // Bedna
+    class ACR_A3_GearBox: B_supplyCrate_F
+    {
+        displayName = "$STR_ACR_GEAR";
+        maximumLoad = 999999;
+        transportMaxWeapons = 50000;
+        transportMaxMagazines = 200000;
+        transportMaxBackpacks = 2000;
+        class TransportMagazines {};
+        class TransportWeapons {};
+        class TransportItems {
+            class _xx_U_ACR_A3_CombatUniform
+            {
+                name = "U_ACR_A3_CombatUniform";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_vest
+            {
+                name = "U_ACR_A3_CombatUniform_vest";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_tshirt
+            {
+                name = "U_ACR_A3_CombatUniform_tshirt";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_Des
+            {
+                name = "U_ACR_A3_CombatUniform_Des";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_Des_vest
+            {
+                name = "U_ACR_A3_CombatUniform_Des_vest";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_Des_tshirt
+            {
+                name = "U_ACR_A3_CombatUniform_Des_tshirt";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_MOUT
+            {
+                name = "U_ACR_A3_CombatUniform_MOUT";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_CombatUniform_MOUT_vest
+            {
+                name = "U_ACR_A3_CombatUniform_MOUT_vest";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_SniperGhillie
+            {
+                name = "U_ACR_A3_SniperGhillie";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_SniperGhillie_Des
+            {
+                name = "U_ACR_A3_SniperGhillie_Des";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_HeliPilotCoveralls_rgr
+            {
+                name = "U_ACR_A3_HeliPilotCoveralls_rgr";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_HeliPilotCoveralls_khk
+            {
+                name = "U_ACR_A3_HeliPilotCoveralls_khk";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_OfficerUniform_vz95
+            {
+                name = "U_ACR_A3_OfficerUniform_vz95";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_OfficerUniform_des
+            {
+                name = "U_ACR_A3_OfficerUniform_des";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_SweaterUniform_vz95
+            {
+                name = "U_ACR_A3_SweaterUniform_vz95";
+                count = 30;
+            };
+            class _xx_U_ACR_A3_SweaterUniform_des
+            {
+                name = "";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrierIA2_vz95
+            {
+                name = "V_ACR_A3_PlateCarrierIA2_vz95";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier1_vz95
+            {
+                name = "V_ACR_A3_PlateCarrier1_vz95";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier2_vz95
+            {
+                name = "V_ACR_A3_PlateCarrier2_vz95";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier1_rgr
+            {
+                name = "V_ACR_A3_PlateCarrier1_rgr";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier2_rgr
+            {
+                name = "V_ACR_A3_PlateCarrier2_rgr";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier1_khk
+            {
+                name = "V_ACR_A3_PlateCarrier1_khk";
+                count = 30;
+            };
+            class _xx_V_ACR_A3_PlateCarrier2_khk
+            {
+                name = "V_ACR_A3_PlateCarrier2_khk";
+                count = 30;
+            };
+            class _xx_V_TacVestIR_blk
+            {
+                name = "V_TacVestIR_blk";
+                count = 30;
+            };
+            class _xx_V_TacVest_khk
+            {
+                name = "V_TacVest_khk";
+                count = 30;
+            };
+            class _xx_V_TacVest_oli
+            {
+                name = "V_TacVest_oli";
+                count = 30;
+            };
+            class _xx_V_Chestrig_khk
+            {
+                name = "V_Chestrig_khk";
+                count = 30;
+            };
+            class _xx_V_Chestrig_rgr
+            {
+                name = "V_Chestrig_rgr";
+                count = 30;
+            };
+            class _xx_V_BandollierB_khk
+            {
+                name = "V_BandollierB_khk";
+                count = 30;
+            };
+            class _xx_V_BandollierB_rgr
+            {
+                name = "V_BandollierB_rgr";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_HelmetIA_vz95
+            {
+                name = "H_ACR_A3_HelmetIA_vz95";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_HelmetIA_vz95_des
+            {
+                name = "H_ACR_A3_HelmetIA_vz95_des";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_HelmetIA_Goggles_vz95
+            {
+                name = "H_ACR_A3_HelmetIA_Goggles_vz95";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_HelmetIA_Goggles_vz95_des
+            {
+                name = "H_ACR_A3_HelmetIA_Goggles_vz95_des";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_HelmetB_rgr
+            {
+                name = "H_ACR_A3_HelmetB_rgr";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Beret_red
+            {
+                name = "H_ACR_A3_Beret_red";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Booniehat_vz95
+            {
+                name = "H_ACR_A3_Booniehat_vz95";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Booniehat_fold_vz95
+            {
+                name = "H_ACR_A3_Booniehat_fold_vz95";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Cap_rgr
+            {
+                name = "H_ACR_A3_Cap_rgr";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Cap_khk
+            {
+                name = "H_ACR_A3_Cap_khk";
+                count = 30;
+            };
+            class _xx_H_ACR_A3_Pakol_grey
+            {
+                name = "H_ACR_A3_Pakol_grey";
+                count = 30;
+            };
+        };
+        class TransportBackpacks  {
+            class _xx_ACR_A3_Backpack_Carryall_vz95
+            {
+                backpack = "ACR_A3_Backpack_Carryall_vz95";
+                count = 30;
+            };
+            class _xx_ACR_A3_Backpack_Kitbag_vz95
+            {
+                backpack = "ACR_A3_Backpack_Kitbag_vz95";
+                count = 30;
+            };
+            class _xx_B_Carryall_cbr
+            {
+                backpack = "B_Carryall_cbr";
+                count = 30;
+            };
+            class _xx_B_Carryall_oli
+            {
+                backpack = "B_Carryall_oli";
+                count = 30;
+            };
+            class _xx_B_Kitbag_cbr
+            {
+                backpack = "B_Kitbag_cbr";
+                count = 30;
+            };
+            class _xx_B_Kitbag_rgr
+            {
+                backpack = "B_Kitbag_rgr";
+                count = 30;
+            };
+            class _xx_B_FieldPack_cbr
+            {
+                backpack = "B_FieldPack_cbr";
+                count = 30;
+            };
+            class _xx_B_FieldPack_oli
+            {
+                backpack = "B_FieldPack_oli";
+                count = 30;
+            };
+            class _xx_B_AssaultPack_cbr
+            {
+                backpack = "B_AssaultPack_cbr";
+                count = 30;
+            };
+            class _xx_B_AssaultPack_rgr
+            {
+                backpack = "B_AssaultPack_rgr";
+                count = 30;
+            };
+            class _xx_B_TacticalPack_Base
+            {
+                backpack = "B_TacticalPack_Base";
+                count = 30;
+            };
+            class _xx_B_TacticalPack_oli
+            {
+                backpack = "B_TacticalPack_oli";
+                count = 30;
+            };
+            class _xx_B_Kitbag_mcamo
+            {
+                backpack = "B_Kitbag_mcamo";
+                count = 0;
             };
         };
     };

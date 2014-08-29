@@ -1,9 +1,9 @@
 class CfgPatches
 {
-	class KLT_SP01Phantom
+	class acr_a3_SP01Phantom
 	{
 		units[] = {};
-		weapons[] = {"KLT_SP01"};
+		weapons[] = {"acr_a3_SP01"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Weapons_F"};
 		magazines[] = {};
@@ -22,7 +22,7 @@ class CfgWeapons
 	{
 		class WeaponSlotsInfo;
 	};
-	class KLT_SP01: Pistol_Base_F
+	class acr_a3_SP01: Pistol_Base_F
 	{
 		scope = 2;
 		model = "acr_a3_weapons\SP01Phantom\Phantom.p3d";

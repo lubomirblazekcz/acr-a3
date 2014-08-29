@@ -41,6 +41,14 @@
             <English>ACR Backpack (vz. 95)</English>
             <Czech>AČR Batoh (vz. 95)</Czech>
         </Key>
+        <Key ID="STR_ACR_GEAR">
+            <English>[ACR] Gear</English>
+            <Czech>[AČR] Vybavení</Czech>
+        </Key>
+        <Key ID="STR_ACR_WEAPONS">
+            <English>[ACR] Weapons</English>
+            <Czech>[AČR] Zbraně</Czech>
+        </Key>
         <Key ID="STR_ACR_VEST">
             <English>ACR Vest (vz. 95)</English>
             <Czech>AČR Vesta (vz. 95)</Czech>
