@@ -84,7 +84,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="ca\data\env_land_co.paa";
+	texture="A3\data\env_land_co.tga";
 	uvSource="tex";
 	class uvTransform
 	{

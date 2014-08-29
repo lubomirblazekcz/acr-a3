@@ -76,7 +76,11 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 20;
-			class MuzzleSlot{};
+			class MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {"ACR_A3_Phantom_Supp"};
+			};
 			class CowsSlot{};
 			class PointerSlot: SlotInfo
 			{
@@ -91,4 +95,5 @@ class CfgWeapons
 			priority = 2;
 		};
 	};
+	#include "accessory.h"
 };
