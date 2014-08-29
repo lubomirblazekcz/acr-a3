@@ -604,6 +604,9 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_GHILLIE";
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_ghillie.paa";
         author = "$STR_ACR";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -617,6 +620,9 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_GHILLIE_DES";
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_ghillie_des.paa";
         author = "$STR_ACR";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
