@@ -79,7 +79,7 @@ class CfgWeapons
 			class MuzzleSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"ACR_A3_Phantom_Supp","muzzle_snds_l"};
+				compatibleItems[] = {"ACR_A3_9mm_supp","muzzle_snds_l"};
 			};
 			class CowsSlot{};
 			class PointerSlot: SlotInfo

@@ -51,7 +51,7 @@ class cfgWeapons
 		_generalMacro = "acc_acr_bipod";
 		scope = 2;
 		displayName = "$STR_A3_BIPOD";
-		picture = "\A3\weapons_F\Data\UI\gear_accv_pointer_CA.paa";
+		picture = "acr_a3_weapons\acc\Data\UI\gear_acr_bipod.paa";
 		model = "acr_a3_weapons\acc\CZ750_bipod.p3d";
 
 		class ItemInfo : InventoryFlashLightItem_Base_F
@@ -74,8 +74,8 @@ class cfgWeapons
 		author = "STR_ACR";
 		scope = 2;	
 		displayName="$STR_ACR_9MM_SUPP";
-		picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
-		model = "acr_a3_weapons\SP01Phantom\Phantom_suppressor.p3d";
+		picture="acr_a3_weapons\acc\Data\UI\gear_9mm_supp.paa";
+		model = "acr_a3_weapons\acc\9mm_acr_suppressor.p3d";
 		class ItemInfo: InventoryMuzzleItem_Base_F
         {
             mass = 5;
