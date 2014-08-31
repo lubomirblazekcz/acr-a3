@@ -82,12 +82,7 @@ class CfgWeapons
 				compatibleItems[] = {"ACR_A3_9mm_supp","muzzle_snds_l"};
 			};
 			class CowsSlot{};
-			class PointerSlot: SlotInfo
-			{
-		/*		linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				displayName = "$STR_A3_PointerSlot0";
-				compatibleItems[] = {"RH_x2","RH_m6x","RH_x300"};*/
-			};
+			class PointerSlot{};
 		};
 		inertia = 0.1;
 		class ItemInfo

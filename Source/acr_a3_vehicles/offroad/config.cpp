@@ -25,6 +25,7 @@ class CfgVehicles
 	class ACR_Offroad: B_G_Offroad_01_F
 	{
 		side = 1;
+		scope = 0;
 		author = "$STR_ACR";
 		faction = "ACR";
 		displayName = "Offroad";

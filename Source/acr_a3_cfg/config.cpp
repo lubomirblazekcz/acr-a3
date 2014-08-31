@@ -105,15 +105,15 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta.paa"};
 		author = "$STR_ACR";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
-			containerClass = "Supply200";
-			mass = 50;
-			armor = "5*0.5";
-			passThrough = 0.7;
-			hiddenSelections[] = {"camo"};
-		};
+        class ItemInfo: VestItem
+        {
+            uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+            containerClass = "Supply120";
+            mass = 60;
+            armor = 30;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"};
+        };
 	};
 	class V_ACR_A3_PlateCarrier1_vz95: V_PlateCarrier1_rgr //Vesta2
 	{
@@ -123,15 +123,15 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Vesta2.paa"};
 		author = "$STR_ACR";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
-			containerClass = "Supply200";
-			mass = 50;
-			armor = "5*0.5";
-			passThrough = 0.7;
-			hiddenSelections[] = {"camo"};
-		};
+        class ItemInfo: VestItem
+        {
+            armor = 20;
+            containerclass = "Supply140";
+            mass = 60;
+            passthrough = 0.5;
+            uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
+            hiddenSelections[] = {"camo"};
+        };
 	};
     class V_ACR_A3_PlateCarrier2_vz95: V_PlateCarrier2_rgr //Vesta2
     {
@@ -143,11 +143,11 @@ class cfgWeapons
         author = "$STR_ACR";
         class ItemInfo: VestItem
         {
+            armor = 30;
+            containerclass = "Supply140";
+            mass = 80;
+            passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
-            containerClass = "Supply200";
-            mass = 50;
-            armor = "5*0.5";
-            passThrough = 0.7;
             hiddenSelections[] = {"camo"};
         };
     };
@@ -178,7 +178,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
             armor = 30;
-            containerclass = "Supply120";
+            containerclass = "Supply140";
             mass = 80;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
@@ -212,7 +212,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
             armor = 30;
-            containerclass = "Supply120";
+            containerclass = "Supply140";
             mass = 80;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
