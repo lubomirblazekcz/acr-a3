@@ -71,7 +71,7 @@ class cfgWeapons
 	
 	class ACR_A3_9mm_supp: ItemCore
 	{	
-		author = "STR_ACR";
+		author = "$STR_ACR";
 		scope = 2;	
 		displayName="$STR_ACR_9MM_SUPP";
 		picture="\acr_a3_weapons\acc\Data\UI\gear_9mm_supp.paa";
