@@ -198,6 +198,11 @@ class CfgWeapons
                 slot = "CowsSlot";
                 item = "optic_SOS";
             };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "ACR_A3_bipod";
+            };
         };
     };
 };

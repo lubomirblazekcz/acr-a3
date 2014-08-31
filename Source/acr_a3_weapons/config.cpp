@@ -209,6 +209,16 @@ class cfgVehicles {
                 name = "muzzle_snds_L";
                 count = 30;
             };
+            class _xx_ACR_A3_bipod
+            {
+                name = "ACR_A3_bipod";
+                count = 30;
+            };
+            class _xx_ACR_A3_9mm_supp
+            {
+                name = "ACR_A3_9mm_supp";
+                count = 30;
+            };
         };
         class TransportBackpacks  {
             class _xx_B_Kitbag_mcamo
