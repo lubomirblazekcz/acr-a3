@@ -184,7 +184,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot{};
 			class PointerSlot: PointerSlot
 			{
-				compatibleItems[] = {"acr_a3_cz750bipod"};
+				compatibleItems[] = {"ACR_A3_bipod"};
 			};
 			class asdg_OpticRail_acr_a3_CZ750: asdg_OpticRail1913_short{};
 		};
