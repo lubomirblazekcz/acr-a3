@@ -774,7 +774,7 @@ class cfgVehicles
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
         displayName = "$STR_ACR_KITBAG";
 		hiddenSelectionsTextures[] = {"\acr_a3_characters\data\ACR_Batoh.paa"};
-		picture = "\acr_a3_characters\data\UI\ikona_ACR_batoh02.paa"; //ikona
+		picture = "\acr_a3_characters\data\UI\ikona_ACR_batoh.paa"; //ikona
 		author = "$STR_ACR";
         maximumLoad = 200;
         mass = 25;
