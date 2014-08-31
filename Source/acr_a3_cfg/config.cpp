@@ -79,8 +79,8 @@ class cfgWeapons
     class ACR_blk_BasicBody: Uniform_Base
     {
         scope = 2;
-        displayName = "ACR_blk_BasicBody";
-        picture = "\A3\characters_f\data\ui\icon_U_BasicBody_ca.paa";
+        displayName = "$STR_ACR_UNDERWEAR";
+        picture = "\acr_a3_characters\data\UI\ikona_ACR_underwear.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
 
         class ItemInfo : UniformItem

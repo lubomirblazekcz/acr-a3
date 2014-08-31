@@ -13,6 +13,10 @@
 			<English>Men</English>
 			<Czech>Muži</Czech>
 		</Key>
+		<Key ID="STR_ACR_UNDERWEAR">
+			<English>ACR Underwear</English>
+			<Czech>AČR Spodní prádlo</Czech>
+		</Key>
 		<Key ID="STR_ACR_MENVZ95">
 			<English>Men (vz. 95)</English>
 			<Czech>Muži (vz. 95)</Czech>
