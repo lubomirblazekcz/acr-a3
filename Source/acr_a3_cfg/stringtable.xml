@@ -333,5 +333,13 @@
             <English>[ACR] O Pos</English>
             <Czech>[AČR] O Pos</Czech>
         </Key>
+        <Key ID="STR_ACR_9MM_SUPP">
+            <English>9mm Suppressor (ACR)</English>
+            <Czech>9mm Tlumič (AČR)</Czech>
+        </Key>
+        <Key ID="STR_A3_BIPOD">
+            <English>Bipod (ACR)</English>
+            <Czech>Dvojnožka (AČR)</Czech>
+        </Key>        
     </Package>
 </Project>

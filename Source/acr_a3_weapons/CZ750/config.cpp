@@ -200,5 +200,4 @@ class CfgWeapons
             };
         };
     };
-	#include "accessory.h"
 };

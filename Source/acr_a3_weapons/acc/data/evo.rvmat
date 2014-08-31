@@ -1,6 +1,6 @@
 class StageTI
 {
-texture="acr_a3_weapons\SP01Phantom\data\evo_ti_ca.tga";
+texture="acr_a3_weapons\acc\data\evo_ti_ca.tga";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="acr_a3_weapons\SP01Phantom\data\evo_nohq.tga";
+	texture="acr_a3_weapons\acc\data\evo_nohq.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="acr_a3_weapons\SP01Phantom\data\evo_as.tga";
+	texture="acr_a3_weapons\acc\data\evo_as.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="acr_a3_weapons\SP01Phantom\data\evo_smdi.tga";
+	texture="acr_a3_weapons\acc\data\evo_smdi.tga";
 	uvSource="tex";
 	class uvTransform
 	{
