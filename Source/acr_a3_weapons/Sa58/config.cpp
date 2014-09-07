@@ -262,6 +262,7 @@ class CfgWeapons
 		};
 		aiDispersionCoefY = 3;
 		aiDispersionCoefX = 2;
+		drySound[] = {"A3\sounds_f\weapons\Other\dry_1","db-5",1,10};
 		reloadMagazineSound[] = {"A3\sounds_f\weapons\reloads\new_ebr",1.0,1,10};
 	};
 	class acr_a3_Sa58P: acr_a3_Sa58_base
