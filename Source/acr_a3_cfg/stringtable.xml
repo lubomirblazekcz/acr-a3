@@ -61,6 +61,10 @@
             <English>Infantry Squad (MOUT)</English>
             <Czech>Družstvo střelců (MOUT)</Czech>
         </Key>
+        <Key ID="STR_ACR_INF_MOUT_DES">
+            <English>Infantry Squad (MOUT Desert)</English>
+            <Czech>Družstvo střelců (MOUT Pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_SNIPERS">
             <English>Sniper Team</English>
             <Czech>Odstřelovačský tým</Czech>
@@ -177,13 +181,17 @@
             <English>ACR Uniform (MOUT)</English>
             <Czech>AČR Uniforma (MOUT)</Czech>
         </Key>
-        <Key ID="STR_ACR_UNIFORM_MOUT_tshirt">
-            <English>ACR Uniform (MOUT, Tshirt)</English>
-            <Czech>AČR Uniforma (MOUT, triko)</Czech>
-        </Key>
         <Key ID="STR_ACR_UNIFORM_MOUT_vest">
             <English>ACR Uniform (MOUT, Sleeves)</English>
             <Czech>AČR Uniforma (MOUT, rukávy)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT_DES">
+            <English>ACR Uniform (MOUT Desert)</English>
+            <Czech>AČR Uniforma (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT_DES_vest">
+            <English>ACR Uniform (MOUT Desert, Sleeves)</English>
+            <Czech>AČR Uniforma (MOUT Pouštní, rukávy)</Czech>
         </Key>
         <Key ID="STR_ACR_UNIFORM_DESERT">
             <English>ACR Uniform (Desert)</English>
