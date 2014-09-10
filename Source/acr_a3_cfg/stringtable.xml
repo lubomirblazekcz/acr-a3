@@ -297,6 +297,10 @@
             <English>Kamaz Fuel</English>
             <Czech>Kamaz Cisterna</Czech>
         </Key>
+        <Key ID="STR_ACR_KAMAZ_MED">
+            <English>Kamaz Medical</English>
+            <Czech>Kamaz Zdravotnický</Czech>
+        </Key>
         <Key ID="STR_ACR_ALCA_CAS">
             <English>L159 ALCA (CAS)</English>
             <Czech>L159 ALCA (CAS)</Czech>
