@@ -1,0 +1,96 @@
+class StageTI
+{
+	texture="Ca\Wheeled_ACR\Pandur\data\Pandur_kan_ti_ca.tga";
+};
+ambient[]={1,1,1,1};
+diffuse[]={1,1,1,1};
+forcedDiffuse[]={0,0,0,1};
+emmisive[]={0,0,0,1};
+specular[]={0.27600074,0.27600074,0.27600074,0.27500004};
+specularPower=85;
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage1
+{
+	texture="Ca\Wheeled_ACR\Pandur\data\Pandur_kan_NOHQ.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage2
+{
+	texture="CA\Data\Destruct\Metal_rough_Half_DT.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={10,0,0};
+		up[]={0,10,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage4
+{
+	texture="Ca\Wheeled_ACR\Pandur\data\Pandur_kan_AS.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage5
+{
+	texture="CA\Wheeled_ACR\Pandur\data\Pandur_kan_SMDI.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage6
+{
+	texture="#(ai,32,128,1)fresnel(1.56,1.99)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage7
+{
+	texture="ca\DATA\env_land_co.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};

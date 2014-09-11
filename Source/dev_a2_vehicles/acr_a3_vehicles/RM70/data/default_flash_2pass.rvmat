@@ -1,0 +1,46 @@
+// members
+
+ambient[] = 
+{
+	0,
+	0,
+	0,
+	5
+}; // array ambient[4]
+diffuse[] = 
+{
+	0,
+	0,
+	0,
+	1
+}; // array diffuse[4]
+forcedDiffuse[] = 
+{
+	0.005000,
+	0.005000,
+	0.005000,
+	0
+}; // array forcedDiffuse[4]
+emmisive[] = 
+{
+	0.500000,
+	0.500000,
+	0.500000,
+	1
+}; // array emmisive[4]
+specular[] = 
+{
+	0,
+	0,
+	0,
+	0
+}; // array specular[4]
+specularPower = 0;
+renderFlags[] = 
+{
+	"NoTiWrite",
+	"NoZWrite",
+	"AddBlend"
+}; // array renderFlags[3]
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

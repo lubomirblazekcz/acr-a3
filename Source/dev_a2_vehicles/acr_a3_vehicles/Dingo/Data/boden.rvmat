@@ -1,0 +1,91 @@
+class StageTI
+{
+	texture="CA\Wheeled_ACR\Dingo\Data\karosse_ti_ca.tga";
+};
+ambient[]={0.49400017,0.49400017,0.49400017,1};
+diffuse[]={0.49400017,0.49400017,0.49400017,1};
+forcedDiffuse[]={0,0,0.00058817776,0};
+emmisive[]={2.2411346e-008,2.2411346e-008,2.2411346e-008,1};
+specular[]={0.067000151,0.067000151,0.067000151,1};
+specularPower=100;
+PixelShaderID="super";
+VertexShaderID="super";
+class Stage1
+{
+	texture="CA\Wheeled_ACR\Dingo\Data\karosse_nohq.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	
+};
+class Stage2
+{
+	texture="CA\Wheeled_ACR\Dingo\Data\detail\Boden_dt.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={15,0,0};
+		up[]={0,15,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage4
+{
+	texture="CA\Wheeled_ACR\Dingo\Data\karosse2_as.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+	
+};
+class Stage5
+{
+	texture="CA\Wheeled_ACR\Dingo\Data\detail\Boden_smdi.tga";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={15,0,0};
+		up[]={0,15,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage6
+{
+	texture="#(ai,1,1,1)fresnel(1.02,0.01)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage7
+{
+	texture="CA\Data\env_land_co.tga";
+	uvSource="none";
+};
