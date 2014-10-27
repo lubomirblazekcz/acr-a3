@@ -15,7 +15,7 @@ class CfgVehicles {
 		displayName = "RT-1523G (ASIP) ACR";
 		descriptionShort = "RT-1523G (ASIP) ACR long range radio 20km";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\acr_a3_tfar\data\clf_nicecomm2_ACR_vz95_co.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3_tfar\data\chcipnievro.paa"};
 	};
 	class tf_rt1523g_big_acr_a3: tf_rt1523g {
 		displayName = "RT-1523G (ASIP) Big ACR";
