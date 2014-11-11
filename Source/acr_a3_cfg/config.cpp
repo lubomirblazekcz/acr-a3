@@ -274,7 +274,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_copy_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
-            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            mass = 70; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
             modelSides[] = {6}; /// available for all sides
@@ -294,7 +294,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
-            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            mass = 70; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
             modelSides[] = {6}; /// available for all sides

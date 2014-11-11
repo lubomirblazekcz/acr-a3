@@ -1,10 +1,8 @@
-#define _ARMA_
-
 class CfgPatches
 {
 	class acr_a3_rhs_replacement
 	{
-		units[] = {"ACR_A3_Mi_24v", "ACR_A3_Mi_24p", "ACR_A3_Mi17_base_CZ_EP1", "ACR_A3_Mi171Sh_rockets_CZ_EP1", "ACR_A3_Mi171Sh_medevac_CZ_EP1"};
+		units[] = {"ACR_A3_Mi_24v", "ACR_A3_Mi_24p", "ACR_A3_Mi17_base_CZ_EP1", "ACR_A3_Mi171Sh_rockets_CZ_EP1", "ACR_A3_Mi171Sh_medevac_CZ_EP1", "ACR_A3_UAZ_469", "ACR_A3_UAZ_469_Open"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		author = "$STR_ACR";
@@ -49,77 +47,157 @@ class CfgVehicles
             "rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa"
         };
     };
-        class RHS_Mi8AMT_vvs;
-        class RHS_Mi8AMTSh_vvs;
-        class RHS_Mi8mt_vvs;
-        class ACR_A3_Mi17_base_CZ_EP1: RHS_Mi8mt_vvs
+    class RHS_Mi8AMT_vvs;
+    class RHS_Mi8AMTSh_vvs;
+    class RHS_Mi8mt_vvs;
+    class ACR_A3_Mi17_base_CZ_EP1: RHS_Mi8mt_vvs
+    {
+        author = "$STR_ACR";
+        faction = "ACR";
+        crew = "ACR_Pilot";
+        scope = 2;
+        displayName = "Mi-17";
+        side = 1;
+        vehicleclass = "Air";
+        hiddenselectionstextures[] =
         {
-            author = "$STR_ACR";
-            faction = "ACR";
-            crew = "ACR_Pilot";
-            scope = 2;
-            displayName = "Mi-17";
-            side = 1;
-            vehicleclass = "Air";
-            hiddenselectionstextures[] =
+            "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
+            "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
+            "a3\data_f\clear_empty.paa",
+            "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
+            "a3\data_f\clear_empty.paa",
+            "a3\data_f\clear_empty.paa"
+        };
+    };
+    class ACR_A3_Mi171Sh_rockets_CZ_EP1: RHS_Mi8AMTSh_vvs
+    {
+        scope = 2;
+        displayName = "Mi-17 (Rockets)";
+        author = "$STR_ACR";
+        crew = "ACR_Pilot";
+        faction = "ACR";
+        side = 1;
+        vehicleclass = "Air";
+        hiddenselectionstextures[] =
+        {
+            "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
+            "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
+            "a3\data_f\clear_empty.paa",
+            "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
+            "a3\data_f\clear_empty.paa",
+            "a3\data_f\clear_empty.paa"
+        };
+    };
+    class ACR_A3_Mi171Sh_medevac_CZ_EP1: RHS_Mi8AMT_vvs
+    {
+        scope = 2;
+        displayName = "Mi-17 (Medevac)";
+        author = "$STR_ACR";
+        crew = "ACR_Pilot";
+        faction = "ACR";
+        side = 1;
+        vehicleclass = "Air";
+        hiddenselectionstextures[] =
+        {
+            "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
+            "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa",
+            "a3\data_f\clear_empty.paa",
+            "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
+            "a3\data_f\clear_empty.paa",
+            "a3\data_f\clear_empty.paa"
+        };
+        class TransportItems
+        {
+            class _xx_FirstAidKit
             {
-                "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
-                "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
-                "a3\data_f\clear_empty.paa",
-                "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
-                "a3\data_f\clear_empty.paa",
-                "a3\data_f\clear_empty.paa"
+                name = "FirstAidKit";
+                count = 30;
+            };
+            class _xx_Medikit
+            {
+                name = "Medikit";
+                count = 15;
             };
         };
-        class ACR_A3_Mi171Sh_rockets_CZ_EP1: RHS_Mi8AMTSh_vvs
+    };
+    class rhs_uaz_vdv;
+    class rhs_uaz_open_vdv;
+    class ACR_A3_UAZ_469: rhs_uaz_vdv
+    {
+        author = "$STR_ACR";
+        vehicleClass = "Car";
+        displayName = "UAZ-469";
+        scope = 2;
+        side = 1;
+        crew = "ACR_MOUT_Vojak01";
+        faction = "ACR";
+        hiddenSelections[]=
         {
-            scope = 2;
-            displayName = "Mi-17 (Rockets)";
-            author = "$STR_ACR";
-            crew = "ACR_Pilot";
-            faction = "ACR";
-            side = 1;
-            vehicleclass = "Air";
-            hiddenselectionstextures[] =
-            {
-                "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
-                "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
-                "a3\data_f\clear_empty.paa",
-                "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
-                "a3\data_f\clear_empty.paa",
-                "a3\data_f\clear_empty.paa"
-            };
+            "camo1",
+            "camog1",
+            "camog2",
+            "n1",				// 2 - 4 number system
+            "n2",
+            "n3",
+            "n4",
+            "i1",				// 6 - right army
+            "i2",				// 7 - left army
+            "i3",				// 8 - right platoon
+            "i4"				// 9 - left platoon
         };
-        class ACR_A3_Mi171Sh_medevac_CZ_EP1: RHS_Mi8AMT_vvs
+
+        hiddenSelectionsTextures[] =
         {
-            scope = 2;
-            displayName = "Mi-17 (Medevac)";
-            author = "$STR_ACR";
-            crew = "ACR_Pilot";
-            faction = "ACR";
-            side = 1;
-            vehicleclass = "Air";
-            hiddenselectionstextures[] =
-            {
-                "\acr_a3_rhs_replacement\data\mi17_body_acr_co.paa",
-                "\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa",
-                "a3\data_f\clear_empty.paa",
-                "rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa",
-                "a3\data_f\clear_empty.paa",
-                "a3\data_f\clear_empty.paa"
-            };
-            class TransportItems
-            {
-                class _xx_FirstAidKit
-                {
-                    name = "FirstAidKit";
-                    count = 30;
-                };
-                class _xx_Medikit
-                {
-                    name = "Medikit";
-                    count = 15;
-                };
-            };
+            "\acr_a3_rhs_replacement\data\uaz_acr_main_co.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"
         };
+    };
+    class ACR_A3_UAZ_469_Open: rhs_uaz_open_vdv
+    {
+        author = "$STR_ACR";
+        vehicleClass = "Car";
+        displayName = "UAZ-469 (Open)";
+        scope = 2;
+        side = 1;
+        crew = "ACR_MOUT_Vojak01";
+        faction = "ACR";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camog1",
+            "camog2",
+            "n1",				// 2 - 4 number system
+            "n2",
+            "n3",
+            "n4",
+            "i1",				// 6 - right army
+            "i2",				// 7 - left army
+            "i3",				// 8 - right platoon
+            "i4"				// 9 - left platoon
+        };
+
+        hiddenSelectionsTextures[] =
+        {
+            "\acr_a3_rhs_replacement\data\uaz_acr_main_co.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"
+        };
+    };
 };
