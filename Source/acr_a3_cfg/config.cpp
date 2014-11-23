@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"ACR_A3_Backpack_Carryall_vz95","ACR_A3_Backpack_Kitbag_vz95","ACRP_Vojak01","ACRP_Vojak02","ACRP_Vojak07","ACRP_Vojak03","ACRP_Vojak04","ACRP_Vojak05","ACRP_Vojak10","ACRP_Vojak06","ACRP_Des_Vojak06","ACRP_Des_Vojak01","ACRP_Des_Vojak02","ACRP_Des_Vojak03","ACRP_Des_Vojak04","ACRP_Des_Vojak05","ACRP_Des_Vojak07","ACRP_Des_Vojak10","ACR_Vojak01","ACR_Vojak02","ACR_Vojak07","ACR_Vojak03","ACR_Vojak04","ACR_Vojak05","ACR_Sniper","ACR_Sniper2","ACR_Sniper_Des","ACR_Sniper2_Des","ACR_Vojak10","ACR_Vojak06","ACR_Vojak12","ACR_MOUT_Vojak01","ACR_MOUT_Vojak02","ACR_MOUT_Vojak07","ACR_MOUT_Vojak03","ACR_MOUT_Vojak04","ACR_MOUT_Vojak05","ACR_MOUT_Vojak10","ACR_MOUT_Vojak06","ACR_MOUT_Des_Vojak01","ACR_MOUT_Des_Vojak02","ACR_MOUT_Des_Vojak07","ACR_MOUT_Des_Vojak03","ACR_MOUT_Des_Vojak04","ACR_MOUT_Des_Vojak05","ACR_MOUT_Des_Vojak10","ACR_MOUT_Des_Vojak06","ACR_Des_Vojak01","ACR_Des_Vojak02","ACR_Des_Vojak07","ACR_Des_Vojak03","ACR_Des_Vojak04","ACR_Des_Vojak05","ACR_Des_Vojak10","ACR_Des_Vojak06","ACR_Pilot","ACR_Dustojnik","ACR_Neozbrojeny","ACR_Pilot_des","ACR_Dustojnik_des","ACR_Neozbrojeny_des"};
 		weapons[] = {"V_ACR_A3_PlateCarrierIA2_vz95","V_ACR_A3_PlateCarrier1_vz95","V_ACR_A3_PlateCarrier2_vz95","V_ACR_A3_PlateCarrier1_rgr","V_ACR_A3_PlateCarrier2_rgr","V_ACR_A3_PlateCarrier1_khk","V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_HelmetIA_vz95","H_ACR_A3_HelmetIA_vz95_des","H_ACR_A3_HelmetB_rgr","H_ACR_A3_Beret_red","H_ACR_A3_Booniehat_vz95","H_ACR_A3_Cap_rgr","U_ACR_A3_CombatUniform","U_ACR_A3_CombatUniform_tshirt","U_ACR_A3_CombatUniform_vest","U_ACR_A3_CombatUniform_MOUT","U_ACR_A3_CombatUniform_MOUT_vest","U_ACR_A3_CombatUniform_Des","U_ACR_A3_CombatUniform_Des_tshirt","U_ACR_A3_CombatUniform_Des_vest","U_ACR_A3_HeliPilotCoveralls_rgr","U_ACR_A3_OfficerUniform_vz95","U_ACR_A3_SweaterUniform_vz95","U_ACR_A3_HeliPilotCoveralls_khk","U_ACR_A3_OfficerUniform_des","U_ACR_A3_SweaterUniform_des","U_ACR_A3_SniperGhillie","U_ACR_A3_SniperGhillie_Des","U_ACR_A3_CombatUniform_MOUT_Des","U_ACR_A3_CombatUniform_MOUT_Des_vest"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Weapons_F","A3_Characters_F_BLUFOR"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Characters_F_BLUFOR", "acr_a3_dubbingradio"};
 	};
 };
 class GenericNames
@@ -60,7 +60,7 @@ class cfgFactionClasses
 		priority = 6;
 		side = 1;
 		genericNames = "CzechMen";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		icon = "\acr_a3_characters\data\ACR_odznak.paa";
 		primarylanguage = "CZ_ACR";
 		backpack_tf_faction_radio_api = "tf_anprc155_big_acr_a3";
@@ -233,7 +233,7 @@ class cfgWeapons
 		picture = "\acr_a3_characters\data\UI\ikona_ACR_helma.paa";
         model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
 		author = "$STR_ACR";
-        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadGearItem
 		{
@@ -254,7 +254,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_helma_poust.paa";
         model   = "acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
         author = "$STR_ACR";
-        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo: HeadGearItem
         {
@@ -274,7 +274,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
-        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
@@ -295,7 +295,7 @@ class cfgWeapons
         picture = "\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
-        hiddenSelections[] = {"camo3"}; /// what selection in model could have different textures
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
@@ -832,7 +832,7 @@ class cfgVehicles
     {
         scope = 1;//1 = private and ensures it doesnt list as a character in the editor
         displayName = "ACR Example Underwear Character";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         model = "\A3\Characters_F\Common\basicbody";
 		genericNames = "CzechMen";
         uniformClass = "ACR_blk_BasicBody"; //Your underwear class in cfgweapons
@@ -856,7 +856,7 @@ class cfgVehicles
 	class ACR_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
@@ -887,7 +887,7 @@ class cfgVehicles
 	class ACR_Vojak02: B_Soldier_GL_F // Granátometčík
 	{
 		_generalMacro = "B_Soldier_GL_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		genericNames = "CzechMen";
@@ -918,7 +918,7 @@ class cfgVehicles
 	class ACR_Vojak03: B_soldier_AR_F
 	{
 		_generalMacro = "B_soldier_AR_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_B_SOLDIER_AR_F0";
@@ -951,7 +951,7 @@ class cfgVehicles
 	class ACR_Vojak04: B_soldier_M_F
 	{
 		_generalMacro = "B_soldier_M_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		head = "H_ACR_A3_HelmetIA_vz95";
@@ -975,7 +975,7 @@ class cfgVehicles
 	class ACR_Vojak05: B_medic_F
 	{
 		_generalMacro = "B_medic_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_AssaultPack_rgr_Medic";
@@ -999,7 +999,7 @@ class cfgVehicles
 	class ACR_Vojak06: B_Soldier_TL_F
 	{
 		_generalMacro = "B_Soldier_TL_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
@@ -1025,7 +1025,7 @@ class cfgVehicles
 	class ACR_Vojak07: B_soldier_repair_F
 	{
 		_generalMacro = "B_soldier_repair_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "ACR_A3_Backpack_Kitbag_vz95";
@@ -1050,7 +1050,7 @@ class cfgVehicles
 	class ACR_Vojak10: B_soldier_LAT_F
 	{
 		_generalMacro = "B_soldier_LAT_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		backpack = "B_AssaultPack_rgr_LAT";
@@ -1076,7 +1076,7 @@ class cfgVehicles
 	class ACR_Des_Vojak01: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
@@ -1107,7 +1107,7 @@ class cfgVehicles
 	class ACR_Des_Vojak02: B_Soldier_GL_F // Granátometčík
 	{
 		_generalMacro = "B_Soldier_GL_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		genericNames = "CzechMen";
@@ -1138,7 +1138,7 @@ class cfgVehicles
 	class ACR_Des_Vojak03: B_soldier_AR_F
 	{
 		_generalMacro = "B_soldier_AR_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_AR_F0"; // Kulometčík
@@ -1170,7 +1170,7 @@ class cfgVehicles
 	class ACR_Des_Vojak04: B_soldier_M_F
 	{
 		_generalMacro = "B_soldier_M_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_M_F0"; // Ostrostřelec
@@ -1193,7 +1193,7 @@ class cfgVehicles
 	class ACR_Des_Vojak05: B_medic_F
 	{
 		_generalMacro = "B_medic_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr_Medic";
@@ -1217,7 +1217,7 @@ class cfgVehicles
 	class ACR_Des_Vojak06: B_Soldier_TL_F
 	{
 		_generalMacro = "B_Soldier_TL_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "ACR_A3_Backpack_Carryall_vz95";
@@ -1242,7 +1242,7 @@ class cfgVehicles
 	class ACR_Des_Vojak07: B_soldier_repair_F
 	{
 		_generalMacro = "B_soldier_repair_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "ACR_A3_Backpack_Kitbag_vz95";
@@ -1267,7 +1267,7 @@ class cfgVehicles
 	class ACR_Des_Vojak10: B_soldier_LAT_F
 	{
 		_generalMacro = "B_soldier_LAT_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
 		backpack = "B_AssaultPack_rgr";
@@ -1293,7 +1293,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak01: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
@@ -1324,7 +1324,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak02: B_Soldier_GL_F // Granátometčík
     {
         _generalMacro = "B_Soldier_GL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         genericNames = "CzechMen";
@@ -1346,7 +1346,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak03: B_soldier_AR_F
     {
         _generalMacro = "B_soldier_AR_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         displayName = "$STR_B_SOLDIER_AR_F0"; // Kulometčík
@@ -1378,7 +1378,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak04: B_soldier_M_F
     {
         _generalMacro = "B_soldier_M_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR"; author = "$STR_ACR";
@@ -1406,7 +1406,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak05: B_medic_F
     {
         _generalMacro = "B_medic_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         backpack = "B_AssaultPack_rgr_Medic"; // Zdravotník
@@ -1430,7 +1430,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak06: B_Soldier_TL_F
     {
         _generalMacro = "B_Soldier_TL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         backpack = "B_Carryall_oli";
@@ -1454,7 +1454,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak07: B_soldier_repair_F
     {
         _generalMacro = "B_soldier_repair_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         backpack = "B_Kitbag_rgr";
@@ -1479,7 +1479,7 @@ class cfgVehicles
     class ACR_MOUT_Vojak10: B_soldier_LAT_F
     {
         _generalMacro = "B_soldier_LAT_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
         backpack = "B_AssaultPack_rgr_LAT";
@@ -1505,7 +1505,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak01: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
@@ -1536,7 +1536,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak02: B_Soldier_GL_F // Granátometčík
     {
         _generalMacro = "B_Soldier_GL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         genericNames = "CzechMen";
@@ -1558,7 +1558,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak03: B_soldier_AR_F
     {
         _generalMacro = "B_soldier_AR_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         displayName = "$STR_B_SOLDIER_AR_F0"; // Kulometčík
@@ -1590,7 +1590,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak04: B_soldier_M_F
     {
         _generalMacro = "B_soldier_M_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR"; author = "$STR_ACR";
@@ -1618,7 +1618,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak05: B_medic_F
     {
         _generalMacro = "B_medic_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         backpack = "B_AssaultPack_rgr_Medic"; // Zdravotník
@@ -1642,7 +1642,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak06: B_Soldier_TL_F
     {
         _generalMacro = "B_Soldier_TL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         backpack = "B_Carryall_oli";
@@ -1666,7 +1666,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak07: B_soldier_repair_F
     {
         _generalMacro = "B_soldier_repair_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         backpack = "B_Kitbag_rgr";
@@ -1691,7 +1691,7 @@ class cfgVehicles
     class ACR_MOUT_Des_Vojak10: B_soldier_LAT_F
     {
         _generalMacro = "B_soldier_LAT_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
         backpack = "B_AssaultPack_rgr_LAT";
@@ -1718,7 +1718,7 @@ class cfgVehicles
     class ACRP_Vojak01: B_recon_F // Zvěd
     {
         _generalMacro = "B_recon_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         genericNames = "CzechMen";
@@ -1741,7 +1741,7 @@ class cfgVehicles
     class ACRP_Vojak02: B_recon_JTAC_F // JTAC
     {
         _generalMacro = "B_recon_JTAC_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         genericNames = "CzechMen";
@@ -1763,7 +1763,7 @@ class cfgVehicles
     class ACRP_Vojak03: B_soldier_AR_F // Kulometčík
     {
         _generalMacro = "B_soldier_AR_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         displayName = "$STR_ACR_KULOMET_F";
@@ -1786,7 +1786,7 @@ class cfgVehicles
     class ACRP_Vojak04: B_recon_M_F  // Ostrostřelec
     {
         _generalMacro = "B_recon_M_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         genericNames = "CzechMen";
@@ -1809,7 +1809,7 @@ class cfgVehicles
     class ACRP_Vojak05: B_recon_medic_F // Zdravotník
     {
         _generalMacro = "B_recon_medic_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR"; author = "$STR_ACR";
@@ -1834,7 +1834,7 @@ class cfgVehicles
     class ACRP_Vojak06: B_recon_TL_F // Velitel týmu
     {
         _generalMacro = "B_recon_TL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         backpack = "ACR_A3_Backpack_Carryall_vz95";
@@ -1858,7 +1858,7 @@ class cfgVehicles
     class ACRP_Vojak07: B_recon_exp_F // Exp. specialsta
     {
         _generalMacro = "B_recon_exp_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         backpack = "ACR_A3_Backpack_Kitbag_vz95";
@@ -1881,7 +1881,7 @@ class cfgVehicles
     class ACRP_Vojak10: B_recon_LAT_F // Raketometčík
     {
         _generalMacro = "B_recon_LAT_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
         backpack = "B_AssaultPack_rgr_LAT";
@@ -1906,7 +1906,7 @@ class cfgVehicles
     class ACRP_Des_Vojak01: B_recon_F // Zvěd
     {
         _generalMacro = "B_recon_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         genericNames = "CzechMen";
@@ -1929,7 +1929,7 @@ class cfgVehicles
     class ACRP_Des_Vojak02: B_recon_JTAC_F // JTAC
     {
         _generalMacro = "B_recon_JTAC_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         genericNames = "CzechMen";
@@ -1951,7 +1951,7 @@ class cfgVehicles
     class ACRP_Des_Vojak03: B_soldier_AR_F // Kulometčík
     {
         _generalMacro = "B_soldier_AR_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         displayName = "$STR_ACR_KULOMET_F";
@@ -1974,7 +1974,7 @@ class cfgVehicles
     class ACRP_Des_Vojak04: B_recon_M_F  // Ostrostřelec
     {
         _generalMacro = "B_recon_M_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         genericNames = "CzechMen";
@@ -1997,7 +1997,7 @@ class cfgVehicles
     class ACRP_Des_Vojak05: B_recon_medic_F // Zdravotník
     {
         _generalMacro = "B_recon_medic_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         scope = 2;
         scopeCurator = 2;
         faction = "ACR"; author = "$STR_ACR";
@@ -2021,7 +2021,7 @@ class cfgVehicles
     class ACRP_Des_Vojak06: B_recon_TL_F // Velitel týmu
     {
         _generalMacro = "B_recon_TL_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         backpack = "B_Carryall_cbr";
@@ -2045,7 +2045,7 @@ class cfgVehicles
     class ACRP_Des_Vojak07: B_recon_exp_F // Exp. specialsta
     {
         _generalMacro = "B_recon_exp_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         backpack = "B_Kitbag_cbr";
@@ -2068,7 +2068,7 @@ class cfgVehicles
     class ACRP_Des_Vojak10: B_recon_LAT_F // Raketometčík
     {
         _generalMacro = "B_recon_LAT_F";
-        identitytypes[] = {"Head_Euro"};
+        identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0_Des"; //RECON
         backpack = "B_AssaultPack_cbr";
@@ -2093,7 +2093,7 @@ class cfgVehicles
     class ACR_Sniper: B_spotter_F
     {
         _generalMacro = "B_spotter_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         displayName = "$STR_B_SPOTTER_F0";
@@ -2119,7 +2119,7 @@ class cfgVehicles
     class ACR_Sniper2: B_sniper_F
     {
         _generalMacro = "B_sniper_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         displayName = "$STR_B_SNIPER_F0";
@@ -2142,7 +2142,7 @@ class cfgVehicles
     class ACR_Sniper_Des: B_spotter_F
     {
         _generalMacro = "B_spotter_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         displayName = "$STR_ACR_SPOTTER_DES";
@@ -2168,7 +2168,7 @@ class cfgVehicles
     class ACR_Sniper2_Des: B_sniper_F
     {
         _generalMacro = "B_sniper_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX04"; //SNIPERI
         displayName = "$STR_ACR_SNIPER_DES";
@@ -2192,7 +2192,7 @@ class cfgVehicles
 	class ACR_Pilot: B_Soldier_F
 	{
 		_generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_HELIPILOT_F0";
@@ -2214,7 +2214,7 @@ class cfgVehicles
     class ACR_Pilot_des: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_HELIPILOT_DES";
@@ -2236,7 +2236,7 @@ class cfgVehicles
 	class ACR_Dustojnik: B_Soldier_F //znackablabla
 	{
 		_generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_OFFICER_F0";
@@ -2260,7 +2260,7 @@ class cfgVehicles
     class ACR_Dustojnik_des: B_Soldier_F //znackablabla
     {
         _generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_OFFICER_DES";
@@ -2283,7 +2283,7 @@ class cfgVehicles
     class ACR_Neozbrojeny: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_B_SOLDIER_LITE_F0";
@@ -2309,7 +2309,7 @@ class cfgVehicles
     class ACR_Neozbrojeny_des: B_Soldier_F
     {
         _generalMacro = "B_Soldier_F";
-		identitytypes[] = {"Head_Euro"};
+		identitytypes[] = {"Head_Euro","Language_ACR_CZ"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_SOLDIER_LITE_DES";
