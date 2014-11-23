@@ -243,6 +243,7 @@ class cfgWeapons
 			armor = "3*0.5";
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		};
 	};
     class H_ACR_A3_HelmetIA_vz95_des: ItemCore
@@ -263,6 +264,7 @@ class cfgWeapons
             armor = "3*0.5";
             passThrough = 0.8;
             hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         };
     };
 	class H_ACR_A3_HelmetIA_Goggles_vz95: ItemCore 
@@ -283,6 +285,7 @@ class cfgWeapons
             armor = "3*0.5";
             passThrough = 0.8;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+            hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         };
     };
     class H_ACR_A3_HelmetIA_Goggles_vz95_des: ItemCore
@@ -303,6 +306,7 @@ class cfgWeapons
             armor = "3*0.5";
             passThrough = 0.8;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+            hiddenSelectionsTextures[] = {"\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         };
     };
     class H_ACR_A3_HelmetB_rgr: ItemCore
