@@ -62,6 +62,8 @@ class cfgFactionClasses
 		genericNames = "CzechMen";
 		identitytypes[] = {"Head_Euro"};
 		icon = "\acr_a3_characters\data\ACR_odznak.paa";
+		primarylanguage = "CZ_ACR";
+		backpack_tf_faction_radio_api = "tf_anprc155_big_acr_a3";
 	};
 };
 class cfgWeapons
