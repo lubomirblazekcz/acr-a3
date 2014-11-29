@@ -5,189 +5,30 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {"acr_a3_CZ750"};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Weapons_F","asdg_jointrails"};
+		requiredAddons[] = {"A3_Weapons_F"};
 		magazines[] = {"acr_a3_10Rnd_cz750_mag","acr_a3_10Rnd_cz750_mag_Tracer"};
 		ammo[] = {};
 	};
 };
-class Mode_SemiAuto;
-class asdg_FrontSideRail;
-class asdg_OpticRail1913;
-class asdg_OpticRail1913_short;
-class SlotInfo;
-class CowsSlot;
-class PointerSlot;
 class CfgMagazines
 {
-	class Default;
-	class CA_Magazine;
-	class acr_a3_10Rnd_cz750_mag: CA_Magazine
+	class CUP_10Rnd_762x51_CZ750;
+	class acr_a3_10Rnd_cz750_mag: CUP_10Rnd_762x51_CZ750
 	{
-		scope = 2;
-		displayName = "7.62x51mm 10rnd CZ 750 Mag";
-		author = "$STR_ACR";
-		picture = "\acr_a3_weapons\CZ750\data\UI\cz750_mag_ca.paa";
-		ammo = "B_762x51_Ball";
-		count = 10;
-		initSpeed = 790;
-		tracersEvery = 0;
-		lastRoundsTracer = 0;
-		descriptionShort = "7.62x51mm CZ750 magazine";
+		scope = 1;
 	};
-	class acr_a3_10Rnd_cz750_mag_Tracer: acr_a3_10Rnd_cz750_mag
+	class CUP_10Rnd_762x51_CZ750_Tracer;
+	class acr_a3_10Rnd_cz750_mag_Tracer: CUP_10Rnd_762x51_CZ750_Tracer
 	{
-		tracersEvery = 1;
-		lastRoundsTracer = 10;
-		displayName = "7.62x51mm 10rnd CZ 750 Tracer Mag";
-		author = "$STR_ACR";
-		picture = "\acr_a3_weapons\CZ750\data\UI\cz750_tracer_mag_ca.paa";
-		descriptionShort = "7.62x51mm CZ750 Tracer magazine";
-		displaynameshort = "Tracers";
+        scope = 1;
 	};
 };
 class CfgWeapons
 {
-	class Rifle_Base_F;
-	class Rifle_Long_Base_F: Rifle_Base_F
+    class CUP_srifle_CZ750;
+	class acr_a3_CZ750: CUP_srifle_CZ750
 	{
-		class WeaponSlotsInfo;
-	};
-	class UGL_F;
-	class acr_a3_CZ750_base: Rifle_Long_Base_F
-	{
-		scope = 0;
-		magazines[] = {"acr_a3_10Rnd_CZ750_mag_Tracer","acr_a3_10Rnd_CZ750_mag"};
-		reloadAction = "GestureReloadLRR";
-		maxZeroing = 2000;
-		maxRecoilSway = 0.0125;
-		swayDecaySpeed = 1.25;
-		class GunParticles
-		{
-			class FirstEffect
-			{
-				effectName = "SniperCloud";
-				positionName = "Usti hlavne";
-				directionName = "Konec hlavne";
-			};
-		};
-		opticsZoomMin = 0.375;
-		opticsZoomMax = 1.1;
-		opticsZoomInit = 0.75;
-		distanceZoomMin = 300;
-		distanceZoomMax = 300;
-		bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01",0.891251,1,25};
-		bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02",0.891251,1,25};
-		bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03",0.891251,1,25};
-		bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04",0.891251,1,25};
-		bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01",0.794328,1,25};
-		bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02",0.794328,1,25};
-		bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03",0.794328,1,25};
-		bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04",0.794328,1,25};
-		bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01",0.707946,1,25};
-		bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02",0.707946,1,25};
-		bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03",0.707946,1,25};
-		bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04",0.707946,1,25};
-		soundBullet[] = {"bullet1",0.083,"bullet2",0.083,"bullet3",0.083,"bullet4",0.083,"bullet5",0.083,"bullet6",0.083,"bullet7",0.083,"bullet8",0.083,"bullet9",0.083,"bullet10",0.083,"bullet11",0.083,"bullet12",0.083};
-		modes[] = {"Single","far_optic1","medium_optic2","far_optic2"};
-		descriptionShort = "CZ 750 S1 M1 Sniper rifle";
-		handAnim[] = {"OFP2_ManSkeleton","acr_a3_weapons\CZ750\Anims\M24.rtm"};
-		dexterity = 1.2;
-		selectionFireAnim = "muzzleFlash";
-		class Single: Mode_SemiAuto
-		{
-			dispersion = 0.00018;
-			soundContinuous = 0;
-			reloadTime = 1;
-			recoil = "recoil_single_gm6";
-			recoilProne = "recoil_single_prone_gm6";
-			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {"A3\sounds_f\weapons\closure\ebr-3",1.122018,1.2,30};
-				closure2[] = {"A3\sounds_f\weapons\closure\ebr-3",1.122018,1,30};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,1200};
-				begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,1200};
-				begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,1200};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33,"begin3",0.33};
-			};
-			minRange = 2;
-			minRangeProbab = 0.1;
-			midRange = 250;
-			midRangeProbab = 0.7;
-			maxRange = 350;
-			maxRangeProbab = 0.05;
-			aiRateOfFire = 3;
-			aiRateOfFireDistance = 500;
-		};
-		class far_optic1: Single
-		{
-			showToPlayer = 0;
-			minRange = 150;
-			minRangeProbab = 0.1;
-			midRange = 500;
-			midRangeProbab = 0.7;
-			maxRange = 1000;
-			maxRangeProbab = 0.3;
-			aiRateOfFire = 5;
-			aiRateOfFireDistance = 700;
-			requiredOpticType = 1;
-		};
-		class medium_optic2: Single
-		{
-			showToPlayer = 0;
-			minRange = 250;
-			minRangeProbab = 0.1;
-			midRange = 750;
-			midRangeProbab = 0.7;
-			maxRange = 1000;
-			maxRangeProbab = 0.3;
-			aiRateOfFire = 6.0;
-			aiRateOfFireDistance = 1000;
-			requiredOpticType = 2;
-		};
-		class far_optic2: far_optic1
-		{
-			minRange = 500;
-			minRangeProbab = 0.1;
-			midRange = 1050;
-			midRangeProbab = 0.7;
-			maxRange = 2000;
-			maxRangeProbab = 0.3;
-			aiRateOfFire = 8;
-			aiRateOfFireDistance = 2000;
-			requiredOpticType = 2;
-		};
-		reloadMagazineSound[] = {"A3\Sounds_F\weapons\M320\M320_reload",1.0,1,10};
-		drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.501187,1,20};
-	};
-	class acr_a3_CZ750: acr_a3_CZ750_base
-	{
-		scope = 2;
-		displayName = "CZ 750 S1 M1";
-		author = "$STR_ACR";
-		model = "acr_a3_weapons\CZ750\CZ750.p3d";
-		picture = "\acr_a3_weapons\CZ750\data\UI\gear_cz750_x_ca.paa";
-		weaponInfoType = "RscWeaponZeroing";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 100;
-			allowedSlots[] = {901};
-			class MuzzleSlot: SlotInfo
-			{
-				compatibleItems[] = {};
-			};
-			class CowsSlot: CowsSlot{};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[] = {"ACR_A3_bipod"};
-			};
-			class asdg_OpticRail_acr_a3_CZ750: asdg_OpticRail1913_short{};
-		};
+		scope = 1;
 	};
     class acr_a3_CZ750_SOS: acr_a3_CZ750
     {
