@@ -22,22 +22,22 @@ class cfgVehicles {
 
             class _xx_acr_a3_30Rnd_Sa58_mag
             {
-                magazine = "acr_a3_30Rnd_Sa58_mag";
+                magazine = "CUP_30Rnd_Sa58_M";
                 count = 30;
             };
             class _xx_acr_a3_30Rnd_Sa58_mag_TracerG
             {
-                magazine = "acr_a3_30Rnd_Sa58_mag_TracerG";
+                magazine = "CUP_30Rnd_Sa58_M_TracerG";
                 count = 30;
             };
             class _xx_acr_a3_30Rnd_Sa58_mag_TracerR
             {
-                magazine = "acr_a3_30Rnd_Sa58_mag_TracerR";
+                magazine = "CUP_30Rnd_Sa58_M_TracerR";
                 count = 30;
             };
             class _xx_acr_a3_30Rnd_Sa58_mag_TracerY
             {
-                magazine = "acr_a3_30Rnd_Sa58_mag_TracerY";
+                magazine = "CUP_30Rnd_Sa58_M_TracerY";
                 count = 30;
             };
             class _xx_30Rnd_556x45_Stanag
@@ -62,17 +62,22 @@ class cfgVehicles {
             };
             class _xx_acr_a3_10Rnd_cz750_mag
             {
-                magazine = "acr_a3_10Rnd_cz750_mag";
+                magazine = "CUP_10Rnd_762x51_CZ750";
                 count = 30;
             };
             class _xx_acr_a3_10Rnd_cz750_mag_Tracer
             {
-                magazine = "acr_a3_10Rnd_cz750_mag_Tracer";
+                magazine = "CUP_10Rnd_762x51_CZ750_Tracer";
                 count = 30;
             };
             class _xx_16Rnd_9x21_Mag
             {
                 magazine = "16Rnd_9x21_Mag";
+                count = 30;
+            };
+            class _xx_CUP_18Rnd_9x19_Phantom
+            {
+                magazine = "CUP_18Rnd_9x19_Phantom";
                 count = 30;
             };
             class _xx_30Rnd_9x21_Mag
@@ -207,16 +212,6 @@ class cfgVehicles {
             class _xx_muzzle_snds_L
             {
                 name = "muzzle_snds_L";
-                count = 30;
-            };
-            class _xx_ACR_A3_bipod
-            {
-                name = "ACR_A3_bipod";
-                count = 30;
-            };
-            class _xx_ACR_A3_9mm_supp
-            {
-                name = "ACR_A3_9mm_supp";
                 count = 30;
             };
         };
