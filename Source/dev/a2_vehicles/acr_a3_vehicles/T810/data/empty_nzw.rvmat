@@ -1,6 +1,0 @@
-// members
-
-renderFlags[] = 
-{
-	"NoZWrite"
-}; // array renderFlags[1]
