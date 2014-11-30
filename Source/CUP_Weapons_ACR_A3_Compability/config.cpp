@@ -21,6 +21,11 @@ class CfgWeapons
             magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
         };
     };
+    class CUP_arifle_CZ805_B_Base;
+    class CUP_arifle_CZ805_B_GL: CUP_arifle_CZ805_B_Base
+    {
+        model = "\CUP_Weapons_ACR_A3_Compability\data\CUP_CZ_805B_GL.p3d";
+    };
     class Rifle_Long_Base_F;
     class CUP_lmg_M60A4: Rifle_Long_Base_F {
         magazines[] += {"acr_a3_100Rnd_762x51_B_M60E4"};
@@ -605,4 +610,8 @@ class CfgMagazines
 	{
         scope = 2;
 	};
+    class CUP_MAAWS_HEDP_M: CA_LauncherMagazine
+    {
+        picture = "\CUP_Weapons_ACR_A3_Compability\data\m_maaws_co.paa";
+    };
 };

@@ -2340,10 +2340,10 @@ class cfgVehicles
         transportMaxWeapons = 50000;
         transportMaxMagazines = 200000;
         transportMaxBackpacks = 2000;
-        class eventHandlers
-        {
-            init = "[""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
-        };
+//        class eventHandlers
+//        {
+//            init = "[""AmmoboxInit"",[_this select 0,false,{true}]] call BIS_fnc_arsenal;";
+//        };
         class TransportMagazines {};
         class TransportWeapons {};
         class TransportItems {

@@ -105,7 +105,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_MRCO";
+                item = "CUP_optic_ACOG";
             };
             class LinkedItemsAcc
             {
@@ -137,7 +137,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_Hamr";
+                item = "CUP_optic_ZDDot";
             };
             class LinkedItemsAcc
             {
@@ -256,10 +256,10 @@ class cfgVehicles {
         transportMaxWeapons = 50000;
         transportMaxMagazines = 200000;
         transportMaxBackpacks = 2000;
-        class eventHandlers
-        {
-            init = "[""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
-        };
+//        class eventHandlers
+//        {
+//            init = "[""AmmoboxInit"",[_this select 0,false,{true}]] call BIS_fnc_arsenal;";
+//        };
         class TransportMagazines {
             class _xx_CUP_MAAWS_HEAT_M
             {
@@ -450,12 +450,12 @@ class cfgVehicles {
             };
             class _xx_CUP_arifle_CZ805B
             {
-                weapon = "CUP_arifle_CZ805B";
+                weapon = "CUP_arifle_CZ805_B";
                 count = 30;
             };
             class _xx_CUP_arifle_CZ805B_GL
             {
-                weapon = "CUP_arifle_CZ805B_GL";
+                weapon = "CUP_arifle_CZ805_B_GL";
                 count = 30;
             };
             class _xx_acr_a3_M60E4
@@ -538,7 +538,8 @@ class cfgVehicles {
             class _xx_CUP_optic_ACOG
             {
                 name = "CUP_optic_ACOG";
-                count =
+                count = 30;
+            };
             class _xx_optic_Arco
             {
                 name = "optic_Arco";
