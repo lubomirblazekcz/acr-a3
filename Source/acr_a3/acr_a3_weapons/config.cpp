@@ -3,7 +3,7 @@ class CfgPatches
 
 	class acr_a3_weapons_pbo
 	{
-		units[] = { };
+		units[] = {"ACR_A3_WeaponsBox"};
 		weapons[] = { };
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"CUP_Weapons_WeaponsCore"};
