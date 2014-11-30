@@ -41,7 +41,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_Holosight";
+                item = "CUP_optic_ZDDot";
             };
             class LinkedItemsAcc
             {
@@ -57,7 +57,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_Holosight";
+                item = "CUP_optic_ZDDot";
             };
             class LinkedItemsAcc
             {
@@ -121,7 +121,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_MRCO";
+                item = "CUP_optic_ACOG";
             };
             class LinkedItemsAcc
             {
@@ -193,11 +193,41 @@ class CfgWeapons
     };
 
     class CUP_arifle_Sa58RIS1_Aco_Laser;
-    class acr_a3_Sa58RIS1_Aco_Laser: CUP_arifle_Sa58RIS1_Aco_Laser {};
+    class acr_a3_Sa58RIS1_Aco_Laser: CUP_arifle_Sa58RIS1_Aco_Laser
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "CUP_optic_TrijiconRx01_black";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
     class CUP_arifle_Sa58RIS2_Arco_Laser;
     class acr_a3_Sa58RIS2_Arco_Laser: CUP_arifle_Sa58RIS2_Arco_Laser {};
     class CUP_arifle_Sa58RIS1_camo_Aco_Laser;
-    class acr_a3_Sa58RIS1_camo_Aco_Laser: CUP_arifle_Sa58RIS1_camo_Aco_Laser {};
+    class acr_a3_Sa58RIS1_camo_Aco_Laser: CUP_arifle_Sa58RIS1_camo_Aco_Laser
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "CUP_optic_TrijiconRx01_desert";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
     class CUP_arifle_Sa58RIS2_camo_Arco_Laser;
     class acr_a3_Sa58RIS2_camo_Arco_Laser: CUP_arifle_Sa58RIS2_camo_Arco_Laser {};
     class CUP_hgun_Phantom;
@@ -226,8 +256,21 @@ class cfgVehicles {
         transportMaxWeapons = 50000;
         transportMaxMagazines = 200000;
         transportMaxBackpacks = 2000;
+        class eventHandlers
+        {
+            init = "[""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+        };
         class TransportMagazines {
-
+            class _xx_CUP_MAAWS_HEAT_M
+            {
+                magazine = "CUP_MAAWS_HEAT_M";
+                count = 30;
+            };
+            class _xx_CUP_MAAWS_HEDP_M
+            {
+                magazine = "CUP_MAAWS_HEDP_M";
+                count = 30;
+            };
             class _xx_acr_a3_30Rnd_Sa58_mag
             {
                 magazine = "CUP_30Rnd_Sa58_M";
@@ -268,9 +311,44 @@ class cfgVehicles {
                 magazine = "30Rnd_556x45_Stanag_Tracer_Yellow";
                 count = 30;
             };
+            class _xx_CUP_20Rnd_762x51_CZ805B
+            {
+                magazine = "CUP_20Rnd_762x51_CZ805B";
+                count = 30;
+            };
+            class _xx_CUP_20Rnd_TE1_Yellow_Tracer_762x51_CZ805B
+            {
+                magazine = "CUP_20Rnd_TE1_Yellow_Tracer_762x51_CZ805B";
+                count = 30;
+            };
+            class _xx_CUP_20Rnd_TE1_Red_Tracer_762x51_CZ805B
+            {
+                magazine = "CUP_20Rnd_TE1_Red_Tracer_762x51_CZ805B";
+                count = 30;
+            };
+            class _xx_CUP_20Rnd_TE1_Green_Tracer_762x51_CZ805B
+            {
+                magazine = "CUP_20Rnd_TE1_Green_Tracer_762x51_CZ805B";
+                count = 30;
+            };
+            class _xx_acr_a3_100Rnd_762x51_B_M60E4
+            {
+                magazine = "acr_a3_100Rnd_762x51_B_M60E4";
+                count = 30;
+            };
+            class _xx_CUP_50Rnd_UK59_762x54R_Tracer
+            {
+                magazine = "CUP_50Rnd_UK59_762x54R_Tracer";
+                count = 30;
+            };
             class _xx_acr_a3_10Rnd_cz750_mag
             {
                 magazine = "CUP_10Rnd_762x51_CZ750";
+                count = 30;
+            };
+            class _xx_CUP_5x_22_LR_17_HMR_M
+            {
+                magazine = "CUP_5x_22_LR_17_HMR_M";
                 count = 30;
             };
             class _xx_acr_a3_10Rnd_cz750_mag_Tracer
@@ -293,8 +371,28 @@ class cfgVehicles {
                 magazine = "30Rnd_9x21_Mag";
                 count = 30;
             };
+            class _xx_CUP_30Rnd_9x19_EVO
+            {
+                magazine = "CUP_30Rnd_9x19_EVO";
+                count = 30;
+            };
+            class _xx_CUP_10Rnd_9x19_Compact
+            {
+                magazine = "CUP_10Rnd_9x19_Compact";
+                count = 30;
+            };
+            class _xx_CUP_20Rnd_B_765x17_Ball_M
+            {
+                magazine = "CUP_20Rnd_B_765x17_Ball_M";
+                count = 30;
+            };
         };
         class TransportWeapons {
+            class _xx_CUP_launch_MAAWS
+            {
+                weapon = "CUP_launch_MAAWS";
+                count = 30;
+            };
             class _xx_acr_a3_Sa58P
             {
                 weapon = "acr_a3_Sa58P";
@@ -350,14 +448,39 @@ class cfgVehicles {
                 weapon = "acr_a3_CZ805_GL";
                 count = 30;
             };
-            class _xx_SMG_02_F
+            class _xx_CUP_arifle_CZ805B
             {
-                weapon = "SMG_02_F";
+                weapon = "CUP_arifle_CZ805B";
+                count = 30;
+            };
+            class _xx_CUP_arifle_CZ805B_GL
+            {
+                weapon = "CUP_arifle_CZ805B_GL";
+                count = 30;
+            };
+            class _xx_acr_a3_M60E4
+            {
+                weapon = "acr_a3_M60E4";
+                count = 30;
+            };
+            class _xx_CUP_lmg_UK59
+            {
+                weapon = "CUP_lmg_UK59";
+                count = 30;
+            };
+            class _xx_CUP_smg_EVO
+            {
+                weapon = "CUP_smg_EVO";
                 count = 30;
             };
             class _xx_acr_a3_CZ750
             {
                 weapon = "acr_a3_CZ750";
+                count = 30;
+            };
+            class _xx_CUP_srifle_CZ550
+            {
+                weapon = "CUP_srifle_CZ550";
                 count = 30;
             };
             class _xx_acr_a3_P07
@@ -370,8 +493,52 @@ class cfgVehicles {
                 weapon = "acr_a3_SP01";
                 count = 30;
             };
+            class _xx_CUP_hgun_Compact
+            {
+                weapon = "CUP_hgun_Compact";
+                count = 30;
+            };
+            class _xx_CUP_hgun_SA61
+            {
+                weapon = "CUP_hgun_SA61";
+                count = 30;
+            };
         };
         class TransportItems {
+            class _xx_CUP_optic_MAAWS_Scope
+            {
+                name = "CUP_optic_MAAWS_Scope";
+                count = 30;
+            };
+            class _xx_CUP_optic_ZDDot
+            {
+                name = "CUP_optic_ZDDot";
+                count = 30;
+            };
+            class _xx_CUP_optic_MRad
+            {
+                name = "CUP_optic_MRad";
+                count = 30;
+            };
+            class _xx_CUP_acc_CZ_M3X
+            {
+                name = "CUP_acc_CZ_M3X";
+                count = 30;
+            };
+            class _xx_CUP_optic_TrijiconRx01_desert
+            {
+                name = "CUP_optic_TrijiconRx01_desert";
+                count = 30;
+            };
+            class _xx_CUP_optic_TrijiconRx01_black
+            {
+                name = "CUP_optic_TrijiconRx01_black";
+                count = 30;
+            };
+            class _xx_CUP_optic_ACOG
+            {
+                name = "CUP_optic_ACOG";
+                count =
             class _xx_optic_Arco
             {
                 name = "optic_Arco";
