@@ -205,10 +205,7 @@ class CfgWeapons
     {
         scope = 1;
     };
-    class Rifle_Long_Base_F;
-    class CUP_lmg_M60A4: Rifle_Long_Base_F {
-        magazines[] = {"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M","acr_a3_100Rnd_762x51_B_M60E4"};
-    };
+    class CUP_lmg_M60A4;
     class acr_a3_M60E4: CUP_lmg_M60A4
     {
         scope = 1;

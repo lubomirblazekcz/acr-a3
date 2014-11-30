@@ -11,158 +11,172 @@ class CfgPatches
 
 class CfgWeapons
 {
+    class Rifle_Base_F;
+    class UGL_F;;
+    class CUP_arifle_CZ805_Base: Rifle_Base_F
+    {
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","CUP_20Rnd_556x45_Stanag"};
+        class CUP_CZ_805_G1: UGL_F
+        {
+            magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        };
+    };
+    class Rifle_Long_Base_F;
+    class CUP_lmg_M60A4: Rifle_Long_Base_F {
+        magazines[] += {"acr_a3_100Rnd_762x51_B_M60E4"};
+    };
 	class ItemCore;
 	class CUP_optic_SB_3_12x50_PMII: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_AN_PAS_13c2: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldMk4: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_HoloBlack: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_HoloWdl: CUP_optic_HoloBlack
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_HoloDesert: CUP_optic_HoloBlack
 	{
-        scope = 0;
+        scope = 1;
 	};
 	class CUP_optic_Eotech533: CUP_optic_HoloBlack
 	{
-        scope = 0;
+        scope = 1;
 	};
 	class CUP_optic_Eotech533Grey: CUP_optic_Eotech533
 	{
-        scope = 0;
+        scope = 1;
 	};
 	class CUP_optic_CompM4: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_ANPEQ_15: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_ANPEQ_2: CUP_acc_ANPEQ_15
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_SUSAT: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_CWS: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_Leupold_VX3: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_AN_PVS_10: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_CompM2_Black: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_CompM2_Woodland: CUP_optic_CompM2_Black
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_CompM2_Woodland2: CUP_optic_CompM2_Black
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_CompM2_Desert: CUP_optic_CompM2_Black
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_Flashlight: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_Flashlight_wdl: CUP_acc_Flashlight
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_Flashlight_desert: CUP_acc_Flashlight
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_XM8_light_module: CUP_acc_Flashlight
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_RCO: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_RCO_desert: CUP_optic_RCO
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_ANPEQ_2_camo: CUP_acc_ANPEQ_2
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_ANPEQ_2_desert: CUP_acc_ANPEQ_2
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_acc_ANPEQ_2_grey: CUP_acc_ANPEQ_2
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldM3LR: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldMk4_10x40_LRT_Desert: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldMk4_10x40_LRT_Woodland: CUP_optic_LeupoldMk4_10x40_LRT_Desert
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_ElcanM145: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_AN_PAS_13c1: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldMk4_CQ_T: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_ELCAN_SpecterDR: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_LeupoldMk4_MRT_tan: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_SB_11_4x20_PM: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 	class CUP_optic_AN_PVS_4: ItemCore
 	{
-		scope = 0;
+		scope = 1;
 	};
 
 	// ACR_A3 Weapons Attachments
