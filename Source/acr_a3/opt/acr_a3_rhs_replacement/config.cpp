@@ -6,7 +6,15 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		author = "$STR_ACR";
-		requiredAddons[] = {"RHS_A2_AirImport"};
+		requiredAddons[] = {"RHS_RU_Radio","RHS_A2_AirImport"};
+	};
+};
+class CfgVoice
+{
+    class BaseRUS;
+	class RUS: BaseRUS
+	{
+        identityTypes[] = {"default","Head_USMC","Head_USMC_CO","Head_USMC_Camo","Head_USMC_CO_Camo","Head_Default","Head_Special","LanguageRUS"};
 	};
 };
 class CfgVehicles

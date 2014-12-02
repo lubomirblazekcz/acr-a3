@@ -26,10 +26,6 @@ class CfgWeapons
     {
         model = "\CUP_Weapons_ACR_A3_Compability\data\CUP_CZ_805B_GL.p3d";
     };
-    class Rifle_Long_Base_F;
-    class CUP_lmg_M60A4: Rifle_Long_Base_F {
-        magazines[] += {"acr_a3_100Rnd_762x51_B_M60E4"};
-    };
 	class ItemCore;
 	class CUP_optic_SB_3_12x50_PMII: ItemCore
 	{

@@ -235,7 +235,11 @@ class CfgWeapons
     {
         scope = 1;
     };
-    class CUP_lmg_M60A4;
+
+    class Rifle_Long_Base_F;
+    class CUP_lmg_M60A4: Rifle_Long_Base_F {
+        magazines[] += {"acr_a3_100Rnd_762x51_B_M60E4"};
+    };
     class acr_a3_M60E4: CUP_lmg_M60A4
     {
         scope = 1;
