@@ -87,6 +87,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNDERWEAR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_underwear.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
+		author = "$STR_ACR";
 
         class ItemInfo : UniformItem
         {
