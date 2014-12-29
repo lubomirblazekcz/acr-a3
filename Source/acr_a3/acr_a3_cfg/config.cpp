@@ -115,7 +115,7 @@ class cfgWeapons
         {
             uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
             containerClass = "Supply120";
-            mass = 60;
+            mass = 80;
             armor = 30;
             passThrough = 0.5;
             hiddenSelections[] = {"camo"};
@@ -133,7 +133,7 @@ class cfgWeapons
         {
             armor = 20;
             containerclass = "Supply140";
-            mass = 60;
+            mass = 80;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
             hiddenSelections[] = {"camo"};
@@ -151,7 +151,7 @@ class cfgWeapons
         {
             armor = 30;
             containerclass = "Supply140";
-            mass = 80;
+            mass = 100;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
             hiddenSelections[] = {"camo"};
@@ -168,7 +168,7 @@ class cfgWeapons
         {
             armor = 20;
             containerclass = "Supply140";
-            mass = 60;
+            mass = 80;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
             hiddenSelections[] = {"camo"};
@@ -185,7 +185,7 @@ class cfgWeapons
         {
             armor = 30;
             containerclass = "Supply140";
-            mass = 80;
+            mass = 100;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
             hiddenSelections[] = {"camo"};
@@ -202,7 +202,7 @@ class cfgWeapons
         {
             armor = 20;
             containerclass = "Supply140";
-            mass = 60;
+            mass = 80;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
             hiddenSelections[] = {"camo"};
@@ -219,7 +219,7 @@ class cfgWeapons
         {
             armor = 30;
             containerclass = "Supply140";
-            mass = 80;
+            mass = 100;
             passthrough = 0.5;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
             hiddenSelections[] = {"camo"};
