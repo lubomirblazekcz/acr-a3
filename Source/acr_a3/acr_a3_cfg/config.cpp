@@ -16,31 +16,31 @@ class CfgVehicleClasses
 {
 	class ACRX0
 	{
-		displayName = "$STR_ACR_MENVZ95REC"; //Maj bonnie hatku a co ja vim
+		displayName = "$STR_ACR_MENVZ95REC"; // VZ95 Specialni
 	};
     class ACRX0_Des
     {
-        displayName = "$STR_ACR_MENVZ95REC_DES"; //Maj bonnie hatku a co ja vim
+        displayName = "$STR_ACR_MENVZ95REC_DES"; // VZ95 Des Specialni
     };
 	class ACRX00
 	{
-		displayName = "$STR_ACR_MEN"; //vz. 95 zakladni vojaci a pilot STRINGTABLETEXT: Men
+		displayName = "$STR_ACR_MEN"; //vz. 95 zakladni vojaci a piloti STRINGTABLETEXT: Men
 	};
 	class ACRX01
 	{
-		displayName = "$STR_ACR_MENVZ95"; //lesni kokoti STRINGTABLETEXT: Men (vz. 95)
+		displayName = "$STR_ACR_MENVZ95"; // vz.95 STRINGTABLETEXT: Men (vz. 95)
 	};
 	class ACRX02
 	{
-		displayName = "$STR_ACR_MEN_MOUT"; //MOUT kokoti
+		displayName = "$STR_ACR_MEN_MOUT"; //MOUT
 	};
 	class ACRX02_DES
 	{
-		displayName = "$STR_ACR_MEN_MOUT_DES"; //MOUT kokoti
+		displayName = "$STR_ACR_MEN_MOUT_DES"; //MOUT Des
 	};
 	class ACRX03
 	{
-		displayName = "$STR_ACR_MEN_DESERT"; //poustni curaci
+		displayName = "$STR_ACR_MEN_DESERT"; // vz.95 Des
 	};
 	class ACRX04
 	{
@@ -238,10 +238,11 @@ class cfgWeapons
 		class ItemInfo: HeadGearItem
 		{
             uniformModel = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
-			mass = 70;
+			mass = 40;
 			modelSides[] = {3,1};
-			armor = "3*0.5";
-			passThrough = 0.8;
+            allowedSlots[] = {901,605};
+			armor = 4;
+			passThrough = 0.5;
 			hiddenSelections[] = {"camo"};
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		};
@@ -259,10 +260,11 @@ class cfgWeapons
         class ItemInfo: HeadGearItem
         {
             uniformModel = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
-            mass = 70;
+            mass = 40;
             modelSides[] = {3,1};
-            armor = "3*0.5";
-            passThrough = 0.8;
+            allowedSlots[] = {901,605};
+            armor = 4;
+            passThrough = 0.5;
             hiddenSelections[] = {"camo"};
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         };
@@ -278,12 +280,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
-            mass = 70; /// combined weight and volume of the cap, this equals to single magazine
+            mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
-            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
-            modelSides[] = {6}; /// available for all sides
-            armor = "3*0.5";
-            passThrough = 0.8;
+            allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {3,1}; /// available for all sides
+            armor = 4;
+            passThrough = 0.5;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         };
@@ -299,12 +301,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
-            mass = 70; /// combined weight and volume of the cap, this equals to single magazine
+            mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
-            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
-            modelSides[] = {6}; /// available for all sides
-            armor = "3*0.5";
-            passThrough = 0.8;
+            allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {3,1}; /// available for all sides
+			armor = 4;
+			passThrough = 0.5;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         };
@@ -321,11 +323,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Prilba2.paa"};
         class ItemInfo: HeadGearItem
         {
-            uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
-            mass = 70;
-            modelSides[] = {3,1};
-            armor = "3*0.5";
-            passThrough = 0.8;
+			mass = 50;
+			uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+			modelSides[] = {3,1};
+            allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
+			armor = 5;
+			passThrough = 0.5;
             hiddenSelections[] = {"camo"};
         };
     };
@@ -342,7 +345,7 @@ class cfgWeapons
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\beret_ACR.p3d";  /// what model is used for this cap
-            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
+			allowedSlots[] = {801,901,701,605};
             modelSides[] = {6}; /// available for all sides
             armor = 0;  /// this cap doesn't provide any protection
             passThrough = 1; /// this cap doesn't provide any protection
@@ -362,9 +365,10 @@ class cfgWeapons
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
+			allowedSlots[] = {801,901,701,605};
 			mass = 10;
 			modelSides[] = {3,1};
-			armor = "0";
+			armor = 0;
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
 		};
@@ -382,9 +386,10 @@ class cfgWeapons
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
+			allowedSlots[] = {801,901,701,605};
 			mass = 10;
 			modelSides[] = {3,1};
-			armor = "0";
+			armor = 0;
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
 		};
@@ -402,9 +407,10 @@ class cfgWeapons
 		class ItemInfo: HeadGearItem
 		{
 			uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
+			allowedSlots[] = {801,901,701,605};
 			mass = 10;
 			modelSides[] = {3,1};
-			armor = "0";
+			armor = 0;
 			passThrough = 0.8;
 			hiddenSelections[] = {"camo"};
 		};
@@ -422,9 +428,10 @@ class cfgWeapons
         class ItemInfo: HeadGearItem
         {
             uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
+			allowedSlots[] = {801,901,701,605};
             mass = 10;
             modelSides[] = {3,1};
-            armor = "0";
+            armor = 0;
             passThrough = 0.8;
             hiddenSelections[] = {"camo"};
         };
@@ -442,10 +449,10 @@ class cfgWeapons
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\pakol_mic_ACR.p3d";  /// what model is used for this cap
-            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
-            modelSides[] = {6}; /// available for all sides
+			allowedSlots[] = {801,901,701,605};
+            modelSides[] = {3,1}; /// available for all sides
             armor = 0;  /// this cap doesn't provide any protection
-            passThrough = 1; /// this cap doesn't provide any protection
+            passThrough = 0.8; /// this cap doesn't provide any protection
             hiddenSelections[] = {"camo","camo1"}; /// what selection in model could have different textures
         };
     };
@@ -462,10 +469,10 @@ class cfgWeapons
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\boonie_ACR.p3d";  /// what model is used for this cap
-            allowedSlots[] = {UNIFORM_SLOT, BACKPACK_SLOT, VEST_SLOT, HEADGEAR_SLOT};   /// this cap is so small and flexible that it fits everywhere
-            modelSides[] = {6}; /// available for all sides
+			allowedSlots[] = {801,901,701,605};
+            modelSides[] = {3,1}; /// available for all sides
             armor = 0;  /// this cap doesn't provide any protection
-            passThrough = 1; /// this cap doesn't provide any protection
+            passThrough = 0.8; /// this cap doesn't provide any protection
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         };
     };
@@ -484,8 +491,8 @@ class cfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "ACR_Vojak01";
-			containerClass = "Supply20";
-			mass = 30;
+			containerClass = "Supply40";
+			mass = 40;
 		};
 	};
     class U_ACR_A3_CombatUniform_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
@@ -500,8 +507,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_Vojak02";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 20;
         };
     };
     class U_ACR_A3_CombatUniform_vest: U_B_CombatUniform_mcam_vest // Rukávy
@@ -516,8 +523,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_Vojak03";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -535,8 +542,8 @@ class cfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "ACR_Des_Vojak01";
-			containerClass = "Supply20";
-			mass = 30;
+			containerClass = "Supply40";
+			mass = 40;
 		};
 	};
     class U_ACR_A3_CombatUniform_Des_tshirt: U_B_CombatUniform_mcam_tshirt // Tričko
@@ -551,8 +558,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_Des_Vojak02";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 20;
         };
     };
     class U_ACR_A3_CombatUniform_Des_vest: U_B_CombatUniform_mcam_vest // Rukávy
@@ -567,8 +574,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_Des_Vojak03";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -586,8 +593,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_MOUT_Vojak01";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -603,8 +610,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_MOUT_Vojak03";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -622,8 +629,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_MOUT_Des_Vojak01";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -639,8 +646,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_MOUT_Des_Vojak03";
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
         };
     };
 
@@ -721,8 +728,8 @@ class cfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "ACR_Dustojnik"; //znackablabla
-			containerClass = "Supply20";
-			mass = 30;
+			containerClass = "Supply40";
+			mass = 40;
 			hiddenSelections[] = {"Camo1","Camo2"};
 		};
 	};
@@ -740,8 +747,8 @@ class cfgWeapons
         {
             uniformModel = "-";
             uniformClass = "ACR_Dustojnik_des"; //znackablabla
-            containerClass = "Supply20";
-            mass = 30;
+            containerClass = "Supply40";
+            mass = 40;
             hiddenSelections[] = {"Camo1","Camo2"};
         };
     };
