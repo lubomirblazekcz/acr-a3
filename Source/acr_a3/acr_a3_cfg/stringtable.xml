@@ -97,6 +97,10 @@
             <English>ACR Vest (vz. 95)</English>
             <Czech>AČR Vesta (vz. 95)</Czech>
         </Key>
+        <Key ID="STR_ACR_VEST_IA1">
+            <English>ACR Vest - Lite (vz. 95)</English>
+            <Czech>AČR Vesta - Lehká (vz. 95)</Czech>
+        </Key>
         <Key ID="STR_ACR_VEST2">
             <English>ACR Tactical Vest (vz. 95)</English>
             <Czech>AČR Taktická Vesta (vz. 95)</Czech>
@@ -360,6 +364,30 @@
         <Key ID="STR_A3_BIPOD">
             <English>Bipod (ACR)</English>
             <Czech>Dvojnožka (AČR)</Czech>
-        </Key>        
+        </Key>
+        <Key ID="str_a3_v_platecarrieria1_khkl0">
+            <Original>GA Carrier Lite (Khaki)</Original>
+            <English>GA Carrier Lite (Khaki)</English>
+            <Czech>GA nosič plátů - lehký (khaki)</Czech>
+            <French>Gilet léger AV (kaki)</French>
+            <German>Leichter Boden-Luft-Tragegurt (Khaki)</German>
+            <Italian>Gilet leggero aviazione (kaki)</Italian>
+            <Polish>Kabura GA (khaki)</Polish>
+            <Portuguese>Transportador leve de GA (cáqui)</Portuguese>
+            <Russian>GA облегченный жилет (хаки)</Russian>
+            <Spanish>Cartuchera de FAA ligera (caqui)</Spanish>
+        </Key>
+        <Key ID="str_a3_v_platecarrieria2_khkl0">
+            <Original>GA Carrier Rig (Khaki)</Original>
+            <English>GA Carrier Rig (Khaki)</English>
+            <Czech>GA nosič plátů (khaki)</Czech>
+            <French>Gilet modulable léger AV (kaki)</French>
+            <German>Boden-Luft-Tragegurt (Khaki)</German>
+            <Italian>Gilet Rig aviazione (kaki)</Italian>
+            <Polish>Kamizelka GA (khaki)</Polish>
+            <Portuguese>Suporte de transportador de GA (cáqui)</Portuguese>
+            <Russian>GA жилет (хаки)</Russian>
+            <Spanish>Cartuchera de FAA (caqui)</Spanish>
+        </Key>
     </Package>
 </Project>
