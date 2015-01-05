@@ -4,7 +4,7 @@ class CfgPatches
 {
 	class acr_a3_Mohawk
 	{
-		units[] = {"acr_a3_Mohawk_FG"};
+		units[] = {"ACR_Mohawk_FG"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F_Beta_Heli_Transport_02"};

@@ -57,11 +57,11 @@ class cfgFactionClasses
 	class ACR //class pod jakou frakci budou
 	{
 		displayName = "$STR_ACR_FACTION"; //jmeno frakce v editoru STRINGTABLETEXT: ACR
-		priority = 6;
+		priority = -6;
 		side = 1;
 		genericNames = "CzechMen";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-		icon = "\acr_a3\acr_a3_characters\data\ACR_odznak.paa";
+		icon = "\acr_a3\acr_a3_characters\data\icon_cz_co.paa";
 		backpack_tf_faction_radio_api = "tf_anprc155_big_acr_a3";
 	};
 };
@@ -70,6 +70,8 @@ class cfgWeapons
 	class ItemCore;
     class V_PlateCarrier1_rgr;
     class V_PlateCarrier2_rgr;
+    class V_PlateCarrierIA1_dgtl;
+    class V_PlateCarrierIA2_dgtl;
 	class HeadGearItem;
     class UniformItem;
     class Uniform_Base;
@@ -102,25 +104,83 @@ class cfgWeapons
             mat[] = {"A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
         };
     };
-    class V_ACR_A3_PlateCarrierIA2_vz95: ItemCore //Vesta
+    class V_ACR_A3_PlateCarrierIA1_vz95: V_PlateCarrierIA1_dgtl //Vesta
 	{
 		scope = 2;
-		model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
+    	model = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
-		displayName = "$STR_ACR_VEST";
+		displayName = "$STR_ACR_VEST_IA1";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
 		author = "$STR_ACR";
         class ItemInfo: VestItem
         {
-            uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+    		uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
             containerClass = "Supply120";
             mass = 80;
             armor = 30;
             passThrough = 0.5;
             hiddenSelections[] = {"camo"};
+		    hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
         };
 	};
+    class V_ACR_A3_PlateCarrierIA2_vz95: V_PlateCarrierIA2_dgtl //Vesta
+    {
+        scope = 2;
+        model = "\A3\Characters_F_beta\Indep\equip_ia_vest02";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
+        displayName = "$STR_ACR_VEST";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+            containerClass = "Supply120";
+            mass = 80;
+            armor = 30;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"};
+		    hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
+        };
+    };
+    class V_PlateCarrierIA1_khk: V_PlateCarrierIA1_dgtl
+    {
+        displayName = "$STR_a3_v_platecarrieria1_khkl0";
+        model = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip_ia_vest01_khk_co.paa"};
+        author = "$STR_A3_Bohemia_Interactive";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
+            containerClass = "Supply120";
+            mass = 60;
+            armor = 20;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip_ia_vest01_khk_co.paa"};
+        };
+    };
+    class V_PlateCarrierIA2_khk: V_PlateCarrierIA2_dgtl
+    {
+        displayName = "$STR_a3_v_platecarrieria2_khkl0";
+        model = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip_ia_vest01_khk_co.paa"};
+        author = "$STR_A3_Bohemia_Interactive";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+            containerClass = "Supply120";
+            mass = 80;
+            armor = 30;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip_ia_vest01_khk_co.paa"};
+        };
+    };
+
 	class V_ACR_A3_PlateCarrier1_vz95: V_PlateCarrier1_rgr //Vesta2
 	{
 		scope = 2;

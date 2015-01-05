@@ -1,5 +1,3 @@
-#define _ARMA_
-
 class CfgPatches
 {
 	class acr_a3_Hunter

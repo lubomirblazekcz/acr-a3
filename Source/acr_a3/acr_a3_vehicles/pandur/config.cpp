@@ -1,11 +1,12 @@
 class CfgPatches
 {
-	class acr_a3_Kamaz
+	class acr_a3_Pandur
 	{
 		units[] = {"ACR_Pandur"};
 		author = "$STR_ACR";
 		weapons[] = {};
 		magazines[] = {};
+		requiredAddons[] = {"A3_Armor_F_APC_Wheeled_03"};
 		ammo[] = {};
 	};
 };
