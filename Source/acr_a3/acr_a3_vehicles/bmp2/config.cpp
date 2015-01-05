@@ -3,10 +3,10 @@ class CfgPatches
 
 	class acr_a3_bmp2
 	{
-		units[] = { };
+		units[] = {"acr_a3_bmp2"};
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = { };
+		requiredAddons[] = {"A3_armor_f_beta_APC_Tracked_02"};
 	};
 };
 #include "CfgMoves.hpp"

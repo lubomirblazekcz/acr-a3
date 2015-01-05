@@ -40,7 +40,7 @@ class CfgVehicles {
 		author="reyhard (BIS port)";
 		displayName = "BMP-1";
 		accuracy = 0.3;
-
+		model="acr_a3\acr_a3_vehicles\bmp2\BMP2";
 		destrType=DestructDefault;
 		maxFordingDepth=1;
 		//takie tam
@@ -537,7 +537,7 @@ class CfgVehicles {
 
 				gunnerForceOptics = 1;
 
-				turretInfoType = "RscWeaponBMP2_FCS";
+				turretInfoType = "acr_a3_RscWeaponBMP2_FCS";
 				class ViewOptics: ViewOptics
 				{
 					initAngleX=0; minAngleX=-30; maxAngleX=+30;
