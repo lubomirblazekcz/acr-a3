@@ -47,27 +47,51 @@
         </Key>
         <Key ID="STR_ACR_RECON_VZ95">
             <English>Recon Team (vz.95)</English>
-            <Czech>Průzkumný tým (vz.95)</Czech>
+            <Czech>Průzkumné tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_VZ95_T">
+            <English>Recon Patrol (vz.95)</English>
+            <Czech>Průzkumný hlídka (vz.95)</Czech>
         </Key>
         <Key ID="STR_ACR_RECON_DES">
             <English>Recon Team (Desert)</English>
             <Czech>Průzkumný tým (pouštní)</Czech>
         </Key>
+        <Key ID="STR_ACR_RECON_DES_T">
+            <English>Recon Patrol (Desert)</English>
+            <Czech>Průzkumná hlídka (pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_INF_VZ95">
             <English>Infantry Squad (vz.95)</English>
             <Czech>Družstvo střelců (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_VZ95_T">
+            <English>Team (vz.95)</English>
+            <Czech>Tým (vz.95)</Czech>
         </Key>
         <Key ID="STR_ACR_INF_DES">
             <English>Infantry Squad (Desert)</English>
             <Czech>Družstvo střelců (Pouštní)</Czech>
         </Key>
+        <Key ID="STR_ACR_INF_DES_T">
+            <English>Team (Desert)</English>
+            <Czech>Tým (Pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_INF_MOUT">
             <English>Infantry Squad (MOUT)</English>
             <Czech>Družstvo střelců (MOUT)</Czech>
         </Key>
+        <Key ID="STR_ACR_INF_MOUT_T">
+            <English>Team (MOUT)</English>
+            <Czech>Tým (MOUT)</Czech>
+        </Key>
         <Key ID="STR_ACR_INF_MOUT_DES">
             <English>Infantry Squad (MOUT Desert)</English>
             <Czech>Družstvo střelců (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT_DES_T">
+            <English>Team (MOUT Desert)</English>
+            <Czech>Tým (MOUT Pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_SNIPERS">
             <English>Sniper Team</English>
@@ -76,6 +100,22 @@
         <Key ID="STR_ACR_SNIPERS_DES">
             <English>Sniper Team (Desert)</English>
             <Czech>Odstřelovačský tým (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MECH_VZ95">
+            <English>Mechanized Rifle Squad (vz.95)</English>
+            <Czech>Motostřelecké družstvo (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MECH_DES">
+            <English>Mechanized Rifle Squad (Desert)</English>
+            <Czech>Motostřelecké družstvo (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MOT_VZ95">
+            <English>Motorized Team (vz.95)</English>
+            <Czech>Motorizovaný tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MOT_DES">
+            <English>Motorized Team (Desert)</English>
+            <Czech>Motorizovaný tým (pouštní)</Czech>
         </Key>
         <Key ID="STR_ACR_BACKPACK">
             <English>ACR Carryall Backpack (vz. 95)</English>
