@@ -1,0 +1,41 @@
+// members
+
+surfaceInfo = "RDS_APC\BMP\penetration\armor_3mm_plate.bisurf";
+ambient[] = 
+{
+	0.490196,
+	0.592157,
+	0.556863,
+	1.000000
+}; // array ambient[4]
+diffuse[] = 
+{
+	0.490196,
+	0.592157,
+	0.556863,
+	1.000000
+}; // array diffuse[4]
+forcedDiffuse[] = 
+{
+	0.000000,
+	0.000000,
+	0.000000,
+	0.000000
+}; // array forcedDiffuse[4]
+emmisive[] = 
+{
+	0.000000,
+	0.000000,
+	0.000000,
+	1.000000
+}; // array emmisive[4]
+specular[] = 
+{
+	0.000000,
+	0.000000,
+	0.000000,
+	1.000000
+}; // array specular[4]
+specularPower = 1.000000;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

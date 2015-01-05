@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class acr_a3_Hunter
 	{
-		units[] = {"ACR_Hunter_Unarmed", "ACR_Hunter_HMG", "ACR_Hunter_GMG"};
+		units[] = {"ACR_Hunter_Unarmed", "ACR_Hunter_HMG", "ACR_Hunter_GMG","ACR_Hunter_HMG_02"};
 		author = "$STR_ACR";
 		weapons[] = {};
 		magazines[] = {};
