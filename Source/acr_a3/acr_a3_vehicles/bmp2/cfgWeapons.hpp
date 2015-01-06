@@ -17,20 +17,62 @@ class CfgAmmo
 	{
 		airfriction = -0.0002;
 	};
+    class ACR_A3_M_AT5_penetrator: Sh_125mm_APFSDS
+    {
+        RHA(600,1000)
+        hit=270;
 
+        rhs_ce_penetration="penetrator";
+        indirectHit = 0;
+        indirectHitRange = 0;
 
-	class RDS_R_PG9_AT;
-	class ACR_A3_Sh_PG15V: RDS_R_PG9_AT
+        explosive = 0;
+        typicalSpeed = 1000;
+        timeToLive = 3;
+        whistleOnFire = 1;
+        whistleDist = 14;
+        deflecting = 0;
+        model = "\A3\Weapons_f\empty";
+    };
+
+    class RocketCore;
+    class RocketBase: RocketCore{};
+    class ACR_A3_R_PG9_AT: RocketBase
+    {
+        rhs_ce_penetration="acr_a3_R_PG9_penetrator";
+        hit=220;indirectHit=10;indirectHitRange=1;
+        model=\acr_a3\acr_a3_vehicles\bmp2\PG9_Projectile;
+        initTime = 0.05;
+        explosive=1;
+        timeToLive=3;
+        cost=400;
+        maxSpeed=700;
+        thrustTime=1;
+        thrust=500;
+        fuseDistance = 5;
+        CraterEffects = "ATRocketCrater";
+        explosionEffects = "ATRocketExplosion";
+        smokeTrail = 2;
+        effectsMissile = "missile2";
+        whistleDist = 2;
+        effectsmissileinit = "RocketBackEffectsStaticRPG";
+    };
+    class acr_a3_R_PG9_penetrator: ACR_A3_M_AT5_penetrator
+    {
+        hit=200;
+        RHA(300,1000)
+    };
+	class ACR_A3_Sh_PG15V: ACR_A3_R_PG9_AT
 	{
-        soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
-        soundEngine[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 1.030957, 1.5, 300};
+		soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
+		soundEngine[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 1.030957, 1.5, 300};
 		manueuvrability=30;
 		//sideairfriction = 0.9;
 		airFriction = 0.27;
 		effectsmissileinit = "";
-		hit = 350;
+		hit = 250;
 		indirectHit = 11;
-		indirectHitRange = 0.15;
+		indirectHitRange = 1.15;
 		typicalSpeed = 700;
 		maxSpeed=720;
 		simulationstep=0.05;
@@ -44,7 +86,13 @@ class CfgAmmo
 		tracerStartTime = 0.1;
 		tracerEndTime = 2.3;
 		explosive=0.1;
+		rhs_ce_penetration="ACR_A3_Sh_PG15V_penetrator";
 	};
+    class ACR_A3_Sh_PG15V_penetrator : ACR_A3_M_AT5_penetrator
+    {
+        hit = 180;
+        RHA(400,1000)
+    };
 	class ACR_A3_Sh_OG15V: ACR_A3_Sh_PG15V
 	{
 		thrustTime=0.5;
@@ -52,12 +100,38 @@ class CfgAmmo
 		indirectHit = 35;
 		indirectHitRange = 7;
 		typicalSpeed = 700;
-		explosive = 0.8;
 		cost = 300;
 		airFriction = -0.00045;
 		timeToLive = 12;
+		explosive=1;
 	};
-	class RDS_M_AT5_AT;
+
+	class MissileBase;
+    class M_Titan_AT: MissileBase {};
+    class ACR_A3_M_AT5_AT: M_Titan_AT //AT-5 Spandrel /Konkurs 9M113
+	{
+		hit=520;indirectHit=12;indirectHitRange=1.2; // 600mm vs RHA
+		irLock=true;
+		rhs_ce_penetration="ACR_A3_M_AT5_penetrator";
+
+		manualControl=true;
+		maxControlRange=4000;
+		trackOversteer = 0.95;
+		trackLead = 0.9;
+		maneuvrability = 8;
+		explosive=1;
+
+		timeToLive = 25;
+		simulationStep = 0.005000;
+		sideAirFriction = 0.050000;
+		maxSpeed = 200;
+		initTime = 0.25;
+		thrustTime = 1.500000;
+		thrust = 210;
+		deflecting = 0;
+		fuseDistance = 5;
+		whistleDist = 2;
+	};
 };
 
 class CfgMagazines
@@ -80,7 +154,7 @@ class CfgMagazines
 	{
 		displayName = "PG-15V HEAT-FS";
 		displayNameShort = "HEAT-FS";
-		ammo = "RDS_Sh_PG15V";
+		ammo = "ACR_A3_Sh_PG15V";
 		count = 24;
 		initSpeed = 700;
 		nameSound = "heat";
@@ -91,7 +165,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "9M113 Konkurs";
 		displayNameShort = "9M113";
-		ammo=RDS_M_AT5_AT;
+		ammo=ACR_A3_M_AT5_AT;
 		initSpeed = 55.1688;
 		count=6;
 		maxLeadSpeed=10;
@@ -115,7 +189,34 @@ class CfgMagazines
 		initSpeed = 960;
 		ammo=ACR_A3_Sh_3UOF8;
 	};
-
+    class ACR_A3_1500Rnd_762x54_PKT: VehicleMagazine
+    {
+        scope = 2;
+        displayName = "PKT";
+        count = 1500;
+        reloadTime = 0.075000;
+        ammo = "B_762x51_Tracer_Green";
+        initSpeed = 900;
+        maxLeadSpeed = 200;
+        tracersEvery = 4;
+        nameSound = "mgun";
+    };
+    class ACR_A3_2000Rnd_762x54_PKT: ACR_A3_1500Rnd_762x54_PKT
+    {
+        count = 2000;
+    };
+    class ACR_A3_200Rnd_762x54_PKT: ACR_A3_1500Rnd_762x54_PKT
+    {
+        count = 200;
+    };
+    class ACR_A3_100Rnd_762x54_PKT: ACR_A3_1500Rnd_762x54_PKT
+    {
+        count = 100;
+    };
+    class ACR_A3_250Rnd_762x54_PKT: ACR_A3_1500Rnd_762x54_PKT
+    {
+        count = 250;
+    };
 
 
 };
@@ -144,7 +245,7 @@ class cfgWeapons
 		cursoraimon = "EmptyCursor";
 		//soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_2", 1.316228, 1.5, 700};
 
-soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
+        soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
 		minRange=5;
 		minRangeProbab=0.89999998;
 		midRange=700;
@@ -160,11 +261,11 @@ soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
  			class StandardSound
  			{
 				weaponSoundEffect = "DefaultRifle";
-				begin1[] ={"RDS_APC\BMP\gun73", 3.16228, 1, 1500};
+				begin1[] ={"acr_a3\acr_a3_vehicles\bmp2\gun73", 3.16228, 1, 1500};
 				soundBegin[] = {"begin1",1};
 			};
 			//soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_2", 1.316228, 1.5, 700};
-soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
+            soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
 			canlock = 2;
 			magazinereloadtime = 6;
 			reloadtime = 6;
@@ -229,7 +330,7 @@ soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
         class StandardSound
         {
             weaponSoundEffect = "DefaultRifle";
-            begin1[] ={"\RDS_StaticW\TOW\Javelin1",1.6228,1,1000};
+            begin1[] ={"\acr_a3\acr_a3_vehicles\bmp2\Javelin1",1.6228,1,1000};
             soundBegin[] = {"begin1",1};
         };
         reloadTime=12;
@@ -242,6 +343,26 @@ soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.630957, 1.5, 300};
 			"ACR_A3_8Rnd_AT5"
 		};
 
+	};
+    class LMG_M200;
+	class ACR_A3_PKT: LMG_M200 {
+		scope = 1;
+		displayName = "PKT";
+
+		class manual;
+		class close;
+		class short;
+		class medium;
+		class far;
+
+		aiDispersionCoefY = 7;
+		aiDispersionCoefX = 7;
+		magazines[] = 		{
+			"ACR_A3_1500Rnd_762x54_PKT","ACR_A3_2000Rnd_762x54_PKT",
+			"ACR_A3_250Rnd_762x54_PKT","ACR_A3_200Rnd_762x54_PKT",
+			"ACR_A3_100Rnd_762x54_PKT"
+		};
+		magazineReloadTime = 5;
 	};
 
 };

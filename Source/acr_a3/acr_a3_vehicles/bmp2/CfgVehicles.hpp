@@ -140,7 +140,7 @@ class CfgVehicles {
 						maxHorizontalRotSpeed = 1.8;	// 1 = 45°/sec
 						maxVerticalRotSpeed = 1.8;		// 1 = 45°/sec
 						stabilizedInAxes = StabilizedInAxesBoth;
-						soundServo[] = {"\RDS_Tank\data\gun_elevate2",0.0177828,1,10};
+						soundServo[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\gun_elevate2",0.0177828,1,10};
 						minElev = -6;
 						maxElev = 45;
 						initElev=0;
@@ -183,7 +183,7 @@ class CfgVehicles {
 							class Wide: ViewOptics
 							{
 								initFov = 0.7/4.75;
-								gunnerOpticsModel = "\RDS_Tank\t72\optika_T72_commander";
+								gunnerOpticsModel = "\acr_a3\acr_a3_vehicles\bmp2\optika_T72_commander";
 								gunnerOutOpticsModel = "\A3\weapons_f\reticle\optics_empty";
 								visionMode[] = {"Normal"};
 							};
@@ -251,7 +251,7 @@ class CfgVehicles {
 				gunnerInAction = "BMP2_Gunner";
 				gunnerGetInAction = "GetInMedium";
 				gunnerGetOutAction = "GetOutMedium";
-				soundServo[] = {"RDS_Tank\data\gun_elevate2",0.01,1,10};
+				soundServo[] = {"acr_a3\acr_a3_vehicles\bmp2\data\gun_elevate2",0.01,1,10};
 				gunnerDoor="hatchG";
 				startEngine=0;
 
@@ -361,7 +361,7 @@ class CfgVehicles {
 				source = "reload";
 				weapon = "ACR_A3_2A28";
 			};
-			class muzzle_rot_coax {source = "ammorandom"; weapon = "RDS_PKT";};
+			class muzzle_rot_coax {source = "ammorandom"; weapon = "ACR_A3_PKT";};
 			class acr_a3_AT5_Launcher {
 				source = "reload";
 				weapon = "acr_a3_AT5_Launcher";
@@ -524,6 +524,11 @@ class CfgVehicles {
 				source = "reload";
 				weapon = "ACR_A3_2A24";
 			};
+            class muzzle_hide_hmg: recoil_source {};
+            class muzzle_rot_hmg: recoil_source
+            {
+                source="ammorandom";
+            };
 		};
 
 		class Turrets: Turrets {
@@ -571,19 +576,19 @@ class CfgVehicles {
 					};
 
 				};
-				weapons[]={ACR_A3_2A24,RDS_PKT,acr_a3_AT5_Launcher};
+				weapons[]={ACR_A3_2A24,ACR_A3_PKT,acr_a3_AT5_Launcher};
 				magazines[]={
 					ACR_A3_30mm_2A42_HE,
 					ACR_A3_30mm_2A42_AP,
 					ACR_A3_8Rnd_AT5,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT,
-					RDS_250Rnd_762x54_PKT
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT,
+					ACR_A3_250Rnd_762x54_PKT
 				};
 
 				class Turrets: Turrets {

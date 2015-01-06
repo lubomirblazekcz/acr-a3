@@ -92,5 +92,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="RDS_StaticW\TOW\data\ah64d_glass_ti_ca.paa";
+	texture="acr_a3\acr_a3_vehicles\bmp2\data\ah64d_glass_ti_ca.paa";
 };

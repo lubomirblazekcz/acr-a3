@@ -1,10 +1,10 @@
-uiNameSpace setVariable ["RDS_BMP2_Ctrl",_this select 0];
+uiNameSpace setVariable ["ACR_A3_BMP2_Ctrl",_this select 0];
 
 
 [] spawn {
 	private["_v","_t"];
 	disableSerialization;
-	_c = (uiNamespace getVariable "RDS_BMP2_Ctrl" displayCtrl 1);
+	_c = (uiNamespace getVariable "ACR_A3_BMP2_Ctrl" displayCtrl 1);
 	_v = vehicle player;
 	while{(player==gunner _v OR player==driver _v)}do{
 		waitUntil {sleep 0.01;inputAction "ZeroingUp">0 OR inputAction "ZeroingDown">0 OR (player!=gunner _v AND player!=driver _v)};
@@ -25,9 +25,9 @@ uiNameSpace setVariable ["RDS_BMP2_Ctrl",_this select 0];
 	private["_v","_c","_c2","_c3"];
 
 	_v = vehicle player;
-	_c=(uiNamespace getVariable "RDS_BMP2_Ctrl" displayCtrl 180);
-	_c2=(uiNamespace getVariable "RDS_BMP2_Ctrl" displayCtrl 1);
-	_c3=(uiNamespace getVariable "RDS_BMP2_Ctrl" displayCtrl 2);
+	_c=(uiNamespace getVariable "ACR_A3_BMP2_Ctrl" displayCtrl 180);
+	_c2=(uiNamespace getVariable "ACR_A3_BMP2_Ctrl" displayCtrl 1);
+	_c3=(uiNamespace getVariable "ACR_A3_BMP2_Ctrl" displayCtrl 2);
 
 	while{(player==gunner _v OR player==driver _v)}do{
 		waitUntil {sleep 0.1;((parseNumber (ctrlText _c)) != 5.6)};
