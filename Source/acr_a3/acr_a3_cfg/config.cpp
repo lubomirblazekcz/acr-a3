@@ -2332,7 +2332,7 @@ class cfgVehicles
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_HELIPILOT_F0";
 		genericNames = "CzechMen";
-		model = "\acr_a3\acr_a3_characters\coverall.p3d";
+		model = "\acr_a3\acr_a3_characters\coverall_ACR.p3d";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_HeliPilotCoveralls_rgr";
 		hiddenSelections[] = {"Camo", "insignia"};
@@ -2359,7 +2359,7 @@ class cfgVehicles
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_HELIPILOT_DES";
         genericNames = "CzechMen";
-        model = "\acr_a3\acr_a3_characters\coverall.p3d";
+        model = "\acr_a3\acr_a3_characters\coverall_ACR.p3d";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_HeliPilotCoveralls_khk";
         hiddenSelections[] = {"Camo", "insignia"};
