@@ -879,7 +879,7 @@ class cfgVehicles
     {
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
-        hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
+        model = "\acr_a3\acr_a3_characters\CUP_Backpack_ACR.p3d";
     };
     class CUP_B_ACRPara_m95: CUP_B_ACRPara_Base
     {
@@ -890,7 +890,7 @@ class cfgVehicles
     {
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
-        hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
+        model = "\acr_a3\acr_a3_characters\CUP_Scoutpack_ACR.p3d";
     };
     class CUP_B_ACRScout_m95: CUP_B_ACRScout_Base
     {
@@ -980,6 +980,7 @@ class cfgVehicles
 	{
 		_generalMacro = "B_Soldier_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+		backpack = "CUP_B_ACRScout_m95";
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
@@ -1011,6 +1012,7 @@ class cfgVehicles
 	{
 		_generalMacro = "B_Soldier_GL_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+		backpack = "CUP_B_ACRScout_m95";
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		genericNames = "CzechMen";
@@ -1043,6 +1045,7 @@ class cfgVehicles
 		_generalMacro = "B_soldier_AR_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		genericNames = "CzechMen";
@@ -1076,6 +1079,7 @@ class cfgVehicles
 		_generalMacro = "B_soldier_M_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX01"; //LESNI
 		head = "H_ACR_A3_HelmetIA_vz95";
 		displayName = "$STR_B_SOLDIER_M_F0"; // Ostrostřelec
@@ -1201,6 +1205,7 @@ class cfgVehicles
 		_generalMacro = "B_Soldier_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
 		genericNames = "CzechMen";
@@ -1232,6 +1237,7 @@ class cfgVehicles
 		_generalMacro = "B_Soldier_GL_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
@@ -1263,6 +1269,7 @@ class cfgVehicles
 		_generalMacro = "B_soldier_AR_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_AR_F0"; // Kulometčík
 		genericNames = "CzechMen";
@@ -1295,6 +1302,7 @@ class cfgVehicles
 		_generalMacro = "B_soldier_M_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
+		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_M_F0"; // Ostrostřelec
 		genericNames = "CzechMen";
@@ -1843,6 +1851,7 @@ class cfgVehicles
         _generalMacro = "B_recon_F";
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
+        backpack = "ACR_A3_Backpack_Kitbag_vz95";
         vehicleClass = "ACRX0"; //RECON
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -1911,6 +1920,7 @@ class cfgVehicles
         _generalMacro = "B_recon_M_F";
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
+        backpack = "ACR_A3_Backpack_Kitbag_vz95";
         vehicleClass = "ACRX0"; //RECON
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -2031,6 +2041,7 @@ class cfgVehicles
         _generalMacro = "B_recon_F";
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
+        backpack = "B_Kitbag_cbr";
         vehicleClass = "ACRX0_Des"; //RECON
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -2099,6 +2110,7 @@ class cfgVehicles
         _generalMacro = "B_recon_M_F";
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
+        backpack = "B_Kitbag_cbr";
         vehicleClass = "ACRX0_Des"; //RECON
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -2329,8 +2341,8 @@ class cfgVehicles
 		respawnWeapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
 		respawnMagazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		linkedItems[] = {"V_TacVestIR_blk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-		respawnlinkedItems[] = {"V_TacVestIR_blk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		linkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+		respawnlinkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
 	};
@@ -2351,8 +2363,8 @@ class cfgVehicles
         respawnWeapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
         magazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        linkedItems[] = {"V_TacVestIR_blk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-        respawnlinkedItems[] = {"V_TacVestIR_blk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        linkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        respawnlinkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
     };
@@ -2416,12 +2428,12 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SweaterUniform_vz95";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
-        weapons[] = {"Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"Throw","Put","Rangefinder"};
-        magazines[] = {"Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-        respawnlinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        weapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+        magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        linkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        respawnlinkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
         class eventHandlers
@@ -2442,12 +2454,12 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SweaterUniform_des";
         hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
-        weapons[] = {"Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"Throw","Put","Rangefinder"};
-        magazines[] = {"Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-        respawnlinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        weapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+        magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        linkedItems[] = {"rhs_tsh4","V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        respawnlinkedItems[] = {"rhs_tsh4","V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
         class eventHandlers
