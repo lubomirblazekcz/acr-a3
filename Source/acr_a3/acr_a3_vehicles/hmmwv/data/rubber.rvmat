@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.94
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ca : data\penetration\rubber.rvmat{
+surfaceInfo = "acr_a3\acr_a3_vehicles\hmmwv\data\rubber.bisurf";
+diffuse[] = {0.5,0.5,1.0,1.0};
+ambient[] = {0.5,0.5,1.0,1.0};
+//};

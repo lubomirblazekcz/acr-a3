@@ -7,6 +7,7 @@ class CfgPatches
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
+		requiredAddons[] = {"A3_Soft_F"};
 	};
 };
 class CfgVehicles
@@ -55,4 +56,3 @@ class CfgVehicles
 		crew = "ACR_Des_Vojak01";
 	};
 };
-
