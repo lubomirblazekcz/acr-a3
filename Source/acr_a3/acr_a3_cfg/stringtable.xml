@@ -125,6 +125,14 @@
             <English>ACR Backpack (vz. 95)</English>
             <Czech>AČR Batoh (vz. 95)</Czech>
         </Key>
+        <Key ID="STR_ACR_KITBAG_A2">
+            <English>ACR Scout Pack (vz. 95)</English>
+            <Czech>AČR Malý batoh (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BACKPACK_A2">
+            <English>ACR Paratrooper Backpack (vz. 95)</English>
+            <Czech>AČR Výsadkářský batoh (vz. 95)</Czech>
+        </Key>
         <Key ID="STR_ACR_GEAR">
             <English>[ACR] Gear</English>
             <Czech>[AČR] Vybavení</Czech>

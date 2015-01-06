@@ -1,6 +1,6 @@
 // members
 
-surfaceInfo = "RDS_APC\BMP\penetration\armor_3mm_plate.bisurf";
+surfaceInfo = "acr_a3\acr_a3_vehicles\bmp2\penetration\armor_3mm_plate.bisurf";
 ambient[] = 
 {
 	0.490196,
