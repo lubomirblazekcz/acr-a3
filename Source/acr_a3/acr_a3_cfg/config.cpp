@@ -751,6 +751,8 @@ class cfgWeapons
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
 		author = "$STR_ACR";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot.paa"};
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -766,6 +768,8 @@ class cfgWeapons
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
         author = "$STR_ACR";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot_DES.paa"};
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -2359,7 +2363,7 @@ class cfgVehicles
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_HELIPILOT_DES";
         genericNames = "CzechMen";
-        model = "\acr_a3\acr_a3_characters\coverall_ACR.p3d";
+        model = "\acr_a3\acr_a3_characters\coverall_des_ACR.p3d";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_HeliPilotCoveralls_khk";
         hiddenSelections[] = {"Camo", "insignia"};
