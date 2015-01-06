@@ -2332,11 +2332,11 @@ class cfgVehicles
 		vehicleClass = "ACRX00"; //zaklad
 		displayName = "$STR_B_HELIPILOT_F0";
 		genericNames = "CzechMen";
-		model = "\A3\Characters_F\Common\coveralls.p3d";
+		model = "\acr_a3\acr_a3_characters\coverall.p3d";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_HeliPilotCoveralls_rgr";
 		hiddenSelections[] = {"Camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Pilot.paa"};
+		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\coverall_co.paa"};
 		weapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
 		magazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
@@ -2345,6 +2345,11 @@ class cfgVehicles
 		respawnlinkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
+	class Wounds
+	{
+		tex[]={"acr_a3\acr_a3_characters\data\w1_coverall_mc.paa" , "acr_a3\acr_a3_characters\data\w2_coverall_mc.paa"};
+		mat[]={"acr_a3\acr_a3_characters\data\coverall.rvmat" , "acr_a3\acr_a3_characters\data\w1_coverall.rvmat" , "acr_a3\acr_a3_characters\data\w2_coverall.rvmat"};
+	};
 	};
     class ACR_Pilot_des: B_Soldier_F
     {
@@ -2354,11 +2359,11 @@ class cfgVehicles
         vehicleClass = "ACRX00"; //zaklad
         displayName = "$STR_ACR_HELIPILOT_DES";
         genericNames = "CzechMen";
-        model = "\A3\Characters_F\Common\coveralls.p3d";
+        model = "\acr_a3\acr_a3_characters\coverall.p3d";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_HeliPilotCoveralls_khk";
         hiddenSelections[] = {"Camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Pilot_des.paa"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\coverall_des_co.paa"};
         weapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"CUP_smg_EVO","acr_a3_P07","Throw","Put","Rangefinder"};
         magazines[] = {"30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","30Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
@@ -2367,7 +2372,12 @@ class cfgVehicles
         respawnlinkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
-    };
+	class Wounds
+	{
+		tex[]={"acr_a3\acr_a3_characters\data\w1_coverall_mc.paa" , "acr_a3\acr_a3_characters\data\w2_coverall_mc.paa"};
+		mat[]={"acr_a3\acr_a3_characters\data\coverall.rvmat" , "acr_a3\acr_a3_characters\data\w1_coverall.rvmat" , "acr_a3\acr_a3_characters\data\w2_coverall.rvmat"};
+	};
+	};
 	class ACR_Dustojnik: B_Soldier_F //znackablabla
 	{
 		_generalMacro = "B_Soldier_F";
