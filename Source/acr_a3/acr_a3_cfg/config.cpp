@@ -483,7 +483,7 @@ class cfgWeapons
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_tanhatheadset.paa";
         model = "\A3\Characters_F_epb\Common\capb_hs";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\data\capb_tan_co.paa"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_KsiltovkaTAN.paa"};
         author = "$STR_ACR";
         class ItemInfo: HeadGearItem
         {
@@ -885,12 +885,14 @@ class cfgVehicles
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Backpack_ACR.p3d";
+		author = "$STR_ACR";
     };
     class CUP_B_ACRPara_m95: CUP_B_ACRPara_Base
     {
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh.paa"; //ikona
 		displayName = "$STR_ACR_BACKPACK_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
+		author = "$STR_ACR";
     };
     class CUP_B_ACRScout_Base: Bag_Base
     {
@@ -898,12 +900,14 @@ class cfgVehicles
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Scoutpack_ACR.p3d";
+		author = "$STR_ACR";
     };
     class CUP_B_ACRScout_m95: CUP_B_ACRScout_Base
     {
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh02.paa"; //ikona
 		displayName = "$STR_ACR_KITBAG_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
+		author = "$STR_ACR";
     };
 	class ACR_A3_Backpack_Carryall_vz95: B_Carryall_mcamo
 	{
