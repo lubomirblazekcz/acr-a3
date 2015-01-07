@@ -749,7 +749,7 @@ class cfgWeapons
 		scope = 2;
 		displayName = "$STR_ACR_UNIFORM_PILOT";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot.paa";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		author = "$STR_ACR";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot.paa"};
@@ -766,7 +766,7 @@ class cfgWeapons
         scope = 2;
         displayName = "$STR_ACR_UNIFORM_PILOT_DES";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot_des.paa";
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_pilot";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         author = "$STR_ACR";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot_DES.paa"};
