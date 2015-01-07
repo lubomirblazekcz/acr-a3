@@ -881,30 +881,34 @@ class cfgVehicles
 	class Bag_Base;
     class CUP_B_ACRPara_Base: Bag_Base
     {
+		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Backpack_ACR.p3d";
     };
     class CUP_B_ACRPara_m95: CUP_B_ACRPara_Base
     {
-        displayName = "$STR_ACR_BACKPACK_A2";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh.paa"; //ikona
+		displayName = "$STR_ACR_BACKPACK_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
     };
     class CUP_B_ACRScout_Base: Bag_Base
     {
+		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Scoutpack_ACR.p3d";
     };
     class CUP_B_ACRScout_m95: CUP_B_ACRScout_Base
     {
-        displayName = "$STR_ACR_KITBAG_A2";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh02.paa"; //ikona
+		displayName = "$STR_ACR_KITBAG_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
     };
 	class ACR_A3_Backpack_Carryall_vz95: B_Carryall_mcamo
 	{
 		scope = 2;
-		displayName = "$STR_ACR_BACKPACK"; //mel 2 textury na batoh ale ma v configu jen 1 wtf?
+		displayName = "$STR_ACR_BACKPACK"; 
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_batoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Batoh02.paa"};
