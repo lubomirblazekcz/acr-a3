@@ -1,5 +1,6 @@
-ACR_A3 Mod
-=======
+==================================================
+Army of the Czech Republic A3 - ACR_A3
+===================================================
 
 Here you can found Source code of Czech ACR Arma 3 Mod. You can contribute, create issues, requests and so on. But please don't edit, change or alter the mod without permission.
 
@@ -7,9 +8,6 @@ You can build the files with pboProject - https://dev.withsix.com/projects/miker
 
 <img src="http://www.armaseries.cz/acr-logo.png">
 
-==================================================
-Army of the Czech Republic A3 - ACR_A3
-===================================================
 Dependencies:
 ===========
 @ASDG_JR, @CUP, @RHS_AFRF
