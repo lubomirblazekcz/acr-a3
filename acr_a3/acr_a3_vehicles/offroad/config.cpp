@@ -52,8 +52,8 @@ class CfgVehicles
 		author = "$STR_ACR";
 		faction = "ACR";
 		displayName = "Offroad";
-		crew = "ACR_MOUT_Vojak01";
-		typicalCargo[] = {"ACR_MOUT_Vojak01"};
+		crew = "ACR_Vojak01";
+		typicalCargo[] = {"ACR_Vojak01"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa","\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa"};
 		transportSoldier = 1;
@@ -135,8 +135,8 @@ class CfgVehicles
         author = "$STR_ACR";
         faction = "ACR";
         displayName = "$STR_A3_CFGVEHICLES_OFFROAD_ARMED_BASE0";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Vojak01";
+        typicalCargo[] = {"ACR_Vojak01"};
         hiddenSelections[] = {"camo","camo2"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa","\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa"};
         class EventHandlers

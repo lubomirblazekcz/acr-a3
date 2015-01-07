@@ -18,16 +18,16 @@ class CfgVehicles {
 	{
 		displayname = "Land Rover (Desert)";
 		faction = "ACR";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Des_Vojak01";
+        typicalCargo[] = {"ACR_Des_Vojak01"};
 		hiddenSelectionsTextures[] = {"pansy\LandRover\data\lr_base_acrs_co","pansy\LandRover\data\lr_special_acr_co"};
 	};
 	class LandRover_ACR: LandRover_CZ_EP1
 	{
 		displayname = "Land Rover";
 		faction = "ACR";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Vojak01";
+        typicalCargo[] = {"ACR_Vojak01"};
 		hiddenSelectionsTextures[] = {"pansy\LandRover\data\lr_acr_base_co","pansy\LandRover\data\lr_acr_spec_co"};
 	};
 	class ACR_Offroad_HMG: BAF_Offroad_W_HMG
@@ -35,8 +35,8 @@ class CfgVehicles {
 		scope = 2;
 		displayname = "Land Rover HMG";
 		faction = "ACR";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Vojak01";
+        typicalCargo[] = {"ACR_Vojak01"};
 		hiddenSelectionsTextures[] = {"pansy\LandRover\data\lr_acr_base_co","pansy\LandRover\data\lr_acr_spec_co","pansy\LandRover\data\lr_mg-spg9_ind_co"};
 	};
 	class ACR_Offroad_HMG_Desert: BAF_Offroad_W_HMG
@@ -44,8 +44,8 @@ class CfgVehicles {
 		scope = 2;
 		displayname = "Land Rover HMG (Desert)";
 		faction = "ACR";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Des_Vojak01";
+        typicalCargo[] = {"ACR_Des_Vojak01"};
 		hiddenSelectionsTextures[] = {"pansy\LandRover\data\lr_base_acrs_co","pansy\LandRover\data\lr_acr_spec_co","pansy\LandRover\data\lr_mg-spg9_ind_co"};
 	};
 	class ACR_LandRover_AMB: LandRover_AMB_Base
@@ -53,7 +53,7 @@ class CfgVehicles {
 		displayName = "Land Rover Ambulance";
 		scope = 2;
 		faction = "ACR";
-        crew = "ACR_MOUT_Vojak01";
-        typicalCargo[] = {"ACR_MOUT_Vojak01"};
+        crew = "ACR_Vojak01";
+        typicalCargo[] = {"ACR_Vojak01"};
 	};
 };
