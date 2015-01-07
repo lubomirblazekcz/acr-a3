@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Army of Czech Republic">
+	<Package name="ACR mod">
+        <Key ID="STR_ACR_FACTION">
+            <English>ACR</English>
+            <Czech>AČR</Czech>
+        </Key>
+		<Key ID="STR_ACR">
+			<English>ACR_A3</English>
+			<Czech>ACR_A3</Czech>
+		</Key>
+		<Key ID="STR_ACR_MEN">
+			<English>Men</English>
+			<Czech>Muži</Czech>
+		</Key>
+		<Key ID="STR_ACR_UNDERWEAR">
+			<English>ACR Underwear</English>
+			<Czech>AČR Spodní prádlo</Czech>
+		</Key>
+		<Key ID="STR_ACR_MENVZ95">
+			<English>Men (vz. 95)</English>
+			<Czech>Muži (vz. 95)</Czech>
+		</Key>
+        <Key ID="STR_ACR_MENVZ95REC">
+            <English>Men (vz. 95, Recon)</English>
+            <Czech>Muži (vz. 95, průzkumníci)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MENVZ95REC_DES">
+            <English>Men (Desert, Recon)</English>
+            <Czech>Muži (Pouštní, průzkumníci)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEN_MOUT">
+            <English>Men (MOUT)</English>
+            <Czech>Muži (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEN_MOUT_DES">
+            <English>Men (MOUT Desert)</English>
+            <Czech>Muži (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEN_DESERT">
+            <English>Men (Desert)</English>
+            <Czech>Muži (Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIP">
+            <English>Men (Sniper)</English>
+            <Czech>Muži (Odstřelovači)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_VZ95">
+            <English>Recon Team (vz.95)</English>
+            <Czech>Průzkumný tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_VZ95_T">
+            <English>Recon Patrol (vz.95)</English>
+            <Czech>Průzkumná hlídka (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_DES">
+            <English>Recon Team (Desert)</English>
+            <Czech>Průzkumný tým (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_RECON_DES_T">
+            <English>Recon Patrol (Desert)</English>
+            <Czech>Průzkumná hlídka (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_VZ95">
+            <English>Infantry Squad (vz.95)</English>
+            <Czech>Družstvo střelců (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_VZ95_T">
+            <English>Team (vz.95)</English>
+            <Czech>Tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_DES">
+            <English>Infantry Squad (Desert)</English>
+            <Czech>Družstvo střelců (Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_DES_T">
+            <English>Team (Desert)</English>
+            <Czech>Tým (Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT">
+            <English>Infantry Squad (MOUT)</English>
+            <Czech>Družstvo střelců (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT_T">
+            <English>Team (MOUT)</English>
+            <Czech>Tým (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT_DES">
+            <English>Infantry Squad (MOUT Desert)</English>
+            <Czech>Družstvo střelců (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_INF_MOUT_DES_T">
+            <English>Team (MOUT Desert)</English>
+            <Czech>Tým (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPERS">
+            <English>Sniper Team</English>
+            <Czech>Odstřelovačský tým</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPERS_DES">
+            <English>Sniper Team (Desert)</English>
+            <Czech>Odstřelovačský tým (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MECH_VZ95">
+            <English>Mechanized Rifle Squad (vz.95)</English>
+            <Czech>Motostřelecké družstvo (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MECH_DES">
+            <English>Mechanized Rifle Squad (Desert)</English>
+            <Czech>Motostřelecké družstvo (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MOT_VZ95">
+            <English>Motorized Team (vz.95)</English>
+            <Czech>Motorizovaný tým (vz.95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MOT_DES">
+            <English>Motorized Team (Desert)</English>
+            <Czech>Motorizovaný tým (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BACKPACK">
+            <English>ACR Carryall Backpack (vz. 95)</English>
+            <Czech>AČR Torna (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KITBAG">
+            <English>ACR Backpack (vz. 95)</English>
+            <Czech>AČR Batoh (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KITBAG_A2">
+            <English>ACR Scout Pack (vz. 95)</English>
+            <Czech>AČR Malý batoh (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BACKPACK_A2">
+            <English>ACR Paratrooper Backpack (vz. 95)</English>
+            <Czech>AČR Výsadkářský batoh (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_GEAR">
+            <English>[ACR] Gear</English>
+            <Czech>[AČR] Vybavení</Czech>
+        </Key>
+        <Key ID="STR_ACR_WEAPONS">
+            <English>[ACR] Weapons</English>
+            <Czech>[AČR] Zbraně</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST">
+            <English>ACR Vest (vz. 95)</English>
+            <Czech>AČR Vesta (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST_IA1">
+            <English>ACR Vest - Lite (vz. 95)</English>
+            <Czech>AČR Vesta - Lehká (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2">
+            <English>ACR Tactical Vest (vz. 95)</English>
+            <Czech>AČR Taktická Vesta (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2_H">
+            <English>ACR Tactical Vest (vz. 95, Heavy)</English>
+            <Czech>AČR Taktická Vesta (vz. 95, těžká)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2_rgr">
+            <English>ACR Tactical Vest (Green)</English>
+            <Czech>AČR Taktická Vesta (zelená)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2_rgr_H">
+            <English>ACR Tactical Vest (Green, Heavy)</English>
+            <Czech>AČR Taktická Vesta (zelená, těžká)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2_khk">
+            <English>ACR Tactical Vest (Khaki)</English>
+            <Czech>AČR Taktická Vesta (khaki)</Czech>
+        </Key>
+        <Key ID="STR_ACR_VEST2_khk_H">
+            <English>ACR Tactical Vest (Khaki, Heavy)</English>
+            <Czech>AČR Taktická Vesta (khaki, těžká)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MICH2000">
+            <English>ACR MICH 2000 (vz. 95)</English>
+            <Czech>AČR MICH 2000 (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MICH2000_Des">
+            <English>ACR MICH 2000 (Desert)</English>
+            <Czech>AČR MICH 2000 (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MICH2000_GOGGLES_Des">
+            <English>ACR MICH 2000 (Desert, Goggles)</English>
+            <Czech>AČR MICH 2000 (pouštní, brýle)</Czech>
+        </Key>
+		<Key ID="STR_ACR_MICH2000_GOGGLES">
+            <English>ACR MICH 2000 (vz. 95, Goggles)</English>
+            <Czech>AČR MICH 2000 (vz. 95, brýle)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ECH_rgr">
+            <English>ACR Equipped MICH 2000 (Green)</English>
+            <Czech>AČR Taktická MICH 2000 (zelená)</Czech>
+        </Key>
+        <Key ID="STR_ACR_Beret_red">
+            <English>ACR Beret (Red)</English>
+            <Czech>AČR Baret (červený)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BOONIEHAT">
+            <English>ACR Booniehat (vz. 95)</English>
+            <Czech>AČR Klobouk (vz. 95)</Czech>
+        </Key>
+		<Key ID="STR_ACR_BOONIEHAT_DES">
+            <English>ACR Booniehat (vz. 95, Desert)</English>
+            <Czech>AČR Klobouk (vz. 95, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_CAP">
+            <English>ACR Cap (Olive)</English>
+            <Czech>AČR Kšiltovka (olivová)</Czech>
+        </Key>
+        <Key ID="STR_ACR_CAP_DES">
+            <English>ACR Cap (Tan)</English>
+            <Czech>AČR Kšiltovka (žluto hnědá)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BOONIEHAT_FOLD">
+            <English>ACR Booniehat (vz. 95, Fold)</English>
+            <Czech>AČR Klobouk (vz. 95, sklopený)</Czech>
+        </Key>
+        <Key ID="STR_ACR_PAKOL_GREY">
+            <English>ACR Pakol (Grey)</English>
+            <Czech>AČR Pakol (šedý)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM">
+            <English>ACR Uniform (vz. 95)</English>
+            <Czech>AČR Uniforma (vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_tshirt">
+            <English>ACR Uniform (vz. 95, Tshirt)</English>
+            <Czech>AČR Uniforma (vz. 95, triko)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_vest">
+            <English>ACR Uniform (vz. 95, Sleeves)</English>
+            <Czech>AČR Uniforma (vz. 95, rukávy)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT">
+            <English>ACR Uniform (MOUT)</English>
+            <Czech>AČR Uniforma (MOUT)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT_vest">
+            <English>ACR Uniform (MOUT, Sleeves)</English>
+            <Czech>AČR Uniforma (MOUT, rukávy)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT_DES">
+            <English>ACR Uniform (MOUT Desert)</English>
+            <Czech>AČR Uniforma (MOUT Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_MOUT_DES_vest">
+            <English>ACR Uniform (MOUT Desert, Sleeves)</English>
+            <Czech>AČR Uniforma (MOUT Pouštní, rukávy)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_DESERT">
+            <English>ACR Uniform (Desert)</English>
+            <Czech>AČR Uniforma (Pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_DESERT_tshirt">
+            <English>ACR Uniform (Desert, Tshirt)</English>
+            <Czech>AČR Uniforma (Pouštní, triko)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_DESERT_vest">
+            <English>ACR Uniform (Desert, Sleeves)</English>
+            <Czech>AČR Uniforma (Pouštní, rukávy)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_PILOT">
+            <English>ACR Uniform (Pilot)</English>
+            <Czech>AČR Uniforma (Pilotní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_PILOT_DES">
+            <English>ACR Uniform (Pilot, Desert)</English>
+            <Czech>AČR Uniforma (Pilotní, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_OFFICER">
+            <English>ACR Uniform (Officer, vz. 95)</English>
+            <Czech>AČR Uniforma (Důstojnická, vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_OFFICER_DES">
+            <English>ACR Uniform (Officer, Desert)</English>
+            <Czech>AČR Uniforma (Důstojnická, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_SWEATER">
+            <English>ACR Uniform (Sweater, vz. 95)</English>
+            <Czech>AČR Uniforma (Svetr, vz. 95)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_SWEATER_DES">
+            <English>ACR Uniform (Sweater, Desert)</English>
+            <Czech>AČR Uniforma (Svetr, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_GHILLIE">
+            <English>ACR Ghillie Suit</English>
+            <Czech>AČR Hejkal</Czech>
+        </Key>
+        <Key ID="STR_ACR_UNIFORM_GHILLIE_DES">
+            <English>ACR Ghillie Suit (Desert)</English>
+            <Czech>AČR Hejkal (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_FLAG">
+            <English>[ACR] Patch (Flag)</English>
+            <Czech>[AČR] Nášivka (Vlajka)</Czech>
+        </Key>
+        <Key ID="STR_ACR_MEDIC">
+            <English>[ACR] Medic</English>
+            <Czech>[AČR] Medik</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO1">
+            <English>[ACR] Label</English>
+            <Czech>[AČR] Nápis</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO2">
+            <English>[ACR] Patch</English>
+            <Czech>[AČR] Nášivka</Czech>
+        </Key>
+        <Key ID="STR_ACR_LOGO3">
+            <English>[ACR] Patch (Red)</English>
+            <Czech>[AČR] Nášivka (Červená)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KULOMET_F">
+            <English>Recon - Machinegunner</English>
+            <Czech>Průzkumník - kulometčík</Czech>
+        </Key>
+        <Key ID="STR_ACR_SNIPER_DES">
+            <English>Sniper (Desert)</English>
+            <Czech>Odstřelovač (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SPOTTER_DES">
+            <English>Spotter (Desert)</English>
+            <Czech>Pozorovatel (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_HELIPILOT_DES">
+            <English>Helicopter Pilot (Desert)</English>
+            <Czech>Pilot helikoptéry (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_OFFICER_DES">
+            <English>Officer (Desert)</English>
+            <Czech>Důstojník (pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_SOLDIER_LITE_DES">
+            <English>Rifleman (Light, Desert)</English>
+            <Czech>Střelec (lehká výzbroj, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_COVERED">
+            <English>Kamaz Transport (Covered)</English>
+            <Czech>Kamaz Valník (krytý)</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_TRANSPORT">
+            <English>Kamaz Transport (Covered)</English>
+            <Czech>Kamaz Valník</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_BOX">
+            <English>Kamaz Repair</English>
+            <Czech>Kamaz Opravárenský</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_FUEL">
+            <English>Kamaz Fuel</English>
+            <Czech>Kamaz Cisterna</Czech>
+        </Key>
+        <Key ID="STR_ACR_KAMAZ_MED">
+            <English>Kamaz Medical</English>
+            <Czech>Kamaz Zdravotnický</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALCA_CAS">
+            <English>L159 ALCA (CAS)</English>
+            <Czech>L159 ALCA (CAS)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALCA_AA">
+            <English>L159 ALCA (AA)</English>
+            <Czech>L159 ALCA (AA)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALBATROS_CAS">
+            <English>L39 ALBATROS (CAS)</English>
+            <Czech>L39 ALBATROS (CAS)</Czech>
+        </Key>
+        <Key ID="STR_ACR_ALBATROS_AA">
+            <English>L39 ALBATROS (AA)</English>
+            <Czech>L39 ALBATROS (AA)</Czech>
+        </Key>
+        <Key ID="STR_ACR_A_NEG">
+            <English>[ACR] A Neg</English>
+            <Czech>[AČR] A Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_A_POS">
+            <English>[ACR] A Pos</English>
+            <Czech>[AČR] A Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_B_POS">
+            <English>[ACR] B Pos</English>
+            <Czech>[AČR] B Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_B_NEG">
+            <English>[ACR] B Neg</English>
+            <Czech>[AČR] B Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_AB_NEG">
+            <English>[ACR] AB Neg</English>
+            <Czech>[AČR] AB Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_AB_POS">
+            <English>[ACR] AB Pos</English>
+            <Czech>[AČR] AB Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_O_NEG">
+            <English>[ACR] O Neg</English>
+            <Czech>[AČR] O Neg</Czech>
+        </Key>
+        <Key ID="STR_ACR_O_POS">
+            <English>[ACR] O Pos</English>
+            <Czech>[AČR] O Pos</Czech>
+        </Key>
+        <Key ID="STR_ACR_9MM_SUPP">
+            <English>9mm Suppressor (ACR)</English>
+            <Czech>9mm Tlumič (AČR)</Czech>
+        </Key>
+        <Key ID="STR_A3_BIPOD">
+            <English>Bipod (ACR)</English>
+            <Czech>Dvojnožka (AČR)</Czech>
+        </Key>
+        <Key ID="str_a3_v_platecarrieria1_khkl0">
+            <Original>GA Carrier Lite (Khaki)</Original>
+            <English>GA Carrier Lite (Khaki)</English>
+            <Czech>GA nosič plátů - lehký (khaki)</Czech>
+            <French>Gilet léger AV (kaki)</French>
+            <German>Leichter Boden-Luft-Tragegurt (Khaki)</German>
+            <Italian>Gilet leggero aviazione (kaki)</Italian>
+            <Polish>Kabura GA (khaki)</Polish>
+            <Portuguese>Transportador leve de GA (cáqui)</Portuguese>
+            <Russian>GA облегченный жилет (хаки)</Russian>
+            <Spanish>Cartuchera de FAA ligera (caqui)</Spanish>
+        </Key>
+        <Key ID="str_a3_v_platecarrieria2_khkl0">
+            <Original>GA Carrier Rig (Khaki)</Original>
+            <English>GA Carrier Rig (Khaki)</English>
+            <Czech>GA nosič plátů (khaki)</Czech>
+            <French>Gilet modulable léger AV (kaki)</French>
+            <German>Boden-Luft-Tragegurt (Khaki)</German>
+            <Italian>Gilet Rig aviazione (kaki)</Italian>
+            <Polish>Kamizelka GA (khaki)</Polish>
+            <Portuguese>Suporte de transportador de GA (cáqui)</Portuguese>
+            <Russian>GA жилет (хаки)</Russian>
+            <Spanish>Cartuchera de FAA (caqui)</Spanish>
+        </Key>
+    </Package>
+</Project>
