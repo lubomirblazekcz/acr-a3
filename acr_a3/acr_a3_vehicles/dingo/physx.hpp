@@ -1,20 +1,21 @@
 		//----- General Parameters -----//
 //		normalSpeedForwardCoef=0.9;
-//		turnCoef=3.5;
-//		terrainCoef=0.5;
+		turnCoef = 3;
+		terrainCoef = 1.5;
 //		waterSpeedFactor=0.4;
-//		simulation="carx";
-//		dampersBumpCoef=0;
-//
-//		precision=9;
-//		brakeDistance=3;
+		simulation="carx";
+		dampersBumpCoef = 6.0;
+
+		precision = 15;
+		brakeDistance = 8.5;
 //		acceleration=15;
 //		fireResistance=5;
 //
-//		maxSpeed=109;
-//		fuelCapacity=78;
-//		wheelCircumference=2.95;
-//		brakeIdleSpeed=0.0;
+		maxSpeed=109;
+		fuelCapacity=94;
+		wheelCircumference = 3.924;
+		brakeIdleSpeed = 1.78;
+
 //
 //		maxFordingDepth=0.9;
 //		waterResistance=2;
@@ -22,104 +23,91 @@
 //		waterLeakiness = 250.0;
 
 		//----- Gearbox Parameters -----//
-//		class complexGearbox
-//		{
-//			GearboxRatios[] = {"R1",-3.07,"N",0,"D1",2.48,"D2",1.48,"D3",1.0,"D4",0.75};
-//			TransmissionRatios[] = {"High",5.2};
-//			gearBoxMode = "auto";
-//			moveOffGear = 1;
-//			driveString = "D";
-//			neutralString = "N";
-//			reverseString = "R";
-//		};
-//		changeGearMinEffectivity[]={0.95,0.15,0.95,0.95,0.95};
-//		switchTime=0.28;
-//		latency = 1.0;
+		class complexGearbox
+		{
+			GearboxRatios[] = {"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
+			TransmissionRatios[] = {"High",5.539};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+		changeGearMinEffectivity[] = {0.95,0.15,0.95,0.95,0.95,0.95,0.95};
+		switchTime = 0.31;
+		latency = 1.0;
 //
 //		//----- Clutch and Driveline Parameters -----//
-//		differentialType="all_limited";
-//		frontRearSplit=0.5;
-//		frontBias=1.5;
-//		rearBias=1.5;
-//		centreBias = 1.3;
-//		clutchStrength=35;
+		differentialType = "all_limited";
+		frontRearSplit = 0.5;
+		frontBias = 1.3;
+		rearBias = 1.3;
+		centreBias = 1.3;
+		clutchStrength = 20.0;
 //		transmissionLosses = 20;
 //
-//		dampingRateFullThrottle=0.079999998;
-//		dampingRateZeroThrottleClutchEngaged=1.34999999;
-//		dampingRateZeroThrottleClutchDisengaged=0.34999999;
+		dampingRateFullThrottle = 0.08;
+		dampingRateZeroThrottleClutchEngaged = 2.0;
+		dampingRateZeroThrottleClutchDisengaged = 0.35;
 
 //		//----- Engine Parameters -----//
-//		torqueCurve[] = {
-//		{"(650/3600)","(417/581)"},
-//		{"(1000/3600)","(508/581)"},
-//		{"(1500/3600)","(562/581)"},
-//		{"(1900/3600)","(581/581)"},
-//		{"(2500/3600)","(545/581)"},
-//		{"(3000/3600)","(475/581)"},
-//		{"(3300/3600)","(396/581)"},
-//		{"(3600/3600)","(314/581)"}
-//		};
+		torqueCurve[] = {{ 0.0,0.0 },{ 0.178,0.5 },{ 0.25,0.85 },{ 0.4,0.9 },{ 0.5,1.0 },{ 0.725,0.95 },{ 0.85,0.6 },{ 1.0,0.3 }};
 //
-//		maxOmega = 376.99;
-//		enginePower = 145;
-//		peakTorque = 581;
-//		idleRPM = 650;
-//		redRPM = 3600;
+		maxOmega = 471;
+		enginePower = 276;
+		peakTorque = 1253;
+		idleRpm = 800;
+		redRpm = 4500;
 //
 //		engineLosses = 30;
-//		thrustDelay=0.2;
+		thrustDelay = 0.1;
 //		engineBrakeCoef = 0.8;
 //
 //		//----- Anti-rollbar Parameters -----//
-//		antiRollbarForceCoef=0;
-//		antiRollbarForceLimit=0.5;
-//		antiRollbarSpeedMin=10;
-//		antiRollbarSpeedMax=80;
+		antiRollbarForceCoef = 12;
+		antiRollbarForceLimit = 10;
+		antiRollbarSpeedMin = 20;
+		antiRollbarSpeedMax = 50;
 
 		class Wheels
         {
             class LF
             {
-				width = "0.05";
                 boneName = "wheel_1_1_damper";
                 steering = 1;
                 side = "left";
                 center = "wheel_1_1_axis";
                 boundary = "wheel_1_1_bound";
-				mass=40;
-				MOI=5;
+                width = "0.2";
+                mass = 150;
+                MOI = 40;
                 dampingRate = 0.1;
-				maxBrakeTorque=5400;
+                dampingRateDamaged = 1.0;
+                dampingRateDestroyed = 1000.0;
+                maxBrakeTorque = 22500;
                 maxHandBrakeTorque = 0;
                 suspTravelDirection[] = {0,-1,0};
                 suspForceAppPointOffset = "wheel_1_1_axis";
                 tireForceAppPointOffset = "wheel_1_1_axis";
-				maxCompression=0.05;
-                mMaxDroop = 0.1;
-				sprungMass = 576;
-				springStrength = 58550;
-				springDamperRate = 4686;
-
-				longitudinalStiffnessPerUnitGravity=1172;
-				latStiffX=10;
-				latStiffY=25;
-				frictionVsSlipGraph[]=
-				{
-					{0,1.2},
-					{0.5,1.13},
-					{1,1}
-				};
-			};
-			class LR: LF
-			{
+                maxCompression = 0.15;
+                mMaxDroop = 0.15;
+                sprungMass = 2066;
+                springStrength = 201234;
+                springDamperRate = 20600.6;
+                longitudinalStiffnessPerUnitGravity = 5000;
+                latStiffX = 25;
+                latStiffY = 180;
+                frictionVsSlipGraph[] = {{ 0,1 },{ 0.5,1 },{ 1,1 }};
+            };
+            class LR: LF
+            {
                 boneName = "wheel_1_2_damper";
                 steering = 0;
                 center = "wheel_1_2_axis";
                 boundary = "wheel_1_2_bound";
                 suspForceAppPointOffset = "wheel_1_2_axis";
                 tireForceAppPointOffset = "wheel_1_2_axis";
-				maxHandBrakeTorque=30000;
+                maxHandBrakeTorque = 275000;
             };
             class RF: LF
             {
@@ -139,6 +127,6 @@
                 boundary = "wheel_2_2_bound";
                 suspForceAppPointOffset = "wheel_2_2_axis";
                 tireForceAppPointOffset = "wheel_2_2_axis";
-				maxHandBrakeTorque=30000;
+                maxHandBrakeTorque = 275000;
             };
         };

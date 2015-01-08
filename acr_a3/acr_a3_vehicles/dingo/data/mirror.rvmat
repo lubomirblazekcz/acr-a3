@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="\a3\data_f\env_mirror_co.paa";
+	texture="acr_a3\acr_a3_vehicles\dingo\data\env_mirror_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
