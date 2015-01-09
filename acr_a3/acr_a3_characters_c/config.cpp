@@ -574,7 +574,7 @@ class cfgWeapons
     class U_ACR_A3_CombatUniform_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
         displayName = "$STR_ACR_UNIFORM_vest";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_vz95.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_vz95_rukav.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
@@ -625,7 +625,7 @@ class cfgWeapons
     class U_ACR_A3_CombatUniform_Des_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
         displayName = "$STR_ACR_UNIFORM_DESERT_vest";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_DESERT.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_DESERT_rukav.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
@@ -661,7 +661,7 @@ class cfgWeapons
     class U_ACR_A3_CombatUniform_MOUT_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
         displayName = "$STR_ACR_UNIFORM_MOUT_vest";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_MOUT.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_MOUT_rukav.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT.paa"};
@@ -697,7 +697,7 @@ class cfgWeapons
     class U_ACR_A3_CombatUniform_MOUT_Des_vest: U_B_CombatUniform_mcam_vest // Rukávy
     {
         displayName = "$STR_ACR_UNIFORM_MOUT_DES_vest";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_MOUT_des.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_MOUT_des_rukav.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT_des.paa"};
