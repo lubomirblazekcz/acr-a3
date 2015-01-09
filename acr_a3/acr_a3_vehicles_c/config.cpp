@@ -1,7 +1,7 @@
 class CfgPatches 
 {
 
-	class acr_a3_characters
+	class acr_a3_vehicles_c
 	{
 		units[] = { };
 		weapons[] = { };
@@ -9,3 +9,4 @@ class CfgPatches
 		requiredAddons[] = { };
 	};
 };
+

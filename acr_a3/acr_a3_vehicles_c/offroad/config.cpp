@@ -124,7 +124,7 @@ class CfgVehicles
         };
         class EventHandlers
         {
-            init = "(_this select 0) execVM ""\acr_a3\acr_a3_vehicles\offroad\randomize_colors.sqf""";
+            init = "(_this select 0) execVM ""\acr_a3\acr_a3_vehicles_c\offroad\randomize_colors.sqf""";
             killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled'); _this select 0 animate [""DamageUnHideConstruction"",0];";
         };
 	};
@@ -141,7 +141,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa","\acr_a3\acr_a3_vehicles\offroad\data\Offroad01.paa"};
         class EventHandlers
         {
-            init = "(_this select 0) execVM ""\acr_a3\acr_a3_vehicles\offroad\randomize_colors.sqf""";
+            init = "(_this select 0) execVM ""\acr_a3\acr_a3_vehicles_c\offroad\randomize_colors.sqf""";
             killed = "_this call (uinamespace getvariable 'BIS_fnc_effectKilled'); _this select 0 animate [""DamageUnHideConstruction"",0];";
         };
     };

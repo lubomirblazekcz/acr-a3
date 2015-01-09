@@ -1,11 +1,11 @@
 class CfgPatches 
 {
 
-	class acr_a3_air_pbo
+	class acr_a3_air
 	{
 		units[] = { };
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = { };
+		requiredAddons[] = {"acr_a3_air_c"};
 	};
 };

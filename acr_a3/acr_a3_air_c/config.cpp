@@ -1,7 +1,7 @@
 class CfgPatches 
 {
 
-	class acr_a3_characters
+	class acr_a3_air_c
 	{
 		units[] = { };
 		weapons[] = { };
