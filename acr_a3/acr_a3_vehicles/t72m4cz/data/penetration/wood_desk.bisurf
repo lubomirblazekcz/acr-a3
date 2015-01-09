@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.88
+//Fri Jan 09 17:30:44 2015 : Source 'file' date Fri Jan 09 17:30:44 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class ca : data\penetration\wood_desk.bisurf{
+Density = 600;
+Thickness = 20;
+bulletPenetrabilityWithThickness = 150;
+rough = 0.1;
+dust = 0;
+bulletPenetrability = 300;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.7;
+restitution = 0.4;
+impact = "Hit_Wood";
+soundHit = "wood";
+//};
