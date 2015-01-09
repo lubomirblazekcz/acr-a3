@@ -1,0 +1,4 @@
+surfaceInfo="acr_a3\acr_a3_vehicles\t810\data\Penetration\rubber.bisurf";
+
+diffuse[]={0.5,0.5,1.0,1.000000};
+ambient[]={0.5,0.5,1.0,1.000000};
