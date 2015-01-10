@@ -49,7 +49,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
     		uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
-            containerClass = "Supply120";
+            containerClass = "Supply140";
             mass = 80;
             armor = 30;
             passThrough = 0.5;
@@ -69,7 +69,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
-            containerClass = "Supply120";
+            containerClass = "Supply140";
             mass = 80;
             armor = 30;
             passThrough = 0.5;
@@ -87,7 +87,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
-            containerClass = "Supply120";
+            containerClass = "Supply140";
             mass = 60;
             armor = 20;
             passThrough = 0.5;
@@ -105,7 +105,7 @@ class cfgWeapons
         class ItemInfo: VestItem
         {
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
-            containerClass = "Supply120";
+            containerClass = "Supply140";
             mass = 80;
             armor = 30;
             passThrough = 0.5;
