@@ -1,6 +1,6 @@
 /// PhysX part
 simulation			= tankX;
-enginePower			= 746;
+enginePower			= 582;
 maxOmega 			= 276;
 peakTorque 			= 4832;
 
