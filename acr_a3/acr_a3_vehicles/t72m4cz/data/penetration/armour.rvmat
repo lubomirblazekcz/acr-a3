@@ -7,7 +7,7 @@
 #define _ARMA_
 
 //Class ca : data\penetration\armour.rvmat{
-surfaceInfo = "ca\data\Penetration\armour.bisurf";
+surfaceInfo = "acr_a3\acr_a3_vehicles\t72m4cz\data\Penetration\armour.bisurf";
 diffuse[] = {1.0,0.5,0.5,1.0};
 ambient[] = {1.0,0.5,0.5,1.0};
 //};

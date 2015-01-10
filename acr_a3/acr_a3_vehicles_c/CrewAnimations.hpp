@@ -3,6 +3,12 @@ class CfgMovesBasic
 	class DefaultDie;
 	class ManActions
 	{
+        T72_Commander = "T72_Commander";
+        T72_CommanderOUT = "T72_CommanderOUT";
+        T72_Driver = "T72_Driver";
+        T72_DriverOUT = "T72_DriverOUT";
+        T72_Gunner = "T72_Gunner";
+        T72_GunnerOut = "T72_GunnerOut";
         HMMWV_Driver = "HMMWV_Driver";
         HMMWV_Gunner01 = "HMMWV_Gunner01";
         HMMWV_Gunner02 = "HMMWV_Gunner02";
@@ -54,6 +60,110 @@ class CfgMovesMaleSdr: CfgMovesBasic
         };
         class Crew;
         class AmovPercMstpSnonWnonDnon;
+        class KIA_T72_Commander: DefaultDie
+        {
+            actions = "DeadActions";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\KIA_T72_Commander.rtm";
+            speed = 0.5;
+            looped = 0;
+            terminal = 1;
+            soundEnabled = 0;
+            connectTo[]=
+            {
+                "Unconscious",
+                0.1
+            };
+        };
+        class KIA_T72_CommanderOUT: DefaultDie
+        {
+            actions = "DeadActions";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\KIA_T72_CommanderOut.rtm";
+            speed = 0.5;
+            looped = 0;
+            terminal = 1;
+            soundEnabled = 0;
+            connectTo[]=
+            {
+                "Unconscious",
+                0.1
+            };
+        };
+        class T72_Commander: Crew
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_Commander.rtm";
+            interpolateTo[] = {"KIA_T72_Commander",1};
+        };
+
+        class T72_CommanderOut: Crew
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_CommanderOut.rtm";
+            interpolateTo[] = {"KIA_T72_CommanderOut",1};
+            leftHandIKCurve[] = {1};
+            //leftHandIKBeg = true;
+            //leftHandIKEnd = true;
+            //rightHandIKCurve[] = {1};
+        };
+        class KIA_T72_Driver: DefaultDie
+        {
+            actions = "DeadActions";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\KIA_T72_Driver.rtm";
+            connectTo[]=
+            {
+                "Unconscious",
+                0.1
+            };
+            speed = 0.5;
+            looped = 0;
+            terminal = 1;
+            soundEnabled = 0;
+        };
+        class T72_Driver: Crew
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_Driver.rtm";
+            interpolateTo[] = {"KIA_T72_Driver",1};
+        };
+        class T72_DriverOut: T72_Driver
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_DriverOut.rtm";
+        };
+        class KIA_T72_Gunner: DefaultDie
+        {
+            actions = "DeadActions";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\KIA_T72_Gunner.rtm";
+            connectTo[]=
+            {
+                "Unconscious",
+                0.1
+            };
+            speed = 0.5;
+            looped = 0;
+            terminal = 1;
+            soundEnabled = 0;
+        };
+        class T72_Gunner: Crew
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_Gunner.rtm";
+            interpolateTo[] = {"KIA_T72_Gunner",1};
+        };
+        class KIA_T72_GunnerOut: DefaultDie
+        {
+            actions = "DeadActions";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\KIA_T72_GunnerOut.rtm";
+            connectTo[]=
+            {
+                "Unconscious",
+                0.1
+            };
+            speed = 0.5;
+            looped = 0;
+            terminal = 1;
+            soundEnabled = 0;
+        };
+        class T72_GunnerOut: Crew
+        {
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\T72_GunnerOut.rtm";
+            interpolateTo[] = {"KIA_T72_GunnerOut",1};
+        };
         class KIA_HMMWV_Driver: DefaultDie
         {
             actions = "DeadActions";
