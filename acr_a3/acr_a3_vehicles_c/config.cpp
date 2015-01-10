@@ -1,4 +1,4 @@
-class CfgPatches 
+class CfgPatches
 {
 
 	class acr_a3_vehicles_c
@@ -6,7 +6,8 @@ class CfgPatches
 		units[] = { };
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = { };
+		requiredAddons[] = {"A3_Soft_F"};
 	};
 };
 
+#include "CrewAnimations.hpp"

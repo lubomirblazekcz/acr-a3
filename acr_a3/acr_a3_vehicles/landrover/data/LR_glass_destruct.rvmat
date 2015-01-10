@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\Data\LR_Glass_SMDI.tga";
+    texture="acr_a3\acr_a3_vehicles\landrover\data\LR_Glass_SMDI.tga";
     uvSource="tex";
     class uvTransform
     {
@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\data\env_land_co.tga";
+    texture="a3\data_f\env_land_co.paa";
     uvSource="tex";
     class uvTransform
     {

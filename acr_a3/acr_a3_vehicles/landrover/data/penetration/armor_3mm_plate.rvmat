@@ -1,4 +1,4 @@
-surfaceInfo="acr_a3\acr_a3_vehicles\landrover\Data\Penetration\armor_3mm_plate.bisurf";
+surfaceInfo="acr_a3\acr_a3_vehicles\landrover\data\Penetration\armor_3mm_plate.bisurf";
 ambient[]={0.490196,0.592157,0.556863,1.000000};
 diffuse[]={0.490196,0.592157,0.556863,1.000000};
 forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
