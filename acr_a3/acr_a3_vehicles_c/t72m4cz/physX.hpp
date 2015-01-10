@@ -1,6 +1,6 @@
 /// PhysX part
 simulation			= tankX;
-enginePower			= 582;
+enginePower			= 746;
 maxOmega 			= 276;
 peakTorque 			= 4832;
 
@@ -28,7 +28,7 @@ redRpm = 2640; // RPM at which the engine redlines.
 engineLosses = 25; // power losses on the engine's crank-shaft (before the gearbox) in Nm. (Multiplied by the gear ratio)
 transmissionLosses = 15; // power losses on wheel axis (in/after the gearbox) in Nm. (Constant)
 
-		
+
 //,"D6",1.425,"D7",1.25
 
 changeGearMinEffectivity[]={0.5,0.15000001,0.84999999,0.84999999,0.84999999,0.84999999,0.84999998};
