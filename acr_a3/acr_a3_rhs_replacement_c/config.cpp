@@ -1,7 +1,7 @@
 class DefaultEventhandlers;
 class CfgPatches
 {
-	class acr_a3_rhs_replacement
+	class acr_a3_rhs_replacement_c
 	{
 		units[] = {"ACR_A3_Mi_24v", "ACR_A3_Mi_24p", "ACR_A3_Mi17_base_CZ_EP1", "ACR_A3_Mi171Sh_rockets_CZ_EP1", "ACR_A3_Mi171Sh_medevac_CZ_EP1", "ACR_A3_UAZ_469", "ACR_A3_UAZ_469_Open"};
 		weapons[] = {};
