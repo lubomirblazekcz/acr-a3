@@ -28,7 +28,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "acr_a3\acr_a3_vehicles\hmmwv\data\destruct\destruct_plech_full_dt.paa";
+	texture = "a3\data_f\destruct\destruct_plech_full_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -88,7 +88,7 @@ class Stage6
 };
 class Stage7
 {
-	texture = "acr_a3\acr_a3_vehicles\hmmwv\data\env_land_co.paa";
+	texture = "a3\data_f\env_land_co.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

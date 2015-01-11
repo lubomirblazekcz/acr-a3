@@ -41,7 +41,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "acr_a3\acr_a3_vehicles\t72m4cz\data\destruct\destruct_plech_full_mc.paa";
+	texture = "a3\data_f\destruct\destruct_plech_full_mc.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -65,7 +65,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "acr_a3\acr_a3_vehicles\t72m4cz\data\destruct\destruct_plech_full_smdi.paa";
+	texture = "a3\data_f\destruct\destruct_plech_full_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -82,7 +82,7 @@ class Stage6
 };
 class Stage7
 {
-	texture = "acr_a3\acr_a3_vehicles\t72m4cz\data\env_land_co.paa";
+	texture = "a3\data_f\env_land_co.paa";
 	uvSource = "none";
 };
 class StageTI

@@ -17,7 +17,7 @@ class Stage0
 };
 class Stage1
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destr_glass_armour2_full_nohq.tga";
+	texture="a3\data_f\Destruct\destr_glass_armour2_full_nohq.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -42,7 +42,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destr_glass_armour2_full_ca.tga";
+	texture="a3\data_f\Destruct\destr_glass_armour2_full_ca.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -67,7 +67,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destr_glass_armour2_full_smdi.tga";
+	texture="a3\data_f\Destruct\destr_glass_armour2_full_smdi.tga";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -24,7 +24,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\damage_metal_basicarmor_dt.tga";
+	texture="a3\data_f\Destruct\damage_metal_basicarmor_dt.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -36,7 +36,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destruct_plech_full_mc.tga";
+	texture="a3\data_f\Destruct\destruct_plech_full_mc.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destruct_plech_full_smdi.tga";
+	texture="a3\data_f\Destruct\destruct_plech_full_smdi.tga";
 	uvSource="tex";
 	class uvTransform
 	{

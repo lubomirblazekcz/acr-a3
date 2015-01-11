@@ -24,7 +24,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="acr_a3\acr_a3_vehicles\dingo\data\Destruct\destruct_rubber_half_dt.tga";
+	texture="a3\data_f\Destruct\destr_rubber_half_dt.tga";
 	uvSource="tex";
 	class uvTransform
 	{
