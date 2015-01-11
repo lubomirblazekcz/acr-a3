@@ -1,6 +1,5 @@
 class CfgPatches 
 {
-
 	class acr_a3_bmp2
 	{
 		units[] = {"acr_a3_bmp2"};

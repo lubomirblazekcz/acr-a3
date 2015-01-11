@@ -13,7 +13,7 @@ class RscInGameUI
 	class acr_a3_RscWeaponBMP2_FCS: RscUnitInfo
 	{
 		idd=300;
-		onLoad="if (isNil 'a3_ui_initDisplay') then {a3_ui_initDisplay = compile preprocessfilelinenumbers 'A3\ui_f\scripts\initDisplay.sqf'}; ['onLoad',_this,'RscUnitInfo','IGUI'] call a3_ui_initDisplay; _this call RDS_fnc_sight_BMP2";
+		onLoad="if (isNil 'a3_ui_initDisplay') then {a3_ui_initDisplay = compile preprocessfilelinenumbers 'A3\ui_f\scripts\initDisplay.sqf'}; ['onLoad',_this,'RscUnitInfo','IGUI'] call a3_ui_initDisplay; _this call ACR_A3_fnc_sight_BMP2";
 		controls[]=
 		{
 			"CA_IGUI_elements_group"

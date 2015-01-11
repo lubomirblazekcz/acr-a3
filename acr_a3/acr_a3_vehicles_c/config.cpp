@@ -6,7 +6,7 @@ class CfgPatches
 		units[] = { };
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"A3_Soft_F"};
+		requiredAddons[] = {"A3_Armor_F","A3_Soft_F"};
 	};
 };
 

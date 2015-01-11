@@ -697,7 +697,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
         };
         class Stryker_Cargo01_V3: Stryker_Cargo01
         {
-            file = "\acr_a3\acr_a3_vehicles\bmp2\Stryker_Cargo01_V3.rtm";
+            file = "\acr_a3\acr_a3_vehicles\Data\Anim\Stryker_Cargo01_V3.rtm";
             interpolateTo[] = {"KIA_Stryker_Cargo01",0.1};
             connectTo[] = {"Stryker_Cargo01",0.1};
             speed = 0.197;
