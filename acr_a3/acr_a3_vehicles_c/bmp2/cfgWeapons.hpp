@@ -363,6 +363,15 @@ class cfgWeapons
 			"ACR_A3_100Rnd_762x54_PKT"
 		};
 		magazineReloadTime = 5;
+        class GunParticles
+        {
+            class effect1
+            {
+                positionName="kulas";
+                directionName="kulas";
+                effectName="MachineGunCloud";
+            };
+        };
 	};
 
 };

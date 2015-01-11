@@ -196,7 +196,7 @@ class CfgVehicles
                         gunEnd = "gun_chamber";
 						weapons[] = {"ACR_A3_KORD","SmokeLauncher"};
 						magazines[] = {"150Rnd_127x108_Ball","150Rnd_127x108_Ball","150Rnd_127x108_Ball","150Rnd_127x108_Ball","SmokeLauncherMag","SmokeLauncherMag"};
-						//selectionFireAnim = "zasleh_1";
+						selectionFireAnim = "zasleh_1";
 
                         //memoryPointGunnerOutOptics = "commander_weapon_view";
                         memoryPointGunnerOptics= "commanderview";
@@ -263,7 +263,7 @@ class CfgVehicles
 
                 // Coaxial gun
                 memoryPointGun = "kulas";
-                selectionFireAnim = "zasleh2";
+                selectionFireAnim = "zasleh";
 
                 // Main gun
                 gunBeg = "usti hlavne";
