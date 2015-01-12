@@ -19,7 +19,7 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_TL";
+                        vehicle = "B_ACR_A3_Soldier_SL";
                     };
                     class Unit1
                     {
@@ -47,7 +47,7 @@ class CfgGroups
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_GL";
+                        vehicle = "B_ACR_A3_Soldier_TL";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
@@ -80,7 +80,7 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_TL_des";
+                        vehicle = "B_ACR_A3_Soldier_SL_des";
                     };
                     class Unit1
                     {
@@ -108,7 +108,7 @@ class CfgGroups
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_GL_des";
+                        vehicle = "B_ACR_A3_Soldier_TL_des";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
@@ -634,7 +634,7 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_TL";
+                        vehicle = "B_ACR_A3_Soldier_SL";
                     };
                     class Unit1
                     {
@@ -662,7 +662,7 @@ class CfgGroups
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_GL";
+                        vehicle = "B_ACR_A3_Soldier_TL";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
@@ -702,7 +702,7 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_TL_des";
+                        vehicle = "B_ACR_A3_Soldier_SL_des";
                     };
                     class Unit1
                     {
@@ -730,7 +730,7 @@ class CfgGroups
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "B_ACR_A3_Soldier_GL_des";
+                        vehicle = "B_ACR_A3_Soldier_TL_des";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};

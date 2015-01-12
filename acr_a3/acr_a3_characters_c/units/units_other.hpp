@@ -155,12 +155,12 @@ class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
     uniformClass = "U_ACR_A3_SweaterUniform_vz95";
     hiddenSelections[] = {"Camo", "insignia"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
-    weapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
-    respawnWeapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
-    magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-    respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-    linkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    respawnlinkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    weapons[] = {"Throw","Put","Rangefinder"};
+    respawnWeapons[] = {"Throw","Put","Rangefinder"};
+    magazines[] = {"Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+    respawnMagazines[] = {"Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+    linkedItems[] = {"V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"FirstAidKit"};
     respawnItems[] = {"FirstAidKit"};
     class eventHandlers
@@ -176,5 +176,83 @@ class B_ACR_A3_Soldier_lite_des: B_ACR_A3_Soldier_lite
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+class B_ACR_A3_crew: B_crew_F
+{
+    _generalMacro = "B_Soldier_lite_F";
+    identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "Men"; //zaklad
+    genericNames = "CzechMen";
+    model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
+    nakedUniform = "U_ACR_A3_BasicBody_blk";
+    uniformClass = "U_ACR_A3_SweaterUniform_vz95";
+    hiddenSelections[] = {"Camo", "insignia"};
+    hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
+    weapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+    respawnWeapons[] = {"CUP_arifle_Sa58V","Throw","Put","Rangefinder"};
+    magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+    respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","Chemlight_green","Chemlight_green","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+    linkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"rhs_tsh4","V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    Items[] = {"FirstAidKit"};
+    respawnItems[] = {"FirstAidKit"};
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+class B_ACR_A3_crew_des: B_ACR_A3_crew
+{
+    displayName = "$STR_ACR_SOLDIER_LITE_DES";
+    uniformClass = "U_ACR_A3_SweaterUniform_des";
+    hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+
+class B_diver_F;
+class B_diver_TL_F;
+class B_diver_exp_F;
+class B_ACR_A3_diver: B_diver_F
+{
+    identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+    genericNames = "CzechMen";
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    nakedUniform = "U_ACR_A3_BasicBody_blk";
+    backpack = "B_Assault_Diver";
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+class B_ACR_A3_diver_TL: B_diver_TL_F
+{
+    identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+    genericNames = "CzechMen";
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    nakedUniform = "U_ACR_A3_BasicBody_blk";
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+class B_ACR_A3_diver_exp: B_diver_exp_F
+{
+    identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+    genericNames = "CzechMen";
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    nakedUniform = "U_ACR_A3_BasicBody_blk";
+    backpack = "B_AssaultPack_blk_DiverExp";
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
     };
 };

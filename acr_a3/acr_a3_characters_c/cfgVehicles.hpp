@@ -20,6 +20,7 @@ class cfgVehicles
     class B_Helipilot_F;
     class B_officer_F;
     class B_Soldier_lite_F;
+    class B_soldier_AA_F;
 	class B_Carryall_mcamo;
 	class B_Kitbag_cbr;
 	class B_spotter_F;

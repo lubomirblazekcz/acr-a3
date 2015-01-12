@@ -236,6 +236,30 @@ class B_ACR_A3_Soldier_MAT: B_soldier_LAT_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
+class B_ACR_A3_Soldier_AA: B_soldier_AA_F
+{
+    _generalMacro = "B_soldier_AA_F";
+    identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    backpack = "";
+    genericNames = "CzechMen";
+    nakedUniform = "U_ACR_A3_BasicBody_blk";
+    uniformClass = "U_ACR_A3_CombatUniform";
+    weapons[] = {"acr_a3_Sa58RIS1_Aco_Laser","Throw","Put","Binocular","CUP_launch_9K32Strela"};
+    respawnWeapons[] = {"acr_a3_Sa58RIS1_Aco_Laser","Throw","Put","Binocular","CUP_launch_9K32Strela"};
+    magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_Strela_2_M"};
+    respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_Strela_2_M"};
+    linkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    Items[] = {"FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit"};
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+    };
+};
 
 // vz.95 Poust
 class B_ACR_A3_Soldier_01_des: B_ACR_A3_Soldier_01
@@ -355,5 +379,18 @@ class B_ACR_A3_Soldier_MAT_des: B_ACR_A3_Soldier_MAT
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+    };
+};
+class B_ACR_A3_Soldier_AA_des: B_ACR_A3_Soldier_AA
+{
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
+    uniformClass = "U_ACR_A3_CombatUniform_Des";
+    weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular","CUP_launch_9K32Strela"};
+    respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular","CUP_launch_9K32Strela"};
+    linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    class eventHandlers
+    {
+        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
