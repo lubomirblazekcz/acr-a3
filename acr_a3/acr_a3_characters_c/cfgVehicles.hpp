@@ -48,6 +48,8 @@ class cfgVehicles
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Scoutpack_ACR.p3d";
 		author = "$STR_ACR";
+        maximumLoad = 80;
+        mass = 15;
     };
     class CUP_B_ACRScout_m95: CUP_B_ACRScout_Base
     {
@@ -55,6 +57,8 @@ class cfgVehicles
 		displayName = "$STR_ACR_KITBAG_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
 		author = "$STR_ACR";
+        maximumLoad = 80;
+        mass = 15;
     };
 	class ACR_A3_Backpack_Carryall_vz95: B_Carryall_mcamo
 	{
@@ -139,17 +143,16 @@ class cfgVehicles
 	{
 		_generalMacro = "B_Soldier_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-		backpack = "CUP_B_ACRScout_m95";
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
-		weapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		respawnWeapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		weapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","Throw","Put","Binocular"};
+		respawnWeapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","Throw","Put","Binocular"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","HandGrenade"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -164,7 +167,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
         };
 	};
 	class ACR_Vojak02: B_Soldier_GL_F // Granátometčík
@@ -196,7 +199,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Vojak03: B_soldier_AR_F
@@ -204,7 +207,6 @@ class cfgVehicles
 		_generalMacro = "B_soldier_AR_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
-		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX01"; //LESNI
 		displayName = "$STR_B_SOLDIER_AR_F0";
 		genericNames = "CzechMen";
@@ -213,8 +215,8 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_vest"; // Kulometčík
 		weapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
 		respawnWeapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+		respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -230,7 +232,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
 	};
 	class ACR_Vojak04: B_soldier_M_F
@@ -255,7 +257,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Vojak05: B_medic_F
@@ -279,7 +281,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Vojak06: B_Soldier_TL_F
@@ -288,15 +290,14 @@ class cfgVehicles
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
-		backpack = "ACR_A3_Backpack_Carryall_vz95";
 		displayName = "$STR_B_SOLDIER_TL_F0"; // Velitel týmu
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		weapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_P07","Throw","Put","Rangefinder"};
 		respawnWeapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_P07","Throw","Put","Rangefinder"};
-		magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-		respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+		respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -305,7 +306,7 @@ class cfgVehicles
 		canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',7];";
         };
 	};
 	class ACR_Vojak07: B_soldier_repair_F
@@ -314,15 +315,15 @@ class cfgVehicles
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX01"; //LESNI
-		backpack = "ACR_A3_Backpack_Kitbag_vz95";
+		backpack = "";
 		displayName = "$STR_B_ENGINEER_F0"; // Ženista
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
 		weapons[] = {"acr_a3_Sa58RIS1_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
 		respawnWeapons[] = {"acr_a3_Sa58RIS1_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -330,7 +331,7 @@ class cfgVehicles
 		canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
         };
 	};
 	class ACR_Vojak10: B_soldier_LAT_F
@@ -344,17 +345,17 @@ class cfgVehicles
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform";
-		weapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-		respawnWeapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+		weapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+		respawnWeapons[] = {"acr_a3_Sa58RIS2_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
 		linkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 
@@ -364,16 +365,15 @@ class cfgVehicles
 		_generalMacro = "B_Soldier_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
-		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
-		weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular"};
+		respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -388,7 +388,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
         };
 	};
 	class ACR_Des_Vojak02: B_Soldier_GL_F // Granátometčík
@@ -420,7 +420,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Des_Vojak03: B_soldier_AR_F
@@ -428,7 +428,6 @@ class cfgVehicles
 		_generalMacro = "B_soldier_AR_F";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
-		backpack = "CUP_B_ACRScout_m95";
 		vehicleClass = "ACRX03"; //POUST
 		displayName = "$STR_B_SOLDIER_AR_F0"; // Kulometčík
 		genericNames = "CzechMen";
@@ -436,8 +435,8 @@ class cfgVehicles
 		uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
 		weapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
 		respawnWeapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+		respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -453,7 +452,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
 	};
 	class ACR_Des_Vojak04: B_soldier_M_F
@@ -477,7 +476,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Des_Vojak05: B_medic_F
@@ -501,7 +500,7 @@ class cfgVehicles
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Des_Vojak06: B_Soldier_TL_F
@@ -526,7 +525,7 @@ class cfgVehicles
 		canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 	class ACR_Des_Vojak07: B_soldier_repair_F
@@ -535,15 +534,15 @@ class cfgVehicles
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
 		faction = "ACR"; author = "$STR_ACR";
 		vehicleClass = "ACRX03"; //POUST
-		backpack = "ACR_A3_Backpack_Kitbag_vz95";
+		backpack = "";
 		displayName = "$STR_B_ENGINEER_F0"; // Ženista
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
 		weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
 		respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
@@ -551,7 +550,7 @@ class cfgVehicles
 		canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
         };
 	};
 	class ACR_Des_Vojak10: B_soldier_LAT_F
@@ -565,17 +564,17 @@ class cfgVehicles
 		genericNames = "CzechMen";
 		nakedUniform = "ACR_blk_BasicBody";
 		uniformClass = "U_ACR_A3_CombatUniform_Des";
-		weapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-		respawnWeapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+		weapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+		respawnWeapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+		magazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+		respawnMagazines[] = {"CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","CUP_30Rnd_Sa58_M","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
 		linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 		Items[] = {"FirstAidKit","FirstAidKit"};
 		respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
         };
 	};
 
@@ -608,7 +607,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Vojak02: B_Soldier_GL_F // Granátometčík
@@ -630,7 +629,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Vojak03: B_soldier_AR_F
@@ -645,8 +644,8 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_CombatUniform_MOUT_vest";
         weapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
         respawnWeapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
-        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
         linkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier2_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier2_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
@@ -662,7 +661,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
     };
     class ACR_MOUT_Vojak04: B_soldier_M_F
@@ -690,7 +689,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Vojak05: B_medic_F
@@ -714,7 +713,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Vojak06: B_Soldier_TL_F
@@ -738,7 +737,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Vojak07: B_soldier_repair_F
@@ -747,7 +746,7 @@ class cfgVehicles
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02"; //MOUT
-        backpack = "B_Kitbag_rgr";
+        backpack = "";
         displayName = "$STR_B_ENGINEER_F0"; // Ženista
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -763,7 +762,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
         };
     };
     class ACR_MOUT_Vojak10: B_soldier_LAT_F
@@ -777,17 +776,17 @@ class cfgVehicles
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_CombatUniform_MOUT";
-        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier1_rgr","NVGoggles_OPFOR","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_rgr","NVGoggles_OPFOR","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
@@ -820,7 +819,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Des_Vojak02: B_Soldier_GL_F // Granátometčík
@@ -842,7 +841,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Des_Vojak03: B_soldier_AR_F
@@ -857,8 +856,8 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des_vest";
         weapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
         respawnWeapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
-        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
+        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade"};
         linkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier2_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier2_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
@@ -874,7 +873,7 @@ class cfgVehicles
         };
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_rgr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
     };
     class ACR_MOUT_Des_Vojak04: B_soldier_M_F
@@ -902,7 +901,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Des_Vojak05: B_medic_F
@@ -926,7 +925,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Des_Vojak06: B_Soldier_TL_F
@@ -950,7 +949,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_MOUT_Des_Vojak07: B_soldier_repair_F
@@ -959,7 +958,7 @@ class cfgVehicles
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX02_DES"; //MOUT
-        backpack = "B_Kitbag_rgr";
+        backpack = "";
         displayName = "$STR_B_ENGINEER_F0"; // Ženista
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
@@ -975,7 +974,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
         };
     };
     class ACR_MOUT_Des_Vojak10: B_soldier_LAT_F
@@ -989,17 +988,17 @@ class cfgVehicles
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
-        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier1_rgr","NVGoggles_OPFOR","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_rgr","NVGoggles_OPFOR","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
@@ -1026,7 +1025,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Vojak02: B_recon_JTAC_F // JTAC
@@ -1048,7 +1047,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Vojak03: B_soldier_AR_F // Kulometčík
@@ -1063,15 +1062,15 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_CombatUniform_tshirt";
         weapons[] = {"acr_a3_M60E4","acr_a3_SP01","Throw","Put","Binocular"};
         respawnWeapons[] = {"acr_a3_M60E4","acr_a3_SP01","Throw","Put","Binocular"};
-        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade"};
+        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
     };
     class ACRP_Vojak04: B_recon_M_F  // Ostrostřelec
@@ -1095,7 +1094,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Vojak05: B_recon_medic_F // Zdravotník
@@ -1120,7 +1119,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Vojak06: B_recon_TL_F // Velitel týmu
@@ -1129,14 +1128,13 @@ class cfgVehicles
         identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         faction = "ACR"; author = "$STR_ACR";
         vehicleClass = "ACRX0"; //RECON
-        backpack = "ACR_A3_Backpack_Carryall_vz95";
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_CombatUniform_tshirt";
         weapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_SP01","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_SP01","Throw","Put","Rangefinder"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier2_vz95","H_ACR_A3_Cap_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_vz95","H_ACR_A3_Cap_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
@@ -1144,7 +1142,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
         };
     };
     class ACRP_Vojak07: B_recon_exp_F // Exp. specialsta
@@ -1167,7 +1165,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_L","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Vojak10: B_recon_LAT_F // Raketometčík
@@ -1180,17 +1178,17 @@ class cfgVehicles
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_CombatUniform_tshirt";
-        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_SP01","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_SP01","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
         linkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95","V_ACR_A3_PlateCarrierIA1_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95","V_ACR_A3_PlateCarrierIA1_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
@@ -1216,7 +1214,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Des_Vojak02: B_recon_JTAC_F // JTAC
@@ -1238,7 +1236,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Des_Vojak03: B_soldier_AR_F // Kulometčík
@@ -1253,15 +1251,15 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
         weapons[] = {"acr_a3_M60E4","acr_a3_SP01","Throw","Put","Binocular"};
         respawnWeapons[] = {"acr_a3_M60E4","acr_a3_SP01","Throw","Put","Binocular"};
-        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green"};
+        magazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade"};
+        respawnMagazines[] = {"acr_a3_100Rnd_762x51_B_M60E4","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_cbr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
         };
     };
     class ACRP_Des_Vojak04: B_recon_M_F  // Ostrostřelec
@@ -1285,7 +1283,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Des_Vojak05: B_recon_medic_F // Zdravotník
@@ -1309,7 +1307,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Des_Vojak06: B_recon_TL_F // Velitel týmu
@@ -1324,8 +1322,8 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
         weapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_SP01","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_SP01","Throw","Put","Rangefinder"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","Chemlight_green","Chemlight_green","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareGreen_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareRed_F","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Cap_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Cap_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
@@ -1333,7 +1331,7 @@ class cfgVehicles
         canDeactivateMines = "true";
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Carryall_cbr';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
         };
     };
     class ACRP_Des_Vojak07: B_recon_exp_F // Exp. specialsta
@@ -1356,7 +1354,7 @@ class cfgVehicles
         respawnItems[] = {"muzzle_snds_L","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACRP_Des_Vojak10: B_recon_LAT_F // Raketometčík
@@ -1369,17 +1367,17 @@ class cfgVehicles
         genericNames = "CzechMen";
         nakedUniform = "ACR_blk_BasicBody";
         uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
-        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_SP01","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_SP01","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
-        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
-        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","CUP_MAAWS_HEAT_M"};
+        weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell","SmokeShell","HandGrenade","CUP_MAAWS_HEAT_M"};
         linkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95_des","V_PlateCarrierIA2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95_des","V_PlateCarrierIA2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         Items[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
@@ -1407,7 +1405,7 @@ class cfgVehicles
         respawnlinkedItems[] = {"V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_Sniper2: B_sniper_F
@@ -1422,15 +1420,15 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SniperGhillie";
         weapons[] = {"acr_a3_CZ750_SOS","acr_a3_P07","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"acr_a3_CZ750_SOS","acr_a3_P07","Throw","Put","Rangefinder"};
-        magazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
+        magazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag"};
+        respawnMagazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
-        linkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-        respawnlinkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+        respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_Sniper_Des: B_spotter_F
@@ -1456,7 +1454,7 @@ class cfgVehicles
         respawnlinkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_Sniper2_Des: B_sniper_F
@@ -1471,15 +1469,15 @@ class cfgVehicles
         uniformClass = "U_ACR_A3_SniperGhillie_des";
         weapons[] = {"acr_a3_CZ750_SOS","acr_a3_P07","Throw","Put","Rangefinder"};
         respawnWeapons[] = {"acr_a3_CZ750_SOS","acr_a3_P07","Throw","Put","Rangefinder"};
-        magazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","Chemlight_green","Chemlight_green"};
+        magazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag"};
+        respawnMagazines[] = {"CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","CUP_10Rnd_762x51_CZ750_Tracer","CUP_10Rnd_762x51_CZ750_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag"};
         Items[] = {"FirstAidKit","FirstAidKit"};
         respawnItems[] = {"FirstAidKit","FirstAidKit"};
         linkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         respawnlinkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
@@ -1607,7 +1605,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
         };
     };
     class ACR_Neozbrojeny_des: B_Soldier_F
@@ -1633,7 +1631,7 @@ class cfgVehicles
         respawnItems[] = {"FirstAidKit"};
         class eventHandlers
         {
-            init = "[_this select 0,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+            init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
         };
     };
 
