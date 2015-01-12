@@ -17,11 +17,11 @@ class CfgVehicles
 	{
 		scope = 2;
 		side = 1;
-		faction = "ACR";
+		faction = "ACR_A3";
 		vehicleclass = "Armored";
 		displayName = "Pandur II";
 		author = "$STR_ACR";
-		crew = "ACR_Neozbrojeny";
+		crew = "B_ACR_A3_Soldier_lite";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\pandur\data\Pandur01.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur02.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur03.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur04.paa"};
 		class TransportMagazines

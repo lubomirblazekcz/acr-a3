@@ -21,13 +21,13 @@ class cfgVehicles
 		_generalMacro = "B_Heli_Transport_02_base_F";
 		author = "$STR_ACR";
 		side = 1;
-		faction = "ACR";
+		faction = "ACR_A3";
 		vehicleclass = "Air";
 		displayName = "AW101 Merlin";
-		crew = "ACR_Pilot";
+		crew = "B_ACR_A3_Pilot";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\mohawk\data\blu_mohawk_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk2_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk3_co.paa"};
-		typicalCargo[] = {"ACR_Pilot"};
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
 	};
 };
 //};

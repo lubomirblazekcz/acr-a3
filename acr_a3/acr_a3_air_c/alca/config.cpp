@@ -21,10 +21,10 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALCA_CAS";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "B_ACR_A3_Pilot";
+        typicalCargo[] = {"B_ACR_A3_Pilot"};
 		side = 1;
-		faction = "ACR";
+		faction = "ACR_A3";
 		_generalMacro = "I_Plane_Fighter_03_CAS_F";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\alca\data\l159_body_1_co.paa","\acr_a3\acr_a3_air\alca\data\l159_body_2_co.paa"};
 
@@ -35,10 +35,10 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALCA_AA";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "B_ACR_A3_Pilot";
+        typicalCargo[] = {"B_ACR_A3_Pilot"};
         side = 1;
-        faction = "ACR";
+        faction = "ACR_A3";
         _generalMacro = "I_Plane_Fighter_03_AA_F";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\alca\data\l159_body_1_co.paa","\acr_a3\acr_a3_air\alca\data\l159_body_2_co.paa"};
 
@@ -49,10 +49,10 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALBATROS_CAS";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "B_ACR_A3_Pilot";
+        typicalCargo[] = {"B_ACR_A3_Pilot"};
         side = 1;
-        faction = "ACR";
+        faction = "ACR_A3";
         _generalMacro = "I_Plane_Fighter_03_CAS_F";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\alca\data\l-39_body_acr_green_co.paa","\acr_a3\acr_a3_air\alca\data\l-39_body_1_acr_green_co.paa"};
 
@@ -63,10 +63,10 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALBATROS_AA";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "B_ACR_A3_Pilot";
+        typicalCargo[] = {"B_ACR_A3_Pilot"};
         side = 1;
-        faction = "ACR";
+        faction = "ACR_A3";
         _generalMacro = "I_Plane_Fighter_03_AA_F";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\alca\data\l-39_body_acr_green_co.paa","\acr_a3\acr_a3_air\alca\data\l-39_body_1_acr_green_co.paa"};
 
