@@ -122,7 +122,7 @@ class cfgVehicles
     class B_ACR_A3_Soldier_Base: B_Soldier_base_F //The soldier who appears wearing your underwear class
     {
         scope = 1;//1 = private and ensures it doesnt list as a character in the editor
-        scopeCurator = 1;
+        scopeCurator = 0;
         displayName = "ACR Example Underwear Character";
 		identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
         model = "\A3\Characters_F\Common\basicbody";
