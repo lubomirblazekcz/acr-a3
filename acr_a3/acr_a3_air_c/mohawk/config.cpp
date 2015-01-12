@@ -24,10 +24,10 @@ class cfgVehicles
 		faction = "ACR";
 		vehicleclass = "Air";
 		displayName = "AW101 Merlin";
-		crew = "ACR_Pilot";
+		crew = "acr_a3_pilot";
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\mohawk\data\blu_mohawk_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk2_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk3_co.paa"};
-		typicalCargo[] = {"ACR_Pilot"};
+		typicalCargo[] = {"acr_a3_pilot"};
 	};
 };
 //};

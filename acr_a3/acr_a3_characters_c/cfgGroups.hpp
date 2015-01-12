@@ -19,55 +19,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Vojak06";
+                        vehicle = "acr_a3_soldier_TL";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Vojak03";
+                        vehicle = "acr_a3_soldier_AR";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak01";
+                        vehicle = "acr_a3_soldier_01";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak05";
+                        vehicle = "acr_a3_soldier_medic";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak02";
+                        vehicle = "acr_a3_soldier_GL";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak04";
+                        vehicle = "acr_a3_soldier_M";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak07";
+                        vehicle = "acr_a3_soldier_repair";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT";
                     };
                 };
                 class Infantry_ACR_A3_ACR_VZ95_DES
@@ -80,55 +80,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak06";
+                        vehicle = "acr_a3_soldier_TL_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak01";
+                        vehicle = "acr_a3_soldier_01_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_des";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak02";
+                        vehicle = "acr_a3_soldier_GL_des";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak04";
+                        vehicle = "acr_a3_soldier_M_des";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak07";
+                        vehicle = "acr_a3_soldier_repair_des";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT_des";
                     };
                 };
                 class Infantry_ACR_A3_ACR_MOUT
@@ -141,55 +141,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak06";
+                        vehicle = "acr_a3_soldier_TL_mout";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_mout";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak01";
+                        vehicle = "acr_a3_soldier_01_mout";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_mout";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak02";
+                        vehicle = "acr_a3_soldier_GL_mout";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak04";
+                        vehicle = "acr_a3_soldier_M_mout";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak07";
+                        vehicle = "acr_a3_soldier_repair_mout";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT_mout";
                     };
                 };
                 class Infantry_ACR_A3_ACR_MOUT_Des
@@ -202,55 +202,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak06";
+                        vehicle = "acr_a3_soldier_TL_mout_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_mout_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak01";
+                        vehicle = "acr_a3_soldier_01_mout_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_mout_des";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak02";
+                        vehicle = "acr_a3_soldier_GL_mout_des";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak04";
+                        vehicle = "acr_a3_soldier_M_mout_des";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak07";
+                        vehicle = "acr_a3_soldier_repair_mout_des";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_MOUT_Des_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT_mout_des";
                     };
                 };
                 class Infantry_ACR_A3_ACRP
@@ -263,55 +263,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACRP_Vojak06";
+                        vehicle = "acr_a3_recon_TL";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACRP_Vojak01";
+                        vehicle = "acr_a3_recon";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak02";
+                        vehicle = "acr_a3_recon_JTAC";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak03";
+                        vehicle = "acr_a3_recon_AR";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak04";
+                        vehicle = "acr_a3_recon_M";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak05";
+                        vehicle = "acr_a3_recon_medic";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak07";
+                        vehicle = "acr_a3_recon_exp";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak10";
+                        vehicle = "acr_a3_recon_MAT";
                     };
                 };
                 class Infantry_ACR_A3_ACRP_Des
@@ -324,56 +324,56 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak06";
+                        vehicle = "acr_a3_recon_TL_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak01";
+                        vehicle = "acr_a3_recon_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak02";
+                        vehicle = "acr_a3_recon_JTAC_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak03";
+                        vehicle = "acr_a3_recon_AR_des";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak04";
+                        vehicle = "acr_a3_recon_M_des";
                     };
                     class Unit5
                     {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak05";
+                        vehicle = "acr_a3_recon_medic_des";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak07";
+                        vehicle = "acr_a3_recon_exp_des";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak10";
+                        vehicle = "acr_a3_recon_MAT_des";
                     };
                 };
                 class Infantry_ACR_A3_ACR_VZ95_T
@@ -386,28 +386,28 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Vojak06";
+                        vehicle = "acr_a3_soldier_TL";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Vojak03";
+                        vehicle = "acr_a3_soldier_AR";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak01";
+                        vehicle = "acr_a3_soldier_01";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak05";
+                        vehicle = "acr_a3_soldier_medic";
                     };
                 };
                 class Infantry_ACR_A3_ACR_VZ95_DES_T
@@ -420,28 +420,28 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak06";
+                        vehicle = "acr_a3_soldier_TL_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak01";
+                        vehicle = "acr_a3_soldier_01_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_des";
                     };
                 };
                 class Infantry_ACR_A3_ACR_MOUT_T
@@ -454,28 +454,28 @@ class CfgGroups
                       position[] = {0, 0, 0};
                       rank = SERGEANT;
                       side = 1;
-                      vehicle = "ACR_MOUT_Vojak06";
+                      vehicle = "acr_a3_soldier_TL_mout";
                   };
                   class Unit1
                   {
                       position[] = {5, -5, 0};
                       rank = CORPORAL;
                       side = 1;
-                      vehicle = "ACR_MOUT_Vojak03";
+                      vehicle = "acr_a3_soldier_AR_mout";
                   };
                   class Unit2
                   {
                       position[] = {-5, -5, 0};
                       rank = PRIVATE;
                       side = 1;
-                      vehicle = "ACR_MOUT_Vojak01";
+                      vehicle = "acr_a3_soldier_01_mout";
                   };
                   class Unit3
                   {
                       position[] = {10, -10, 0};
                       rank = PRIVATE;
                       side = 1;
-                      vehicle = "ACR_MOUT_Vojak05";
+                      vehicle = "acr_a3_soldier_medic_mout";
                   };
                 };
                 class Infantry_ACR_A3_ACR_MOUT_Des_T
@@ -488,28 +488,28 @@ class CfgGroups
                       position[] = {0, 0, 0};
                       rank = SERGEANT;
                       side = 1;
-                      vehicle = "ACR_MOUT_Des_Vojak06";
+                      vehicle = "acr_a3_soldier_TL_mout_des";
                   };
                   class Unit1
                   {
                       position[] = {5, -5, 0};
                       rank = CORPORAL;
                       side = 1;
-                      vehicle = "ACR_MOUT_Des_Vojak03";
+                      vehicle = "acr_a3_soldier_AR_mout_des";
                   };
                   class Unit2
                   {
                       position[] = {-5, -5, 0};
                       rank = PRIVATE;
                       side = 1;
-                      vehicle = "ACR_MOUT_Des_Vojak01";
+                      vehicle = "acr_a3_soldier_01_mout_des";
                   };
                   class Unit3
                   {
                       position[] = {10, -10, 0};
                       rank = PRIVATE;
                       side = 1;
-                      vehicle = "ACR_MOUT_Des_Vojak05";
+                      vehicle = "acr_a3_soldier_medic_mout_des";
                   };
                 };
                 class Infantry_ACR_A3_ACRP_T
@@ -522,28 +522,28 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACRP_Vojak06";
+                        vehicle = "acr_a3_recon_TL";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACRP_Vojak01";
+                        vehicle = "acr_a3_recon";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak02";
+                        vehicle = "acr_a3_recon_JTAC";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Vojak03";
+                        vehicle = "acr_a3_recon_AR";
                     };
                 };
                 class Infantry_ACR_A3_ACRP_Des_T
@@ -556,28 +556,28 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak06";
+                        vehicle = "acr_a3_recon_TL_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak01";
+                        vehicle = "acr_a3_recon_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak02";
+                        vehicle = "acr_a3_recon_JTAC_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACRP_Des_Vojak03";
+                        vehicle = "acr_a3_recon_AR_des";
                     };
                 };
                 class Infantry_ACR_SNIPER
@@ -590,14 +590,14 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Sniper2";
+                        vehicle = "acr_a3_sniper";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Sniper";
+                        vehicle = "acr_a3_spotter";
                     };
                 };
                 class Infantry_ACR_SNIPER_Des
@@ -610,14 +610,14 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Sniper2_Des";
+                        vehicle = "acr_a3_sniper_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Sniper_Des";
+                        vehicle = "acr_a3_spotter_des";
                     };
                 };
             };
@@ -634,55 +634,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Vojak06";
+                        vehicle = "acr_a3_soldier_TL";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Vojak03";
+                        vehicle = "acr_a3_soldier_AR";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak01";
+                        vehicle = "acr_a3_soldier_01";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak05";
+                        vehicle = "acr_a3_soldier_medic";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak02";
+                        vehicle = "acr_a3_soldier_GL";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak04";
+                        vehicle = "acr_a3_soldier_M";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak07";
+                        vehicle = "acr_a3_soldier_repair";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT";
                     };
                     class Unit8
                     {
@@ -702,55 +702,55 @@ class CfgGroups
                         position[] = {0, 0, 0};
                         rank = SERGEANT;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak06";
+                        vehicle = "acr_a3_soldier_TL_des";
                     };
                     class Unit1
                     {
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak01";
+                        vehicle = "acr_a3_soldier_01_des";
                     };
                     class Unit3
                     {
                         position[] = {10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_des";
                     };
                     class Unit4
                     {
                         position[] = {-10, -10, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak02";
+                        vehicle = "acr_a3_soldier_GL_des";
                     };
                     class Unit5 {
                         position[] = {15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak04";
+                        vehicle = "acr_a3_soldier_M_des";
                     };
                     class Unit6
                     {
                         position[] = {-15, -15, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak07";
+                        vehicle = "acr_a3_soldier_repair_des";
                     };
                     class Unit7
                     {
                         position[] = {20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak10";
+                        vehicle = "acr_a3_soldier_MAT_des";
                     };
                     class Unit8
                     {
@@ -781,14 +781,14 @@ class CfgGroups
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Vojak03";
+                        vehicle = "acr_a3_soldier_AR";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Vojak05";
+                        vehicle = "acr_a3_soldier_medic";
                     };
                 };
                 class Motorized_ACR_A3_ACR_VZ95_DES_T
@@ -808,14 +808,14 @@ class CfgGroups
                         position[] = {5, -5, 0};
                         rank = CORPORAL;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak03";
+                        vehicle = "acr_a3_soldier_AR_des";
                     };
                     class Unit2
                     {
                         position[] = {-5, -5, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Des_Vojak05";
+                        vehicle = "acr_a3_soldier_medic_des";
                     };
                 };
             };

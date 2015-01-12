@@ -21,8 +21,8 @@ class CfgVehicles
         displayName = "Mi-24V";
         scope = 2;
         side = 1;
-        crew = "ACR_Pilot";
-		typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+		typicalCargo[] = {"acr_a3_pilot"};
         faction = "ACR";
         vehicleclass = "Air";
         hiddenSelections[]=
@@ -51,8 +51,8 @@ class CfgVehicles
         displayName = "Mi-24P";
         scope = 2;
         side = 1;
-        crew = "ACR_Pilot";
-		typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+		typicalCargo[] = {"acr_a3_pilot"};
         faction = "ACR";
         vehicleclass = "Air";
         hiddenSelections[]=
@@ -81,8 +81,8 @@ class CfgVehicles
     {
         author = "$STR_ACR";
         faction = "ACR";
-        crew = "ACR_Pilot";
-		typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+		typicalCargo[] = {"acr_a3_pilot"};
         scope = 2;
         displayName = "Mi-17";
         side = 1;
@@ -104,8 +104,8 @@ class CfgVehicles
         scope = 2;
         displayName = "Mi-17 (Rockets)";
         author = "$STR_ACR";
-        crew = "ACR_Pilot";
-		typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+		typicalCargo[] = {"acr_a3_pilot"};
         faction = "ACR";
         side = 1;
         vehicleclass = "Air";
@@ -126,8 +126,8 @@ class CfgVehicles
         scope = 2;
         displayName = "Mi-17 (Medevac)";
         author = "$STR_ACR";
-        crew = "ACR_Pilot";
-		typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+		typicalCargo[] = {"acr_a3_pilot"};
         faction = "ACR";
         side = 1;
         vehicleclass = "Air";
@@ -200,8 +200,8 @@ class CfgVehicles
         displayName = "UAZ-469";
         scope = 2;
         side = 1;
-        crew = "ACR_Vojak01";
-		typicalCargo[] = {"ACR_Vojak01"};
+        crew = "acr_a3_soldier_01";
+		typicalCargo[] = {"acr_a3_soldier_01"};
         faction = "ACR";
         hiddenSelections[]=
         {
@@ -249,8 +249,8 @@ class CfgVehicles
         displayName = "UAZ-469 (Open)";
         scope = 2;
         side = 1;
-        crew = "ACR_Vojak01";
-		typicalCargo[] = {"ACR_Vojak01"};
+        crew = "acr_a3_soldier_01";
+		typicalCargo[] = {"acr_a3_soldier_01"};
         faction = "ACR";
         hiddenSelections[]=
         {

@@ -639,8 +639,8 @@ class CfgVehicles {
 		side = 1;
 		faction="ACR";
 		accuracy = 1000;
-		typicalCargo[] = {"ACR_Neozbrojeny"};
-		crew = "ACR_Neozbrojeny";
+		typicalCargo[] = {"acr_a3_soldier_lite"};
+		crew = "acr_a3_soldier_lite";
 		displayName = "BMP-2";
 	};
 

@@ -21,8 +21,8 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALCA_CAS";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+        typicalCargo[] = {"acr_a3_pilot"};
 		side = 1;
 		faction = "ACR";
 		_generalMacro = "I_Plane_Fighter_03_CAS_F";
@@ -35,8 +35,8 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALCA_AA";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+        typicalCargo[] = {"acr_a3_pilot"};
         side = 1;
         faction = "ACR";
         _generalMacro = "I_Plane_Fighter_03_AA_F";
@@ -49,8 +49,8 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALBATROS_CAS";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+        typicalCargo[] = {"acr_a3_pilot"};
         side = 1;
         faction = "ACR";
         _generalMacro = "I_Plane_Fighter_03_CAS_F";
@@ -63,8 +63,8 @@ class CfgVehicles
         scope = 2;
         vehicleclass = "Air";
         displayName = "$STR_ACR_ALBATROS_AA";
-        crew = "ACR_Pilot";
-        typicalCargo[] = {"ACR_Pilot"};
+        crew = "acr_a3_pilot";
+        typicalCargo[] = {"acr_a3_pilot"};
         side = 1;
         faction = "ACR";
         _generalMacro = "I_Plane_Fighter_03_AA_F";

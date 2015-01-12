@@ -16,7 +16,7 @@ class cfgWeapons
 	class BagItem;
 	class H_HelmetB;
 	class U_B_GhillieSuit;
-    class ACR_blk_BasicBody: Uniform_Base
+    class U_ACR_A3_BasicBody_blk: Uniform_Base
     {
         scope = 2;
         displayName = "$STR_ACR_UNDERWEAR";
@@ -27,7 +27,7 @@ class cfgWeapons
         class ItemInfo : UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Underwear_Character";
+            uniformClass = "B_ACR_A3_Soldier_Base";
             containerClass = "Supply0";
             mass = 1;
         };
@@ -483,7 +483,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "ACR_Vojak01";
+			uniformClass = "acr_a3_soldier_01";
 			containerClass = "Supply40";
 			mass = 40;
 		};
@@ -499,7 +499,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Vojak02";
+            uniformClass = "acr_a3_soldier_GL";
             containerClass = "Supply40";
             mass = 20;
         };
@@ -515,7 +515,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Vojak03";
+            uniformClass = "acr_a3_soldier_AR";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -534,7 +534,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "ACR_Des_Vojak01";
+			uniformClass = "acr_a3_soldier_01_des";
 			containerClass = "Supply40";
 			mass = 40;
 		};
@@ -550,7 +550,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Des_Vojak02";
+            uniformClass = "acr_a3_soldier_GL_des";
             containerClass = "Supply40";
             mass = 20;
         };
@@ -566,7 +566,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Des_Vojak03";
+            uniformClass = "acr_a3_soldier_AR_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -585,7 +585,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_MOUT_Vojak01";
+            uniformClass = "acr_a3_soldier_01_mout";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -602,7 +602,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_MOUT_Vojak03";
+            uniformClass = "acr_a3_soldier_AR_mout";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -621,7 +621,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_MOUT_Des_Vojak01";
+            uniformClass = "acr_a3_soldier_01_mout_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -638,7 +638,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_MOUT_Des_Vojak03";
+            uniformClass = "acr_a3_soldier_AR_mout_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -656,7 +656,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Sniper";
+            uniformClass = "acr_a3_spotter";
             containerClass = "Supply60";
             mass = 60;
         };
@@ -672,7 +672,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Sniper_Des";
+            uniformClass = "acr_a3_spotter_des";
             containerClass = "Supply60";
             mass = 60;
         };
@@ -689,7 +689,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "ACR_Pilot";
+			uniformClass = "acr_a3_pilot";
 			containerClass = "Supply20";
 			mass = 30;
 		};
@@ -706,7 +706,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Pilot_des";
+            uniformClass = "acr_a3_pilot_des";
             containerClass = "Supply20";
             mass = 30;
         };
@@ -724,7 +724,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "ACR_Dustojnik"; //znackablabla
+			uniformClass = "acr_a3_officer"; //znackablabla
 			containerClass = "Supply40";
 			mass = 40;
 			hiddenSelections[] = {"Camo1","Camo2"};
@@ -743,7 +743,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Dustojnik_des"; //znackablabla
+            uniformClass = "acr_a3_officer_des"; //znackablabla
             containerClass = "Supply40";
             mass = 40;
             hiddenSelections[] = {"Camo1","Camo2"};
@@ -761,7 +761,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Neozbrojeny";
+            uniformClass = "acr_a3_soldier_lite";
             containerClass = "Supply30";
             mass = 30;
         };
@@ -778,7 +778,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "ACR_Neozbrojeny_des";
+            uniformClass = "acr_a3_soldier_lite_des";
             containerClass = "Supply30";
             mass = 30;
         };

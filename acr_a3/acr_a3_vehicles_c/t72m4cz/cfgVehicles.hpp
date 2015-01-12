@@ -74,8 +74,8 @@ class CfgVehicles
 
 		side = 1;
 		faction = "ACR";
-		crew = "ACR_neozbrojeny";
-		typicalCargo[] = {"ACR_neozbrojeny"};
+		crew = "acr_a3_soldier_lite";
+		typicalCargo[] = {"acr_a3_soldier_lite"};
 		LockDetectionSystem = 4;
 		IncommingMisslieDetectionSystem = 16;
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_1_co.paa","\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_2_co.paa","\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_3_co.paa"};
