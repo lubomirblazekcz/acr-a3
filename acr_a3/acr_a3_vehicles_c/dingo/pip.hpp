@@ -48,4 +48,16 @@
 					fov 				= 0.7;
 				};
 			};
-		};
+           class Gunner_display
+            {
+                renderTarget = "rendertarget4";
+                class CameraView1
+                {
+                    pointPosition = "PIP4_pos";
+                    pointDirection = "PIP4_dir";
+                    renderVisionMode = 2;
+                    renderQuality = 2;
+                    fov = 0.7;
+                };
+            };
+};
