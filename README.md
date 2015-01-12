@@ -10,7 +10,7 @@ Dependencies:
 ===========
 @ASDG_JR, @CUP, @RHS_AFRF
 
-About-
+About
 ===========
 I would like to introduce you our long going czech community project, it was annouced year ago on armaholic, but since then there wasn't much progress. 
 Few months back we re-annouced it here on BI forums and since then we made huge progress and few czech communities were testing the mod privately, but today we would like to release it for everyone!
