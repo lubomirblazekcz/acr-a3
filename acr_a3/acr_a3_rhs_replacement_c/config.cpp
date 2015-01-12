@@ -21,9 +21,9 @@ class CfgVehicles
         displayName = "Mi-24V";
         scope = 2;
         side = 1;
-        crew = "acr_a3_pilot";
-		typicalCargo[] = {"acr_a3_pilot"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Pilot";
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
+        faction = "ACR_A3";
         vehicleclass = "Air";
         hiddenSelections[]=
         {
@@ -51,9 +51,9 @@ class CfgVehicles
         displayName = "Mi-24P";
         scope = 2;
         side = 1;
-        crew = "acr_a3_pilot";
-		typicalCargo[] = {"acr_a3_pilot"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Pilot";
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
+        faction = "ACR_A3";
         vehicleclass = "Air";
         hiddenSelections[]=
         {
@@ -80,9 +80,9 @@ class CfgVehicles
     class ACR_A3_Mi17_base_CZ_EP1: RHS_Mi8_base
     {
         author = "$STR_ACR";
-        faction = "ACR";
-        crew = "acr_a3_pilot";
-		typicalCargo[] = {"acr_a3_pilot"};
+        faction = "ACR_A3";
+        crew = "B_ACR_A3_Pilot";
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
         scope = 2;
         displayName = "Mi-17";
         side = 1;
@@ -104,9 +104,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mi-17 (Rockets)";
         author = "$STR_ACR";
-        crew = "acr_a3_pilot";
-		typicalCargo[] = {"acr_a3_pilot"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Pilot";
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
+        faction = "ACR_A3";
         side = 1;
         vehicleclass = "Air";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","n1","n2","tail_decals"};
@@ -126,9 +126,9 @@ class CfgVehicles
         scope = 2;
         displayName = "Mi-17 (Medevac)";
         author = "$STR_ACR";
-        crew = "acr_a3_pilot";
-		typicalCargo[] = {"acr_a3_pilot"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Pilot";
+		typicalCargo[] = {"B_ACR_A3_Pilot"};
+        faction = "ACR_A3";
         side = 1;
         vehicleclass = "Air";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","n1","n2","tail_decals"};
@@ -200,9 +200,9 @@ class CfgVehicles
         displayName = "UAZ-469";
         scope = 2;
         side = 1;
-        crew = "acr_a3_soldier_01";
-		typicalCargo[] = {"acr_a3_soldier_01"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Soldier_01";
+		typicalCargo[] = {"B_ACR_A3_Soldier_01"};
+        faction = "ACR_A3";
         hiddenSelections[]=
         {
             "camo1",
@@ -249,9 +249,9 @@ class CfgVehicles
         displayName = "UAZ-469 (Open)";
         scope = 2;
         side = 1;
-        crew = "acr_a3_soldier_01";
-		typicalCargo[] = {"acr_a3_soldier_01"};
-        faction = "ACR";
+        crew = "B_ACR_A3_Soldier_01";
+		typicalCargo[] = {"B_ACR_A3_Soldier_01"};
+        faction = "ACR_A3";
         hiddenSelections[]=
         {
             "camo1",

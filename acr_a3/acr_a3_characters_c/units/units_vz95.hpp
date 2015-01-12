@@ -1,9 +1,10 @@
-class acr_a3_soldier_01: B_Soldier_F
+class B_ACR_A3_Soldier_01: B_Soldier_F
 {
     _generalMacro = "B_Soldier_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -24,13 +25,14 @@ class acr_a3_soldier_01: B_Soldier_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
     };
 };
-class acr_a3_soldier_GL: B_Soldier_GL_F // Granátometčík
+class B_ACR_A3_Soldier_GL: B_Soldier_GL_F // Granátometčík
 {
     _generalMacro = "B_Soldier_GL_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     backpack = "CUP_B_ACRScout_m95";
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_tshirt";
@@ -51,12 +53,13 @@ class acr_a3_soldier_GL: B_Soldier_GL_F // Granátometčík
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_AR: B_soldier_AR_F
+class B_ACR_A3_Soldier_AR: B_soldier_AR_F
 {
     _generalMacro = "B_soldier_AR_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     displayName = "$STR_B_SOLDIER_AR_F0";
     genericNames = "CzechMen";
     uniformAccessories[] = {};
@@ -79,13 +82,14 @@ class acr_a3_soldier_AR: B_soldier_AR_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
-class acr_a3_soldier_M: B_soldier_M_F
+class B_ACR_A3_Soldier_M: B_soldier_M_F
 {
     _generalMacro = "B_soldier_M_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
+    faction = "ACR_A3";
+    author = "$STR_ACR";
     backpack = "CUP_B_ACRScout_m95";
-    vehicleClass = "ACRX01"; //LESNI
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     head = "H_ACR_A3_HelmetIA_vz95";
     displayName = "$STR_B_SOLDIER_M_F0"; // Ostrostřelec
     genericNames = "CzechMen";
@@ -104,12 +108,13 @@ class acr_a3_soldier_M: B_soldier_M_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_medic: B_medic_F
+class B_ACR_A3_Soldier_medic: B_medic_F
 {
     _generalMacro = "B_medic_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     backpack = "B_AssaultPack_rgr_Medic";
     displayName = "$STR_B_MEDIC_F0"; // Zdravotník
     genericNames = "CzechMen";
@@ -128,12 +133,13 @@ class acr_a3_soldier_medic: B_medic_F
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_TL: B_Soldier_TL_F
+class B_ACR_A3_Soldier_TL: B_Soldier_TL_F
 {
     _generalMacro = "B_Soldier_TL_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     displayName = "$STR_B_SOLDIER_TL_F0"; // Velitel týmu
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -153,12 +159,13 @@ class acr_a3_soldier_TL: B_Soldier_TL_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',7];";
     };
 };
-class acr_a3_soldier_SL: B_Soldier_SL_F
+class B_ACR_A3_Soldier_SL: B_Soldier_SL_F
 {
     _generalMacro = "B_Soldier_SL_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     displayName = "$STR_B_Soldier_SL_F0"; // Velitel družstva
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -178,12 +185,13 @@ class acr_a3_soldier_SL: B_Soldier_SL_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRPara_m95';_unit addMagazines ['30Rnd_556x45_Stanag',7];";
     };
 };
-class acr_a3_soldier_repair: B_soldier_repair_F
+class B_ACR_A3_Soldier_repair: B_soldier_repair_F
 {
     _generalMacro = "B_soldier_repair_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     backpack = "";
     displayName = "$STR_B_ENGINEER_F0"; // Ženista
     genericNames = "CzechMen";
@@ -203,12 +211,13 @@ class acr_a3_soldier_repair: B_soldier_repair_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
     };
 };
-class acr_a3_soldier_MAT: B_soldier_LAT_F
+class B_ACR_A3_Soldier_MAT: B_soldier_LAT_F
 {
     _generalMacro = "B_soldier_LAT_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR"; author = "$STR_ACR";
-    vehicleClass = "ACRX01"; //LESNI
+    faction = "ACR_A3";
+    author = "$STR_ACR";
+    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     displayName = "$STR_B_SOLDIER_AT_F0"; // Raketometčík
     genericNames = "CzechMen";
@@ -229,9 +238,9 @@ class acr_a3_soldier_MAT: B_soldier_LAT_F
 };
 
 // vz.95 Poust
-class acr_a3_soldier_01_des: acr_a3_soldier_01
+class B_ACR_A3_Soldier_01_des: B_ACR_A3_Soldier_01
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular"};
     respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular"};
@@ -244,10 +253,10 @@ class acr_a3_soldier_01_des: acr_a3_soldier_01
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
     };
 };
-class acr_a3_soldier_GL_des: acr_a3_soldier_GL // Granátometčík
+class B_ACR_A3_Soldier_GL_des: B_ACR_A3_Soldier_GL // Granátometčík
 {
     backpack = "CUP_B_ACRScout_m95";
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -258,9 +267,9 @@ class acr_a3_soldier_GL_des: acr_a3_soldier_GL // Granátometčík
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_AR_des: acr_a3_soldier_AR
+class B_ACR_A3_Soldier_AR_des: B_ACR_A3_Soldier_AR
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -272,10 +281,10 @@ class acr_a3_soldier_AR_des: acr_a3_soldier_AR
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
-class acr_a3_soldier_M_des: acr_a3_soldier_M
+class B_ACR_A3_Soldier_M_des: B_ACR_A3_Soldier_M
 {
     backpack = "CUP_B_ACRScout_m95";
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -284,9 +293,9 @@ class acr_a3_soldier_M_des: acr_a3_soldier_M
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_medic_des: acr_a3_soldier_medic
+class B_ACR_A3_Soldier_medic_des: B_ACR_A3_Soldier_medic
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     backpack = "B_AssaultPack_rgr_Medic";
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -296,9 +305,9 @@ class acr_a3_soldier_medic_des: acr_a3_soldier_medic
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_TL_des: acr_a3_soldier_TL
+class B_ACR_A3_Soldier_TL_des: B_ACR_A3_Soldier_TL
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     backpack = "ACR_A3_Backpack_Carryall_vz95";
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -308,9 +317,9 @@ class acr_a3_soldier_TL_des: acr_a3_soldier_TL
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_SL_des: acr_a3_soldier_SL
+class B_ACR_A3_Soldier_SL_des: B_ACR_A3_Soldier_SL
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     backpack = "ACR_A3_Backpack_Carryall_vz95";
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -320,9 +329,9 @@ class acr_a3_soldier_SL_des: acr_a3_soldier_SL
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_repair_des: acr_a3_soldier_repair
+class B_ACR_A3_Soldier_repair_des: B_ACR_A3_Soldier_repair
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     backpack = "";
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     weapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -334,9 +343,9 @@ class acr_a3_soldier_repair_des: acr_a3_soldier_repair
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
     };
 };
-class acr_a3_soldier_MAT_des: acr_a3_soldier_MAT
+class B_ACR_A3_Soldier_MAT_des: B_ACR_A3_Soldier_MAT
 {
-    vehicleClass = "ACRX03"; //POUST
+    vehicleClass = "ACR_A3_Men_vz95_D"; //POUST
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     weapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};

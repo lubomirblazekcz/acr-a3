@@ -10,7 +10,7 @@ class CfgPatches
 };
 class cfgFactionClasses
 {
-	class ACR //class pod jakou frakci budou
+	class ACR_A3 //class pod jakou frakci budou
 	{
 		displayName = "$STR_ACR_FACTION"; //jmeno frakce v editoru STRINGTABLETEXT: ACR
 		priority = -6;
@@ -24,36 +24,28 @@ class cfgFactionClasses
 
 class CfgVehicleClasses
 {
-	class ACRX0
+	class ACR_A3_Men_Recon
 	{
 		displayName = "$STR_ACR_MENVZ95REC"; // VZ95 Specialni
 	};
-    class ACRX0_Des
+    class ACR_A3_Men_Recon_D
     {
         displayName = "$STR_ACR_MENVZ95REC_DES"; // VZ95 Des Specialni
     };
-	class ACRX00
-	{
-		displayName = "$STR_ACR_MEN"; //vz. 95 zakladni vojaci a piloti STRINGTABLETEXT: Men
-	};
-	class ACRX01
+	class ACR_A3_Men_vz95
 	{
 		displayName = "$STR_ACR_MENVZ95"; // vz.95 STRINGTABLETEXT: Men (vz. 95)
 	};
-	class ACRX02
-	{
-		displayName = "$STR_ACR_MEN_MOUT"; //MOUT
-	};
-	class ACRX02_DES
-	{
-		displayName = "$STR_ACR_MEN_MOUT_DES"; //MOUT Des
-	};
-	class ACRX03
+	class ACR_A3_Men_vz95_D
 	{
 		displayName = "$STR_ACR_MEN_DESERT"; // vz.95 Des
 	};
-	class ACRX04
+	class ACR_A3_Men_MOUT
 	{
-		displayName = "$STR_ACR_SNIP"; //sniperi se krovim
+		displayName = "$STR_ACR_MEN_MOUT"; //MOUT
+	};
+	class ACR_A3_Men_MOUT_D
+	{
+		displayName = "$STR_ACR_MEN_MOUT_DES"; //MOUT Des
 	};
 };

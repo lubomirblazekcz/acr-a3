@@ -28,7 +28,7 @@ class cfgVehicles
 	class B_Kitbag_rgr_Exp;
 	class B_Kitbag_rgr;
 
-	// Batohy
+	// Backpacks
 	class Bag_Base;
     class CUP_B_ACRPara_Base: Bag_Base
     {
@@ -145,13 +145,14 @@ class cfgVehicles
     // vz.95 MOUT - Woodland / Desert
     #include "units\units_mout.hpp"
 
-
     // vz.95 Recon - Woodland / Desert
     #include "units\units_recon.hpp"
 
-
 	// Other
     #include "units\units_other.hpp"
+
+    // Dummy for compability
+    #include "units\units_dummy.hpp"
 
 
     // Bedna

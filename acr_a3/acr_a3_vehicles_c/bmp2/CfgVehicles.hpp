@@ -637,10 +637,10 @@ class CfgVehicles {
 	class acr_a3_bmp2: acr_a3_BMP2_base {
 		scope = 2;
 		side = 1;
-		faction="ACR";
+		faction="ACR_A3";
 		accuracy = 1000;
-		typicalCargo[] = {"acr_a3_soldier_lite"};
-		crew = "acr_a3_soldier_lite";
+		typicalCargo[] = {"B_ACR_A3_Soldier_lite"};
+		crew = "B_ACR_A3_Soldier_lite";
 		displayName = "BMP-2";
 	};
 

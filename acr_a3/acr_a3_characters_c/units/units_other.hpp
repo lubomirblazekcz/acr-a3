@@ -1,10 +1,10 @@
-class acr_a3_spotter: B_spotter_F
+class B_ACR_A3_Spotter: B_spotter_F
 {
     _generalMacro = "B_spotter_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR";
+    faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACRX04"; //SNIPERI
+    vehicleClass = "MenSniper"; //SNIPERI
     displayName = "$STR_B_SPOTTER_F0";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -25,13 +25,13 @@ class acr_a3_spotter: B_spotter_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_sniper: B_sniper_F
+class B_ACR_A3_Sniper: B_sniper_F
 {
     _generalMacro = "B_sniper_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR";
+    faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACRX04"; //SNIPERI
+    vehicleClass = "MenSniper"; //SNIPERI
     displayName = "$STR_B_SNIPER_F0";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -49,7 +49,7 @@ class acr_a3_sniper: B_sniper_F
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_spotter_des: acr_a3_spotter
+class B_ACR_A3_Spotter_des: B_ACR_A3_Spotter
 {
     displayName = "$STR_ACR_SPOTTER_DES";
     uniformClass = "U_ACR_A3_SniperGhillie_des";
@@ -62,7 +62,7 @@ class acr_a3_spotter_des: acr_a3_spotter
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_sniper_des: acr_a3_sniper
+class B_ACR_A3_Sniper_des: B_ACR_A3_Sniper
 {
     displayName = "$STR_ACR_SNIPER_DES";
     uniformClass = "U_ACR_A3_SniperGhillie_des";
@@ -73,13 +73,13 @@ class acr_a3_sniper_des: acr_a3_sniper
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_pilot: B_Helipilot_F
+class B_ACR_A3_Pilot: B_Helipilot_F
 {
     _generalMacro = "B_Helipilot_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR";
+    faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACRX00"; //zaklad
+    vehicleClass = "Men"; //zaklad
     displayName = "$STR_B_HELIPILOT_F0";
     genericNames = "CzechMen";
     model = "\acr_a3\acr_a3_characters\coverall_ACR.p3d";
@@ -101,7 +101,7 @@ class acr_a3_pilot: B_Helipilot_F
         mat[]={"acr_a3\acr_a3_characters\data\coverall.rvmat" , "acr_a3\acr_a3_characters\data\w1_coverall.rvmat" , "acr_a3\acr_a3_characters\data\w2_coverall.rvmat"};
     };
 };
-class acr_a3_pilot_des: acr_a3_pilot
+class B_ACR_A3_Pilot_des: B_ACR_A3_Pilot
 {
     displayName = "$STR_ACR_HELIPILOT_DES";
     model = "\acr_a3\acr_a3_characters\coverall_des_ACR.p3d";
@@ -110,13 +110,13 @@ class acr_a3_pilot_des: acr_a3_pilot
     linkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
 };
-class acr_a3_officer: B_officer_F //znackablabla
+class B_ACR_A3_Officer: B_officer_F //znackablabla
 {
     _generalMacro = "B_officer_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR";
+    faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACRX00"; //zaklad
+    vehicleClass = "Men"; //zaklad
     displayName = "$STR_B_OFFICER_F0";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
@@ -135,19 +135,19 @@ class acr_a3_officer: B_officer_F //znackablabla
     hiddenSelections[] = {"Camo1","Camo2","insignia"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Offic.paa","\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr.paa"};
 };
-class acr_a3_officer_des: acr_a3_officer //znackablabla
+class B_ACR_A3_Officer_des: B_ACR_A3_Officer //znackablabla
 {
     displayName = "$STR_ACR_OFFICER_DES";
     uniformClass = "U_ACR_A3_OfficerUniform_des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Offic_des.paa","\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
 };
-class acr_a3_soldier_lite: B_Soldier_lite_F
+class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
 {
     _generalMacro = "B_Soldier_lite_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
-    faction = "ACR";
+    faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACRX00"; //zaklad
+    vehicleClass = "Men"; //zaklad
     displayName = "$STR_B_SOLDIER_LITE_F0";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
@@ -168,7 +168,7 @@ class acr_a3_soldier_lite: B_Soldier_lite_F
         init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_lite_des: acr_a3_soldier_lite
+class B_ACR_A3_Soldier_lite_des: B_ACR_A3_Soldier_lite
 {
     displayName = "$STR_ACR_SOLDIER_LITE_DES";
     uniformClass = "U_ACR_A3_SweaterUniform_des";

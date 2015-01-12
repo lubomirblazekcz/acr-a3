@@ -1,6 +1,6 @@
-class acr_a3_soldier_01_mout: acr_a3_soldier_01
+class B_ACR_A3_Soldier_01_mout: B_ACR_A3_Soldier_01
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular"};
     respawnWeapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -15,9 +15,9 @@ class acr_a3_soldier_01_mout: acr_a3_soldier_01
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_GL_mout: acr_a3_soldier_GL // Granátometčík
+class B_ACR_A3_Soldier_GL_mout: B_ACR_A3_Soldier_GL // Granátometčík
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_tshirt";
     weapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_P07","Throw","Put","Binocular"};
     respawnWeapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -30,9 +30,9 @@ class acr_a3_soldier_GL_mout: acr_a3_soldier_GL // Granátometčík
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_AR_mout: acr_a3_soldier_AR
+class B_ACR_A3_Soldier_AR_mout: B_ACR_A3_Soldier_AR
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_vest";
     weapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
     respawnWeapons[] = {"acr_a3_M60E4","acr_a3_P07","Throw","Put","Binocular"};
@@ -47,9 +47,9 @@ class acr_a3_soldier_AR_mout: acr_a3_soldier_AR
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
-class acr_a3_soldier_M_mout: acr_a3_soldier_M
+class B_ACR_A3_Soldier_M_mout: B_ACR_A3_Soldier_M
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     backpack = "B_AssaultPack_rgr";
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_A1_MRCO_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -63,9 +63,9 @@ class acr_a3_soldier_M_mout: acr_a3_soldier_M
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_medic_mout: acr_a3_soldier_medic
+class B_ACR_A3_Soldier_medic_mout: B_ACR_A3_Soldier_medic
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     backpack = "B_AssaultPack_rgr_Medic"; // Zdravotník
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_A2_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -79,9 +79,9 @@ class acr_a3_soldier_medic_mout: acr_a3_soldier_medic
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_TL_mout: acr_a3_soldier_TL
+class B_ACR_A3_Soldier_TL_mout: B_ACR_A3_Soldier_TL
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     backpack = "B_Carryall_oli";
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_GL_Hamr_Laser","acr_a3_P07","Throw","Put","Rangefinder"};
@@ -95,9 +95,9 @@ class acr_a3_soldier_TL_mout: acr_a3_soldier_TL
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_repair_mout: acr_a3_soldier_repair
+class B_ACR_A3_Soldier_repair_mout: B_ACR_A3_Soldier_repair
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     backpack = "";
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_A2_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
@@ -111,9 +111,9 @@ class acr_a3_soldier_repair_mout: acr_a3_soldier_repair
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
     };
 };
-class acr_a3_soldier_MAT_mout: acr_a3_soldier_MAT
+class B_ACR_A3_Soldier_MAT_mout: B_ACR_A3_Soldier_MAT
 {
-    vehicleClass = "ACRX02"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT"; //MOUT
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     uniformClass = "U_ACR_A3_CombatUniform_MOUT";
     weapons[] = {"acr_a3_CZ805_A2_MRCO_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
@@ -129,9 +129,9 @@ class acr_a3_soldier_MAT_mout: acr_a3_soldier_MAT
 };
 
 // vz.95 MOUT DES
-class acr_a3_soldier_01_mout_des: acr_a3_soldier_01_mout
+class B_ACR_A3_Soldier_01_mout_des: B_ACR_A3_Soldier_01_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT_des.paa"};
     class eventHandlers
@@ -139,18 +139,18 @@ class acr_a3_soldier_01_mout_des: acr_a3_soldier_01_mout
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_GL_mout_des: acr_a3_soldier_GL_mout // Granátometčík
+class B_ACR_A3_Soldier_GL_mout_des: B_ACR_A3_Soldier_GL_mout // Granátometčík
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_AR_mout_des: acr_a3_soldier_AR_mout
+class B_ACR_A3_Soldier_AR_mout_des: B_ACR_A3_Soldier_AR_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des_vest";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT_des.paa"};
     class eventHandlers
@@ -158,45 +158,45 @@ class acr_a3_soldier_AR_mout_des: acr_a3_soldier_AR_mout
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_rgr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
-class acr_a3_soldier_M_mout_des: acr_a3_soldier_M_mout
+class B_ACR_A3_Soldier_M_mout_des: B_ACR_A3_Soldier_M_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_medic_mout_des: acr_a3_soldier_medic_mout
+class B_ACR_A3_Soldier_medic_mout_des: B_ACR_A3_Soldier_medic_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_TL_mout_des: acr_a3_soldier_TL_mout
+class B_ACR_A3_Soldier_TL_mout_des: B_ACR_A3_Soldier_TL_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
-class acr_a3_soldier_repair_mout_des: acr_a3_soldier_repair_mout
+class B_ACR_A3_Soldier_repair_mout_des: B_ACR_A3_Soldier_repair_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class eventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
     };
 };
-class acr_a3_soldier_MAT_mout_des: acr_a3_soldier_MAT_mout
+class B_ACR_A3_Soldier_MAT_mout_des: B_ACR_A3_Soldier_MAT_mout
 {
-    vehicleClass = "ACRX02_DES"; //MOUT
+    vehicleClass = "ACR_A3_Men_MOUT_D"; //MOUT
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class eventHandlers
     {

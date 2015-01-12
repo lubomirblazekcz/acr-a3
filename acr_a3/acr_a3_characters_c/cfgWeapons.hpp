@@ -483,7 +483,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "acr_a3_soldier_01";
+			uniformClass = "B_ACR_A3_Soldier_01";
 			containerClass = "Supply40";
 			mass = 40;
 		};
@@ -499,7 +499,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_GL";
+            uniformClass = "B_ACR_A3_Soldier_GL";
             containerClass = "Supply40";
             mass = 20;
         };
@@ -515,7 +515,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_AR";
+            uniformClass = "B_ACR_A3_Soldier_AR";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -534,7 +534,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "acr_a3_soldier_01_des";
+			uniformClass = "B_ACR_A3_Soldier_01_des";
 			containerClass = "Supply40";
 			mass = 40;
 		};
@@ -550,7 +550,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_GL_des";
+            uniformClass = "B_ACR_A3_Soldier_GL_des";
             containerClass = "Supply40";
             mass = 20;
         };
@@ -566,7 +566,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_AR_des";
+            uniformClass = "B_ACR_A3_Soldier_AR_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -585,7 +585,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_01_mout";
+            uniformClass = "B_ACR_A3_Soldier_01_mout";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -602,7 +602,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_AR_mout";
+            uniformClass = "B_ACR_A3_Soldier_AR_mout";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -621,7 +621,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_01_mout_des";
+            uniformClass = "B_ACR_A3_Soldier_01_mout_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -638,7 +638,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_AR_mout_des";
+            uniformClass = "B_ACR_A3_Soldier_AR_mout_des";
             containerClass = "Supply40";
             mass = 40;
         };
@@ -656,7 +656,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_spotter";
+            uniformClass = "B_ACR_A3_Spotter";
             containerClass = "Supply60";
             mass = 60;
         };
@@ -672,7 +672,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_spotter_des";
+            uniformClass = "B_ACR_A3_Spotter_des";
             containerClass = "Supply60";
             mass = 60;
         };
@@ -689,7 +689,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "acr_a3_pilot";
+			uniformClass = "B_ACR_A3_Pilot";
 			containerClass = "Supply20";
 			mass = 30;
 		};
@@ -706,7 +706,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_pilot_des";
+            uniformClass = "B_ACR_A3_Pilot_des";
             containerClass = "Supply20";
             mass = 30;
         };
@@ -724,7 +724,7 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "acr_a3_officer"; //znackablabla
+			uniformClass = "B_ACR_A3_Officer"; //znackablabla
 			containerClass = "Supply40";
 			mass = 40;
 			hiddenSelections[] = {"Camo1","Camo2"};
@@ -743,7 +743,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_officer_des"; //znackablabla
+            uniformClass = "B_ACR_A3_Officer_des"; //znackablabla
             containerClass = "Supply40";
             mass = 40;
             hiddenSelections[] = {"Camo1","Camo2"};
@@ -761,7 +761,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_lite";
+            uniformClass = "B_ACR_A3_Soldier_lite";
             containerClass = "Supply30";
             mass = 30;
         };
@@ -778,7 +778,7 @@ class cfgWeapons
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
-            uniformClass = "acr_a3_soldier_lite_des";
+            uniformClass = "B_ACR_A3_Soldier_lite_des";
             containerClass = "Supply30";
             mass = 30;
         };
