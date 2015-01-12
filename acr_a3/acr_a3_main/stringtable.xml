@@ -337,6 +337,10 @@
             <English>Rifleman (Light, Desert)</English>
             <Czech>Střelec (lehká výzbroj, pouštní)</Czech>
         </Key>
+        <Key ID="STR_ACR_SOLDIER_CREW_DES">
+            <English>Crewman (Desert)</English>
+            <Czech>Posádka (pouštní)</Czech>
+        </Key>
         <Key ID="STR_ACR_KAMAZ_COVERED">
             <English>Kamaz Transport (Covered)</English>
             <Czech>Kamaz Valník (krytý)</Czech>
@@ -436,6 +440,26 @@
             <Portuguese>Suporte de transportador de GA (cáqui)</Portuguese>
             <Russian>GA жилет (хаки)</Russian>
             <Spanish>Cartuchera de FAA (caqui)</Spanish>
+        </Key>
+        <Key ID="STR_ACR_DINGO_MG">
+            <English>Dingo 2 CZ (MG)</English>
+            <Czech>Dingo 2 CZ (MG)</Czech>
+        </Key>
+        <Key ID="STR_ACR_DINGO_MG_DES">
+            <English>Dingo 2 CZ (MG, Desert)</English>
+            <Czech>Dingo 2 CZ (MG, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_DINGO_GL">
+            <English>Dingo 2 CZ (GL)</English>
+            <Czech>Dingo 2 CZ (GL)</Czech>
+        </Key>
+        <Key ID="STR_ACR_DINGO_GL_DES">
+            <English>Dingo 2 CZ (GL, Desert)</English>
+            <Czech>Dingo 2 CZ (GL, pouštní)</Czech>
+        </Key>
+        <Key ID="STR_ACR_BMP2_DES">
+            <English>BMP-2 (Desert)</English>
+            <Czech>BMP-2 (pouštní)</Czech>
         </Key>
     </Package>
 </Project>

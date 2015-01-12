@@ -497,7 +497,7 @@ class CfgMagazines
 	class RPG32_F;
 	class CUP_Strela_2_M: Titan_AA
 	{
-        scope = 0;
+        scope = 2;
 	};
 	class CUP_Stinger_M: CA_LauncherMagazine
 	{

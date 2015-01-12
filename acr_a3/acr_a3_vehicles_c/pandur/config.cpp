@@ -21,7 +21,7 @@ class CfgVehicles
 		vehicleclass = "Armored";
 		displayName = "Pandur II";
 		author = "$STR_ACR";
-		crew = "B_ACR_A3_Soldier_lite";
+		crew = "B_ACR_A3_crew";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\pandur\data\Pandur01.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur02.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur03.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur04.paa"};
 		class TransportMagazines

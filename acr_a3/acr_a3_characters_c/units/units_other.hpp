@@ -206,7 +206,7 @@ class B_ACR_A3_crew: B_crew_F
 };
 class B_ACR_A3_crew_des: B_ACR_A3_crew
 {
-    displayName = "$STR_ACR_SOLDIER_LITE_DES";
+    displayName = "$STR_ACR_SOLDIER_CREW_DES";
     uniformClass = "U_ACR_A3_SweaterUniform_des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
     class eventHandlers

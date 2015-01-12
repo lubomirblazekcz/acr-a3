@@ -757,7 +757,7 @@ class CfgGroups
                         position[] = {-20, -20, 0};
                         rank = PRIVATE;
                         side = 1;
-                        vehicle = "ACR_Pandur";
+                        vehicle = "acr_a3_bmp2_des";
                     };
                 };
             };

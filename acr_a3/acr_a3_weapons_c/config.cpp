@@ -6,7 +6,7 @@ class CfgPatches
 		units[] = {"ACR_A3_WeaponsBox"};
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"CUP_Weapons_CZ805","CUP_Weapons_Duty","CUP_Weapons_Sa58","CUP_Weapons_Phantom"};
+		requiredAddons[] = {"CUP_Weapons_CZ805","CUP_Weapons_Duty","CUP_Weapons_Sa58","CUP_Weapons_Phantom","CUP_Weapons_West_Attachments"};
 	};
 };
 

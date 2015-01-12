@@ -639,9 +639,15 @@ class CfgVehicles {
 		side = 1;
 		faction="ACR_A3";
 		accuracy = 1000;
-		typicalCargo[] = {"B_ACR_A3_Soldier_lite"};
-		crew = "B_ACR_A3_Soldier_lite";
+		typicalCargo[] = {"B_ACR_A3_crew"};
+		crew = "B_ACR_A3_crew";
 		displayName = "BMP-2";
 	};
+    class acr_a3_bmp2_des: acr_a3_bmp2 {
+		hiddenselectionstextures[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_01_acr_des_co.paa", "\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_02_acr_des_co.paa"};
+        typicalCargo[] = {"B_ACR_A3_crew"};
+        crew = "B_ACR_A3_crew_des";
+        displayName = "$STR_ACR_BMP2_DES";
+    };
 
 };

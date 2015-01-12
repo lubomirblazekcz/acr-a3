@@ -52,7 +52,7 @@ class CfgVehicles
 		picture =	"\A3\armor_f_gamma\MBT_02\Data\UI\MBT_02_Base_ca.paa";
 		Icon = "\acr_a3\acr_a3_vehicles\t72m4cz\data\icomap_t72_CA.paa";
 		mapSize = 9.5;
-		displayName = "T-72M4CZ";
+		displayName = "T-72M4 CZ";
 
         commanderCanSee = 1+2+4+8+16+31;
         gunnerCanSee = 2+4+8+16;
@@ -74,8 +74,8 @@ class CfgVehicles
 
 		side = 1;
 		faction = "ACR_A3";
-		crew = "B_ACR_A3_Soldier_lite";
-		typicalCargo[] = {"B_ACR_A3_Soldier_lite"};
+		crew = "B_ACR_A3_crew";
+		typicalCargo[] = {"B_ACR_A3_crew"};
 		LockDetectionSystem = 4;
 		IncommingMisslieDetectionSystem = 16;
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_1_co.paa","\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_2_co.paa","\acr_a3\acr_a3_vehicles\t72m4cz\data\T72_3_co.paa"};
