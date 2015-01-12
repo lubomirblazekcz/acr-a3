@@ -49,6 +49,7 @@ class CfgVehicles
 	{
 		side = 1;
 		scope = 1;
+		scopeCurator = 0;
 		faction = "ACR_A3";
 		vehicleclass = "Car";
 		displayName = "M-ATV HMG";

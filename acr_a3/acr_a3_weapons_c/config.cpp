@@ -199,12 +199,12 @@ class CfgWeapons
         {
             class LinkedItemsOptic
             {
-                slot = "CowsSlot";
+                slot = "CUP_PicatinnyTopMountSA58";
                 item = "CUP_optic_TrijiconRx01_black";
             };
             class LinkedItemsAcc
             {
-                slot = "PointerSlot";
+                slot = "CUP_PicatinnySideMountSA58";
                 item = "acc_pointer_IR";
             };
         };
@@ -218,12 +218,12 @@ class CfgWeapons
         {
             class LinkedItemsOptic
             {
-                slot = "CowsSlot";
+                slot = "CUP_PicatinnyTopMountSA58";
                 item = "CUP_optic_TrijiconRx01_desert";
             };
             class LinkedItemsAcc
             {
-                slot = "PointerSlot";
+                slot = "CUP_PicatinnySideMountSA58";
                 item = "acc_pointer_IR";
             };
         };
