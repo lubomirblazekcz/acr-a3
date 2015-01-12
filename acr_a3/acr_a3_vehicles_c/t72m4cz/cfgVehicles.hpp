@@ -196,7 +196,7 @@ class CfgVehicles
                         gunEnd = "gun_chamber";
 						weapons[] = {"ACR_A3_KORD","SmokeLauncher"};
 						magazines[] = {"150Rnd_127x108_Ball","150Rnd_127x108_Ball","150Rnd_127x108_Ball","150Rnd_127x108_Ball","SmokeLauncherMag","SmokeLauncherMag"};
-						selectionFireAnim = "zasleh_1";
+						selectionFireAnim = "zasleh3";
 
                         //memoryPointGunnerOutOptics = "commander_weapon_view";
                         memoryPointGunnerOptics= "commanderview";
@@ -269,17 +269,13 @@ class CfgVehicles
                 gunBeg = "usti hlavne";
                 gunEnd = "konec hlavne";
 
-				weapons[] = {"ACR_A3_T72_FCS","ACR_A3_D81CZ","ACR_A3_PKT"};
-				magazines[] = {"24Rnd_125mm_APFSDS","12Rnd_125mm_HE","12Rnd_125mm_HE","ACR_A3_2000Rnd_762x54_PKT","ACR_A3_2000Rnd_762x54_PKT","ACR_A3_2000Rnd_762x54_PKT","ACR_A3_LaserMag"};
+				weapons[] = {"ACR_A3_D81CZ","ACR_A3_PKT"};
+				magazines[] = {"24Rnd_125mm_APFSDS","12Rnd_125mm_HE","12Rnd_125mm_HE","ACR_A3_2000Rnd_762x54_PKT","ACR_A3_2000Rnd_762x54_PKT","ACR_A3_2000Rnd_762x54_PKT"};
 
                 // Turret servos
                 minElev=-5;
                 maxElev=+20;
                 initElev=10;
-
-                turretInfoType = "acr_a3_RscWeaponT72_FCS";
-                discreteDistance[] = {100};
-                discreteDistanceInitIndex = 0;	// start at 600 meters
 
                 // Optics view
                 memoryPointGunnerOptics= "gunnerview";
@@ -291,25 +287,6 @@ class CfgVehicles
                 // Field of view values: 1 = 120°
 
                 class OpticsIn {
-
-                    class Wide: ViewOptics {
-                        initAngleX=0;
-                        minAngleX=-30;
-                        maxAngleX=+30;
-                        initAngleY=0;
-                        minAngleY=-100;
-                        maxAngleY=+100;
-                        initFov = 0.076666; // reticle scales to fit whole screen
-                        minFov = 0.0766666;  // 8x fixed magnification, 13 px/mil
-                        maxFov = 0.0766666;
-                        //initFov = 0.0511; //0.03
-                        //minFov = 0.0511;
-                        //maxFov = 0.0511;
-                        visionMode[] = {"Normal"};
-                        gunnerOpticsModel = "\acr_a3\acr_a3_vehicles\t72m4cz\NWD_tank_gunner_noreticle";
-                        gunnerOpticsEffect[] = 	{"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
-                    };
-
                     class Periscope: ViewOptics {
                         initAngleX=0;
                         minAngleX=-30;
@@ -320,23 +297,36 @@ class CfgVehicles
                         initFov = 0.466666;
                         minFov = 0.466666;
                         maxFov = 0.466666;
-                        visionMode[] = {"Normal"};
+                        visionMode[] = {"Normal","NVG"};
                         gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
                         gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
                     };
-
-                    class IR: Wide {
+                    class Wide: ViewOptics {
                         initAngleX=0;
                         minAngleX=-30;
                         maxAngleX=+30;
                         initAngleY=0;
                         minAngleY=-100;
                         maxAngleY=+100;
-                        initFov = 0.10;
-                        minFov = 0.10;
-                        maxFov = 0.10;
-                        visionMode[] = {"NVG"};
-                        gunnerOpticsModel = "\acr_a3\acr_a3_vehicles\t72m4cz\optika_T72_Gunner_IR";
+                        initFov=0.3;
+                        minFov=0.3;
+                        maxFov=0.3;
+                        visionMode[] = {"Normal","Ti","NVG"};
+                        thermalMode[] = {4,5}; //red hot chilli
+                        gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_w_F.p3d";
+                        gunnerOpticsEffect[] = {};
+                    };
+                    class Medium: Wide {
+                        gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_m_F.p3d";
+                        initFov=0.07;
+                        minFov=0.07;
+                        maxFov=0.07;
+                    };
+                    class Narrow: Wide {
+                        gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MTB_02_n_F.p3d";
+                        initFov=0.028;
+                        minFov=0.028;
+                        maxFov=0.028;
                     };
                 };
                 // Gunner operations and animations
@@ -377,56 +367,12 @@ class CfgVehicles
             class muzzle_rot_coax {source = "ammorandom"; weapon = "ACR_A3_PKT";};
             class muzzle_rot_HMG {source = "ammorandom"; weapon = "ACR_A3_KORD";};
             class recoil_source {source = "reload"; weapon = "ACR_A3_D81CZ";};
-
-            class hidePrimarySight
-            {
-                    source = "user";
-                    animPeriod = 0.001;
-                    initPhase=0;
-            };
-            class gunNotReady
-            {
-                    source = "reload";weapon = "ACR_A3_D81CZ";
-                    animPeriod = 0.001;
-                    initPhase=0;
-            };
-            class sightRange
-            {
-                    source = "user";
-                    animPeriod = 0.0005; // seconds per meter
-                    initPhase=0;
-            };
-            class sightElevationAPFSDS
-            {
-                    source = "user";
-                    animPeriod = 0.400; // seconds per mil
-                    initPhase=0;
-            };
-            class sightElevationHEAT
-            {
-                    source = "user";
-                    animPeriod = 0.065; // seconds per mil
-                    initPhase=0;
-            };
-            class sightElevationHEF
-            {
-                    source = "user";
-                    animPeriod = 0.080; // seconds per mil
-                    initPhase=0;
-            };
             class comm_g
             {
                     source = "user";
                     animPeriod = 22.5; // seconds per mil
                     initPhase=0;
             };
-            class TC_Override
-            {
-                    source = "user";
-                    animPeriod = 6.25; // seconds per mil
-                    initPhase=0;
-            };
-            class TC_Override2: TC_Override {};
             class HatchC
             {
                 source="door";
