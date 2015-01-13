@@ -1,3 +1,14 @@
+- Faction:
+ACR_A3
+
+- Vehicle clases:
+ACR_A3_Men_vz95
+ACR_A3_Men_vz95_D
+ACR_A3_Men_Recon
+ACR_A3_Men_Recon_D
+ACR_A3_Men_MOUT
+ACR_A3_Men_MOUT_D
+
 - Items:
 V_ACR_A3_PlateCarrierIA2_vz95
 V_ACR_A3_PlateCarrier1_vz95
@@ -84,3 +95,14 @@ acr_a3_10Rnd_cz750_mag
 acr_a3_10Rnd_cz750_mag_Tracer
 16Rnd_9x21_Mag
 30Rnd_9x21_Mag
+
+- Vehicles:
+acr_a3_bmp2
+acr_a3_bmp2_des
+acr_a3_T72M4CZ
+acr_a3_dingo_wdl
+acr_a3_dingo_des
+acr_a3_dingo_gl_wdl
+acr_a3_dingo_gl_des
+acr_a3_hmmwv_M1151_M2
+acr_a3_hmmwv_M1114_AGS_ACR
