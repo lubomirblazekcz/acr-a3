@@ -5,6 +5,9 @@ Here you can found Source code of Czech ACR Arma 3 Mod. You can contribute, crea
 
 You can build the files with pboProject (include whole acr_a3 folder) - https://dev.withsix.com/projects/mikero-pbodll/files 
 
+If you like our work, please consider donating ;)
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=evromalarkey%40gmail%2ecom&lc=US&item_name=ARMAseries%2ecz&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
+
 <img src="http://www.armaseries.cz/acr-logo.png">
 Dependencies:
 ===========
