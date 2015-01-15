@@ -1,3 +1,4 @@
+class UniformSlotInfo;
 class cfgWeapons
 {
 	class ItemCore;

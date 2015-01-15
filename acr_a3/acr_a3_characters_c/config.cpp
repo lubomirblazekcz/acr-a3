@@ -8,12 +8,8 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F","A3_Characters_F_BLUFOR","CUP_Weapons_Backpacks","acr_a3_dubbingradio"};
 	};
 };
-class GenericNames
-{
-    #include "CzechMen.hpp"
-};
-class UniformSlotInfo;
 
+#include "CzechMen.hpp"
 #include "cfgWeapons.hpp"
 #include "cfgVehicles.hpp"
 #include "cfgGroups.hpp"

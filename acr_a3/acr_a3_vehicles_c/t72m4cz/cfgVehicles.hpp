@@ -44,7 +44,10 @@ class CfgVehicles
 	class MBT_02_base_F: Tank_F {};
 	class acr_a3_T72M4CZ: MBT_02_base_F
 	{
-		AGM_FCSEnabled = 0;
+		AGM_FCSEnabled = 1; // bool; 1 = FCS on; 0 = FCS off
+        AGM_FCSMinDistance = 0; // minimum distance of the vehicles' range finder (in meters)
+        AGM_FCSMaxDistance = 1500; // maximum distance of the vehicles' range finder (in meters)
+        AGM_FCSDistanceInterval = 1; // precision of the vehicles' range finder (in meters)
 		scope = 2;
 		author="ACR A3";
 		vehicleClass = "Armored";
