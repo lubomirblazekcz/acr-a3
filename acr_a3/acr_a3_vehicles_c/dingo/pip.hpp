@@ -2,7 +2,7 @@
 		{
 			class LeveZrcadko
 			{
-				renderTarget = "rendertarget1"; /// what texture is going to be used, it should be mapped in model like #(argb,256,512,1)r2t(rendertarget0,1.0)
+				renderTarget = "rendertarget0"; /// what texture is going to be used, it should be mapped in model like #(argb,256,512,1)r2t(rendertarget0,1.0)
 				class CameraView1
 				{
 					pointPosition		= "PIP0_pos"; 	/// memory point of PiP origin
@@ -14,7 +14,7 @@
 			};
 			class PraveZrcadko	/// rendering of PiPs is shared, it is best to have one for all sources, this is just an example
 			{
-				renderTarget = "rendertarget0";
+				renderTarget = "rendertarget1";
 				class CameraView1
 				{
 					pointPosition		= "PIP1_pos";
