@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\data\Destruct\damage_metal_tankArmor_dt.tga";
+    texture="a3\data_f\destruct\damage_metal_tankArmor_dt.tga";
     uvSource="tex1";
     class uvTransform
     {
@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\data\Destruct\vehicle_destr1024_1024_MC.tga";
+    texture="acr_a3\acr_a3_vehicles\landrover\destruct\vehicle_destr1024_1024_MC.tga";
     uvSource="tex";
     class uvTransform
     {
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\data\Destruct\vehicle_destr1024_1024_smdi.tga";
+    texture="acr_a3\acr_a3_vehicles\landrover\destruct\vehicle_destr1024_1024_smdi.tga";
     uvSource="tex";
     class uvTransform
     {
@@ -78,5 +78,5 @@ class Stage7
 };
 class StageTI
 {
-    texture="acr_a3\acr_a3_vehicles\landrover\data\destruct_ti_ca.tga";
+    texture="a3\data_f\destruct_ti_ca.paa";
 };

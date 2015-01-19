@@ -92,5 +92,5 @@ class Stage7
 };
 class StageTI
 {
-	texture="acr_a3\acr_a3_vehicles\landrover\data\default_vehicle_ti_ca.tga";
+	texture="a3\data_f\default_vehicle_ti_ca.paa";
 };

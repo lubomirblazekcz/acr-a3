@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="acr_a3\acr_a3_vehicles\landrover\Data\DetailMaps\Metal_rough_DT.tga";
+	texture="a3\weapons_f\data\detailmaps\Metal_rough_DT.paa";
 	uvSource="tex";
 	class uvTransform
 	{
