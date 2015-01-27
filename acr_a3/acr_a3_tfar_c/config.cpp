@@ -42,8 +42,8 @@ class CfgVehicles {
         picture = "\acr_a3\acr_a3_tfar\data\155_icon.paa";
         scope = 2;
         scopeCurator = 2;
-        maximumLoad = 160;
-        mass = 160;
+        maximumLoad = 50;
+        mass = 80;
 	};
 
 	class Box_IND_Support_F;

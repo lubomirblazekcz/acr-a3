@@ -51,8 +51,8 @@ class cfgWeapons
         {
     		uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
             containerClass = "Supply140";
-            mass = 80;
-            armor = 30;
+            mass = 60;
+            armor = 20;
             passThrough = 0.5;
             hiddenSelections[] = {"camo"};
 		    hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
