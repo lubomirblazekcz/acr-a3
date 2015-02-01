@@ -105,6 +105,8 @@ Additional Credits
 ============
 Bohemia Interactive - Arma2 Sample Models (ACR rvmats, textures and models) 
 
+Arma 3 Model makers channel (All of you!) - For help with models 
+
 Robalo - ASDG Joint Rails
 
 CUP team - For help and sharing
@@ -116,3 +118,4 @@ Reyhard - For sharing his A2 ports
 Aplion - For sharing his A2 ports
 
 Cinco - For sharing his Nomex uniform
+
