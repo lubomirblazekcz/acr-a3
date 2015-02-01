@@ -105,7 +105,7 @@ Additional Credits
 ============
 Bohemia Interactive - Arma2 Sample Models (ACR rvmats, textures and models) 
 
-Arma 3 Model makers channel (All of you!) - For help with models 
+Arma 3 Model makers channel (All of you!) - For help with models and configs
 
 Robalo - ASDG Joint Rails
 
