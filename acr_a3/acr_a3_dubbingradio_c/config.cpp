@@ -36,25 +36,34 @@ class CfgVoice
     {
         protocol="RadioProtocol_ACR_CZ";
 		icon = "\a3\Ui_f\data\Map\Markers\Flags\czechrepublic_ca.paa";
-		identityTypes[] = {"default","Head_USMC","Head_USMC_CO","Head_USMC_Camo","Head_USMC_CO_Camo","Head_Default","Head_Special","Language_ACR_CZ"};
+		identityTypes[] = {"Language_ACR_CZ"};
     };
 	class Male01CZ_ACR: CZ_ACR
 	{
-		directories[] = {"\acr_a3\acr_a3_dubbingradio\RADIO\Male01CZ\","\acr_a3\acr_a3_dubbingradio\RADIO\Male01CZ\"};
+		directories[] = {
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male01CZ\",
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male01CZ\"
+		};
 		displayName = "$STR_A3_CfgVoiceTypes_Male01_F0";
 		scope = 2;
 		author = "$STR_A3_Bohemia_Interactive";
 	};
 	class Male02CZ_ACR: CZ_ACR
 	{
-		directories[] = {"\acr_a3\acr_a3_dubbingradio\RADIO\Male02CZ\","\acr_a3\acr_a3_dubbingradio\RADIO\Male02CZ\"};
+		directories[] = {
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male02CZ\",
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male02CZ\"
+		};
 		displayName = "$STR_A3_CfgVoiceTypes_Male02_F0";
 		scope = 2;
 		author = "$STR_A3_Bohemia_Interactive";
 	};
 	class Male03CZ_ACR: CZ_ACR
 	{
-		directories[] = {"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\","\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\"};
+		directories[] = {
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\",
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\"
+		};
 		voiceType = "Male03";
 		displayName = "$STR_A3_CfgVoiceTypes_Male03_F0";
 		scope = 2;
@@ -62,14 +71,20 @@ class CfgVoice
 	};
 	class Male04CZ_ACR: CZ_ACR
 	{
-		directories[] = {"\acr_a3\acr_a3_dubbingradio\RADIO\Male04CZ\","\acr_a3\acr_a3_dubbingradio\RADIO\Male04CZ\"};
+		directories[] = {
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male04CZ\",
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male04CZ\"
+		};
 		displayName = "$STR_A3_CfgVoiceTypes_Male04_F0";
 		scope = 2;
 		author = "$STR_A3_Bohemia_Interactive";
 	};
 	class Male05CZ_ACR: CZ_ACR
 	{
-		directories[] = {"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\","\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\"};
+		directories[] = {
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\",
+		"\acr_a3\acr_a3_dubbingradio\RADIO\Male03CZ\"
+		};
 		displayName = "$STR_A3_CfgVoiceTypes_Male05_F0";
 		scope = 2;
 		author = "$STR_A3_Bohemia_Interactive";
