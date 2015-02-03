@@ -109,6 +109,8 @@ Arma 3 Model makers channel (All of you!) - For help with models and configs
 
 Robalo - ASDG Joint Rails
 
+RedPhoenix - For tweaking T72M4CZ Physx
+
 CUP team - For help and sharing
 
 RHS team - For RHS AFRF and some their config values
