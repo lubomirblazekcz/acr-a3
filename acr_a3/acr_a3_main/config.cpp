@@ -24,18 +24,6 @@ class cfgFactionClasses
 
 class CfgVehicleClasses
 {
-	class ACR_A3_Men_Recon
-	{
-		displayName = "$STR_ACR_MENVZ95REC"; // VZ95 Specialni
-	};
-    class ACR_A3_Men_Recon_D
-    {
-        displayName = "$STR_ACR_MENVZ95REC_DES"; // VZ95 Des Specialni
-    };
-	class ACR_A3_Men_vz95
-	{
-		displayName = "$STR_ACR_MENVZ95"; // vz.95 STRINGTABLETEXT: Men (vz. 95)
-	};
 	class ACR_A3_Men_vz95_D
 	{
 		displayName = "$STR_ACR_MEN_DESERT"; // vz.95 Des

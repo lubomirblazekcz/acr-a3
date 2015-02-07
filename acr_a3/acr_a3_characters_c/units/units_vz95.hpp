@@ -4,7 +4,7 @@ class B_ACR_A3_Soldier_01: B_Soldier_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     displayName = "$STR_A3_CFGVEHICLES_B_SOLDIER_F0"; // Střelec
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -32,7 +32,7 @@ class B_ACR_A3_Soldier_GL: B_Soldier_GL_F // Granátometčík
     backpack = "CUP_B_ACRScout_m95";
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_tshirt";
@@ -59,7 +59,7 @@ class B_ACR_A3_Soldier_AR: B_soldier_AR_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     displayName = "$STR_B_SOLDIER_AR_F0";
     genericNames = "CzechMen";
     uniformAccessories[] = {};
@@ -89,7 +89,7 @@ class B_ACR_A3_Soldier_M: B_soldier_M_F
     faction = "ACR_A3";
     author = "$STR_ACR";
     backpack = "CUP_B_ACRScout_m95";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     head = "H_ACR_A3_HelmetIA_vz95";
     displayName = "$STR_B_SOLDIER_M_F0"; // Ostrostřelec
     genericNames = "CzechMen";
@@ -114,7 +114,7 @@ class B_ACR_A3_Soldier_medic: B_medic_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     backpack = "B_AssaultPack_rgr_Medic";
     displayName = "$STR_B_MEDIC_F0"; // Zdravotník
     genericNames = "CzechMen";
@@ -139,7 +139,7 @@ class B_ACR_A3_Soldier_TL: B_Soldier_TL_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     displayName = "$STR_B_SOLDIER_TL_F0"; // Velitel týmu
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -165,7 +165,7 @@ class B_ACR_A3_Soldier_SL: B_Soldier_SL_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     displayName = "$STR_B_Soldier_SL_F0"; // Velitel družstva
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -191,7 +191,7 @@ class B_ACR_A3_Soldier_repair: B_soldier_repair_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     backpack = "";
     displayName = "$STR_B_ENGINEER_F0"; // Ženista
     genericNames = "CzechMen";
@@ -217,7 +217,7 @@ class B_ACR_A3_Soldier_MAT: B_soldier_LAT_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     displayName = "$STR_B_SOLDIER_AT_F0"; // Raketometčík
     genericNames = "CzechMen";
@@ -242,7 +242,7 @@ class B_ACR_A3_Soldier_AA: B_soldier_AA_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_vz95"; //LESNI
+    vehicleClass = "Men"; //LESNI
     backpack = "";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";

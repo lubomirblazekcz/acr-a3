@@ -103,6 +103,7 @@ class B_ACR_A3_Pilot: B_Helipilot_F
 };
 class B_ACR_A3_Pilot_des: B_ACR_A3_Pilot
 {
+    vehicleClass = "ACR_A3_Men_vz95_D";
     displayName = "$STR_ACR_HELIPILOT_DES";
     model = "\acr_a3\acr_a3_characters\coverall_des_ACR.p3d";
     uniformClass = "U_ACR_A3_HeliPilotCoveralls_khk";
@@ -116,7 +117,7 @@ class B_ACR_A3_Officer: B_officer_F //znackablabla
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "Men"; //zaklad
+    vehicleClass = "Men";
     displayName = "$STR_B_OFFICER_F0";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_beta\indep\ia_officer.p3d";
@@ -137,6 +138,7 @@ class B_ACR_A3_Officer: B_officer_F //znackablabla
 };
 class B_ACR_A3_Officer_des: B_ACR_A3_Officer //znackablabla
 {
+    vehicleClass = "ACR_A3_Men_vz95_D";
     displayName = "$STR_ACR_OFFICER_DES";
     uniformClass = "U_ACR_A3_OfficerUniform_des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Offic_des.paa","\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
@@ -147,7 +149,7 @@ class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "Men"; //zaklad
+    vehicleClass = "Men";
     displayName = "$STR_B_SOLDIER_LITE_F0";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
@@ -170,6 +172,7 @@ class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
 };
 class B_ACR_A3_Soldier_lite_des: B_ACR_A3_Soldier_lite
 {
+    vehicleClass = "ACR_A3_Men_vz95_D";
     displayName = "$STR_ACR_SOLDIER_LITE_DES";
     uniformClass = "U_ACR_A3_SweaterUniform_des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
@@ -184,7 +187,7 @@ class B_ACR_A3_crew: B_crew_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "Men"; //zaklad
+    vehicleClass = "Men";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -206,6 +209,7 @@ class B_ACR_A3_crew: B_crew_F
 };
 class B_ACR_A3_crew_des: B_ACR_A3_crew
 {
+    vehicleClass = "ACR_A3_Men_vz95_D";
     displayName = "$STR_ACR_SOLDIER_CREW_DES";
     uniformClass = "U_ACR_A3_SweaterUniform_des";
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};

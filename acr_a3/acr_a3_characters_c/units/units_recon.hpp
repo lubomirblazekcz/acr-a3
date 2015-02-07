@@ -5,7 +5,7 @@ class B_ACR_A3_Recon: B_recon_F // Zvěd
     faction = "ACR_A3";
     author = "$STR_ACR";
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_vest";
@@ -29,7 +29,7 @@ class B_ACR_A3_Recon_JTAC: B_recon_JTAC_F // JTAC
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_vest";
@@ -52,7 +52,7 @@ class B_ACR_A3_Recon_AR: B_soldier_AR_F // Kulometčík
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     displayName = "$STR_ACR_KULOMET_F";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -77,7 +77,7 @@ class B_ACR_A3_Recon_M: B_recon_M_F  // Ostrostřelec
     faction = "ACR_A3";
     author = "$STR_ACR";
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_vest";
@@ -101,7 +101,7 @@ class B_ACR_A3_Recon_medic: B_recon_medic_F // Zdravotník
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     backpack = "B_AssaultPack_rgr_Medic";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -125,7 +125,7 @@ class B_ACR_A3_Recon_TL: B_recon_TL_F // Velitel týmu
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     uniformClass = "U_ACR_A3_CombatUniform_tshirt";
@@ -149,7 +149,7 @@ class B_ACR_A3_Recon_exp: B_recon_exp_F // Exp. specialsta
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -173,7 +173,7 @@ class B_ACR_A3_Recon_MAT: B_recon_LAT_F // Raketometčík
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
     author = "$STR_ACR";
-    vehicleClass = "ACR_A3_Men_Recon"; //RECON
+    vehicleClass = "Men"; //RECON
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -196,7 +196,7 @@ class B_ACR_A3_Recon_MAT: B_recon_LAT_F // Raketometčík
 class B_ACR_A3_Recon_des: B_ACR_A3_Recon // Zvěd
 {
     backpack = "B_Kitbag_cbr";
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"V_PlateCarrierIA2_khk","H_ACR_A3_Pakol_grey","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_PlateCarrierIA2_khk","H_ACR_A3_Pakol_grey","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -207,7 +207,7 @@ class B_ACR_A3_Recon_des: B_ACR_A3_Recon // Zvěd
 };
 class B_ACR_A3_Recon_JTAC_des: B_ACR_A3_Recon_JTAC // JTAC
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -218,7 +218,7 @@ class B_ACR_A3_Recon_JTAC_des: B_ACR_A3_Recon_JTAC // JTAC
 };
 class B_ACR_A3_Recon_AR_des: B_ACR_A3_Recon_AR // Kulometčík
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     linkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -230,7 +230,7 @@ class B_ACR_A3_Recon_AR_des: B_ACR_A3_Recon_AR // Kulometčík
 class B_ACR_A3_Recon_M_des: B_ACR_A3_Recon_M  // Ostrostřelec
 {
     backpack = "B_Kitbag_cbr";
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"H_ACR_A3_Cap_khk","V_PlateCarrierIA1_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"H_ACR_A3_Cap_khk","V_PlateCarrierIA1_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -241,7 +241,7 @@ class B_ACR_A3_Recon_M_des: B_ACR_A3_Recon_M  // Ostrostřelec
 };
 class B_ACR_A3_Recon_medic_des: B_ACR_A3_Recon_medic // Zdravotník
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     backpack = "";
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -252,7 +252,7 @@ class B_ACR_A3_Recon_medic_des: B_ACR_A3_Recon_medic // Zdravotník
 };
 class B_ACR_A3_Recon_TL_des: B_ACR_A3_Recon_TL // Velitel týmu
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     backpack = "";
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Cap_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -264,7 +264,7 @@ class B_ACR_A3_Recon_TL_des: B_ACR_A3_Recon_TL // Velitel týmu
 };
 class B_ACR_A3_Recon_exp_des: B_ACR_A3_Recon_exp // Exp. specialsta
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     backpack = "B_Kitbag_cbr";
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
     linkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_Pakol_grey","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
@@ -276,7 +276,7 @@ class B_ACR_A3_Recon_exp_des: B_ACR_A3_Recon_exp // Exp. specialsta
 };
 class B_ACR_A3_Recon_MAT_des: B_ACR_A3_Recon_MAT // Raketometčík
 {
-    vehicleClass = "ACR_A3_Men_Recon_D"; //RECON
+    vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     backpack = "ACR_A3_B_AssaultPack_cbr_LAT";
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     linkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95_des","V_PlateCarrierIA2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};

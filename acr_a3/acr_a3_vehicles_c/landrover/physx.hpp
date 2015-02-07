@@ -101,8 +101,8 @@
                 suspTravelDirection[] = {0,-1,0};
                 suspForceAppPointOffset = "wheel_1_1_axis";
                 tireForceAppPointOffset = "wheel_1_1_axis";
-                maxCompression = 0.05;
-                maxDroop = 0.1;
+                maxCompression = 0.15;
+                maxDroop = 0.15;
                 sprungMass = 650;
 				springStrength = 56000;
 				springDamperRate = 12000;
