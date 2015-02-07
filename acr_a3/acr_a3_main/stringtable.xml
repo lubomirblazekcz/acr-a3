@@ -461,5 +461,117 @@
             <English>BMP-2 (Desert)</English>
             <Czech>BMP-2 (pouštní)</Czech>
         </Key>
+        <Key ID="str_acr_a3_landrover_special">
+            <Original>Military Offroad Special</Original>
+            <Chinese>Military Offroad Special</Chinese>
+            <French>Véhicule tout terrain militaire FS</French>
+            <Spanish>Todoterreno militar especial</Spanish>
+            <Italian>Fuoristrada speciale</Italian>
+            <Hungarian>Military Offroad Special</Hungarian>
+            <Polish>Wojskowa terenówka - specjalna</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (спец.)</Russian>
+            <German>Militär-Geländefahrzeug Spezial</German>
+            <Czech>Vojenský off-road speciál</Czech>
+            <English>Military Offroad Special</English>
+            <Japanese>Military Offroad Special</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_special_des">
+            <Original>Military Offroad Special (Desert)</Original>
+            <Chinese>Military Offroad Special (Desert)</Chinese>
+            <French>Véhicule tout terrain militaire FS (Desert)</French>
+            <Spanish>Todoterreno militar especial (Desert)</Spanish>
+            <Italian>Fuoristrada speciale (Desert)</Italian>
+            <Hungarian>Military Offroad Special (Desert)</Hungarian>
+            <Polish>Wojskowa terenówka - specjalna (Desert)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (спец.) (Desert)</Russian>
+            <German>Militär-Geländefahrzeug Spezial (Desert)</German>
+            <Czech>Vojenský off-road speciál (pouštní)</Czech>
+            <English>Military Offroad Special (Desert)</English>
+            <Japanese>Military Offroad Special (Desert)</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_mg">
+            <Original>Military Offroad (M2)</Original>
+            <Chinese>Military Offroad (M2)</Chinese>
+            <French>Véhicule tout terrain militaire (M2)</French>
+            <Spanish>Todoterreno militar (M2)</Spanish>
+            <Italian>Fuoristrada (M2)</Italian>
+            <Hungarian>Military Offroad (M2)</Hungarian>
+            <Polish>Wojskowa terenówka (M2)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (M2)</Russian>
+            <German>Militär-Geländefahrzeug (M2)</German>
+            <Czech>Vojenský off-road (M2)</Czech>
+            <English>Military Offroad (M2)</English>
+            <Japanese>Military Offroad (M2)</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_mg_des">
+            <Original>Military Offroad (M2) (Desert)</Original>
+            <Chinese>Military Offroad (M2) (Desert)</Chinese>
+            <French>Véhicule tout terrain militaire (M2) (Desert)</French>
+            <Spanish>Todoterreno militar (M2) (Desert)</Spanish>
+            <Italian>Fuoristrada (M2) (Desert)</Italian>
+            <Hungarian>Military Offroad (M2) (Desert)</Hungarian>
+            <Polish>Wojskowa terenówka (M2) (Desert)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (M2) (Desert)</Russian>
+            <German>Militär-Geländefahrzeug (M2) (Desert)</German>
+            <Czech>Vojenský off-road (M2) (pouštní)</Czech>
+            <English>Military Offroad (M2) (Desert)</English>
+            <Japanese>Military Offroad (M2) (Desert)</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover">
+            <Original>Military Offroad</Original>
+            <Chinese>Military Offroad</Chinese>
+            <French>Véhicule tout terrain militaire </French>
+            <Spanish>Todoterreno militar</Spanish>
+            <Italian>Fuoristrada </Italian>
+            <Hungarian>Military Offroad</Hungarian>
+            <Polish>Wojskowa terenówka </Polish>
+            <Russian>Ленд Ровер Дефендер 110</Russian>
+            <German>Militär-Geländefahrzeug</German>
+            <Czech>Vojenský off-road</Czech>
+            <English>Military Offroad</English>
+            <Japanese>Military Offroad</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_des">
+            <Original>Military Offroad (Desert)</Original>
+            <Chinese>Military Offroad (Desert)</Chinese>
+            <French>Véhicule tout terrain militaire (Desert)</French>
+            <Spanish>Todoterreno militar (Desert)</Spanish>
+            <Italian>Fuoristrada (Desert)</Italian>
+            <Hungarian>Military Offroad (Desert)</Hungarian>
+            <Polish>Wojskowa terenówka (Desert)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (Desert)</Russian>
+            <German>Militär-Geländefahrzeug (Desert)</German>
+            <Czech>Vojenský off-road (pouštní)</Czech>
+            <English>Military Offroad (Desert)</English>
+            <Japanese>Military Offroad (Desert)</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_ambulance">
+            <Original>Military Offroad (Ambulance)</Original>
+            <Chinese>Military Offroad (Ambulance)</Chinese>
+            <French>Véhicule tout terrain militaire (Ambulance)</French>
+            <Spanish>Todoterreno militar (Ambulance)</Spanish>
+            <Italian>Fuoristrada (Ambulance)</Italian>
+            <Hungarian>Military Offroad (Ambulance)</Hungarian>
+            <Polish>Wojskowa terenówka (Ambulance)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (Ambulance)</Russian>
+            <German>Militär-Geländefahrzeug (Ambulance)</German>
+            <Czech>Vojenský off-road (Ambulance)</Czech>
+            <English>Military Offroad (Ambulance)</English>
+            <Japanese>Military Offroad (Ambulance)</Japanese>
+        </Key>
+        <Key ID="str_acr_a3_landrover_ambulance_des">
+            <Original>Military Offroad (Ambulance) (Desert)</Original>
+            <Chinese>Military Offroad (Ambulance) (Desert)</Chinese>
+            <French>Véhicule tout terrain militaire (Ambulance) (Desert)</French>
+            <Spanish>Todoterreno militar (Ambulance) (Desert)</Spanish>
+            <Italian>Fuoristrada (Ambulance) (Desert)</Italian>
+            <Hungarian>Military Offroad (Ambulance) (Desert)</Hungarian>
+            <Polish>Wojskowa terenówk (Ambulance) (Desert)</Polish>
+            <Russian>Ленд Ровер Дефендер 110 (Ambulance) (Desert)</Russian>
+            <German>Militär-Geländefahrzeug (Ambulance) (Desert)</German>
+            <Czech>Vojenský off-road (Ambulance) (pouštní)</Czech>
+            <English>Military Offroad (Ambulance) (Desert)</English>
+            <Japanese>Military Offroad (Ambulance) (Desert)</Japanese>
+        </Key>
     </Package>
 </Project>
