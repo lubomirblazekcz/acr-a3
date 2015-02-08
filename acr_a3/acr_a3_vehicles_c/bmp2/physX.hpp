@@ -1,104 +1,91 @@
-
-maxspeed = 55;
-
 /// PhysX part
+numberPhysicalWheels = 16;
+
+/// General Parameters ///
 simulation			= tankX;
-enginePower			= 824;
-maxOmega 			= 272;
-peakTorque 			= 1050;
+normalSpeedForwardCoef=0.6;
+slowSpeedForwardCoef=0.35;
 
+terrainCoef = 0.0;
+turnCoef = 5.25; 	/// how well is the ship able to turn
+brakeIdleSpeed = 0.0;
+
+fuelConsumptionRate = 85;
+fuelCapacity		= 462;
+
+tankTurnForce		= 260000; /// Random magic number, expected to be something like 11 x mass of vehicle
+
+/// Bouyancy ///
+
+canFloat = false;
+waterLeakiness = 250.0;
+maxFordingDepth = 0.1;
+waterResistance = 1;
+waterDamageEngine = 0.9;
+
+engineShiftY           		 = -0.8;		/// relative virtual position of engine for PhysX, affects lateral ship slope during turns
+
+waterLinearDampingCoefY 	 = 2;		/// affect how fast does the ship go through waves down - higher values make it drift more on top of waves
+waterLinearDampingCoefX 	 = 2.0;		/// affects sliding of the ship in turns
+waterAngularDampingCoef 	 = 1.2;		/// increase this for smoother movement, but beware too high values
+waterResistanceCoef 		 = 0.015;	/// how much does water slow the ship down
+rudderForceCoef				 = 0.100000;	/// increase this to gain more turning on lower speeds
+rudderForceCoefAtMaxSpeed	 = 0.003000;	/// increase this to gain more turning on higher speeds
+
+waterEffectSpeed 		 = 5;						/// limit of displaying the standard water effect
+engineEffectSpeed 		 = 5;						/// limit of displaying the engine effect
+waterFastEffectSpeed 	 = 28;						/// limit where the standard water effect changes to the fast sailing one
+
+/// Engine ///
 
 torqueCurve[] = {
-{(400/2000), 0}, // ignore idle
-{(800/2000), (1600/3000)},
-{(1200/2000), (2200/3000)},
-{(1400/2000), (3000/3000)},
-{(3000/2000), 0} // don't overestimate low gears
-};/*
-torqueCurve[] = {
-	{0 , 0},
-	{0.14 , 0.16},
-	{0.29 , 0.27},
-	{0.43 , 0.38},
-	{0.57 , 0.38},
-	{0.71 , 0.37},
-	{0.86 , 0.34},
-	{1 , 0.26},
-};*/
+{"(650/2880)","(854/981)"},
+{"(1200/2880)","(935/981)"},
+{"(1600/2880)","(981/981)"},
+{"(1800/2880)","(971/981)"},
+{"(2000/2880)","(892/981)"},
+{"(2300/2880)","(804/981)"},
+{"(2600/2880)","(686/981)"},
+{"(3164/2880)","(0/981)"}
+};
 
-
-		engineShiftY           		 = -0.8;		/// relative virtual position of engine for PhysX, affects lateral ship slope during turns
-		waterLeakiness         		 = 1.0;		/// amount of litres per second that leaks into ship if under water, destroyed or turned upside down
-		turnCoef 					 = 5.25; 	/// how well is the ship able to turn
-		waterLinearDampingCoefY 	 = 2;		/// affect how fast does the ship go through waves down - higher values make it drift more on top of waves
-		waterLinearDampingCoefX 	 = 2.0;		/// affects sliding of the ship in turns
-		waterAngularDampingCoef 	 = 1.2;		/// increase this for smoother movement, but beware too high values
-		waterResistanceCoef 		 = 0.015;	/// how much does water slow the ship down
-		rudderForceCoef				 = 0.100000;	/// increase this to gain more turning on lower speeds
-		rudderForceCoefAtMaxSpeed	 = 0.003000;	/// increase this to gain more turning on higher speeds
-
-
-		waterEffectSpeed 		 = 5;						/// limit of displaying the standard water effect
-		engineEffectSpeed 		 = 5;						/// limit of displaying the engine effect
-		waterFastEffectSpeed 	 = 28;						/// limit where the standard water effect changes to the fast sailing one
-
+maxOmega = 301.59;
+enginePower = 194;
+peakTorque = 981;
+idleRPM = 650;
+redRPM = 2880;
 
 thrustDelay			= 0.1;    	/// how much time does it take to get the full thrust (default 1), used to reduce initial wheel slipping
-clutchStrength 		= 180.0;
-fuelCapacity		= 462;
-brakeIdleSpeed		= 1.78; 	/// speed in m/s below which braking is applied
-latency 			= 0.1;
-tankTurnForce		= 260000; /// Random magic number, expected to be something like 11 x mass of vehicle
-//600000;
-/// Gearbox and transmission
-idleRpm = 700; // RPM at which the engine idles.
-redRpm = 2640; // RPM at which the engine redlines.
 
 engineLosses = 25; // power losses on the engine's crank-shaft (before the gearbox) in Nm. (Multiplied by the gear ratio)
 transmissionLosses = 15; // power losses on wheel axis (in/after the gearbox) in Nm. (Constant)
 
+/// Clutch, Gearbox and Driveline ///
 
-
-changeGearMinEffectivity[]={0.5,0.15000001,0.84999999,0.84999999,0.84999999,0.84999999,0.89999998};
-
-class complexGearbox {
-			GearboxRatios[]=
-			{
-				"R2",
-				-12.5,
-				"N",
-				0,
-				"D1a",
-				5.2,
-				"D1",
-				3.2,
-				"D2a",
-				2.83,
-				"D2",
-				2.33,
-				"D3a",
-				1.8099999,
-				"D3",
-				1.3099999,
-				"D4",
-				0.98000002,
-				"D5",
-				0.75000001
-			};
-			TransmissionRatios[]=
-			{
-				"High",
-				5
-			};
-			gearBoxMode="auto";
-			moveOffGear=1;
-			driveString="D";
-			neutralString="N";
-			reverseString="R";
-			transmissionDelay=0.1;
-
+clutchStrength 		= 95.0;
+class complexGearbox
+{
+	GearboxRatios[] =
+	{
+		"R1",-5.25,
+		"N",0,
+		"D1",5.25,
+		"D2",2.842,
+		"D3",1.912,
+		"D4",1.28,
+		"D5",0.858
+	};
+	TransmissionRatios[] = {"High",10.5};
+	gearBoxMode = "auto";
+	moveOffGear = 1;
+	driveString = "D";
+	neutralString = "N";
+	reverseString = "R";
+	transmissionDelay = 0.3;
 };
-/// end of gearbox
+changeGearMinEffectivity[] = {0.5,0.0,0.90,0.90,0.90,0.90,0.90};
+switchTime = 0.3;
+latency = 0.5;
 
 class Wheels {
 	class L2 {
@@ -114,25 +101,29 @@ class Wheels {
 		/// weight of the wheel is defined per wheel, it reduces overall mass of vehicle
 		weight=130;
 		mass=130;
+
 		MOI=26;
-		latStiffX=15;
-		latStiffY=280;
+
+		latStiffX=5;
+		latStiffY=500;
 		longitudinalStiffnessPerUnitGravity=100000;
-		maxBrakeTorque=6520;
-		sprungMass=1116;
-		springStrength=27900;
-		springDamperRate=8664;
+		maxBrakeTorque=500;
+
+		sprungMass = 1183;
+		springStrength = 29583;
+		springDamperRate = 4720;
+
 		dampingRate=0.9;
-		dampingRateInAir=880;
+		dampingRateInAir=870;
 		dampingRateDamaged=10;
 		dampingRateDestroyed=10000;
 		maxDroop=0.15000001;
 		maxCompression=0.18000001;
 		frictionVsSlipGraph[]=
 		{
-			{0,1.9},
-			{0.5,1.3},
-			{1,1.3}
+			{0,1.},
+			{0.5,1},
+			{1,1}
 		};
 	};
 	class L3: L2 {

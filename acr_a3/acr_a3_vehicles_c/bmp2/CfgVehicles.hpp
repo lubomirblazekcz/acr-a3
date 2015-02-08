@@ -42,9 +42,7 @@ class CfgVehicles {
 		accuracy = 0.3;
 		model="acr_a3\acr_a3_vehicles\bmp2\BMP2";
 		destrType=DestructDefault;
-		maxFordingDepth=1;
 		//takie tam
-		canfloat = 1; //czy może być łodzią podwodną
  		commanderCanSee = 1+2+4+8+16+31;
  		gunnerCanSee = 2+4+8+16;
 		drivercompartments = "Compartment1";
