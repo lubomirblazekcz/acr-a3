@@ -19,7 +19,8 @@ class cfgWeapons
 	class U_B_GhillieSuit;
     class U_ACR_A3_BasicBody_blk: Uniform_Base
     {
-        scope = 2;
+        scope = 1;
+        scopeArsenal = 0;
         displayName = "$STR_ACR_UNDERWEAR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_underwear.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
