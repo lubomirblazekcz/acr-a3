@@ -19,6 +19,11 @@ class CfgMovesBasic
         BMP2_GunnerOUT = "BMP2_GunnerOUT";
         BMP2_Cargo04 = "BMP2_Cargo04";
         Stryker_Cargo01 = "Stryker_Cargo01";
+        ACR_A3_BRDM2_Driver = "ACR_A3_BRDM2_Driver";
+        ACR_A3_BRDM2_Gunner = "ACR_A3_BRDM2_Gunner";
+        ACR_A3_BRDM2_Cargo01 = "ACR_A3_BRDM2_Cargo01";
+        ACR_A3_BRDM2_Cargo02 = "ACR_A3_BRDM2_Cargo02";
+        ACR_A3_GAZ_Gunner = "ACR_A3_GAZ_Gunner";
 	};
 };
 class CfgMovesMaleSdr: CfgMovesBasic
@@ -282,5 +287,79 @@ class CfgMovesMaleSdr: CfgMovesBasic
             interpolateTo[] = {"KIA_BMP2_Cargo04",1};
         };
 
+		class ACR_A3_KIA_BRDM2_Driver:DefaultDie
+		{
+			actions = "DeadActions";
+			speed = 0.5;
+			looped=false;
+			terminal = 1;
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\KIA_BRDM2_Driver.rtm";
+			connectTo[] = {"Unconscious",0.1};
+		};
+		class ACR_A3_BRDM2_Driver: Crew
+		{
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\BRDM2_Driver.rtm";
+			interpolateTo[]={"ACR_A3_KIA_BRDM2_Driver",1};
+		};
+		class ACR_A3_KIA_BRDM2_Gunner:DefaultDie
+		{
+			actions = "DeadActions";
+			speed = 0.5;
+			looped=false;
+			terminal = 1;
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\KIA_BRDM2_Gunner.rtm";
+			soundEnabled=0;
+			connectTo[] = {"Unconscious",0.1};
+		};
+		class ACR_A3_BRDM2_Gunner: Crew
+		{
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\BRDM2_Gunner.rtm";
+			interpolateTo[]={"ACR_A3_KIA_BRDM2_Gunner",1};
+		};
+		class ACR_A3_KIA_BRDM2_Cargo01:DefaultDie
+		{
+			actions = "DeadActions";
+			speed = 0.5;
+			looped=false;
+			terminal = 1;
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\KIA_BRDM2_Cargo01.rtm";
+			soundEnabled=0;
+			connectTo[] = {"Unconscious",0.1};
+		};
+		class ACR_A3_BRDM2_Cargo01: Crew
+		{
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\BRDM2_Cargo01.rtm";
+			interpolateTo[]={"ACR_A3_KIA_BRDM2_Cargo01",1};
+		};
+		class ACR_A3_KIA_BRDM2_Cargo02:DefaultDie
+		{
+			actions = "DeadActions";
+			speed = 0.5;
+			looped=false;
+			terminal = 1;
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\KIA_BRDM2_Cargo02.rtm";
+			soundEnabled=0;
+			connectTo[] = {"Unconscious",0.1};
+		};
+		class ACR_A3_BRDM2_Cargo02: Crew
+		{
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\BRDM2_Cargo02.rtm";
+			interpolateTo[]={"ACR_A3_KIA_BRDM2_Cargo02",1};
+		};
+		class ACR_A3_KIA_GAZ_Gunner: DefaultDie
+		{
+			actions = "DeadActions";
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\KIA_GAZ_Gunner.rtm";
+			speed = 0.5;
+			looped=false;
+			terminal = 1;
+			soundEnabled=0;
+			connectTo[] = {"Unconscious",0.1};
+		};
+		class ACR_A3_GAZ_Gunner: Crew
+		{
+			file="\acr_a3\acr_a3_vehicles\Data\Anim\Stryker_GunnerOut.rtm";
+			interpolateTo[]={"ACR_A3_KIA_GAZ_Gunner",1};
+		};
 	};
 };

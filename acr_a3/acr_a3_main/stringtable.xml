@@ -1052,5 +1052,10 @@
             <English>Military Offroad (Ambulance) (Desert)</English>
             <Japanese>Military Offroad (Ambulance) (Desert)</Japanese>
         </Key>
+        <Key ID="str_acr_a3_brdm2">
+            <Original>BRDM-2 (Desert)</Original>
+            <English>BRDM-2 (Desert)</English>
+            <Czech>BRDM-2 (pouštní)</Czech>
+        </Key>
     </Package>
 </Project>
