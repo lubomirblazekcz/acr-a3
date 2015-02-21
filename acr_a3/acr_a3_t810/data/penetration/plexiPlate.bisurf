@@ -1,0 +1,12 @@
+Density=1180;
+Thickness=2;
+rough=0.1;
+dust=0;
+bulletPenetrability=300;
+bulletPenetrabilityWithThickness=150;
+soundEnviron=Empty;
+isWater=false;
+friction=0.7;
+restitution=0.3;
+impact = Hit_Glass;
+soundHit = plastic;

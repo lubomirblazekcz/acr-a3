@@ -28,6 +28,8 @@ class cfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_air\mohawk\data\blu_mohawk_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk2_co.paa","\acr_a3\acr_a3_air\mohawk\data\blu_mohawk3_co.paa"};
 		typicalCargo[] = {"B_ACR_A3_Pilot"};
+		scope = 1;
+		scopeCurator = 0;
 	};
 };
 //};

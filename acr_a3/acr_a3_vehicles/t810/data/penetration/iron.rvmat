@@ -1,9 +1,0 @@
-surfaceInfo="acr_a3\acr_a3_vehicles\t810\data\Penetration\iron.bisurf";
-ambient[]={0.000000,0.222000,0.370000,1.000000};
-diffuse[]={0.000000,0.222000,0.370000,1.000000};
-forcedDiffuse[]={0.000000,0.000000,0.000000,0.000000};
-emmisive[]={0.000000,0.000000,0.000000,1.000000};
-specular[]={0.000000,0.000000,0.000000,1.000000};
-specularPower=1.000000;
-PixelShaderID="Normal";
-VertexShaderID="Basic";
