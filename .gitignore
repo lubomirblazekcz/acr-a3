@@ -37,3 +37,6 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+*.xlsx
+acr_a3/engine_calculation_Oct2-20TFSI.xlsx.part
+acr_a3/acr_a3_vehicles/landrover/LR_MG.p3d
