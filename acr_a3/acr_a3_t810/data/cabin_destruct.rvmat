@@ -1,6 +1,6 @@
 class StageTI
 {
-    texture="acr_a3\acr_a3_vehicles\t810\data\destruct_ti_ca.tga";
+    texture="acr_a3\acr_a3_t810\data\destruct_ti_ca.tga";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="acr_a3\acr_a3_vehicles\t810\data\cabin_NOHQ.tga";
+	texture="acr_a3\acr_a3_t810\data\cabin_NOHQ.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -24,7 +24,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="acr_a3\acr_a3_vehicles\t810\data\Destruct\destruct_plech_half_dt.tga";
+	texture="acr_a3\acr_a3_t810\data\Destruct\destruct_plech_half_dt.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -36,7 +36,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="acr_a3\acr_a3_vehicles\t810\data\Destruct\destruct_plech_full_mc.tga";
+	texture="acr_a3\acr_a3_t810\data\Destruct\destruct_plech_full_mc.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="acr_a3\acr_a3_vehicles\t810\data\Destruct\destruct_plech_full_smdi.tga";
+	texture="acr_a3\acr_a3_t810\data\Destruct\destruct_plech_full_smdi.tga";
 	uvSource="tex";
 	class uvTransform
 	{
