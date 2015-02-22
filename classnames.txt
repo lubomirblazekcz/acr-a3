@@ -106,3 +106,13 @@ acr_a3_dingo_gl_wdl
 acr_a3_dingo_gl_des
 acr_a3_hmmwv_M1151_M2
 acr_a3_hmmwv_M1114_AGS_ACR
+ACR_A3_LandRover
+CR_A3_LandRover_Des
+ACR_A3_LandRover_MG
+ACR_A3_LandRover_MG_Des
+ACR_A3_LandRover_Special
+ACR_A3_LandRover_Special_Des
+ACR_A3_LandRover_Ambulance
+ACR_A3_LandRover_Ambulance_Des
+ACR_A3_BRDM2
+ACR_A3_BRDM2_DES

@@ -91,6 +91,20 @@ Changelog
 - Added: cup_weapons_strela_2.pbo
 - Updated: CUP_Weapons_ACR_A3_Compability.pbo
 
+0.8
+- Added: Military Offroad, Military Offroad (Desert)
+- Added: Military Offroad (M2), Military Offroad (M2) (Desert)
+- Added: Military Offroad Special, Military Offroad Special (Desert)
+- Added: Military Offroad (Ambulance), Military Offroad (Ambulance) (Desert)
+- Added: BRDM-2, BRDM-2 (Desert)
+- Improved: Stringtables redone to BI standarts
+- Improved: Vehicle classes redone / merged
+- Improved: Dingo and hmmwv armor values
+- Fixed: Acro on Sa-58 changed to ACOG (soldiers related)
+- Fixed: Again Dingo PiP
+- Fixed: Wrong mass in TFAR radios
+- Removed: M-ATVs and AW101 Merlin (only hidden from editor and zeus)
+
 Credits
 ============
 EvroMalarkey - Project lead, Configs, Models porting
