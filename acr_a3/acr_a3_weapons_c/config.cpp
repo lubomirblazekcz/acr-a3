@@ -210,7 +210,23 @@ class CfgWeapons
         };
     };
     class CUP_arifle_Sa58RIS2_Arco_Laser;
-    class acr_a3_Sa58RIS2_Arco_Laser: CUP_arifle_Sa58RIS2_Arco_Laser {};
+    class acr_a3_Sa58RIS2_Arco_Laser: CUP_arifle_Sa58RIS2_Arco_Laser
+    {
+        class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CUP_PicatinnyTopMountSA58";
+				item = "CUP_optic_RCO";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "CUP_PicatinnySideMountSA58";
+				item = "acc_pointer_IR";
+			};
+		};
+
+    };
     class CUP_arifle_Sa58RIS1_camo_Aco_Laser;
     class acr_a3_Sa58RIS1_camo_Aco_Laser: CUP_arifle_Sa58RIS1_camo_Aco_Laser
     {
@@ -229,7 +245,22 @@ class CfgWeapons
         };
     };
     class CUP_arifle_Sa58RIS2_camo_Arco_Laser;
-    class acr_a3_Sa58RIS2_camo_Arco_Laser: CUP_arifle_Sa58RIS2_camo_Arco_Laser {};
+    class acr_a3_Sa58RIS2_camo_Arco_Laser: CUP_arifle_Sa58RIS2_camo_Arco_Laser
+    {
+        class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CUP_PicatinnyTopMountSA58";
+				item = "CUP_optic_RCO_desert";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "CUP_PicatinnySideMountSA58";
+				item = "acc_pointer_IR";
+			};
+		};
+    };
     class CUP_hgun_Phantom;
     class acr_a3_SP01: CUP_hgun_Phantom
     {
