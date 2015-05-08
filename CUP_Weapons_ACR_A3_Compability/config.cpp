@@ -9,10 +9,16 @@ class CfgPatches
 	};
 };
 
+class SlotInfo;
 class CfgWeapons
 {
-    class Rifle_Base_F;
-    class UGL_F;;
+	class Rifle;
+	class Rifle_Base_F: Rifle
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+    class UGL_F;
     class CUP_arifle_CZ805_Base: Rifle_Base_F
     {
         magazines[] = {"CUP_30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow","CUP_20Rnd_556x45_Stanag"};
@@ -21,11 +27,34 @@ class CfgWeapons
             magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
         };
     };
-    class CUP_arifle_CZ805_B_Base;
-    class CUP_arifle_CZ805_B_GL: CUP_arifle_CZ805_B_Base
+    class CUP_arifle_Sa58_base: Rifle_Base_F
     {
-        model = "\CUP_Weapons_ACR_A3_Compability\data\CUP_CZ_805B_GL.p3d";
+		class CUP_CZ_805_G1_SA58: UGL_F
+		{
+			magazines[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+		};
     };
+	class CUP_arifle_Sa58P: CUP_arifle_Sa58_base
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: SlotInfo
+			{
+				compatibleItems[] = {"muzzle_snds_B"};
+			};
+		};
+	};
+	class CUP_arifle_Sa58RIS1: CUP_arifle_Sa58_base
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: SlotInfo
+			{
+				compatibleItems[] = {"muzzle_snds_B"};
+			};
+		};
+	};
+
 	class ItemCore;
 	class CUP_optic_SB_3_12x50_PMII: ItemCore
 	{
@@ -606,8 +635,4 @@ class CfgMagazines
 	{
         scope = 2;
 	};
-    class CUP_MAAWS_HEDP_M: CA_LauncherMagazine
-    {
-        picture = "\CUP_Weapons_ACR_A3_Compability\data\m_maaws_co.paa";
-    };
 };
