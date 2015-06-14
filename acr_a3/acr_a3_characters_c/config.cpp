@@ -1,3 +1,4 @@
+class DefaultEventhandlers;
 class CfgPatches
 {
 	class acr_a3_characters_c

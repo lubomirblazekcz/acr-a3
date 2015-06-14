@@ -20,7 +20,7 @@ class B_ACR_A3_Soldier_01: B_Soldier_F
     hiddenSelections[] = {"Camo", "insignia"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
     };
@@ -48,7 +48,7 @@ class B_ACR_A3_Soldier_GL: B_Soldier_GL_F // Granátometčík
     hiddenSelections[] = {"camo", "camo2", "insignia"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.paa","\acr_a3\acr_a3_characters\data\ACR_Basicbody.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
@@ -77,7 +77,7 @@ class B_ACR_A3_Soldier_AR: B_soldier_AR_F
     hiddenSelections[] = {"Camo", "insignia"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
@@ -103,7 +103,7 @@ class B_ACR_A3_Soldier_M: B_soldier_M_F
     respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA1_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
@@ -128,7 +128,7 @@ class B_ACR_A3_Soldier_medic: B_medic_F
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
@@ -154,7 +154,7 @@ class B_ACR_A3_Soldier_TL: B_Soldier_TL_F
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
     icon = "iconManLeader";
     canDeactivateMines = "true";
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',7];";
     };
@@ -180,7 +180,7 @@ class B_ACR_A3_Soldier_SL: B_Soldier_SL_F
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
     icon = "iconManLeader";
     canDeactivateMines = "true";
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRPara_m95';_unit addMagazines ['30Rnd_556x45_Stanag',7];";
     };
@@ -206,7 +206,7 @@ class B_ACR_A3_Soldier_repair: B_soldier_repair_F
     Items[] = {"FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
     canDeactivateMines = "true";
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
     };
@@ -231,7 +231,7 @@ class B_ACR_A3_Soldier_MAT: B_soldier_LAT_F
     respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
@@ -255,7 +255,7 @@ class B_ACR_A3_Soldier_AA: B_soldier_AA_F
     respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_vz95","V_ACR_A3_PlateCarrierIA2_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
@@ -272,7 +272,7 @@ class B_ACR_A3_Soldier_01_des: B_ACR_A3_Soldier_01
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['CUP_30Rnd_Sa58_M',2];";
     };
@@ -286,7 +286,7 @@ class B_ACR_A3_Soldier_GL_des: B_ACR_A3_Soldier_GL // Granátometčík
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Des.paa","\acr_a3\acr_a3_characters\data\ACR_Basicbody_des.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
@@ -300,7 +300,7 @@ class B_ACR_A3_Soldier_AR_des: B_ACR_A3_Soldier_AR
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     hiddenSelectionsMaterials[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma.rvmat"};
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Des.paa"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
@@ -312,7 +312,7 @@ class B_ACR_A3_Soldier_M_des: B_ACR_A3_Soldier_M
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
@@ -324,7 +324,7 @@ class B_ACR_A3_Soldier_medic_des: B_ACR_A3_Soldier_medic
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA1_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
@@ -336,7 +336,7 @@ class B_ACR_A3_Soldier_TL_des: B_ACR_A3_Soldier_TL
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
     };
@@ -348,7 +348,7 @@ class B_ACR_A3_Soldier_SL_des: B_ACR_A3_Soldier_SL
     uniformClass = "U_ACR_A3_CombatUniform_Des";
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Neg'] call BIS_fnc_setUnitInsignia;";
     };
@@ -362,7 +362,7 @@ class B_ACR_A3_Soldier_repair_des: B_ACR_A3_Soldier_repair
     respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","acr_a3_P07","Throw","Put","Binocular"};
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Kitbag_vz95';_unit addMagazines [""CUP_30Rnd_Sa58_M"",3];_unit addItem 'ToolKit';";
     };
@@ -376,7 +376,7 @@ class B_ACR_A3_Soldier_MAT_des: B_ACR_A3_Soldier_MAT
     respawnWeapons[] = {"acr_a3_Sa58RIS2_camo_Arco_Laser","Throw","Put","Binocular","CUP_launch_MAAWS_Scope"};
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
@@ -389,7 +389,7 @@ class B_ACR_A3_Soldier_AA_des: B_ACR_A3_Soldier_AA
     respawnWeapons[] = {"acr_a3_Sa58RIS1_camo_Aco_Laser","Throw","Put","Binocular","CUP_launch_9K32Strela"};
     linkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierIA2_vz95","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    class eventHandlers
+    class EventHandlers: EventHandlers
     {
         init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
     };
