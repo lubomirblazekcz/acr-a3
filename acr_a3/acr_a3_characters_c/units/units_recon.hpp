@@ -20,7 +20,7 @@ class B_ACR_A3_Recon: B_recon_F // Zvěd
     canDeactivateMines = "true";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_JTAC: B_recon_JTAC_F // JTAC
@@ -43,7 +43,7 @@ class B_ACR_A3_Recon_JTAC: B_recon_JTAC_F // JTAC
     respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_AR: B_soldier_AR_F // Kulometčík
@@ -67,7 +67,7 @@ class B_ACR_A3_Recon_AR: B_soldier_AR_F // Kulometčík
     respawnItems[] = {"FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
 class B_ACR_A3_Recon_M: B_recon_M_F  // Ostrostřelec
@@ -92,7 +92,7 @@ class B_ACR_A3_Recon_M: B_recon_M_F  // Ostrostřelec
     canDeactivateMines = "true";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_medic: B_recon_medic_F // Zdravotník
@@ -116,7 +116,7 @@ class B_ACR_A3_Recon_medic: B_recon_medic_F // Zdravotník
     respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_TL: B_recon_TL_F // Velitel týmu
@@ -140,7 +140,7 @@ class B_ACR_A3_Recon_TL: B_recon_TL_F // Velitel týmu
     canDeactivateMines = "true";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'ACR_A3_Backpack_Carryall_vz95';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
     };
 };
 class B_ACR_A3_Recon_exp: B_recon_exp_F // Exp. specialsta
@@ -164,7 +164,7 @@ class B_ACR_A3_Recon_exp: B_recon_exp_F // Exp. specialsta
     respawnItems[] = {"muzzle_snds_L","FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_MAT: B_recon_LAT_F // Raketometčík
@@ -188,7 +188,7 @@ class B_ACR_A3_Recon_MAT: B_recon_LAT_F // Raketometčík
     respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 
@@ -202,7 +202,7 @@ class B_ACR_A3_Recon_des: B_ACR_A3_Recon // Zvěd
     respawnlinkedItems[] = {"V_PlateCarrierIA2_khk","H_ACR_A3_Pakol_grey","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_JTAC_des: B_ACR_A3_Recon_JTAC // JTAC
@@ -213,7 +213,7 @@ class B_ACR_A3_Recon_JTAC_des: B_ACR_A3_Recon_JTAC // JTAC
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_AR_des: B_ACR_A3_Recon_AR // Kulometčík
@@ -224,7 +224,7 @@ class B_ACR_A3_Recon_AR_des: B_ACR_A3_Recon_AR // Kulometčík
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_HelmetIA_Goggles_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_cbr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_O_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_cbr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
 class B_ACR_A3_Recon_M_des: B_ACR_A3_Recon_M  // Ostrostřelec
@@ -236,7 +236,7 @@ class B_ACR_A3_Recon_M_des: B_ACR_A3_Recon_M  // Ostrostřelec
     respawnlinkedItems[] = {"H_ACR_A3_Cap_khk","V_PlateCarrierIA1_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_medic_des: B_ACR_A3_Recon_medic // Zdravotník
@@ -247,7 +247,7 @@ class B_ACR_A3_Recon_medic_des: B_ACR_A3_Recon_medic // Zdravotník
     linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_HelmetIA_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_cbr';_unit addItem 'Medikit'";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_cbr';_unit addItem 'Medikit'";
     };
 };
 class B_ACR_A3_Recon_TL_des: B_ACR_A3_Recon_TL // Velitel týmu
@@ -259,7 +259,7 @@ class B_ACR_A3_Recon_TL_des: B_ACR_A3_Recon_TL // Velitel týmu
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Cap_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Carryall_cbr';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Carryall_cbr';_unit addMagazines ['30Rnd_556x45_Stanag',5];";
     };
 };
 class B_ACR_A3_Recon_exp_des: B_ACR_A3_Recon_exp // Exp. specialsta
@@ -271,7 +271,7 @@ class B_ACR_A3_Recon_exp_des: B_ACR_A3_Recon_exp // Exp. specialsta
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_khk","H_ACR_A3_Pakol_grey","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Recon_MAT_des: B_ACR_A3_Recon_MAT // Raketometčík
@@ -283,6 +283,6 @@ class B_ACR_A3_Recon_MAT_des: B_ACR_A3_Recon_MAT // Raketometčík
     respawnlinkedItems[] = {"H_ACR_A3_HelmetIA_Goggles_vz95_des","V_PlateCarrierIA2_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };

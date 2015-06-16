@@ -22,7 +22,7 @@ class B_ACR_A3_Spotter: B_spotter_F
     respawnlinkedItems[] = {"V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Sniper: B_sniper_F
@@ -46,7 +46,7 @@ class B_ACR_A3_Sniper: B_sniper_F
     respawnlinkedItems[] = {"V_TacVest_oli","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Spotter_des: B_ACR_A3_Spotter
@@ -59,7 +59,7 @@ class B_ACR_A3_Spotter_des: B_ACR_A3_Spotter
     respawnlinkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Sniper_des: B_ACR_A3_Sniper
@@ -70,7 +70,7 @@ class B_ACR_A3_Sniper_des: B_ACR_A3_Sniper
     respawnlinkedItems[] = {"V_TacVest_khk","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Pilot: B_Helipilot_F
@@ -165,7 +165,7 @@ class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
     respawnItems[] = {"FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_lite_des: B_ACR_A3_Soldier_lite
@@ -175,7 +175,7 @@ class B_ACR_A3_Soldier_lite_des: B_ACR_A3_Soldier_lite
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_crew: B_crew_F
@@ -201,7 +201,7 @@ class B_ACR_A3_crew: B_crew_F
     respawnItems[] = {"FirstAidKit"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_crew_des: B_ACR_A3_crew
@@ -211,7 +211,7 @@ class B_ACR_A3_crew_des: B_ACR_A3_crew
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_Svetr_des.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Flag'] call BIS_fnc_setUnitInsignia;";
     };
 };
 
@@ -229,7 +229,7 @@ class B_ACR_A3_diver: B_diver_F
     backpack = "B_Assault_Diver";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_diver_TL: B_diver_TL_F
@@ -241,7 +241,7 @@ class B_ACR_A3_diver_TL: B_diver_TL_F
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_diver_exp: B_diver_exp_F
@@ -254,6 +254,6 @@ class B_ACR_A3_diver_exp: B_diver_exp_F
     backpack = "B_AssaultPack_blk_DiverExp";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch'] call BIS_fnc_setUnitInsignia;";
     };
 };

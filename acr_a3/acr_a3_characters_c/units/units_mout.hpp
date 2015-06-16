@@ -12,7 +12,7 @@ class B_ACR_A3_Soldier_01_mout: B_ACR_A3_Soldier_01
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_GL_mout: B_ACR_A3_Soldier_GL // Granátometčík
@@ -27,7 +27,7 @@ class B_ACR_A3_Soldier_GL_mout: B_ACR_A3_Soldier_GL // Granátometčík
     respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier1_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_AR_mout: B_ACR_A3_Soldier_AR
@@ -44,7 +44,7 @@ class B_ACR_A3_Soldier_AR_mout: B_ACR_A3_Soldier_AR
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'CUP_B_ACRScout_m95';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
 class B_ACR_A3_Soldier_M_mout: B_ACR_A3_Soldier_M
@@ -60,7 +60,7 @@ class B_ACR_A3_Soldier_M_mout: B_ACR_A3_Soldier_M
     respawnlinkedItems[] = {"H_ACR_A3_HelmetB_rgr","NVGoggles_OPFOR","V_ACR_A3_PlateCarrier2_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_medic_mout: B_ACR_A3_Soldier_medic
@@ -76,7 +76,7 @@ class B_ACR_A3_Soldier_medic_mout: B_ACR_A3_Soldier_medic
     respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier1_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_TL_mout: B_ACR_A3_Soldier_TL
@@ -92,7 +92,7 @@ class B_ACR_A3_Soldier_TL_mout: B_ACR_A3_Soldier_TL
     respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier1_rgr","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_repair_mout: B_ACR_A3_Soldier_repair
@@ -108,7 +108,7 @@ class B_ACR_A3_Soldier_repair_mout: B_ACR_A3_Soldier_repair
     respawnlinkedItems[] = {"NVGoggles_OPFOR","V_ACR_A3_PlateCarrier1_rgr","H_ACR_A3_HelmetIA_vz952","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
     };
 };
 class B_ACR_A3_Soldier_MAT_mout: B_ACR_A3_Soldier_MAT
@@ -124,7 +124,7 @@ class B_ACR_A3_Soldier_MAT_mout: B_ACR_A3_Soldier_MAT
     respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier1_rgr","NVGoggles_OPFOR","H_ACR_A3_HelmetB_rgr","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 
@@ -136,7 +136,7 @@ class B_ACR_A3_Soldier_01_mout_des: B_ACR_A3_Soldier_01_mout
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT_des.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_GL_mout_des: B_ACR_A3_Soldier_GL_mout // Granátometčík
@@ -145,7 +145,7 @@ class B_ACR_A3_Soldier_GL_mout_des: B_ACR_A3_Soldier_GL_mout // Granátometčík
     uniformClass = "U_ACR_A3_CombatUniform_Des_tshirt";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_AR_mout_des: B_ACR_A3_Soldier_AR_mout
@@ -155,7 +155,7 @@ class B_ACR_A3_Soldier_AR_mout_des: B_ACR_A3_Soldier_AR_mout
     hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Uniforma_MOUT_des.paa"};
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_rgr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Neg'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_AssaultPack_rgr';_unit addMagazines ['acr_a3_100Rnd_762x51_B_M60E4',3];";
     };
 };
 class B_ACR_A3_Soldier_M_mout_des: B_ACR_A3_Soldier_M_mout
@@ -164,7 +164,7 @@ class B_ACR_A3_Soldier_M_mout_des: B_ACR_A3_Soldier_M_mout
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_medic_mout_des: B_ACR_A3_Soldier_medic_mout
@@ -173,7 +173,7 @@ class B_ACR_A3_Soldier_medic_mout_des: B_ACR_A3_Soldier_medic_mout
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Medic'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_TL_mout_des: B_ACR_A3_Soldier_TL_mout
@@ -182,7 +182,7 @@ class B_ACR_A3_Soldier_TL_mout_des: B_ACR_A3_Soldier_TL_mout
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_A_Neg'] call BIS_fnc_setUnitInsignia;";
     };
 };
 class B_ACR_A3_Soldier_repair_mout_des: B_ACR_A3_Soldier_repair_mout
@@ -191,7 +191,7 @@ class B_ACR_A3_Soldier_repair_mout_des: B_ACR_A3_Soldier_repair_mout
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;_unit addBackpack 'B_Kitbag_rgr';_unit addItem 'ToolKit';";
     };
 };
 class B_ACR_A3_Soldier_MAT_mout_des: B_ACR_A3_Soldier_MAT_mout
@@ -200,6 +200,6 @@ class B_ACR_A3_Soldier_MAT_mout_des: B_ACR_A3_Soldier_MAT_mout
     uniformClass = "U_ACR_A3_CombatUniform_MOUT_Des";
     class EventHandlers: EventHandlers
     {
-        init = "_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
+        init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_B_Pos'] call BIS_fnc_setUnitInsignia;";
     };
 };
