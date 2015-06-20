@@ -36,8 +36,38 @@ class CfgVehicles
         };
         hiddenselectionstextures[] =
         {
-            "\acr_a3\acr_a3_rhs_replacement\data\mi35_acr_1_co.paa",
-            "\acr_a3\acr_a3_rhs_replacement\data\mi35_acr_2_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\15_cz_dark_001_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\15_cz_dark_002_co.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+        };
+    };
+     class ACR_A3_Mi_24v_des: ACR_A3_Mi_24v //desert
+    {
+        accuracy = 0.5;
+        author = "$STR_ACR";
+        displayName = "Mi-24V (Desert)";
+        scope = 2;
+        side = 1;
+        crew = "B_ACR_A3_Pilot_des";
+		typicalCargo[] = {"B_ACR_A3_Pilot_des"};
+        faction = "ACR_A3";
+        vehicleclass = "Air";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "n1",
+            "n2",
+            "exhaust",
+            "tail_decals"
+        };
+        hiddenselectionstextures[] =
+        {
+            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_001_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_002_co.paa",
             "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
             "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
             "rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
@@ -66,14 +96,44 @@ class CfgVehicles
         };
         hiddenselectionstextures[] =
         {
-            "\acr_a3\acr_a3_rhs_replacement\data\mi35_acr_1_co.paa",
-            "\acr_a3\acr_a3_rhs_replacement\data\mi35_acr_2_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\15_cz_dark_001_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\15_cz_dark_002_co.paa",
             "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
             "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
             "rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
             "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
         };
     };
+    class ACR_A3_Mi_24p_des: ACR_A3_Mi_24p //desert
+    {
+        accuracy = 0.5;
+        author = "$STR_ACR";
+        displayName = "Mi-24P (Desert)";
+        scope = 2;
+        side = 1;
+        crew = "B_ACR_A3_Pilot_des";
+		typicalCargo[] = {"B_ACR_A3_Pilot_des"};
+        faction = "ACR_A3";
+        vehicleclass = "Air";
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "n1",
+            "n2",
+            "exhaust",
+            "tail_decals"
+        };
+        hiddenselectionstextures[] =
+        {
+            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_001_co.paa",
+            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_002_co.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa",
+            "rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa",
+            "rhsafrf\addons\rhs_decals\Data\Labels\Misc\no_ca.paa"
+        };
+    };	
     class RHS_Mi8AMT_base;
     class RHS_Mi8AMTSh_base;
     class RHS_Mi8_base;
