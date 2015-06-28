@@ -243,6 +243,12 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa","\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy.paa"};
         author = "$STR_ACR";
     };
+    class V_PlateCarrierIAGL_khk: V_PlateCarrierIAGL_oli
+    {
+        displayName = "$STR_a3_v_platecarrieria2_khkl0";
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip_ia_vest01_khk_co.paa", "\acr_a3\acr_a3_characters\data\equip_ia_vest01_heavy_khk_co.paa"};
+        author = "$STR_A3_Bohemia_Interactive";
+    };
 	class H_ACR_A3_HelmetIA_vz95: ItemCore
 	{
 		scope = 2;
