@@ -37,8 +37,8 @@ class B_ACR_A3_Recon_JTAC: B_recon_JTAC_F // JTAC
     respawnWeapons[] = {"acr_a3_CZ805_A1_MRCO_Laser","acr_a3_SP01","Throw","Put","Laserdesignator"};
     magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","CUP_18Rnd_9x19_Phantom","CUP_18Rnd_9x19_Phantom","SmokeShell","SmokeShell","HandGrenade","HandGrenade","Chemlight_green","Chemlight_green","Laserbatteries"};
-    linkedItems[] = {"V_ACR_A3_PlateCarrier2_vz95","H_ACR_A3_Booniehat_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_vz95","H_ACR_A3_Booniehat_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    linkedItems[] = {"V_ACR_A3_PlateCarrierSpec_rgr","H_ACR_A3_Booniehat_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierSpec_rgr","H_ACR_A3_Booniehat_vz95","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     Items[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
     respawnItems[] = {"muzzle_snds_M","FirstAidKit","FirstAidKit"};
     class EventHandlers: EventHandlers
@@ -209,8 +209,8 @@ class B_ACR_A3_Recon_JTAC_des: B_ACR_A3_Recon_JTAC // JTAC
 {
     vehicleClass = "ACR_A3_Men_vz95_D"; //RECON
     uniformClass = "U_ACR_A3_CombatUniform_Des_vest";
-    linkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
-    respawnlinkedItems[] = {"V_ACR_A3_PlateCarrier2_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    linkedItems[] = {"V_ACR_A3_PlateCarrierSpec_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
+    respawnlinkedItems[] = {"V_ACR_A3_PlateCarrierSpec_khk","H_ACR_A3_Booniehat_vz95_des","ItemMap","ItemCompass","ItemWatch","ItemGPS","ItemRadio"};
     class EventHandlers: EventHandlers
     {
         init = "_this call SLX_XEH_EH_Init;_unit = _this select 0;[_unit,'ACR_Patch_AB_Pos'] call BIS_fnc_setUnitInsignia;";
