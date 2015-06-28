@@ -427,6 +427,30 @@
             <Russian>Разгрузочный жилет [ACR] (Khaki)</Russian>
             <Spanish>Cartuchera [ACR] (Khaki)</Spanish>
         </Key>
+        <Key ID="STR_ACR_VEST3_rgr">
+            <Original>Carrier Special Rig [ACR] (Green)</Original>
+            <English>Carrier Special Rig [ACR] (Green)</English>
+            <Czech>Nosič plátů speciální [AČR] (zelený)</Czech>
+            <French>Gilet modulable spécial [ACR] (vert)</French>
+            <German>Spezialtragegurt [ACR] (grün)</German>
+            <Italian>Gilet speciale Rig [ACR] (verde)</Italian>
+            <Polish>Kamizelka specjalna [ACR] (zielone)</Polish>
+            <Portuguese>Suporte especial de transportador [ACR] (verde)</Portuguese>
+            <Russian>Специальный жилет [ACR] (зеленый)</Russian>
+            <Spanish>Equipo especial de portaaviones [ACR] (verde)</Spanish>
+        </Key>
+        <Key ID="STR_ACR_VEST3_khk">
+            <Original>Carrier Special Rig [ACR] (Khaki)</Original>
+            <English>Carrier Special Rig [ACR] (Khaki)</English>
+            <Czech>Nosič plátů speciální [AČR] (khaki)</Czech>
+            <French>Gilet modulable spécial [ACR] (khaki)</French>
+            <German>Spezialtragegurt [ACR] (khaki)</German>
+            <Italian>Gilet speciale Rig [ACR] (khaki)</Italian>
+            <Polish>Kamizelka specjalna [ACR] (khaki)</Polish>
+            <Portuguese>Suporte especial de transportador [ACR] (khaki)</Portuguese>
+            <Russian>Специальный жилет [ACR] (khaki)</Russian>
+            <Spanish>Equipo especial de portaaviones [ACR] (khaki)</Spanish>
+        </Key>
         <Key ID="STR_ACR_MICH2000">
             <Original>Helmet [ACR]</Original>
             <English>Helmet [ACR]</English>

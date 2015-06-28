@@ -3,7 +3,7 @@ class CfgPatches
 {
 	class acr_a3_rhs_replacement_c
 	{
-		units[] = {"ACR_A3_Mi_24v", "ACR_A3_Mi_24p", "ACR_A3_Mi17_base_CZ_EP1", "ACR_A3_Mi171Sh_rockets_CZ_EP1", "ACR_A3_Mi171Sh_medevac_CZ_EP1", "ACR_A3_UAZ_469", "ACR_A3_UAZ_469_Open"};
+		units[] = {"ACR_A3_Mi_24v", "ACR_A3_Mi_24p", "ACR_A3_Mi17_base_CZ_EP1", "ACR_A3_Mi171Sh_rockets_CZ_EP1", "ACR_A3_Mi171Sh_medevac_CZ_EP1", "ACR_A3_UAZ_469", "ACR_A3_UAZ_469_Open","ACR_A3_Mi_24v_des","ACR_A3_Mi_24v_ram","ACR_A3_Mi_24p_des","ACR_A3_Mi_24p_ram"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		author = "$STR_ACR";
