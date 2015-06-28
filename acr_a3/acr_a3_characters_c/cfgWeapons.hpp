@@ -224,14 +224,14 @@ class cfgWeapons
     class V_ACR_A3_PlateCarrierSpec_rgr: V_PlateCarrierSpec_rgr
     {
         displayName = "$STR_ACR_VEST3_rgr";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_olive.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy_olive.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy_olive.paa"};
         author = "$STR_ACR";
     };
     class V_ACR_A3_PlateCarrierSpec_khk: V_PlateCarrierSpec_rgr
     {
         displayName = "$STR_ACR_VEST3_khk";
-        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_khk.paa";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy_khk.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy_khk.paa"};
         author = "$STR_ACR";
     };
@@ -239,6 +239,7 @@ class cfgWeapons
     class V_ACR_A3_PlateCarrierIAGL_oli: V_PlateCarrierIAGL_oli
     {
         displayName = "$STR_ACR_VEST";
+		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa","\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy.paa"};
         author = "$STR_ACR";
     };
