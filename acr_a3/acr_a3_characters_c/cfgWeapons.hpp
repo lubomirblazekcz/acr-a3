@@ -239,7 +239,7 @@ class cfgWeapons
     class V_ACR_A3_PlateCarrierIAGL_oli: V_PlateCarrierIAGL_oli
     {
         displayName = "$STR_ACR_VEST";
-        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta2_heavy_oli.paa"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa","\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy.paa"};
         author = "$STR_ACR";
     };
 	class H_ACR_A3_HelmetIA_vz95: ItemCore
