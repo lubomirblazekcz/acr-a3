@@ -1,7 +1,7 @@
 		thrustDelay = 0.5;
 		brakeIdleSpeed = 1.78;
-		maxSpeed = 80;
-		fuelCapacity = 350;
+		maxSpeed = 106;
+		fuelCapacity = 320;
 		fuelConsumptionRate = 26;
 		antiRollbarForceCoef = 0;
 		antiRollbarForceLimit = 5;
@@ -27,13 +27,13 @@
 		rearBias = 1.3;
 		centreBias = 1.3;
 		clutchStrength = 55.0;
-		enginePower = 180;
+		enginePower = 177;
 		maxOmega = 240;
-		peakTorque = 1280;
+		peakTorque = 920;
 		dampingRateFullThrottle = 0.08;
 		dampingRateZeroThrottleClutchEngaged = 2.0;
 		dampingRateZeroThrottleClutchDisengaged = 0.35;
-		torqueCurve[] = {{ 0.0,0.2 },{ 0.278,0.5 },{ 0.35,0.85 },{ 0.461,0.95 },{ 0.6,1.0 },{ 0.7,0.95 },{ 0.8,0.7 },{ 1.0,0.4 }};
+		torqueCurve[] = {{0.0,0.2},{0.278,0.5},{0.35,0.85},{0.461,0.95},{0.6,1.0},{0.7,0.95},{0.8,0.7},{1.0,0.4}};
 		switchTime = 0.31;
 		class Wheels
 		{
@@ -63,7 +63,7 @@
 				longitudinalStiffnessPerUnitGravity = 10000;
 				latStiffX = 25;
 				latStiffY = 180;
-				frictionVsSlipGraph[] = {{ 0,1 },{ 0.5,1 },{ 1,1 }};
+				frictionVsSlipGraph[] = {{0,1},{0.5,1},{1,1}};
 			};
 			class L2: L1
 			{
@@ -117,20 +117,5 @@
 				suspForceAppPointOffset = "wheel_2_3_axis";
 				tireForceAppPointOffset = "wheel_2_3_axis";
 				maxHandBrakeTorque = 300000;
-			};
-		};
-		class RenderTargets
-		{
-			class mirrors
-			{
-				renderTarget = "rendertarget0";
-				class mirror
-				{
-					pointPosition = "PIP0_pos";
-					pointDirection = "PIP0_dir";
-					renderVisionMode = 4;
-					renderQuality = 2;
-					fov = 0.5;
-				};
 			};
 		};

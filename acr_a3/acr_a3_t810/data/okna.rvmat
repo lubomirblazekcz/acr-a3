@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="acr_a3\acr_a3_t810\data\auta_skla_ti_ca.tga";
+	texture="acr_a3\acr_a3_t810\data\okna2_ti_ca.tga";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
@@ -84,7 +84,7 @@ class Stage6
 };
 class Stage7
 {
-	texture="acr_a3\acr_a3_t810\data\env_land_co.paa";
+	texture="a3\data_f\env_land_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
