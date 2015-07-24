@@ -180,7 +180,7 @@ class CfgVehicles
                         //gunnerLeftHandAnimName="Commander_Gun"; //nie działa :<
 
                         // Servos
-                        maxHorizontalRotSpeed = 1.8;	// 1 = 45°/sec
+                        maxHorizontalRotSpeed = 360/45;	// 1 = 45°/sec
                         maxVerticalRotSpeed = 1.8;		// 1 = 45°/sec
 						stabilizedInAxes = "StabilizedInAxesBoth";
 						soundServo[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\gun_elevate2",0.0177828,1,10};
@@ -457,23 +457,7 @@ class CfgVehicles
                 hitpoint 	= "P svetlo";
                 selection 	= "P svetlo";
             };
-            class Right2: Right {
-                position 	= "light_R_flare";
-                useFlare 	= 1;
-            };
-            class Left2: Left {
-                position 	= "light_L_flare";
-                useFlare 	= 1;
-            };
-            class GunnerLight: Left2
-            {
-                position = "gunner light";
-                direction = "konec gunner light";
-                hitpoint = "gunner light";
-                selection = "gunner light";
-                ambient[] = {0.1,0.1,0.1,0.1};
-            };
         };
-        aggregateReflectors[] = {{"Left","Right","Left2","Right2"}};
+        aggregateReflectors[] = {{"Left","Right"}};
 	};
 };
