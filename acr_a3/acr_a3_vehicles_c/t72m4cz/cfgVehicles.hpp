@@ -180,7 +180,7 @@ class CfgVehicles
                         //gunnerLeftHandAnimName="Commander_Gun"; //nie działa :<
 
                         // Servos
-                        maxHorizontalRotSpeed = 360/45;	// 1 = 45°/sec
+                        maxHorizontalRotSpeed = 1.8;	// 1 = 45°/sec
                         maxVerticalRotSpeed = 1.8;		// 1 = 45°/sec
 						stabilizedInAxes = "StabilizedInAxesBoth";
 						soundServo[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\gun_elevate2",0.0177828,1,10};
@@ -261,8 +261,8 @@ class CfgVehicles
 				};
 
                 LODTurnedOut = 1100;
-                maxHorizontalRotSpeed = 0.32;	// 1 = 45°/sec
-                maxVerticalRotSpeed = 0.1;		// 1 = 45°/sec
+                maxHorizontalRotSpeed = 0.93;	// 1 = 45°/sec
+                maxVerticalRotSpeed = 0.187;		// 1 = 45°/sec
 
                 // Coaxial gun
                 memoryPointGun = "kulas";
