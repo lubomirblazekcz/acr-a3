@@ -39,6 +39,24 @@ class cfgWeapons
             mat[] = {"A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
         };
     };
+    class V_ACR_A3_BN2013_vz95: V_PlateCarrierIA1_dgtl //Vesta
+    {
+        scope = 2;
+        model = "\acr_a3\acr_a3_characters\vesta_ACR";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
+        displayName = "Balistický nosič BN-2013"; //TODO
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
+            containerClass = "Supply140";
+            mass = 60;
+            hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
+        };
+    };
     class V_ACR_A3_PlateCarrierIA1_vz95: V_PlateCarrierIA1_dgtl //Vesta
 	{
 		scope = 2;
@@ -287,7 +305,7 @@ class cfgWeapons
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
-            modelSides[] = {6; /// available for all sides
+            modelSides[] = {6}; /// available for all sides
             armor = 4;
             passThrough = 0.5;
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
