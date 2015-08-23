@@ -3,7 +3,7 @@ class CfgGroups
     class West
     {
         name = "$STR_A3_CfgGroups_West0";
-        class ACR_A3_ACRP_Group
+        class ACR_A3
         {
             name = "$STR_ACR_FACTION";
             class Infantry
