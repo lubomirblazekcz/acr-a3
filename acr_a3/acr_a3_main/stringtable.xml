@@ -379,6 +379,31 @@
             <Russian>Разгрузочный жилет [ACR] (vz. 95)</Russian>
             <Spanish>Cartuchera [ACR] (vz. 95)</Spanish>
         </Key>
+          <Key ID="STR_ACR_CAP_HEADPHONES">
+            <Original>Rangemaster Cap [ACR] (vz. 95)</Original>
+            <English>Rangemaster Cap [ACR] (vz. 95)</English>
+            <Czech>Čepice vedoucího střelby [AČR] (vz. 95)</Czech>
+            <French>Képi d'intendant [ACR] (vz. 95)</French>
+            <German>Schießplatzverwalter-Mütze [ACR] (vz. 95)</German>
+            <Italian>Cappello responsabile poligono [ACR] (vz. 95)</Italian>
+            <Polish>Czapka instruktora [ACR] (vz. 95)</Polish>
+            <Portuguese>Boné do líder de combate a distância [ACR] (vz. 95)</Portuguese>
+            <Russian>Кепка инструктора [ACR] (vz. 95)</Russian>
+            <Spanish>Gorra de responsable de galería de tiro [ACR] (vz. 95)</Spanish>
+          </Key>
+        </Key>
+          <Key ID="STR_ACR_CAP_HEADPHONES_DES">
+            <Original>Rangemaster Cap [ACR] (Desert)</Original>
+            <English>Rangemaster Cap [ACR] (Desert)</English>
+            <Czech>Čepice vedoucího střelby [AČR] (pouštní)</Czech>
+            <French>Képi d'intendant [ACR] (Desert)</French>
+            <German>Schießplatzverwalter-Mütze [ACR] (Desert)</German>
+            <Italian>Cappello responsabile poligono [ACR] (Desert)</Italian>
+            <Polish>Czapka instruktora [ACR] (Desert)</Polish>
+            <Portuguese>Boné do líder de combate a distância [ACR] (Desert)</Portuguese>
+            <Russian>Кепка инструктора [ACR] (Desert)</Russian>
+            <Spanish>Gorra de responsable de galería de tiro [ACR] (Desert)</Spanish>
+          </Key>
         <Key ID="STR_ACR_VEST2_rgr">
             <Original>Carrier Lite [ACR] (Green)</Original>
             <English>Carrier Lite [ACR] (Green)</English>

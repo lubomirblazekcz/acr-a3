@@ -458,6 +458,48 @@ class cfgWeapons
             hiddenSelections[] = {"camo"};
         };
     };
+    class H_ACR_A3_Cap_Headphones: ItemCore //headphones
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_ACR_CAP_HEADPHONES";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_cap_headphones.paa";
+        model = "\A3\Characters_F_epb\Common\capb_hs";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_headphones.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: HeadGearItem
+        {
+            uniformModel = "\A3\Characters_F\Common\capb_headphones.p3d";
+			allowedSlots[] = {801,901,701,605};
+            mass = 10;
+            modelSides[] = {6};
+            armor = 0;
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"};
+        };
+    };
+    class H_ACR_A3_Cap_Headphones_des: ItemCore //headphones
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_ACR_CAP_HEADPHONES_DES";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_cap_headphones_des.paa";
+        model = "\A3\Characters_F_epb\Common\capb_hs";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_headphones_des.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: HeadGearItem
+        {
+            uniformModel = "\A3\Characters_F\Common\capb_headphones.p3d";
+			allowedSlots[] = {801,901,701,605};
+            mass = 10;
+            modelSides[] = {6};
+            armor = 0;
+            passThrough = 0.8;
+            hiddenSelections[] = {"camo"};
+        };
+    };
 	class H_ACR_A3_Pakol_grey: ItemCore
         {
         scope = 2; /// scope needs to be 2 to have a visible class
