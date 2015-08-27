@@ -362,7 +362,7 @@ class cfgWeapons
         model   = "\acr_a3\acr_a3_characters\beret_ACR.p3d"; /// what model does the cap use
 		author = "$STR_ACR";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
-        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ins_bardak_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
