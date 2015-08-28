@@ -57,6 +57,24 @@ class cfgWeapons
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
         };
     };
+    class V_ACR_A3_BN2013_vz95_black: V_PlateCarrierIA1_dgtl //Vesta Test
+    {
+        scope = 2;
+        model = "\acr_a3\acr_a3_characters\vesta_ACR";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
+        displayName = "Balistický nosič BN-2013 (BLACK)"; //TODO
+        hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip1_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip4_co_BLACK.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
+            containerClass = "Supply140";
+            mass = 60;
+            hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip1_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip4_co_BLACK.paa"};
+        };
+    };
     class V_ACR_A3_BN2013_vz95_des: V_PlateCarrierIA1_dgtl //Vesta Test
     {
         scope = 2;
