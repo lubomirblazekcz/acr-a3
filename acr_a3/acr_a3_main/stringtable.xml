@@ -480,6 +480,10 @@
             <Original>Helmet [ACR]</Original>
             <English>Helmet [ACR]</English>
             <Czech>Přilba [AČR]</Czech>
+        <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES">
+            <Original>Helmet [ACR] (WOCOVER goggles)</Original>
+            <English>Helmet [ACR] (WOCOVER goggles)</English>
+            <Czech>Přilba [AČR] (bez potahu a brýle)</Czech>
         </Key>
         <Key ID="STR_ACR_MICH2000_Des">
             <Original>Helmet [ACR] (Desert)</Original>
