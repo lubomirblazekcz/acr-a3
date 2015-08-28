@@ -576,6 +576,26 @@ class cfgWeapons
             hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         };
     };
+    class H_ACR_A3_Booniehat_fold_des: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_BOONIEHAT_DES_FOLD"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_booniefold_des.paa"; /// this looks fairly similar
+        model   = "\acr_a3\acr_a3_characters\boonie_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 10; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "\acr_a3\acr_a3_characters\boonie_ACR.p3d";  /// what model is used for this cap
+			allowedSlots[] = {801,901,701,605};
+            modelSides[] = {6}; /// available for all sides
+            armor = 0;  /// this cap doesn't provide any protection
+            passThrough = 0.8; /// this cap doesn't provide any protection
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        };
+    };
 
 	// vz. 95 Lesní Uniformy
 	class U_ACR_A3_CombatUniform: Uniform_Base // Klasická

@@ -580,6 +580,18 @@
             <Russian>Панама [ACR] (fold)</Russian>
             <Spanish>Gorro militar [ACR] (fold)</Spanish>
         </Key>
+        <Key ID="STR_ACR_BOONIEHAT_DES_FOLD">
+            <Original>Booniehat [ACR] (Desert/fold)</</Original>
+            <English>Booniehat [ACR] (Desert/fold)</</English>
+            <Czech>Klobouk [AČR] (pouštní/sklopený)</Czech>
+            <French>Chapeau de brousse [ACR] (Desert/fold)</</French>
+            <German>Buschhut [ACR] (Desert/fold)</</German>
+            <Italian>Boonie hat [ACR] (Desert/fold)</)</Italian>
+            <Polish>Booniehat [ACR] (Desert/fold)</</Polish>
+            <Portuguese>Chapéu tático [ACR] (fold)</Portuguese>
+            <Russian>Панама [ACR] (Desert/fold)</Russian>
+            <Spanish>Gorro militar [ACR] (Desert/fold)</</Spanish>
+        </Key>
         <Key ID="STR_ACR_PAKOL_GREY">
             <Original>Pakol [ACR]</Original>
             <English>Pakol [ACR]</English>
