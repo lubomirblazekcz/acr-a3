@@ -39,7 +39,7 @@ class cfgWeapons
             mat[] = {"A3\Characters_F\Common\Data\basicbody.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Common\Data\basicbody_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
         };
     };
-    class V_ACR_A3_BN2013_vz95: V_PlateCarrierIA1_dgtl //Vesta
+    class V_ACR_A3_BN2013_vz95: V_PlateCarrierIA1_dgtl //Vesta Test
     {
         scope = 2;
         model = "\acr_a3\acr_a3_characters\vesta_ACR";
@@ -55,6 +55,24 @@ class cfgWeapons
             mass = 60;
             hiddenSelections[] = {"camo"};
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
+        };
+    };
+    class V_ACR_A3_BN2013_vz95_des: V_PlateCarrierIA1_dgtl //Vesta Test
+    {
+        scope = 2;
+        model = "\acr_a3\acr_a3_characters\vesta_ACR";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
+        displayName = "Balistický nosič BN-2013 (DES)"; //TODO
+        hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip1_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip4_co_DESERT.paa"};
+        author = "$STR_ACR";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
+            containerClass = "Supply140";
+            mass = 60;
+            hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip1_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip4_co_DESERT.paa"};
         };
     };
     class V_ACR_A3_PlateCarrierIA1_vz95: V_PlateCarrierIA1_dgtl //Vesta
