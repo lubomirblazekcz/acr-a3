@@ -481,10 +481,15 @@
             <English>Helmet [ACR]</English>
             <Czech>Přilba [AČR]</Czech>
 		</Key>
+        <Key ID="STR_ACR_MICH2000_HEADSET">
+            <Original>Helmet [ACR] (Headset)</Original>
+            <English>Helmet [ACR] (Headset)</English>
+            <Czech>Přilba [AČR] (sluchátka)</Czech>
+		</Key>
         <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES">
-            <Original>Helmet [ACR] (WOCOVER goggles)</Original>
-            <English>Helmet [ACR] (WOCOVER goggles)</English>
-            <Czech>Přilba [AČR] (bez potahu s brýlema)</Czech>
+            <Original>Helmet [ACR] (WOCOVER/Goggles)</Original>
+            <English>Helmet [ACR] (WOCOVER/Goggles)</English>
+            <Czech>Přilba [AČR] (bez potahu/brýle)</Czech>
         </Key>
         <Key ID="STR_ACR_MICH2000WOCOVER">
             <Original>Helmet [ACR] (WOCOVER)</Original>
@@ -496,15 +501,25 @@
             <English>Helmet [ACR] (Desert)</English>
             <Czech>Přilba [AČR] (pouštní)</Czech>
         </Key>
+        <Key ID="STR_ACR_MICH2000_HEADSET_Des">
+            <Original>Helmet [ACR] (Desert/HS/Goggles)</Original>
+            <English>Helmet [ACR] (Desert/HS/Goggles)</English>
+            <Czech>Přilba [AČR] (pouštní/sluchátka/brýle)</Czech>
+        </Key>
         <Key ID="STR_ACR_MICH2000_GOGGLES">
-            <Original>Helmet [ACR] (goggles)</Original>
-            <English>Helmet [ACR] (goggles)</English>
+            <Original>Helmet [ACR] (Goggles)</Original>
+            <English>Helmet [ACR] (Goggles)</English>
             <Czech>Přilba [AČR] (brýle)</Czech>
         </Key>
+        <Key ID="STR_ACR_MICH2000_HS_GOGGLES">
+            <Original>Helmet [ACR] (HS/Goggles)</Original>
+            <English>Helmet [ACR] (HS/Goggles)</English>
+            <Czech>Přilba [AČR] (sluchátka/brýle)</Czech>
+        </Key>
         <Key ID="STR_ACR_MICH2000_GOGGLES_Des">
-            <Original>Helmet [ACR] (Desert) (goggles)</Original>
-            <English>Helmet [ACR] (Desert) (goggles)</English>
-            <Czech>Přilba [AČR] (pouštní) (brýle)</Czech>
+            <Original>Helmet [ACR] (Desert/Goggles)</Original>
+            <English>Helmet [ACR] (Desert/Goggles)</English>
+            <Czech>Přilba [AČR] (pouštní/brýle)</Czech>
         </Key>
         <Key ID="STR_ACR_ECH_rgr">
             <Original>ECH [ACR]</Original>

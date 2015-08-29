@@ -305,6 +305,28 @@ class cfgWeapons
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		};
 	};
+	class H_ACR_A3_HelmetIA_Headset_vz95: ItemCore
+	{
+		scope = 2;
+		weaponPoolAvailable = 1;
+		displayName = "$STR_ACR_MICH2000_HEADSET";
+		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma.paa";
+        model   = "\acr_a3\acr_a3_characters\mich2000headsetnogoggles_ACR"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
+		class ItemInfo: HeadGearItem
+		{
+            uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetnogoggles_ACR.p3d";  /// what model is used for this cap
+			mass = 40;
+			modelSides[] = {6};
+            allowedSlots[] = {901,605};
+			armor = 4;
+			passThrough = 0.5;
+			hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
+		};
+	};
     class H_ACR_A3_HelmetIA_vz95_des: ItemCore
     {
         scope = 2;
@@ -318,6 +340,28 @@ class cfgWeapons
         class ItemInfo: HeadGearItem
         {
             uniformModel = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
+            mass = 40;
+            modelSides[] = {6};
+            allowedSlots[] = {901,605};
+            armor = 4;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"};
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
+        };
+    };
+    class H_ACR_A3_HelmetIA_Headset_vz95_des: ItemCore
+    {
+        scope = 2;
+        weaponPoolAvailable = 1;
+        displayName = "$STR_ACR_MICH2000_HEADSET_Des";
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_poust.paa";
+        model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR"; /// what model does the cap use
+        author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
+        class ItemInfo: HeadGearItem
+        {
+            uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
             mass = 40;
             modelSides[] = {6};
             allowedSlots[] = {901,605};
@@ -348,6 +392,27 @@ class cfgWeapons
             hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         };
     };
+	class H_ACR_A3_HelmetIA_Goggles_Headset_vz95: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_HS_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
+        model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+            armor = 4;
+            passThrough = 0.5;
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
+        };
+    };
     class H_ACR_A3_HelmetIA_Goggles_vz95_des: ItemCore
         {
         scope = 2; /// scope needs to be 2 to have a visible class
@@ -361,6 +426,27 @@ class cfgWeapons
         {
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
+            allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
+            modelSides[] = {6}; /// available for all sides
+			armor = 4;
+			passThrough = 0.5;
+            hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+            hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
+        };
+    };
+    class H_ACR_A3_HelmetIA_Goggles_Headset_vz95_des: ItemCore
+        {
+        scope = 2; /// scope needs to be 2 to have a visible class
+        displayName  = "$STR_ACR_MICH2000_HS_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
+        picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
+        model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d"; /// what model does the cap use
+		author = "$STR_ACR";
+        hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
+        hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
+        class ItemInfo : HeadgearItem
+        {
+            mass = 40; /// combined weight and volume of the cap, this equals to single magazine
+            uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
             modelSides[] = {6}; /// available for all sides
 			armor = 4;
