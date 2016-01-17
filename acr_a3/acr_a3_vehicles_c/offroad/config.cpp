@@ -3,7 +3,7 @@ class CfgPatches
 	class acr_a3_Offroad
 	{
 		units[] = {"ACR_Offroad", "ACR_Offroad_Armed"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -49,7 +49,7 @@ class CfgVehicles
 		side = 1;
 		scope = 2;
 		_generalMacro = "ACR_Offroad";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		faction = "ACR_A3";
 		displayName = "Offroad";
 		crew = "B_ACR_A3_Soldier_01";
@@ -132,7 +132,7 @@ class CfgVehicles
     {
         side = 1;
         scope = 2;
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         faction = "ACR_A3";
         displayName = "$STR_A3_CFGVEHICLES_OFFROAD_ARMED_BASE0";
         crew = "B_ACR_A3_Soldier_01";

@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"ACR_Kamaz","ACR_Kamaz02","ACR_Kamaz03","ACR_Kamaz04","ACR_Kamaz05"};
 		weapons[] = {};
         requiredVersion = 0.1;
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		requiredAddons[] = {"A3_Armor_F","A3_Soft_F"};
 	};
 };
@@ -23,7 +23,7 @@ class CfgVehicles
 		scope = 2;
 		faction = "ACR_A3";
 		displayName = "$STR_ACR_KAMAZ_COVERED";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Plachta.paa"};
@@ -36,7 +36,7 @@ class CfgVehicles
 		scope = 2;
 		faction = "ACR_A3";
 		displayName = "$STR_ACR_KAMAZ_TRANSPORT";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Plachta.paa"};
@@ -49,7 +49,7 @@ class CfgVehicles
 		scope = 2;
 		faction = "ACR_A3";
 		displayName = "$STR_ACR_KAMAZ_BOX";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Kabina.paa"};
@@ -62,7 +62,7 @@ class CfgVehicles
 		scope = 2;
 		faction = "ACR_A3";
 		displayName = "$STR_ACR_KAMAZ_FUEL";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz_cisterna.paa"};
@@ -75,7 +75,7 @@ class CfgVehicles
 		scope = 2;
 		faction = "ACR_A3";
 		displayName = "$STR_ACR_KAMAZ_MED";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz.paa","\acr_a3\acr_a3_vehicles\kamaz\data\ACR_Kamaz_Plachta.paa"};

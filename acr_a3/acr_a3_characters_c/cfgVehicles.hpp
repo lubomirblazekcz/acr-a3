@@ -53,14 +53,14 @@ class cfgVehicles
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Backpack_ACR.p3d";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
     };
     class CUP_B_ACRPara_m95: CUP_B_ACRPara_Base
     {
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh.paa"; //ikona
 		displayName = "$STR_ACR_BACKPACK_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\backpack_acr_co.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
     };
     class CUP_B_ACRScout_Base: Bag_Base
     {
@@ -68,7 +68,7 @@ class cfgVehicles
 		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
         model = "\acr_a3\acr_a3_characters\CUP_Scoutpack_ACR.p3d";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         maximumLoad = 80;
         mass = 15;
     };
@@ -77,7 +77,7 @@ class cfgVehicles
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_CUPbatoh02.paa"; //ikona
 		displayName = "$STR_ACR_KITBAG_A2";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_equip2_co.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         maximumLoad = 80;
         mass = 15;
     };
@@ -88,7 +88,7 @@ class cfgVehicles
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_batoh02.paa"; //ikona
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Batoh02.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 	};
 	class ACR_A3_Backpack_Kitbag_vz95: B_Kitbag_rgr {
         scope = 2;
@@ -96,7 +96,7 @@ class cfgVehicles
         displayName = "$STR_ACR_KITBAG";
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Batoh.paa"};
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_batoh.paa"; //ikona
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         maximumLoad = 200;
         mass = 25;
     };

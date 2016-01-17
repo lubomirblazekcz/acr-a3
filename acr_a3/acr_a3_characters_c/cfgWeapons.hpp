@@ -24,7 +24,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNDERWEAR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_underwear.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 
         class ItemInfo : UniformItem
         {
@@ -47,9 +47,36 @@ class cfgWeapons
         displayName = "Balistický nosič BN-2013"; //TODO
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
             containerClass = "Supply140";
             mass = 60;
@@ -65,9 +92,36 @@ class cfgWeapons
         displayName = "Balistický nosič BN-2013 (BLACK)"; //TODO
         hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip1_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip4_co_BLACK.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
             containerClass = "Supply140";
             mass = 60;
@@ -83,9 +137,36 @@ class cfgWeapons
         displayName = "Balistický nosič BN-2013 (DES)"; //TODO
         hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip1_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip4_co_DESERT.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\vesta_ACR";
             containerClass = "Supply140";
             mass = 60;
@@ -101,9 +182,36 @@ class cfgWeapons
 		displayName = "$STR_ACR_VEST_IA1";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
     		uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
             containerClass = "Supply140";
             mass = 60;
@@ -119,9 +227,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
             containerClass = "Supply140";
             mass = 80;
@@ -138,6 +273,33 @@ class cfgWeapons
         author = "$STR_A3_Bohemia_Interactive";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest01";
             containerClass = "Supply140";
             mass = 60;
@@ -154,6 +316,33 @@ class cfgWeapons
         author = "$STR_A3_Bohemia_Interactive";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             uniformModel = "\A3\Characters_F_Beta\INDEP\equip_ia_vest02";
             containerClass = "Supply140";
             mass = 80;
@@ -169,9 +358,36 @@ class cfgWeapons
 		displayName = "$STR_ACR_VEST2";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta2.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 80;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
@@ -185,9 +401,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST2_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta2.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 100;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
@@ -200,9 +443,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST2_rgr";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_olive.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 80;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
@@ -215,9 +485,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST2_rgr_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_olive.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 100;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
@@ -230,9 +527,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST2_khk";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_khk.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 80;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest02";
@@ -245,9 +569,36 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST2_khk_H";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_khk.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: VestItem
         {
+
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Diaphragm
+				{
+					HitpointName = "HitDiaphragm";
+					armor = 20;
+					PassThrough = 0.2;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 20;
+					passThrough = 0.2;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.2;
+				};
+			};
             containerclass = "Supply140";
             mass = 100;
             uniformmodel = "\A3\Characters_F\BLUFOR\equip_b_vest01";
@@ -260,14 +611,14 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST3_rgr";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy_olive.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy_olive.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
     };
     class V_ACR_A3_PlateCarrierSpec_khk: V_PlateCarrierSpec_rgr
     {
         displayName = "$STR_ACR_VEST3_khk";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy_khk.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy_khk.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
     };
     class V_PlateCarrierIAGL_oli;
     class V_ACR_A3_PlateCarrierIAGL_oli: V_PlateCarrierIAGL_oli
@@ -275,7 +626,7 @@ class cfgWeapons
         displayName = "$STR_ACR_VEST";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta_heavy.paa";
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa","\acr_a3\acr_a3_characters\data\ACR_Vesta_heavy.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
     };
     class V_PlateCarrierIAGL_khk: V_PlateCarrierIAGL_oli
     {
@@ -290,11 +641,20 @@ class cfgWeapons
 		displayName = "$STR_ACR_MICH2000";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma.paa";
         model   = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadGearItem
 		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
 			mass = 40;
 			modelSides[] = {6};
@@ -312,11 +672,20 @@ class cfgWeapons
 		displayName = "$STR_ACR_MICH2000_HEADSET";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma.paa";
         model   = "\acr_a3\acr_a3_characters\mich2000headsetnogoggles_ACR"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadGearItem
 		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetnogoggles_ACR.p3d";  /// what model is used for this cap
 			mass = 40;
 			modelSides[] = {6};
@@ -334,11 +703,20 @@ class cfgWeapons
         displayName = "$STR_ACR_MICH2000_Des";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_poust.paa";
         model   = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR"; /// what model does the cap use
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo: HeadGearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\mich2000nogoggles_ACR.p3d";  /// what model is used for this cap
             mass = 40;
             modelSides[] = {6};
@@ -356,11 +734,20 @@ class cfgWeapons
         displayName = "$STR_ACR_MICH2000_HEADSET_Des";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_poust.paa";
         model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR"; /// what model does the cap use
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo: HeadGearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
             mass = 40;
             modelSides[] = {6};
@@ -377,11 +764,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -398,11 +794,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000_HS_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -419,11 +824,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -440,11 +854,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000_HS_GOGGLES_Des"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helmabryle_poust.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000headsetgoggles_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -461,11 +884,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000WOCOVER"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_WOCOVER.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000wocovernogoggles_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip3_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000wocovernogoggles_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -482,11 +914,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000WOCOVER_DES"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_WOCOVER_DES.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000wocovernogoggles_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip3_co_DESHELMET.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000wocovernogoggles_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -503,11 +944,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000WOCOVER_GOGGLES"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_WOCOVERGOGGLES.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000wocover_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip3_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000wocover_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -524,11 +974,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_MICH2000WOCOVER_GOGGLES_DES"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_helma_WOCOVERGOGGLES_DES.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\mich2000wocover_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip3_co_DESHELMET.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 6;
+					passThrough = 0.5;
+				};
+			};
             mass = 40; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\mich2000wocover_ACR.p3d";  /// what model is used for this cap
             allowedSlots[] = {901,605};   /// this cap is so small and flexible that it fits everywhere
@@ -545,11 +1004,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_Beret_red"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_beret.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\beret_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ins_bardak_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 1;
+				};
+			};
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\beret_ACR.p3d";  /// what model is used for this cap
 			allowedSlots[] = {801,901,701,605};
@@ -568,9 +1036,18 @@ class cfgWeapons
     	model = "\A3\Characters_F_epb\Common\booniehat_hs";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Klobouk95.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: HeadGearItem
 		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
 			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
 			allowedSlots[] = {801,901,701,605};
 			mass = 10;
@@ -589,9 +1066,18 @@ class cfgWeapons
     	model = "\A3\Characters_F_epb\Common\booniehat_hs";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Klobouk95_des.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: HeadGearItem
 		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
 			uniformModel = "\A3\Characters_F_epb\Common\booniehat_hs";
 			allowedSlots[] = {801,901,701,605};
 			mass = 10;
@@ -610,9 +1096,18 @@ class cfgWeapons
 		model = "\A3\Characters_F_epb\Common\capb_hs";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Ksiltovka95.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: HeadGearItem
 		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
 			uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
 			allowedSlots[] = {801,901,701,605};
 			mass = 10;
@@ -631,9 +1126,18 @@ class cfgWeapons
         model = "\A3\Characters_F_epb\Common\capb_hs";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_KsiltovkaTAN.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: HeadGearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             uniformModel = "\A3\Characters_F_epb\Common\capb_hs";
 			allowedSlots[] = {801,901,701,605};
             mass = 10;
@@ -652,9 +1156,18 @@ class cfgWeapons
         model = "\A3\Characters_F_epb\Common\capb_hs";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_headphones.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: HeadGearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             uniformModel = "\A3\Characters_F\Common\capb_headphones.p3d";
 			allowedSlots[] = {801,901,701,605};
             mass = 10;
@@ -673,9 +1186,18 @@ class cfgWeapons
         model = "\A3\Characters_F_epb\Common\capb_hs";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_headphones_des.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: HeadGearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             uniformModel = "\A3\Characters_F\Common\capb_headphones.p3d";
 			allowedSlots[] = {801,901,701,605};
             mass = 10;
@@ -691,11 +1213,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_PAKOL_GREY"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pakol.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\pakol_mic_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo","camo1"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip4_co.paa","\acr_a3\acr_a3_characters\data\equip1_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\pakol_mic_ACR.p3d";  /// what model is used for this cap
 			allowedSlots[] = {801,901,701,605};
@@ -711,11 +1242,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_BOONIEHAT_FOLD"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_booniefold.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\boonie_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_wood_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\boonie_ACR.p3d";  /// what model is used for this cap
 			allowedSlots[] = {801,901,701,605};
@@ -731,11 +1271,20 @@ class cfgWeapons
         displayName  = "$STR_ACR_BOONIEHAT_DES_FOLD"; /// how would the stuff be displayed in inventory and on ground
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_booniefold_des.paa"; /// this looks fairly similar
         model   = "\acr_a3\acr_a3_characters\boonie_ACR.p3d"; /// what model does the cap use
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
         hiddenSelections[] = {"camo"}; /// what selection in model could have different textures
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\equip2_des_co.paa"}; /// what texture is going to be used
         class ItemInfo : HeadgearItem
         {
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 0;
+					passThrough = 0.8;
+				};
+			};
             mass = 10; /// combined weight and volume of the cap, this equals to single magazine
             uniformModel = "\acr_a3\acr_a3_characters\boonie_ACR.p3d";  /// what model is used for this cap
 			allowedSlots[] = {801,901,701,605};
@@ -755,7 +1304,7 @@ class cfgWeapons
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -771,7 +1320,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -787,7 +1336,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -806,7 +1355,7 @@ class cfgWeapons
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -822,7 +1371,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -838,7 +1387,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -857,7 +1406,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -874,7 +1423,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -893,7 +1442,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT_des.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -910,7 +1459,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_MOUT_des.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -925,7 +1474,7 @@ class cfgWeapons
     {
         displayName = "$STR_ACR_UNIFORM_GHILLIE";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_ghillie.paa";
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
@@ -941,7 +1490,7 @@ class cfgWeapons
     {
         displayName = "$STR_ACR_UNIFORM_GHILLIE_DES";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_ghillie_des.paa";
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
@@ -959,7 +1508,7 @@ class cfgWeapons
 		displayName = "$STR_ACR_UNIFORM_PILOT";
 		picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot.paa"};
 		class ItemInfo: UniformItem
@@ -976,7 +1525,7 @@ class cfgWeapons
         displayName = "$STR_ACR_UNIFORM_PILOT_DES";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_pilot_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_pilot_DES.paa"};
         class ItemInfo: UniformItem
@@ -996,7 +1545,7 @@ class cfgWeapons
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_LES.paa"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -1015,7 +1564,7 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\Suitpacks\suitpack_POUST.paa"};
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         class ItemInfo: UniformItem
         {
             uniformModel = "-";
@@ -1028,7 +1577,7 @@ class cfgWeapons
     class U_ACR_A3_SweaterUniform_vz95: Uniform_Base
     {
         scope = 2;
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         displayName = "$STR_ACR_UNIFORM_SWEATER";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_svetr.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
@@ -1045,7 +1594,7 @@ class cfgWeapons
     class U_ACR_A3_SweaterUniform_des: Uniform_Base
     {
         scope = 2;
-        author = "$STR_ACR";
+        author = "$STR_ACR"; dlc = "ACR_A3";
         displayName = "$STR_ACR_UNIFORM_SWEATER_DES";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_svetr_des.paa";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";

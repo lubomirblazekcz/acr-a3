@@ -3,7 +3,7 @@ class CfgPatches
 	class acr_a3_Pandur
 	{
 		units[] = {"ACR_Pandur"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		weapons[] = {};
 		magazines[] = {};
 		requiredAddons[] = {"A3_Armor_F_APC_Wheeled_03"};
@@ -20,7 +20,7 @@ class CfgVehicles
 		faction = "ACR_A3";
 		vehicleclass = "Armored";
 		displayName = "Pandur II";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_crew";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_vehicles\pandur\data\Pandur01.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur02.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur03.paa","\acr_a3\acr_a3_vehicles\pandur\data\Pandur04.paa"};

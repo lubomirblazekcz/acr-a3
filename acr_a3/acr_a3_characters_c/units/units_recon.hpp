@@ -3,7 +3,7 @@ class B_ACR_A3_Recon: B_recon_F // Zvěd
     _generalMacro = "B_recon_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
     vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
@@ -28,7 +28,7 @@ class B_ACR_A3_Recon_JTAC: B_recon_JTAC_F // JTAC
     _generalMacro = "B_recon_JTAC_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -51,7 +51,7 @@ class B_ACR_A3_Recon_AR: B_soldier_AR_F // Kulometčík
     _generalMacro = "B_soldier_AR_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     displayName = "$STR_ACR_KULOMET_F";
     genericNames = "CzechMen";
@@ -75,7 +75,7 @@ class B_ACR_A3_Recon_M: B_recon_M_F  // Ostrostřelec
     _generalMacro = "B_recon_M_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
     vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
@@ -100,7 +100,7 @@ class B_ACR_A3_Recon_medic: B_recon_medic_F // Zdravotník
     _generalMacro = "B_recon_medic_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     backpack = "B_AssaultPack_rgr_Medic";
     genericNames = "CzechMen";
@@ -124,7 +124,7 @@ class B_ACR_A3_Recon_TL: B_recon_TL_F // Velitel týmu
     _generalMacro = "B_recon_TL_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     genericNames = "CzechMen";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
@@ -148,7 +148,7 @@ class B_ACR_A3_Recon_exp: B_recon_exp_F // Exp. specialsta
     _generalMacro = "B_recon_exp_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     backpack = "ACR_A3_Backpack_Kitbag_vz95";
     genericNames = "CzechMen";
@@ -172,7 +172,7 @@ class B_ACR_A3_Recon_MAT: B_recon_LAT_F // Raketometčík
     _generalMacro = "B_recon_LAT_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //RECON
     backpack = "ACR_A3_B_AssaultPack_rgr_LAT";
     genericNames = "CzechMen";

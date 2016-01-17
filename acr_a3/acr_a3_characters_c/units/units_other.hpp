@@ -3,7 +3,7 @@ class B_ACR_A3_Spotter: B_spotter_F
     _generalMacro = "B_spotter_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "MenSniper"; //SNIPERI
     displayName = "$STR_B_SPOTTER_F0";
     genericNames = "CzechMen";
@@ -30,7 +30,7 @@ class B_ACR_A3_Sniper: B_sniper_F
     _generalMacro = "B_sniper_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "MenSniper"; //SNIPERI
     displayName = "$STR_B_SNIPER_F0";
     genericNames = "CzechMen";
@@ -78,7 +78,7 @@ class B_ACR_A3_Pilot: B_Helipilot_F
     _generalMacro = "B_Helipilot_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men"; //zaklad
     displayName = "$STR_B_HELIPILOT_F0";
     genericNames = "CzechMen";
@@ -115,7 +115,7 @@ class B_ACR_A3_Officer: B_officer_F //znackablabla
     _generalMacro = "B_officer_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men";
     displayName = "$STR_B_OFFICER_F0";
     genericNames = "CzechMen";
@@ -146,7 +146,7 @@ class B_ACR_A3_Soldier_lite: B_Soldier_lite_F
     _generalMacro = "B_Soldier_lite_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men";
     displayName = "$STR_B_SOLDIER_LITE_F0";
     genericNames = "CzechMen";
@@ -183,7 +183,7 @@ class B_ACR_A3_crew: B_crew_F
     _generalMacro = "B_Soldier_lite_F";
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     vehicleClass = "Men";
     genericNames = "CzechMen";
     model = "\A3\Characters_F_Bootcamp\Guerrilla\ig_guerrilla_6_1.p3d";
@@ -224,7 +224,7 @@ class B_ACR_A3_diver: B_diver_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     genericNames = "CzechMen";
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     backpack = "B_Assault_Diver";
     class EventHandlers: EventHandlers
@@ -237,7 +237,7 @@ class B_ACR_A3_diver_TL: B_diver_TL_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     genericNames = "CzechMen";
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     class EventHandlers: EventHandlers
     {
@@ -249,7 +249,7 @@ class B_ACR_A3_diver_exp: B_diver_exp_F
     identityTypes[] = {"Language_ACR_CZ","Head_Euro"};
     genericNames = "CzechMen";
     faction = "ACR_A3";
-    author = "$STR_ACR";
+    author = "$STR_ACR"; dlc = "ACR_A3";
     nakedUniform = "U_ACR_A3_BasicBody_blk";
     backpack = "B_AssaultPack_blk_DiverExp";
     class EventHandlers: EventHandlers

@@ -37,3 +37,23 @@ class CfgVehicleClasses
 		displayName = "$STR_ACR_MEN_MOUT_DES"; //MOUT Des
 	};
 };
+
+class CfgMods
+{
+  class Mod_Base;
+  class ACR_A3: Mod_Base
+  {
+    picture = "\acr_a3\acr_a3_main\data\logo.paa";
+    logo = "\acr_a3\acr_a3_main\data\logo.paa";
+    logoOver = "\acr_a3\acr_a3_main\data\logo_glow.paa";
+    logoSmall = "\acr_a3\acr_a3_main\data\logo.paa";
+    tooltipOwned = "Army of the Czech Republic A3 - ACR_A3";
+    action = "https://forums.bistudio.com/topic/172582-army-of-the-czech-republic-a3-acr-a3/";
+    dlcColor[] = {0.31,0.78,0.78,1};
+    overview = "This mod contains various infantry units, weapons and equipment. Weapons are ports from Arma 2 and part of CUP. Vehicles are also ports from Arma 2. Our goal is to include all of the content from the Arma 2 ACR DLC in Arma 3 standards.";
+    hideName = 1;
+    hidePicture = 0;
+    name = "Army of the Czech Republic A3 - ACR_A3";
+    dir = "acr_a3";
+  };
+};

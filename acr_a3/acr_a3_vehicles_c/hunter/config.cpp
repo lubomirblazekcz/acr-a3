@@ -3,7 +3,7 @@ class CfgPatches
 	class acr_a3_Hunter
 	{
 		units[] = {"ACR_Hunter_Unarmed", "ACR_Hunter_HMG", "ACR_Hunter_GMG","ACR_Hunter_HMG_02"};
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -21,7 +21,7 @@ class CfgVehicles
 		faction = "ACR_A3";
 		vehicleclass = "Car";
 		displayName = "M-ATV";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		scope = 1;
 		scopeCurator = 0;
@@ -33,7 +33,7 @@ class CfgVehicles
 		faction = "ACR_A3";
 		vehicleclass = "Car";
 		displayName = "M-ATV HMG";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		scope = 1;
 		scopeCurator = 0;
@@ -45,7 +45,7 @@ class CfgVehicles
 		faction = "ACR_A3";
 		vehicleclass = "Car";
 		displayName = "M-ATV GMG";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01";
 		scope = 1;
 		scopeCurator = 0;
@@ -59,7 +59,7 @@ class CfgVehicles
 		faction = "ACR_A3";
 		vehicleclass = "Car";
 		displayName = "M-ATV HMG";
-		author = "$STR_ACR";
+		author = "$STR_ACR"; dlc = "ACR_A3";
 		crew = "B_ACR_A3_Soldier_01_des";
 	};
 };
