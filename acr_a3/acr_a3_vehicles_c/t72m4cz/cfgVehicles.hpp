@@ -63,12 +63,13 @@ class CfgVehicles
         castdrivershadow = 0;
         attenuationEffectType = "TankAttenuation"; //echo fix
         insideSoundCoef=0.89999998;
-        forceHideDriver = 1;
+        forceHideDriver = 0;
         driverForceOptics = 1;
-        driverAction = "T72_DriverOut";
-        driverInAction = "T72_Driver";
-		LODTurnedOut = 1;
-		driverDoor="hatchD";
+        driverAction ="driver_apcwheeled2_out";// "T72_DriverOut";
+        driverInAction ="driver_apcwheeled2_in";// "T72_Driver";
+		//LODTurnedOut = 1;
+		driverDoor="poklop_driver";
+        //hideProxyInCombat = true;
 
 		destrType=DestructDefault;
 
@@ -155,7 +156,7 @@ class CfgVehicles
 			{
                 gunnerAction = "T72_GunnerOut";
                 gunnerInAction = "T72_Gunner";
-                gunnerDoor="hatchG";
+                gunnerDoor="poklop_gunner";
                 soundServo[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\gun_elevate2",0.01,1,10};
 				class Turrets: Turrets
 				{
@@ -165,13 +166,13 @@ class CfgVehicles
                         gunnerAction = "T72_CommanderOut";
                         gunnerInAction = "T72_Commander";
 
-                        //Turn out commander has bugged view
-                        forceHideCommander = 1;
+                        //Turn out commander has bugged view //NOPE it works, lel
+                        forceHideCommander = 0;
 
                         // Animation class
                         body = "obsTurret";
                         gun = "obsGun";
-                        gunnerDoor="hatchC";
+                        gunnerDoor="poklop_commander";
 
 
                         // Animation source
@@ -191,9 +192,12 @@ class CfgVehicles
 						maxTurn=+360;
 						initTurn=0;
 
+
+                        //zeroing
 						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 						discreteDistanceInitIndex = 2;
 
+                        //Commander's KORD
                         memoryPointGun = "machinegun";
                         gunBeg = "gun_muzzle";
                         gunEnd = "gun_chamber";
@@ -240,7 +244,7 @@ class CfgVehicles
                                 armor = 0.3;
                                 material = -1;
                                 name = "vez2";
-                                visual="vez2";
+                                visual="commander_turret";
                                 passThrough = 0;
                                 minimalHit = 0.03;
                                 explosionShielding=0.001;
@@ -249,8 +253,8 @@ class CfgVehicles
                             class HitGun	{
                                 armor = 0.3;
                                 material = -1;
-                                name = "zbranVelitele"; //potreba doplnit
-                                visual="zbranVelitele";
+                                name = "zasleh_1"; //potreba doplnit
+                                visual="commander_gun";
                                 passThrough = 0;
                                 minimalHit = 0.03;
                                 explosionShielding=0.001;
@@ -279,6 +283,7 @@ class CfgVehicles
                 minElev=-5;
                 maxElev=+20;
                 initElev=10;
+                startEngine = 0; //do not start engine on turret movement
 
                 // Optics view
                 memoryPointGunnerOptics= "gunnerview";
