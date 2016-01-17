@@ -6,7 +6,7 @@ class CfgPatches
 		units[] = {"ACR_A3_WeaponsBox"};
 		weapons[] = { };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"CUP_Weapons_CZ805","CUP_Weapons_Duty","CUP_Weapons_Sa58","CUP_Weapons_Phantom","CUP_Weapons_West_Attachments"};
+		requiredAddons[] = {"CUP_Weapons_CZ805","CUP_Weapons_Duty","CUP_Weapons_M60E4","CUP_Weapons_Sa58","CUP_Weapons_Phantom","CUP_Weapons_West_Attachments"};
 	};
 };
 
@@ -267,11 +267,11 @@ class CfgWeapons
         scope = 1;
     };
 
-    class Rifle_Long_Base_F;
-    class CUP_lmg_M60A4: Rifle_Long_Base_F {
+    class CUP_M60E4_base;
+    class CUP_lmg_M60E4: CUP_M60E4_base {
         magazines[] += {"acr_a3_100Rnd_762x51_B_M60E4"};
     };
-    class acr_a3_M60E4: CUP_lmg_M60A4
+    class acr_a3_M60E4: CUP_lmg_M60E4
     {
         scope = 1;
     };
