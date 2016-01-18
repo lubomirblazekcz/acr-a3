@@ -35,8 +35,8 @@ class cfgVehicles {
         vehicleclass = "Air";
         hiddenselectionstextures[] =
         {
-            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_001_co.paa",
-            "\acr_a3\acr_a3_rhs_replacement\data\16_cz_desert_002_co.paa"
+            "\acr_a3\acr_a3_air\mi24\16_cz_desert_001_co.paa",
+            "\acr_a3\acr_a3_air\mi24\16_cz_desert_002_co.paa"
         };
     };
      class ACR_A3_Mi_24v_ram: ACR_A3_Mi_24v_des //ram
@@ -53,8 +53,8 @@ class cfgVehicles {
         vehicleclass = "Air";
         hiddenselectionstextures[] =
         {
-            "\acr_a3\acr_a3_rhs_replacement\data\17_cz_experimantalram_001_co.paa",
-            "\acr_a3\acr_a3_rhs_replacement\data\17_cz_experimantalram_002_co.paa"
+            "\acr_a3\acr_a3_air\mi24\17_cz_experimantalram_001_co.paa",
+            "\acr_a3\acr_a3_air\mi24\17_cz_experimantalram_002_co.paa"
         };
     };
     class ACR_A3_Mi_24p: ACR_A3_Mi_24v
