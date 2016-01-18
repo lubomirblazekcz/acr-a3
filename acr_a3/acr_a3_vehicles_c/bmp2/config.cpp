@@ -3,12 +3,13 @@ class CfgPatches {
 		units[] = {"acr_a3_bmp2", "acr_a3_bmp2_des"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
-		requiredAddons[] = {"A3_armor_f_beta_APC_Tracked_02","A3_ui_f"};
+		requiredAddons[] = {"CUP_TrackedVehicles_BMP"};
 	};
 };
 
 class CfgVehicles {
-	class acr_a3_bmp2: acr_a3_BMP2_base {
+    class CUP_B_BMP2_CDF;
+	class acr_a3_bmp2: CUP_B_BMP2_CDF {
 		scope = 2;
 		side = 1;
 		faction="ACR_A3";
