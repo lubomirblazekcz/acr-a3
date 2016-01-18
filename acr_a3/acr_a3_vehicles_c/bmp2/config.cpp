@@ -1,15 +1,31 @@
-class CfgPatches 
-{
-	class acr_a3_bmp2
-	{
+class CfgPatches {
+	class acr_a3_bmp2 {
 		units[] = {"acr_a3_bmp2", "acr_a3_bmp2_des"};
-		weapons[] = { };
+		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"A3_armor_f_beta_APC_Tracked_02","A3_ui_f"};
 	};
 };
-#include "CfgFunctions.hpp"
-#include "CfgRsc.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
 
+class CfgVehicles {
+	class acr_a3_bmp2: acr_a3_BMP2_base {
+		scope = 2;
+		side = 1;
+		faction="ACR_A3";
+		typicalCargo[] = {"B_ACR_A3_crew"};
+		crew = "B_ACR_A3_crew";
+		displayName = "BMP-2";
+		vehicleClass = "Armored";
+		hiddenselectionstextures[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_01_acr_co.paa", "\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_02_acr_co.paa"};
+        dlc = "ACR_A3";
+        author = "ACR_A3";
+	};
+    class acr_a3_bmp2_des: acr_a3_bmp2 {
+		hiddenselectionstextures[] = {"\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_01_acr_des_co.paa", "\acr_a3\acr_a3_vehicles\bmp2\data\bmp2_02_acr_des_co.paa"};
+        typicalCargo[] = {"B_ACR_A3_crew"};
+        crew = "B_ACR_A3_crew_des";
+        displayName = "$STR_ACR_BMP2_DES";
+        dlc = "ACR_A3";
+        author = "ACR_A3";
+    };
+};
