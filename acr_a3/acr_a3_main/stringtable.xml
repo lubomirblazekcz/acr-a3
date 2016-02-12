@@ -1,1157 +1,1170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Army of Czech Republic">
-	<Package name="ACR mod">
-        <Key ID="STR_ACR_FACTION">
-            <Original>ACR</Original>
-            <English>ACR</English>
-            <Czech>AČR</Czech>
-        </Key>
-		<Key ID="STR_ACR">
-            <Original>ACR_A3</Original>
-			<English>ACR_A3</English>
-			<Czech>ACR_A3</Czech>
-		</Key>
-        <Key ID="STR_ACR_UNDERWEAR">
-            <Original>Underwear [AČR]</Original>
-            <English>Underwear [AČR]</English>
-            <Czech>Spodní prádlo [AČR]</Czech>
-            <French>Sous-vêtements [AČR]</French>
-            <German>Unterwäsche [AČR]</German>
-            <Italian>Biancheria [AČR]</Italian>
-            <Polish>Bielizna [AČR]</Polish>
-            <Portuguese>Cueca [AČR]</Portuguese>
-            <Russian>Белье [AČR]</Russian>
-            <Spanish>Ropa interior [AČR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MEN_MOUT">
-            <Original>Men (MOUT)</Original>
-            <English>Men (MOUT)</English>
-            <Czech>Muži (MOUT)</Czech>
-            <French>Hommes (MOUT)</French>
-            <German>Männer (MOUT)</German>
-            <Italian>Uomini (MOUT)</Italian>
-            <Polish>Mężczyźni (MOUT)</Polish>
-            <Portuguese>Homens (MOUT)</Portuguese>
-            <Russian>Люди (MOUT)</Russian>
-            <Spanish>Hombres (MOUT)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MEN_MOUT_DES">
-            <Original>Men (MOUT) (Desert)</Original>
-            <English>Men (MOUT) (Desert)</English>
-            <Czech>Muži (MOUT) (pouštní)</Czech>
-            <French>Hommes (MOUT) (Desert)</French>
-            <German>Männer (MOUT) (Desert)</German>
-            <Italian>Uomini (MOUT) (Desert)</Italian>
-            <Polish>Mężczyźni (MOUT) (Desert)</Polish>
-            <Portuguese>Homens (MOUT) (Desert)</Portuguese>
-            <Russian>Люди (MOUT) (Desert)</Russian>
-            <Spanish>Hombres (MOUT) (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MEN_DESERT">
-            <Original>Men (Desert)</Original>
-            <English>Men (Desert)</English>
-            <Czech>Muži (pouštní)</Czech>
-            <French>Hommes (Desert)</French>
-            <German>Männer (Desert)</German>
-            <Italian>Uomini (Desert)</Italian>
-            <Polish>Mężczyźni (Desert)</Polish>
-            <Portuguese>Homens (Desert)</Portuguese>
-            <Russian>Люди (Desert)</Russian>
-            <Spanish>Hombres (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_SNIP">
-            <Original>Men (Sniper)</Original>
-            <English>Men (Sniper)</English>
-            <Czech>Muži (odstřelovači)</Czech>
-            <French>Hommes (snipers)</French>
-            <German>Männer (Sniper)</German>
-            <Italian>Uomini (cecchini)</Italian>
-            <Polish>Mężczyźni (snajperzy)</Polish>
-            <Portuguese>Homens (franco-atirador)</Portuguese>
-            <Russian>Люди (снайперы)</Russian>
-            <Spanish>Hombres (francotiradores)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_RECON_VZ95">
-            <Original>Recon Team (vz.95)</Original>
-            <English>Recon Team (vz.95)</English>
-            <Czech>Průzkumný tým (vz.95)</Czech>
-            <French>Équipe reco (vz.95)</French>
-            <German>Spähteam (vz.95)</German>
-            <Italian>Squadra ricognitori (vz.95)</Italian>
-            <Polish>Drużyna zwiadu (vz.95)</Polish>
-            <Portuguese>Equipe de reconhecimento (vz.95)</Portuguese>
-            <Russian>Разведгруппа (vz.95)</Russian>
-            <Spanish>Equipo de reconocimiento (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_RECON_VZ95_T">
-            <Original>Recon Patrol (vz.95)</Original>
-            <English>Recon Patrol (vz.95)</English>
-            <Czech>Průzkumná hlídka (vz.95)</Czech>
-            <French>Patrouille reco (vz.95)</French>
-            <German>Aufklärungspatrouille (vz.95)</German>
-            <Italian>Pattuglia ricognitori (vz.95)</Italian>
-            <Polish>Zespół zwiadu (vz.95)</Polish>
-            <Portuguese>Patrulha de reconhecimento (vz.95)</Portuguese>
-            <Russian>Разведывательный патруль (vz.95)</Russian>
-            <Spanish>Patrulla de reconocimiento (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_RECON_DES">
-            <Original>Recon Team (Desert)</Original>
-            <English>Recon Team (Desert)</English>
-            <Czech>Průzkumný tým (pouštní)</Czech>
-            <French>Équipe reco (Desert)</French>
-            <German>Spähteam (Desert)</German>
-            <Italian>Squadra ricognitori (Desert)</Italian>
-            <Polish>Drużyna zwiadu (Desert)</Polish>
-            <Portuguese>Equipe de reconhecimento (Desert)</Portuguese>
-            <Russian>Разведгруппа (Desert)</Russian>
-            <Spanish>Equipo de reconocimiento (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_RECON_DES_T">
-            <Original>Recon Patrol (Desert)</Original>
-            <English>Recon Patrol (Desert)</English>
-            <Czech>Průzkumná hlídka (pouštní)</Czech>
-            <French>Patrouille reco (Desert)</French>
-            <German>Aufklärungspatrouille (Desert)</German>
-            <Italian>Pattuglia ricognitori (Desert)</Italian>
-            <Polish>Zespół zwiadu (Desert)</Polish>
-            <Portuguese>Patrulha de reconhecimento (Desert)</Portuguese>
-            <Russian>Разведывательный патруль (Desert)</Russian>
-            <Spanish>Patrulla de reconocimiento (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_VZ95">
-            <Original>Rifle Squad (vz.95)</Original>
-            <English>Rifle Squad (vz.95)</English>
-            <Czech>Družstvo střelců (vz.95)</Czech>
-            <French>Escouade de fusiliers (vz.95)</French>
-            <German>Gewehrtrupp (vz.95)</German>
-            <Italian>Squadra di fucilieri (vz.95)</Italian>
-            <Polish>Drużyna piechoty (vz.95)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros (vz.95)</Portuguese>
-            <Russian>Стрелковое отделение (vz.95)</Russian>
-            <Spanish>Pelotón de fusiles (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_VZ95_T">
-            <Original>Fire Team (vz.95)</Original>
-            <English>Fire Team (vz.95)</English>
-            <Czech>Tým (vz.95)</Czech>
-            <French>Unité (vz.95)</French>
-            <German>Feuerteam (vz.95)</German>
-            <Italian>Squadra di fuoco (vz.95)</Italian>
-            <Polish>Zespół ogniowy (vz.95)</Polish>
-            <Portuguese>Equipe de fogo (vz.95)</Portuguese>
-            <Russian>Огневая группа (vz.95)</Russian>
-            <Spanish>Equipo de fuego (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_DES">
-            <Original>Rifle Squad (Desert)</Original>
-            <English>Rifle Squad (Desert)</English>
-            <Czech>Družstvo střelců (pouštní)</Czech>
-            <French>Escouade de fusiliers (Desert)</French>
-            <German>Gewehrtrupp (Desert)</German>
-            <Italian>Squadra di fucilieri (Desert)</Italian>
-            <Polish>Drużyna piechoty (Desert)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros (Desert)</Portuguese>
-            <Russian>Стрелковое отделение (Desert)</Russian>
-            <Spanish>Pelotón de fusiles (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_DES_T">
-            <Original>Fire Team (Desert)</Original>
-            <English>Fire Team (Desert)</English>
-            <Czech>Tým (pouštní)</Czech>
-            <French>Unité (Desert)</French>
-            <German>Feuerteam (Desert)</German>
-            <Italian>Squadra di fuoco (Desert)</Italian>
-            <Polish>Zespół ogniowy (Desert)</Polish>
-            <Portuguese>Equipe de fogo (Desert)</Portuguese>
-            <Russian>Огневая группа (Desert)</Russian>
-            <Spanish>Equipo de fuego (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_MOUT">
-            <Original>Rifle Squad (MOUT)</Original>
-            <English>Rifle Squad (MOUT)</English>
-            <Czech>Družstvo střelců (MOUT)</Czech>
-            <French>Escouade de fusiliers (MOUT)</French>
-            <German>Gewehrtrupp (MOUT)</German>
-            <Italian>Squadra di fucilieri (MOUT)</Italian>
-            <Polish>Drużyna piechoty (MOUT)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros (MOUT)</Portuguese>
-            <Russian>Стрелковое отделение (MOUT)</Russian>
-            <Spanish>Pelotón de fusiles (MOUT)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_MOUT_T">
-            <Original>Fire Team (MOUT)</Original>
-            <English>Fire Team (MOUT)</English>
-            <Czech>Tým (MOUT)</Czech>
-            <French>Unité (MOUT)</French>
-            <German>Feuerteam (MOUT)</German>
-            <Italian>Squadra di fuoco (MOUT)</Italian>
-            <Polish>Zespół ogniowy (MOUT)</Polish>
-            <Portuguese>Equipe de fogo (MOUT)</Portuguese>
-            <Russian>Огневая группа (MOUT)</Russian>
-            <Spanish>Equipo de fuego (MOUT)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_MOUT_DES">
-            <Original>Rifle Squad (MOUT) (Desert)</Original>
-            <English>Rifle Squad (MOUT) (Desert)</English>
-            <Czech>Družstvo střelců (MOUT) (pouštní)</Czech>
-            <French>Escouade de fusiliers (MOUT) (Desert)</French>
-            <German>Gewehrtrupp (MOUT) (Desert)</German>
-            <Italian>Squadra di fucilieri (MOUT) (Desert)</Italian>
-            <Polish>Drużyna piechoty (MOUT) (Desert)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros (MOUT) (Desert)</Portuguese>
-            <Russian>Стрелковое отделение (MOUT) (Desert)</Russian>
-            <Spanish>Pelotón de fusiles (MOUT) (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_INF_MOUT_DES_T">
-            <Original>Fire Team (MOUT) (Desert)</Original>
-            <English>Fire Team (MOUT) (Desert)</English>
-            <Czech>Tým (MOUT) (pouštní)</Czech>
-            <French>Unité (MOUT) (Desert)</French>
-            <German>Feuerteam (MOUT) (Desert)</German>
-            <Italian>Squadra di fuoco (MOUT) (Desert)</Italian>
-            <Polish>Zespół ogniowy (MOUT) (Desert)</Polish>
-            <Portuguese>Equipe de fogo (MOUT) (Desert)</Portuguese>
-            <Russian>Огневая группа (MOUT) (Desert)</Russian>
-            <Spanish>Equipo de fuego (MOUT) (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_SNIPERS">
-            <Original>Sniper Team</Original>
-            <English>Sniper Team</English>
-            <Czech>Odstřelovačský tým</Czech>
-            <French>Équipe de snipers</French>
-            <German>Sniper-Team</German>
-            <Italian>Squadra di cecchini</Italian>
-            <Polish>Dwójka snajperska</Polish>
-            <Portuguese>Equipe de franco-atiradores</Portuguese>
-            <Russian>Снайперская группа</Russian>
-            <Spanish>Equipo de francotiradores</Spanish>
-        </Key>
-        <Key ID="STR_ACR_SNIPERS_DES">
-            <Original>Sniper Team (Desert)</Original>
-            <English>Sniper Team (Desert)</English>
-            <Czech>Odstřelovačský tým (pouštní)</Czech>
-            <French>Équipe de snipers (Desert)</French>
-            <German>Sniper-Team (Desert)</German>
-            <Italian>Squadra di cecchini (Desert)</Italian>
-            <Polish>Dwójka snajperska (Desert)</Polish>
-            <Portuguese>Equipe de franco-atiradores (Desert)</Portuguese>
-            <Russian>Снайперская группа (Desert)</Russian>
-            <Spanish>Equipo de francotiradores (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MECH_VZ95">
-            <Original>Mechanized Rifle Squad (vz.95)</Original>
-            <English>Mechanized Rifle Squad (vz.95)</English>
-            <Czech>Motostřelecké družstvo (vz.95)</Czech>
-            <French>Escouade de fusiliers mécanisée (vz.95)</French>
-            <German>Mechanisierter Gewehrtrupp (vz.95)</German>
-            <Italian>Squadra di fucilieri motorizzata (vz.95)</Italian>
-            <Polish>Zmechanizowana drużyna piechoty (vz.95)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros mecanizado (vz.95)</Portuguese>
-            <Russian>Механизированное стрелковое отделение (vz.95)</Russian>
-            <Spanish>Pelotón de fusiles mecanizados (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MECH_DES">
-            <Original>Mechanized Rifle Squad (Desert)</Original>
-            <English>Mechanized Rifle Squad (Desert)</English>
-            <Czech>Motostřelecké družstvo (pouštní)</Czech>
-            <French>Escouade de fusiliers mécanisée (Desert)</French>
-            <German>Mechanisierter Gewehrtrupp (Desert)</German>
-            <Italian>Squadra di fucilieri motorizzata (Desert)</Italian>
-            <Polish>Zmechanizowana drużyna piechoty (Desert)</Polish>
-            <Portuguese>Grupo de combate de fuzileiros mecanizado (Desert)</Portuguese>
-            <Russian>Механизированное стрелковое отделение (Desert)</Russian>
-            <Spanish>Pelotón de fusiles mecanizados (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MOT_VZ95">
-            <Original>Motorized Team (vz.95)</Original>
-            <English>Motorized Team (vz.95)</English>
-            <Czech>Motorizovaný tým (vz.95)</Czech>
-            <French>Équipe motorisée (vz.95)</French>
-            <German>Motorisiertes Team (vz.95)</German>
-            <Italian>Squadra motorizzata (vz.95)</Italian>
-            <Polish>Zmotoryzowany zespół ogniowy (vz.95)</Polish>
-            <Portuguese>Equipe motorizada (vz.95)</Portuguese>
-            <Russian>Моторизованная группа (vz.95)</Russian>
-            <Spanish>Equipo motorizado (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MOT_DES">
-            <Original>Motorized Team (Desert)</Original>
-            <English>Motorized Team (Desert)</English>
-            <Czech>Motorizovaný tým (pouštní)</Czech>
-            <French>Équipe motorisée (Desert)</French>
-            <German>Motorisiertes Team (Desert)</German>
-            <Italian>Squadra motorizzata (Desert)</Italian>
-            <Polish>Zmotoryzowany zespół ogniowy (Desert)</Polish>
-            <Portuguese>Equipe motorizada (Desert)</Portuguese>
-            <Russian>Моторизованная группа (Desert)</Russian>
-            <Spanish>Equipo motorizado (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_BACKPACK">
-            <Original>Carryall Backpack [ACR] (vz. 95)</Original>
-            <English>Carryall Backpack [ACR] (vz. 95)</English>
-            <Czech>Torna [AČR] (vz. 95)</Czech>
-            <French>Carryall Backpack [ACR] (vz. 95)</French>
-            <German>Großer Rucksack [ACR] (vz. 95)</German>
-            <Italian>Zaino portatutto [ACR] (vz. 95)</Italian>
-            <Polish>Plecak [ACR] (vz. 95)</Polish>
-            <Portuguese>Mochila [ACR] (vz. 95)</Portuguese>
-            <Russian>Вещевой мешок [ACR] (vz. 95)</Russian>
-            <Spanish>Bolsa de viaje [ACR] (vz. 95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_KITBAG">
-            <Original>Kitbag [ACR] (vz. 95)</Original>
-            <English>Kitbag [ACR] (vz. 95)</English>
-            <Czech>Batoh [AČR] (vz. 95)</Czech>
-            <French>Paquetage de terrain [ACR] (vz. 95)</French>
-            <German>Seesack [ACR] (vz. 95)</German>
-            <Italian>Borsa kit [ACR] (vz. 95)</Italian>
-            <Polish>Torba [ACR] (vz. 95)</Polish>
-            <Portuguese>Bornal [ACR] (vz. 95)</Portuguese>
-            <Russian>Вещмешок [ACR] (vz. 95)</Russian>
-            <Spanish>Petate [ACR] (vz. 95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_KITBAG_A2">
-            <Original>Scout Pack [ACR] (vz. 95)</Original>
-            <English>Scout Pack [ACR] (vz. 95)</English>
-            <Czech>Malý batoh [AČR] (vz. 95)</Czech>
-        </Key>
-        <Key ID="STR_ACR_BACKPACK_A2">
-            <Original>Paratrooper Backpack [ACR] (vz. 95)</Original>
-            <English>Paratrooper Backpack [ACR] (vz. 95)</English>
-            <Czech>Výsadkářský batoh [AČR] (vz. 95)</Czech>
-        </Key>
-        <Key ID="STR_ACR_GEAR">
-            <Original>[ACR] Gear</Original>
-            <English>[ACR] Gear</English>
-            <Czech>[AČR] Vybavení</Czech>
-        </Key>
-        <Key ID="STR_ACR_WEAPONS">
-            <Original>[ACR] Weapons</Original>
-            <English>[ACR] Weapons</English>
-            <Czech>[AČR] Zbraně</Czech>
-        </Key>
-        <Key ID="STR_ACR_VEST_IA1">
-            <Original>GA Carrier Lite [ACR] (vz. 95)</Original>
-            <English>GA Carrier Lite [ACR] (vz. 95)</English>
-            <Czech>GA nosič plátů - lehký [AČR] (vz. 95)</Czech>
-            <French>Gilet léger AV [ACR] (vz. 95)</French>
-            <German>Leichter Boden-Luft-Tragegurt [ACR] (vz. 95)</German>
-            <Italian>Gilet leggero aviazione [ACR] (vz. 95)</Italian>
-            <Polish>Kabura GA [ACR] (vz. 95)</Polish>
-            <Portuguese>Transportador leve de GA [ACR] (vz. 95)</Portuguese>
-            <Russian>GA облегченный жилет [ACR] (vz. 95)</Russian>
-            <Spanish>Cartuchera de FAA ligera [ACR] (vz. 95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST">
-            <Original>GA Carrier Rig [ACR] (vz. 95)</Original>
-            <English>GA Carrier Rig [ACR] (vz. 95)</English>
-            <Czech>GA nosič plátů [AČR] (vz. 95)</Czech>
-            <French>Gilet modulable léger [ACR] AV (vz. 95)</French>
-            <German>Boden-Luft-Tragegurt [ACR] (vz. 95)</German>
-            <Italian>Gilet Rig aviazione [ACR] (vz. 95)</Italian>
-            <Polish>Kamizelka GA [ACR] (vz. 95)</Polish>
-            <Portuguese>Suporte de transportador de GA [ACR] (vz. 95)</Portuguese>
-            <Russian>GA жилет [ACR] (vz. 95)</Russian>
-            <Spanish>Cartuchera de FAA [ACR] (vz. 95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST2">
-            <Original>Carrier Lite [ACR] (vz. 95)</Original>
-            <English>Carrier Lite [ACR] (vz. 95)</English>
-            <Czech>Lehká taktická vesta [AČR] (vz. 95)</Czech>
-            <French>Gilet léger [ACR] (vz. 95)</French>
-            <German>Leichter Tragegurt [ACR] (vz. 95)</German>
-            <Italian>Gilet leggero [ACR] (vz. 95)</Italian>
-            <Polish>Kamizelka Lite [ACR] (vz. 95)</Polish>
-            <Portuguese>Transportador leve [ACR] (vz. 95)</Portuguese>
-            <Russian>Легкий жилет [ACR] (vz. 95)</Russian>
-            <Spanish>Cartuchera ligera [ACR] (vz. 95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST2_H">
-            <Original>Carrier Rig [ACR] (vz. 95)</Original>
-            <English>Carrier Rig [ACR] (vz. 95)</English>
-            <Czech>Nosič plátů [AČR] (vz. 95)</Czech>
-            <French>Gilet modulable léger [ACR] (vz. 95)</French>
-            <German>Tragegurt [ACR] (vz. 95)</German>
-            <Italian>Gilet [ACR] (vz. 95)</Italian>
-            <Polish>Kamizelka Platecarrier [ACR] (vz. 95)</Polish>
-            <Portuguese>Traje transportador [ACR] (vz. 95)</Portuguese>
-            <Russian>Разгрузочный жилет [ACR] (vz. 95)</Russian>
-            <Spanish>Cartuchera [ACR] (vz. 95)</Spanish>
-        </Key>
-          <Key ID="STR_ACR_CAP_HEADPHONES">
-            <Original>Rangemaster Cap [ACR] (vz. 95)</Original>
-            <English>Rangemaster Cap [ACR] (vz. 95)</English>
-            <Czech>Čepice vedoucího střelby [AČR] (vz. 95)</Czech>
-            <French>Képi d'intendant [ACR] (vz. 95)</French>
-            <German>Schießplatzverwalter-Mütze [ACR] (vz. 95)</German>
-            <Italian>Cappello responsabile poligono [ACR] (vz. 95)</Italian>
-            <Polish>Czapka instruktora [ACR] (vz. 95)</Polish>
-            <Portuguese>Boné do líder de combate a distância [ACR] (vz. 95)</Portuguese>
-            <Russian>Кепка инструктора [ACR] (vz. 95)</Russian>
-            <Spanish>Gorra de responsable de galería de tiro [ACR] (vz. 95)</Spanish>
-          </Key>
-        </Key>
-          <Key ID="STR_ACR_CAP_HEADPHONES_DES">
-            <Original>Rangemaster Cap [ACR] (Desert)</Original>
-            <English>Rangemaster Cap [ACR] (Desert)</English>
-            <Czech>Čepice vedoucího střelby [AČR] (pouštní)</Czech>
-            <French>Képi d'intendant [ACR] (Desert)</French>
-            <German>Schießplatzverwalter-Mütze [ACR] (Desert)</German>
-            <Italian>Cappello responsabile poligono [ACR] (Desert)</Italian>
-            <Polish>Czapka instruktora [ACR] (Desert)</Polish>
-            <Portuguese>Boné do líder de combate a distância [ACR] (Desert)</Portuguese>
-            <Russian>Кепка инструктора [ACR] (Desert)</Russian>
-            <Spanish>Gorra de responsable de galería de tiro [ACR] (Desert)</Spanish>
-          </Key>
-        <Key ID="STR_ACR_VEST2_rgr">
-            <Original>Carrier Lite [ACR] (Green)</Original>
-            <English>Carrier Lite [ACR] (Green)</English>
-            <Czech>Lehká taktická vesta [AČR] (zelená)</Czech>
-            <French>Gilet léger [ACR] (Green)</French>
-            <German>Leichter Tragegurt [ACR] (Green)</German>
-            <Italian>Gilet leggero [ACR] (Green)</Italian>
-            <Polish>Kamizelka Lite [ACR] (Green)</Polish>
-            <Portuguese>Transportador leve [ACR] (Green)</Portuguese>
-            <Russian>Легкий жилет [ACR] (Green)</Russian>
-            <Spanish>Cartuchera ligera [ACR] (Green)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST2_rgr_H">
-            <Original>Carrier Rig [ACR] (Green)</Original>
-            <English>Carrier Rig [ACR] (Green)</English>
-            <Czech>Nosič plátů [AČR] (zelený)</Czech>
-            <French>Gilet modulable léger [ACR] (Green)</French>
-            <German>Tragegurt [ACR] (Green)</German>
-            <Italian>Gilet [ACR] (Green)</Italian>
-            <Polish>Kamizelka Platecarrier [ACR] (Green)</Polish>
-            <Portuguese>Traje transportador [ACR] (Green)</Portuguese>
-            <Russian>Разгрузочный жилет [ACR] (Green)</Russian>
-            <Spanish>Cartuchera [ACR] (Green)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST2_khk">
-            <Original>Carrier Lite [ACR] (Khaki)</Original>
-            <English>Carrier Lite [ACR] (Khaki)</English>
-            <Czech>Lehká taktická vesta [AČR] (khaki)</Czech>
-            <French>Gilet léger [ACR] (Khaki)</French>
-            <German>Leichter Tragegurt [ACR] (Khaki)</German>
-            <Italian>Gilet leggero [ACR] (Khaki)</Italian>
-            <Polish>Kamizelka Lite [ACR] (Khaki)</Polish>
-            <Portuguese>Transportador leve [ACR] (Khaki)</Portuguese>
-            <Russian>Легкий жилет [ACR] (Khaki)</Russian>
-            <Spanish>Cartuchera ligera [ACR] (Khaki)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST2_khk_H">
-            <Original>Carrier Rig [ACR] (Khaki)</Original>
-            <English>Carrier Rig [ACR] (Khaki)</English>
-            <Czech>Nosič plátů [AČR] (khaki)</Czech>
-            <French>Gilet modulable léger [ACR] (Khaki)</French>
-            <German>Tragegurt [ACR] (Khaki)</German>
-            <Italian>Gilet [ACR] (Khaki)</Italian>
-            <Polish>Kamizelka Platecarrier [ACR] (Khaki)</Polish>
-            <Portuguese>Traje transportador [ACR] (Khaki)</Portuguese>
-            <Russian>Разгрузочный жилет [ACR] (Khaki)</Russian>
-            <Spanish>Cartuchera [ACR] (Khaki)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST3_rgr">
-            <Original>Carrier Special Rig [ACR] (Green)</Original>
-            <English>Carrier Special Rig [ACR] (Green)</English>
-            <Czech>Nosič plátů speciální [AČR] (zelený)</Czech>
-            <French>Gilet modulable spécial [ACR] (vert)</French>
-            <German>Spezialtragegurt [ACR] (grün)</German>
-            <Italian>Gilet speciale Rig [ACR] (verde)</Italian>
-            <Polish>Kamizelka specjalna [ACR] (zielone)</Polish>
-            <Portuguese>Suporte especial de transportador [ACR] (verde)</Portuguese>
-            <Russian>Специальный жилет [ACR] (зеленый)</Russian>
-            <Spanish>Equipo especial de portaaviones [ACR] (verde)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_VEST3_khk">
-            <Original>Carrier Special Rig [ACR] (Khaki)</Original>
-            <English>Carrier Special Rig [ACR] (Khaki)</English>
-            <Czech>Nosič plátů speciální [AČR] (khaki)</Czech>
-            <French>Gilet modulable spécial [ACR] (khaki)</French>
-            <German>Spezialtragegurt [ACR] (khaki)</German>
-            <Italian>Gilet speciale Rig [ACR] (khaki)</Italian>
-            <Polish>Kamizelka specjalna [ACR] (khaki)</Polish>
-            <Portuguese>Suporte especial de transportador [ACR] (khaki)</Portuguese>
-            <Russian>Специальный жилет [ACR] (khaki)</Russian>
-            <Spanish>Equipo especial de portaaviones [ACR] (khaki)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_MICH2000">
-            <Original>Helmet [ACR]</Original>
-            <English>Helmet [ACR]</English>
-            <Czech>Přilba [AČR]</Czech>
-		</Key>
-        <Key ID="STR_ACR_MICH2000_HEADSET">
-            <Original>Helmet [ACR] (Headset)</Original>
-            <English>Helmet [ACR] (Headset)</English>
-            <Czech>Přilba [AČR] (sluchátka)</Czech>
-		</Key>
-        <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES">
-            <Original>Helmet [ACR] (WOCOVER/Goggles)</Original>
-            <English>Helmet [ACR] (WOCOVER/Goggles)</English>
-            <Czech>Přilba [AČR] (bez potahu/brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES_DES">
-            <Original>Helmet [ACR] (Des/WOCOVER/Goggles)</Original>
-            <English>Helmet [ACR] (Des/WOCOVER/Goggles)</English>
-            <Czech>Přilba [AČR] (poušť/bez potahu/brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000WOCOVER">
-            <Original>Helmet [ACR] (WOCOVER)</Original>
-            <English>Helmet [ACR] (WOCOVER)</English>
-            <Czech>Přilba [AČR] (bez potahu)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000WOCOVER_DES">
-            <Original>Helmet [ACR] (Desert/WOCOVER)</Original>
-            <English>Helmet [ACR] (Desert/WOCOVER)</English>
-            <Czech>Přilba [AČR] (pouštní/bez potahu)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000_Des">
-            <Original>Helmet [ACR] (Desert)</Original>
-            <English>Helmet [ACR] (Desert)</English>
-            <Czech>Přilba [AČR] (pouštní)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000_HEADSET_Des">
-            <Original>Helmet [ACR] (Desert/HS/Goggles)</Original>
-            <English>Helmet [ACR] (Desert/HS/Goggles)</English>
-            <Czech>Přilba [AČR] (pouštní/sluchátka/brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000_GOGGLES">
-            <Original>Helmet [ACR] (Goggles)</Original>
-            <English>Helmet [ACR] (Goggles)</English>
-            <Czech>Přilba [AČR] (brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000_HS_GOGGLES">
-            <Original>Helmet [ACR] (HS/Goggles)</Original>
-            <English>Helmet [ACR] (HS/Goggles)</English>
-            <Czech>Přilba [AČR] (sluchátka/brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_MICH2000_GOGGLES_Des">
-            <Original>Helmet [ACR] (Desert/Goggles)</Original>
-            <English>Helmet [ACR] (Desert/Goggles)</English>
-            <Czech>Přilba [AČR] (pouštní/brýle)</Czech>
-        </Key>
-        <Key ID="STR_ACR_ECH_rgr">
-            <Original>ECH [ACR]</Original>
-            <English>ECH [ACR]</English>
-            <Czech>Přilba ECH [AČR]</Czech>
-            <French>Casque ECH [ACR]</French>
-            <German>ECH [ACR]</German>
-            <Italian>Elmetto ECH [ACR]</Italian>
-            <Polish>ECH [ACR]</Polish>
-            <Portuguese>ECH [ACR]</Portuguese>
-            <Russian>ECH [ACR]</Russian>
-            <Spanish>ECH [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_Beret_red">
-            <Original>Beret [ACR]</Original>
-            <English>Beret [ACR]</English>
-            <Czech>Baret [AČR]</Czech>
-            <French>Béret [ACR]</French>
-            <German>Barett [ACR]</German>
-            <Italian>Basco [ACR]</Italian>
-            <Polish>Beret [ACR]</Polish>
-            <Portuguese>Boina [ACR]</Portuguese>
-            <Russian>Берет [ACR]</Russian>
-            <Spanish>Boina [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_BOONIEHAT">
-            <Original>Booniehat [ACR]</Original>
-            <English>Booniehat [ACR]</English>
-            <Czech>Klobouk [AČR]</Czech>
-            <French>Chapeau de brousse [ACR]</French>
-            <German>Buschhut [ACR]</German>
-            <Italian>Boonie hat [ACR]</Italian>
-            <Polish>Booniehat [ACR]</Polish>
-            <Portuguese>Chapéu tático [ACR]</Portuguese>
-            <Russian>Панама [ACR]</Russian>
-            <Spanish>Gorro militar [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_BOONIEHAT_DES">
-            <Original>Booniehat [ACR] (Desert)</Original>
-            <English>Booniehat [ACR] (Desert)</English>
-            <Czech>Klobouk [AČR] (pouštní)</Czech>
-            <French>Chapeau de brousse [ACR] (Desert)</French>
-            <German>Buschhut [ACR] (Desert)</German>
-            <Italian>Boonie hat [ACR] (Desert)</Italian>
-            <Polish>Booniehat [ACR] (Desert)</Polish>
-            <Portuguese>Chapéu tático [ACR] (Desert)</Portuguese>
-            <Russian>Панама [ACR] (Desert)</Russian>
-            <Spanish>Gorro militar [ACR] (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_CAP">
-            <Original>Cap [ACR]</Original>
-            <English>Cap [ACR]</English>
-            <Czech>Čepice [AČR]</Czech>
-            <French>Casquette [ACR]</French>
-            <German>Mütze [ACR]</German>
-            <Italian>Cappello [ACR]</Italian>
-            <Polish>Czapka [ACR]</Polish>
-            <Portuguese>Boné [ACR]</Portuguese>
-            <Russian>Кепка [ACR]</Russian>
-            <Spanish>Gorra [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_CAP_DES">
-            <Original>Cap [ACR] (Coyote)</Original>
-            <English>Cap [ACR] (Coyote)</English>
-            <Czech>Čepice [AČR] (žlutohnědá)</Czech>
-            <French>Casquette [ACR] (Coyote)</French>
-            <German>Mütze [ACR] (Tan)</German>
-            <Italian>Cappello [ACR] (Coyote)</Italian>
-            <Polish>Czapka [ACR] (Coyote)</Polish>
-            <Portuguese>Boné [ACR] (Coyote)</Portuguese>
-            <Russian>Кепка [ACR] (Coyote)</Russian>
-            <Spanish>Gorra [ACR] (Coyote)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_BOONIEHAT_FOLD">
-            <Original>Booniehat [ACR] (fold)</Original>
-            <English>Booniehat [ACR] (fold)</English>
-            <Czech>Klobouk [AČR] (sklopený)</Czech>
-            <French>Chapeau de brousse [ACR] (fold)</French>
-            <German>Buschhut [ACR] (fold)</German>
-            <Italian>Boonie hat [ACR] (fold)</Italian>
-            <Polish>Booniehat [ACR] (fold)</Polish>
-            <Portuguese>Chapéu tático [ACR] (fold)</Portuguese>
-            <Russian>Панама [ACR] (fold)</Russian>
-            <Spanish>Gorro militar [ACR] (fold)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_BOONIEHAT_DES_FOLD">
-            <Original>Booniehat [ACR] (Desert/fold)</</Original>
-            <English>Booniehat [ACR] (Desert/fold)</</English>
-            <Czech>Klobouk [AČR] (pouštní/sklopený)</Czech>
-            <French>Chapeau de brousse [ACR] (Desert/fold)</</French>
-            <German>Buschhut [ACR] (Desert/fold)</</German>
-            <Italian>Boonie hat [ACR] (Desert/fold)</)</Italian>
-            <Polish>Booniehat [ACR] (Desert/fold)</</Polish>
-            <Portuguese>Chapéu tático [ACR] (fold)</Portuguese>
-            <Russian>Панама [ACR] (Desert/fold)</Russian>
-            <Spanish>Gorro militar [ACR] (Desert/fold)</</Spanish>
-        </Key>
-        <Key ID="STR_ACR_PAKOL_GREY">
-            <Original>Pakol [ACR]</Original>
-            <English>Pakol [ACR]</English>
-            <Czech>Pakol [AČR]</Czech>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM">
-            <Original>Combat Fatigues [ACR] (vz.95)</Original>
-            <English>Combat Fatigues [ACR] (vz.95)</English>
-            <Czech>Uniforma [AČR] (vz.95)</Czech>
-            <French>Treillis [ACR] (vz.95)</French>
-            <German>Kampfanzug [ACR] (vz.95)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_tshirt">
-            <Original>Combat Fatigues [ACR] (vz.95) (Tshirt)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (Tshirt)</English>
-            <Czech>Uniforma [AČR] (vz.95) (triko)</Czech>
-            <French>Treillis [ACR] (vz.95) (Tshirt)</French>
-            <German>Kampfanzug [ACR] (vz.95) (Tshirt)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (Tshirt)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (Tshirt)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (Tshirt)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (Tshirt)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (Tshirt)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_vest">
-            <Original>Combat Fatigues [ACR] (vz.95) (Rolled-up)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (Rolled-up)</English>
-            <Czech>Uniforma [AČR] (vz.95) (rukávy)</Czech>
-            <French>Treillis [ACR] (vz.95) (Rolled-up)</French>
-            <German>Kampfanzug [ACR] (vz.95) (Rolled-up)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (Rolled-up)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (Rolled-up)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (Rolled-up)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (Rolled-up)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (Rolled-up)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_MOUT">
-            <Original>Combat Fatigues [ACR] (vz.95) (MOUT)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (MOUT)</English>
-            <Czech>Uniforma [AČR] (vz.95) (MOUT)</Czech>
-            <French>Treillis [ACR] (vz.95) (MOUT)</French>
-            <German>Kampfanzug [ACR] (vz.95) (MOUT)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (MOUT)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (MOUT)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (MOUT)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (MOUT)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (MOUT)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_MOUT_vest">
-            <Original>Combat Fatigues [ACR] (vz.95) (MOUT) (Rolled-up)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (MOUT) (Rolled-up)</English>
-            <Czech>Uniforma [AČR] (vz.95) (MOUT) (rukávy)</Czech>
-            <French>Treillis [ACR] (vz.95) (MOUT) (Rolled-up)</French>
-            <German>Kampfanzug [ACR] (vz.95) (MOUT) (Rolled-up)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (MOUT) (Rolled-up)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (MOUT) (Rolled-up)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (MOUT) (Rolled-up)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (MOUT) (Rolled-up)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (MOUT) (Rolled-up)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_MOUT_DES">
-            <Original>Combat Fatigues [ACR] (Desert) (MOUT)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (MOUT)</English>
-            <Czech>Uniforma [AČR] (pouštní) (MOUT)</Czech>
-            <French>Treillis [ACR] (Desert) (MOUT)</French>
-            <German>Kampfanzug [ACR] (Desert) (MOUT)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (MOUT)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (MOUT)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (MOUT)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (MOUT)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (MOUT)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_MOUT_DES_vest">
-            <Original>Combat Fatigues [ACR](Desert) (MOUT) (Rolled-up)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (MOUT)(Rolled-up)</English>
-            <Czech>Uniforma [AČR] (pouštní) (MOUT) (rukávy)</Czech>
-            <French>Treillis [ACR] (Desert) (MOUT) (Rolled-up)</French>
-            <German>Kampfanzug [ACR] (Desert) (MOUT) (Rolled-up)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (MOUT) (Rolled-up)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (MOUT) (Rolled-up)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (MOUT) (Rolled-up)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (MOUT) (Rolled-up)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (MOUT) (Rolled-up)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_DESERT">
-            <Original>Combat Fatigues [ACR] (Desert)</Original>
-            <English>Combat Fatigues [ACR] (Desert)</English>
-            <Czech>Uniforma [AČR] (pouštní)</Czech>
-            <French>Treillis [ACR] (Desert)</French>
-            <German>Kampfanzug [ACR] (Desert)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_DESERT_tshirt">
-            <Original>Combat Fatigues [ACR] (Desert) (Tshirt)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (Tshirt)</English>
-            <Czech>Uniforma [AČR] (pouštní) (triko)</Czech>
-            <French>Treillis [ACR] (Desert) (Tshirt)</French>
-            <German>Kampfanzug [ACR] (Desert) (Tshirt)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (Tshirt)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (Tshirt)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (Tshirt)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (Tshirt)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (Tshirt)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_DESERT_vest">
-            <Original>Combat Fatigues [ACR] (Desert) (Rolled-up)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (Rolled-up)</English>
-            <Czech>Uniforma [AČR] (pouštní) (rukávy)</Czech>
-            <French>Treillis [ACR] (Desert) (Rolled-up)</French>
-            <German>Kampfanzug [ACR] (Desert) (Rolled-up)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (Rolled-up)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (Rolled-up)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (Rolled-up)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (Rolled-up)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (Rolled-up)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_PILOT">
-            <Original>Pilot Coveralls [ACR]</Original>
-            <English>Pilot Coveralls [ACR]</English>
-            <Czech>Pilotní kombinéza [AČR]</Czech>
-            <French>Combinaison de pilote [ACR]</French>
-            <German>Pilotenoverall [ACR]</German>
-            <Italian>Tuta da pilota [ACR]</Italian>
-            <Polish>Mundur pilota [ACR]</Polish>
-            <Portuguese>Macacão de piloto [ACR]</Portuguese>
-            <Russian>Летный комбинезон [ACR]</Russian>
-            <Spanish>Mono de piloto [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_PILOT_DES">
-            <Original>Pilot Coveralls [ACR] (Desert)</Original>
-            <English>Pilot Coveralls [ACR] (Desert)</English>
-            <Czech>Pilotní kombinéza [AČR] (pouštní)</Czech>
-            <French>Combinaison de pilote [ACR] (Desert)</French>
-            <German>Pilotenoverall [ACR] (Desert)</German>
-            <Italian>Tuta da pilota [ACR] (Desert)</Italian>
-            <Polish>Mundur pilota [ACR] (Desert)</Polish>
-            <Portuguese>Macacão de piloto [ACR] (Desert)</Portuguese>
-            <Russian>Летный комбинезон [ACR] (Desert)</Russian>
-            <Spanish>Mono de piloto [ACR] (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_OFFICER">
-            <Original>Combat Fatigues [ACR] (vz.95) (Officer)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (Officer)</English>
-            <Czech>Uniforma [AČR] (vz.95) (důstojnická)</Czech>
-            <French>Treillis [ACR] (vz.95) (Officer)</French>
-            <German>Kampfanzug [ACR] (vz.95) (Officer)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (Officer)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (Officer)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (Officer)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (Officer)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (Officer)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_OFFICER_DES">
-            <Original>Combat Fatigues [ACR] (Desert) (Officer)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (Officer)</English>
-            <Czech>Uniforma [AČR] (pouštní) (důstojnická)</Czech>
-            <French>Treillis [ACR] (Desert) (Officer)</French>
-            <German>Kampfanzug [ACR] (Desert) (Officer)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (Officer)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (Officer)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (Officer)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (Officer)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (Officer)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_SWEATER">
-            <Original>Combat Fatigues [ACR] (vz.95) (Sweater)</Original>
-            <English>Combat Fatigues [ACR] (vz.95) (Sweater)</English>
-            <Czech>Uniforma [AČR] (vz.95) (svetr)</Czech>
-            <French>Treillis [ACR] (vz.95) (Sweater)</French>
-            <German>Kampfanzug [ACR] (vz.95) (Sweater)</German>
-            <Italian>Uniforme da combattimento [ACR] (vz.95) (Sweater)</Italian>
-            <Polish>Mundur bojowy [ACR] (vz.95) (Sweater)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (vz.95) (Sweater)</Portuguese>
-            <Russian>Полевая форма [ACR] (vz.95) (Sweater)</Russian>
-            <Spanish>Traje de combate [ACR] (vz.95) (Sweater)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_SWEATER_DES">
-            <Original>Combat Fatigues [ACR] (Desert) (Sweater)</Original>
-            <English>Combat Fatigues [ACR] (Desert) (Sweater)</English>
-            <Czech>Uniforma [AČR] (pouštní) (svetr)</Czech>
-            <French>Treillis [ACR] (Desert) (Sweater)</French>
-            <German>Kampfanzug [ACR] (Desert) (Sweater)</German>
-            <Italian>Uniforme da combattimento [ACR] (Desert) (Sweater)</Italian>
-            <Polish>Mundur bojowy [ACR] (Desert) (Sweater)</Polish>
-            <Portuguese>Uniforme de combate [ACR] (Desert) (Sweater)</Portuguese>
-            <Russian>Полевая форма [ACR] (Desert) (Sweater)</Russian>
-            <Spanish>Traje de combate [ACR] (Desert) (Sweater)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_GHILLIE">
-            <Original>Ghillie Suit [ACR]</Original>
-            <English>Ghillie Suit [ACR]</English>
-            <Czech>Hejkal [AČR]</Czech>
-            <French>Ghillie Suit [ACR]</French>
-            <German>Ghillie-Anzug [ACR]</German>
-            <Italian>Mimetica da cecchino [ACR]</Italian>
-            <Polish>Ghillie [ACR]</Polish>
-            <Portuguese>Traje ghillie [ACR]</Portuguese>
-            <Russian>Маскировочный костюм [ACR]</Russian>
-            <Spanish>Traje de camuflaje [ACR]</Spanish>
-        </Key>
-        <Key ID="STR_ACR_UNIFORM_GHILLIE_DES">
-            <Original>Ghillie Suit [ACR] (Desert)</Original>
-            <English>Ghillie Suit [ACR] (Desert)</English>
-            <Czech>Hejkal [AČR] (pouštní)</Czech>
-            <French>Ghillie Suit [ACR] (Desert)</French>
-            <German>Ghillie-Anzug [ACR] (Desert)</German>
-            <Italian>Mimetica da cecchino [ACR] (Desert)</Italian>
-            <Polish>Ghillie [ACR] (Desert)</Polish>
-            <Portuguese>Traje ghillie [ACR] (Desert)</Portuguese>
-            <Russian>Маскировочный костюм [ACR] (Desert)</Russian>
-            <Spanish>Traje de camuflaje [ACR] (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_FLAG">
-            <Original>[ACR] Flag</Original>
-            <English>[ACR] Flag</English>
-            <Czech>[AČR] Vlajka</Czech>
-        </Key>
-        <Key ID="STR_ACR_MEDIC">
-            <Original>[ACR] Medic</Original>
-            <English>[ACR] Medic</English>
-            <Czech>[AČR] Medik</Czech>
-        </Key>
-        <Key ID="STR_ACR_LOGO1">
-            <Original>[ACR] Label</Original>
-            <English>[ACR] Label</English>
-            <Czech>[AČR] Nápis</Czech>
-        </Key>
-        <Key ID="STR_ACR_LOGO2">
-            <Original>[ACR] Patch</Original>
-            <English>[ACR] Patch</English>
-            <Czech>[AČR] Nášivka</Czech>
-        </Key>
-        <Key ID="STR_ACR_LOGO3">
-            <Original>[ACR] Patch (Red)</Original>
-            <English>[ACR] Patch (Red)</English>
-            <Czech>[AČR] Nášivka (červená)</Czech>
-        </Key>
-        <Key ID="STR_ACR_KULOMET_F">
-            <Original>Recon - Machinegunner</Original>
-            <English>Recon - Machinegunner</English>
-            <Czech>Průzkumník - kulometčík</Czech>
-        </Key>
-        <Key ID="STR_ACR_SNIPER_DES">
-            <Original>Sniper (Desert)</Original>
-            <English>Sniper (Desert)</English>
-            <Czech>Odstřelovač (pouštní)</Czech>
-            <French>Sniper (Desert)</French>
-            <German>Sniper (Desert)</German>
-            <Italian>Cecchino (Desert)</Italian>
-            <Polish>Snajper (Desert)</Polish>
-            <Portuguese>Atirador de elite (Desert)</Portuguese>
-            <Russian>Снайпер (Desert)</Russian>
-            <Spanish>Francotirador (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_SPOTTER_DES">
-            <Original>Spotter (Desert)</Original>
-            <English>Spotter (Desert)</English>
-            <Czech>Pozorovatel (pouštní)</Czech>
-            <French>Repéreur (Desert)</French>
-            <German>Spotter (Desert)</German>
-            <Italian>Osservatore (Desert)</Italian>
-            <Polish>Obserwator (Desert)</Polish>
-            <Portuguese>Observador (Desert)</Portuguese>
-            <Russian>Корректировщик (Desert)</Russian>
-            <Spanish>Observador (Desert)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_KAMAZ_COVERED">
-            <Original>Kamaz Transport (Covered)</Original>
-            <English>Kamaz Transport (Covered)</English>
-            <Czech>Kamaz Valník (krytý)</Czech>
-        </Key>
-        <Key ID="STR_ACR_KAMAZ_TRANSPORT">
-            <Original>Kamaz Transport</Original>
-            <English>Kamaz Transport</English>
-            <Czech>Kamaz Valník</Czech>
-        </Key>
-        <Key ID="STR_ACR_KAMAZ_BOX">
-            <Original>Kamaz Repair</Original>
-            <English>Kamaz Repair</English>
-            <Czech>Kamaz Opravárenský</Czech>
-        </Key>
-        <Key ID="STR_ACR_KAMAZ_FUEL">
-            <Original>Kamaz Fuel</Original>
-            <English>Kamaz Fuel</English>
-            <Czech>Kamaz Cisterna</Czech>
-        </Key>
-        <Key ID="STR_ACR_KAMAZ_MED">
-            <Original>Kamaz Medical</Original>
-            <English>Kamaz Medical</English>
-            <Czech>Kamaz Zdravotnický</Czech>
-        </Key>
-        <Key ID="STR_ACR_ALCA_CAS">
-            <Original>L159 ALCA (CAS)</Original>
-            <English>L159 ALCA (CAS)</English>
-            <Czech>L159 ALCA (CAS)</Czech>
-        </Key>
-        <Key ID="STR_ACR_ALCA_AA">
-            <Original>L159 ALCA (AA)</Original>
-            <English>L159 ALCA (AA)</English>
-            <Czech>L159 ALCA (AA)</Czech>
-        </Key>
-        <Key ID="STR_ACR_ALBATROS_CAS">
-            <Original>L39 ALBATROS (CAS)</Original>
-            <English>L39 ALBATROS (CAS)</English>
-            <Czech>L39 ALBATROS (CAS)</Czech>
-        </Key>
-        <Key ID="STR_ACR_ALBATROS_AA">
-            <Original>L39 ALBATROS (AA)</Original>
-            <English>L39 ALBATROS (AA)</English>
-            <Czech>L39 ALBATROS (AA)</Czech>
-        </Key>
-        <Key ID="STR_ACR_A_NEG">
-            <Original>[ACR] Blood (A Neg)</Original>
-            <English>[ACR] Blood (A Neg)</English>
-            <Czech>[AČR] Krev (A Neg)</Czech>
-        </Key>
-        <Key ID="STR_ACR_A_POS">
-            <Original>[ACR] Blood (A Pos)</Original>
-            <English>[ACR] Blood (A Pos)</English>
-            <Czech>[AČR] Krev (A Pos)</Czech>
-        </Key>
-        <Key ID="STR_ACR_B_POS">
-            <Original>[ACR] Blood (B Pos)</Original>
-            <English>[ACR] Blood (B Pos)</English>
-            <Czech>[AČR] Krev (B Pos)</Czech>
-        </Key>
-        <Key ID="STR_ACR_B_NEG">
-            <Original>[ACR] Blood (B Neg)</Original>
-            <English>[ACR] Blood (B Neg)</English>
-            <Czech>[AČR] Krev (B Neg)</Czech>
-        </Key>
-        <Key ID="STR_ACR_AB_NEG">
-            <Original>[ACR] Blood (AB Neg)</Original>
-            <English>[ACR] Blood (AB Neg)</English>
-            <Czech>[AČR] Krev (AB Neg)</Czech>
-        </Key>
-        <Key ID="STR_ACR_AB_POS">
-            <Original>[ACR] Blood (AB Pos)</Original>
-            <English>[ACR] Blood (AB Pos)</English>
-            <Czech>[AČR] Krev (AB Pos)</Czech>
-        </Key>
-        <Key ID="STR_ACR_O_NEG">
-            <Original>[ACR] Blood (O Neg)</Original>
-            <English>[ACR] Blood (O Neg)</English>
-            <Czech>[AČR] Krev (O Neg)</Czech>
-        </Key>
-        <Key ID="STR_ACR_O_POS">
-            <Original>[ACR] Blood (O Pos)</Original>
-            <English>[ACR] Blood (O Pos)</English>
-            <Czech>[AČR] Krev (O Pos)</Czech>
-        </Key>
-        <Key ID="str_a3_v_platecarrieria1_khkl0">
-            <Original>GA Carrier Lite (Khaki)</Original>
-            <English>GA Carrier Lite (Khaki)</English>
-            <Czech>GA nosič plátů - lehký (khaki)</Czech>
-            <French>Gilet léger AV (kaki)</French>
-            <German>Leichter Boden-Luft-Tragegurt (Khaki)</German>
-            <Italian>Gilet leggero aviazione (kaki)</Italian>
-            <Polish>Kabura GA (khaki)</Polish>
-            <Portuguese>Transportador leve de GA (cáqui)</Portuguese>
-            <Russian>GA облегченный жилет (хаки)</Russian>
-            <Spanish>Cartuchera de FAA ligera (caqui)</Spanish>
-        </Key>
-        <Key ID="str_a3_v_platecarrieria2_khkl0">
-            <Original>GA Carrier Rig (Khaki)</Original>
-            <English>GA Carrier Rig (Khaki)</English>
-            <Czech>GA nosič plátů (khaki)</Czech>
-            <French>Gilet modulable léger AV (kaki)</French>
-            <German>Boden-Luft-Tragegurt (Khaki)</German>
-            <Italian>Gilet Rig aviazione (kaki)</Italian>
-            <Polish>Kamizelka GA (khaki)</Polish>
-            <Portuguese>Suporte de transportador de GA (cáqui)</Portuguese>
-            <Russian>GA жилет (хаки)</Russian>
-            <Spanish>Cartuchera de FAA (caqui)</Spanish>
-        </Key>
-        <Key ID="STR_ACR_DINGO_MG">
-            <Original>Dingo 2 CZ (MG)</Original>
-            <English>Dingo 2 CZ (MG)</English>
-            <Czech>Dingo 2 CZ (MG)</Czech>
-        </Key>
-        <Key ID="STR_ACR_DINGO_MG_DES">
-            <Original>Dingo 2 CZ (MG) (Desert)</Original>
-            <English>Dingo 2 CZ (MG) (Desert)</English>
-            <Czech>Dingo 2 CZ (MG) (pouštní)</Czech>
-        </Key>
-        <Key ID="STR_ACR_DINGO_GL">
-            <Original>Dingo 2 CZ (GL)</Original>
-            <English>Dingo 2 CZ (GL)</English>
-            <Czech>Dingo 2 CZ (GL)</Czech>
-        </Key>
-        <Key ID="STR_ACR_DINGO_GL_DES">
-            <Original>Dingo 2 CZ (GL) (Desert)</Original>
-            <English>Dingo 2 CZ (GL) (Desert)</English>
-            <Czech>Dingo 2 CZ (GL) (pouštní)</Czech>
-        </Key>
-        <Key ID="STR_ACR_BMP2_DES">
-            <Original>BMP-2 (Desert)</Original>
-            <English>BMP-2 (Desert)</English>
-            <Czech>BMP-2 (pouštní)</Czech>
-        </Key>
-        <Key ID="str_acr_a3_landrover_special">
-            <Original>Military Offroad Special</Original>
-            <Chinese>Military Offroad Special</Chinese>
-            <French>Véhicule tout terrain militaire FS</French>
-            <Spanish>Todoterreno militar especial</Spanish>
-            <Italian>Fuoristrada speciale</Italian>
-            <Hungarian>Military Offroad Special</Hungarian>
-            <Polish>Wojskowa terenówka - specjalna</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (спец.)</Russian>
-            <German>Militär-Geländefahrzeug Spezial</German>
-            <Czech>Vojenský off-road speciál</Czech>
-            <English>Military Offroad Special</English>
-            <Japanese>Military Offroad Special</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_special_des">
-            <Original>Military Offroad Special (Desert)</Original>
-            <Chinese>Military Offroad Special (Desert)</Chinese>
-            <French>Véhicule tout terrain militaire FS (Desert)</French>
-            <Spanish>Todoterreno militar especial (Desert)</Spanish>
-            <Italian>Fuoristrada speciale (Desert)</Italian>
-            <Hungarian>Military Offroad Special (Desert)</Hungarian>
-            <Polish>Wojskowa terenówka - specjalna (Desert)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (спец.) (Desert)</Russian>
-            <German>Militär-Geländefahrzeug Spezial (Desert)</German>
-            <Czech>Vojenský off-road speciál (pouštní)</Czech>
-            <English>Military Offroad Special (Desert)</English>
-            <Japanese>Military Offroad Special (Desert)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_mg">
-            <Original>Military Offroad (M2)</Original>
-            <Chinese>Military Offroad (M2)</Chinese>
-            <French>Véhicule tout terrain militaire (M2)</French>
-            <Spanish>Todoterreno militar (M2)</Spanish>
-            <Italian>Fuoristrada (M2)</Italian>
-            <Hungarian>Military Offroad (M2)</Hungarian>
-            <Polish>Wojskowa terenówka (M2)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (M2)</Russian>
-            <German>Militär-Geländefahrzeug (M2)</German>
-            <Czech>Vojenský off-road (M2)</Czech>
-            <English>Military Offroad (M2)</English>
-            <Japanese>Military Offroad (M2)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_mg_des">
-            <Original>Military Offroad (M2) (Desert)</Original>
-            <Chinese>Military Offroad (M2) (Desert)</Chinese>
-            <French>Véhicule tout terrain militaire (M2) (Desert)</French>
-            <Spanish>Todoterreno militar (M2) (Desert)</Spanish>
-            <Italian>Fuoristrada (M2) (Desert)</Italian>
-            <Hungarian>Military Offroad (M2) (Desert)</Hungarian>
-            <Polish>Wojskowa terenówka (M2) (Desert)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (M2) (Desert)</Russian>
-            <German>Militär-Geländefahrzeug (M2) (Desert)</German>
-            <Czech>Vojenský off-road (M2) (pouštní)</Czech>
-            <English>Military Offroad (M2) (Desert)</English>
-            <Japanese>Military Offroad (M2) (Desert)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover">
-            <Original>Military Offroad</Original>
-            <Chinese>Military Offroad</Chinese>
-            <French>Véhicule tout terrain militaire </French>
-            <Spanish>Todoterreno militar</Spanish>
-            <Italian>Fuoristrada </Italian>
-            <Hungarian>Military Offroad</Hungarian>
-            <Polish>Wojskowa terenówka </Polish>
-            <Russian>Ленд Ровер Дефендер 110</Russian>
-            <German>Militär-Geländefahrzeug</German>
-            <Czech>Vojenský off-road</Czech>
-            <English>Military Offroad</English>
-            <Japanese>Military Offroad</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_des">
-            <Original>Military Offroad (Desert)</Original>
-            <Chinese>Military Offroad (Desert)</Chinese>
-            <French>Véhicule tout terrain militaire (Desert)</French>
-            <Spanish>Todoterreno militar (Desert)</Spanish>
-            <Italian>Fuoristrada (Desert)</Italian>
-            <Hungarian>Military Offroad (Desert)</Hungarian>
-            <Polish>Wojskowa terenówka (Desert)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (Desert)</Russian>
-            <German>Militär-Geländefahrzeug (Desert)</German>
-            <Czech>Vojenský off-road (pouštní)</Czech>
-            <English>Military Offroad (Desert)</English>
-            <Japanese>Military Offroad (Desert)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_ambulance">
-            <Original>Military Offroad (Ambulance)</Original>
-            <Chinese>Military Offroad (Ambulance)</Chinese>
-            <French>Véhicule tout terrain militaire (Ambulance)</French>
-            <Spanish>Todoterreno militar (Ambulance)</Spanish>
-            <Italian>Fuoristrada (Ambulance)</Italian>
-            <Hungarian>Military Offroad (Ambulance)</Hungarian>
-            <Polish>Wojskowa terenówka (Ambulance)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (Ambulance)</Russian>
-            <German>Militär-Geländefahrzeug (Ambulance)</German>
-            <Czech>Vojenský off-road (Ambulance)</Czech>
-            <English>Military Offroad (Ambulance)</English>
-            <Japanese>Military Offroad (Ambulance)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_landrover_ambulance_des">
-            <Original>Military Offroad (Ambulance) (Desert)</Original>
-            <Chinese>Military Offroad (Ambulance) (Desert)</Chinese>
-            <French>Véhicule tout terrain militaire (Ambulance) (Desert)</French>
-            <Spanish>Todoterreno militar (Ambulance) (Desert)</Spanish>
-            <Italian>Fuoristrada (Ambulance) (Desert)</Italian>
-            <Hungarian>Military Offroad (Ambulance) (Desert)</Hungarian>
-            <Polish>Wojskowa terenówk (Ambulance) (Desert)</Polish>
-            <Russian>Ленд Ровер Дефендер 110 (Ambulance) (Desert)</Russian>
-            <German>Militär-Geländefahrzeug (Ambulance) (Desert)</German>
-            <Czech>Vojenský off-road (Ambulance) (pouštní)</Czech>
-            <English>Military Offroad (Ambulance) (Desert)</English>
-            <Japanese>Military Offroad (Ambulance) (Desert)</Japanese>
-        </Key>
-        <Key ID="str_acr_a3_brdm2">
-            <Original>BRDM-2 (Desert)</Original>
-            <English>BRDM-2 (Desert)</English>
-            <Czech>BRDM-2 (pouštní)</Czech>
-        </Key>
-    </Package>
+  <Package name="ACR mod">
+    <Container name="Vsechno">
+      <Key ID="STR_ACR_FACTION">
+        <Original>ACR</Original>
+        <English>ACR</English>
+        <Czech>AČR</Czech>
+      </Key>
+      <Key ID="STR_ACR">
+        <Original>ACR_A3</Original>
+        <English>ACR_A3</English>
+        <Czech>ACR_A3</Czech>
+      </Key>
+      <Key ID="STR_ACR_UNDERWEAR">
+        <Original>Underwear [AČR]</Original>
+        <English>Underwear [AČR]</English>
+        <Czech>Spodní prádlo [AČR]</Czech>
+        <French>Sous-vêtements [AČR]</French>
+        <Spanish>Ropa interior [AČR]</Spanish>
+        <Italian>Biancheria [AČR]</Italian>
+        <Polish>Bielizna [AČR]</Polish>
+        <Portuguese>Cueca [AČR]</Portuguese>
+        <Russian>Белье [AČR]</Russian>
+        <German>Unterwäsche [AČR]</German>
+      </Key>
+      <Key ID="STR_ACR_MEN_MOUT">
+        <Original>Men (MOUT)</Original>
+        <English>Men (MOUT)</English>
+        <Czech>Muži (MOUT)</Czech>
+        <French>Hommes (MOUT)</French>
+        <Spanish>Hombres (MOUT)</Spanish>
+        <Italian>Uomini (MOUT)</Italian>
+        <Polish>Mężczyźni (MOUT)</Polish>
+        <Portuguese>Homens (MOUT)</Portuguese>
+        <Russian>Люди (MOUT)</Russian>
+        <German>Männer (MOUT)</German>
+      </Key>
+      <Key ID="STR_ACR_MEN_MOUT_DES">
+        <Original>Men (MOUT) (Desert)</Original>
+        <English>Men (MOUT) (Desert)</English>
+        <Czech>Muži (MOUT) (pouštní)</Czech>
+        <French>Hommes (MOUT) (Desert)</French>
+        <Spanish>Hombres (MOUT) (Desert)</Spanish>
+        <Italian>Uomini (MOUT) (Desert)</Italian>
+        <Polish>Mężczyźni (MOUT) (Desert)</Polish>
+        <Portuguese>Homens (MOUT) (Desert)</Portuguese>
+        <Russian>Люди (MOUT) (Desert)</Russian>
+        <German>Männer (MOUT) (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_MEN_DESERT">
+        <Original>Men (Desert)</Original>
+        <English>Men (Desert)</English>
+        <Czech>Muži (pouštní)</Czech>
+        <French>Hommes (Desert)</French>
+        <Spanish>Hombres (Desert)</Spanish>
+        <Italian>Uomini (Desert)</Italian>
+        <Polish>Mężczyźni (Desert)</Polish>
+        <Portuguese>Homens (Desert)</Portuguese>
+        <Russian>Люди (Desert)</Russian>
+        <German>Männer (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_SNIP">
+        <Original>Men (Sniper)</Original>
+        <English>Men (Sniper)</English>
+        <Czech>Muži (odstřelovači)</Czech>
+        <French>Hommes (snipers)</French>
+        <Spanish>Hombres (francotiradores)</Spanish>
+        <Italian>Uomini (cecchini)</Italian>
+        <Polish>Mężczyźni (snajperzy)</Polish>
+        <Portuguese>Homens (franco-atirador)</Portuguese>
+        <Russian>Люди (снайперы)</Russian>
+        <German>Männer (Sniper)</German>
+      </Key>
+      <Key ID="STR_ACR_RECON_VZ95">
+        <Original>Recon Team (vz.95)</Original>
+        <English>Recon Team (vz.95)</English>
+        <Czech>Průzkumný tým (vz.95)</Czech>
+        <French>Équipe reco (vz.95)</French>
+        <Spanish>Equipo de reconocimiento (vz.95)</Spanish>
+        <Italian>Squadra ricognitori (vz.95)</Italian>
+        <Polish>Drużyna zwiadu (vz.95)</Polish>
+        <Portuguese>Equipe de reconhecimento (vz.95)</Portuguese>
+        <Russian>Разведгруппа (vz.95)</Russian>
+        <German>Spähteam (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_RECON_VZ95_T">
+        <Original>Recon Patrol (vz.95)</Original>
+        <English>Recon Patrol (vz.95)</English>
+        <Czech>Průzkumná hlídka (vz.95)</Czech>
+        <French>Patrouille reco (vz.95)</French>
+        <Spanish>Patrulla de reconocimiento (vz.95)</Spanish>
+        <Italian>Pattuglia ricognitori (vz.95)</Italian>
+        <Polish>Zespół zwiadu (vz.95)</Polish>
+        <Portuguese>Patrulha de reconhecimento (vz.95)</Portuguese>
+        <Russian>Разведывательный патруль (vz.95)</Russian>
+        <German>Aufklärungspatrouille (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_RECON_DES">
+        <Original>Recon Team (Desert)</Original>
+        <English>Recon Team (Desert)</English>
+        <Czech>Průzkumný tým (pouštní)</Czech>
+        <French>Équipe reco (Desert)</French>
+        <Spanish>Equipo de reconocimiento (Desert)</Spanish>
+        <Italian>Squadra ricognitori (Desert)</Italian>
+        <Polish>Drużyna zwiadu (Desert)</Polish>
+        <Portuguese>Equipe de reconhecimento (Desert)</Portuguese>
+        <Russian>Разведгруппа (Desert)</Russian>
+        <German>Spähteam (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_RECON_DES_T">
+        <Original>Recon Patrol (Desert)</Original>
+        <English>Recon Patrol (Desert)</English>
+        <Czech>Průzkumná hlídka (pouštní)</Czech>
+        <French>Patrouille reco (Desert)</French>
+        <Spanish>Patrulla de reconocimiento (Desert)</Spanish>
+        <Italian>Pattuglia ricognitori (Desert)</Italian>
+        <Polish>Zespół zwiadu (Desert)</Polish>
+        <Portuguese>Patrulha de reconhecimento (Desert)</Portuguese>
+        <Russian>Разведывательный патруль (Desert)</Russian>
+        <German>Aufklärungspatrouille (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_VZ95">
+        <Original>Rifle Squad (vz.95)</Original>
+        <English>Rifle Squad (vz.95)</English>
+        <Czech>Družstvo střelců (vz.95)</Czech>
+        <French>Escouade de fusiliers (vz.95)</French>
+        <Spanish>Pelotón de fusiles (vz.95)</Spanish>
+        <Italian>Squadra di fucilieri (vz.95)</Italian>
+        <Polish>Drużyna piechoty (vz.95)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros (vz.95)</Portuguese>
+        <Russian>Стрелковое отделение (vz.95)</Russian>
+        <German>Gewehrtrupp (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_VZ95_T">
+        <Original>Fire Team (vz.95)</Original>
+        <English>Fire Team (vz.95)</English>
+        <Czech>Tým (vz.95)</Czech>
+        <French>Unité (vz.95)</French>
+        <Spanish>Equipo de fuego (vz.95)</Spanish>
+        <Italian>Squadra di fuoco (vz.95)</Italian>
+        <Polish>Zespół ogniowy (vz.95)</Polish>
+        <Portuguese>Equipe de fogo (vz.95)</Portuguese>
+        <Russian>Огневая группа (vz.95)</Russian>
+        <German>Feuerteam (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_DES">
+        <Original>Rifle Squad (Desert)</Original>
+        <English>Rifle Squad (Desert)</English>
+        <Czech>Družstvo střelců (pouštní)</Czech>
+        <French>Escouade de fusiliers (Desert)</French>
+        <Spanish>Pelotón de fusiles (Desert)</Spanish>
+        <Italian>Squadra di fucilieri (Desert)</Italian>
+        <Polish>Drużyna piechoty (Desert)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros (Desert)</Portuguese>
+        <Russian>Стрелковое отделение (Desert)</Russian>
+        <German>Gewehrtrupp (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_DES_T">
+        <Original>Fire Team (Desert)</Original>
+        <English>Fire Team (Desert)</English>
+        <Czech>Tým (pouštní)</Czech>
+        <French>Unité (Desert)</French>
+        <Spanish>Equipo de fuego (Desert)</Spanish>
+        <Italian>Squadra di fuoco (Desert)</Italian>
+        <Polish>Zespół ogniowy (Desert)</Polish>
+        <Portuguese>Equipe de fogo (Desert)</Portuguese>
+        <Russian>Огневая группа (Desert)</Russian>
+        <German>Feuerteam (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_MOUT">
+        <Original>Rifle Squad (MOUT)</Original>
+        <English>Rifle Squad (MOUT)</English>
+        <Czech>Družstvo střelců (MOUT)</Czech>
+        <French>Escouade de fusiliers (MOUT)</French>
+        <Spanish>Pelotón de fusiles (MOUT)</Spanish>
+        <Italian>Squadra di fucilieri (MOUT)</Italian>
+        <Polish>Drużyna piechoty (MOUT)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros (MOUT)</Portuguese>
+        <Russian>Стрелковое отделение (MOUT)</Russian>
+        <German>Gewehrtrupp (MOUT)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_MOUT_T">
+        <Original>Fire Team (MOUT)</Original>
+        <English>Fire Team (MOUT)</English>
+        <Czech>Tým (MOUT)</Czech>
+        <French>Unité (MOUT)</French>
+        <Spanish>Equipo de fuego (MOUT)</Spanish>
+        <Italian>Squadra di fuoco (MOUT)</Italian>
+        <Polish>Zespół ogniowy (MOUT)</Polish>
+        <Portuguese>Equipe de fogo (MOUT)</Portuguese>
+        <Russian>Огневая группа (MOUT)</Russian>
+        <German>Feuerteam (MOUT)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_MOUT_DES">
+        <Original>Rifle Squad (MOUT) (Desert)</Original>
+        <English>Rifle Squad (MOUT) (Desert)</English>
+        <Czech>Družstvo střelců (MOUT) (pouštní)</Czech>
+        <French>Escouade de fusiliers (MOUT) (Desert)</French>
+        <Spanish>Pelotón de fusiles (MOUT) (Desert)</Spanish>
+        <Italian>Squadra di fucilieri (MOUT) (Desert)</Italian>
+        <Polish>Drużyna piechoty (MOUT) (Desert)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros (MOUT) (Desert)</Portuguese>
+        <Russian>Стрелковое отделение (MOUT) (Desert)</Russian>
+        <German>Gewehrtrupp (MOUT) (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_INF_MOUT_DES_T">
+        <Original>Fire Team (MOUT) (Desert)</Original>
+        <English>Fire Team (MOUT) (Desert)</English>
+        <Czech>Tým (MOUT) (pouštní)</Czech>
+        <French>Unité (MOUT) (Desert)</French>
+        <Spanish>Equipo de fuego (MOUT) (Desert)</Spanish>
+        <Italian>Squadra di fuoco (MOUT) (Desert)</Italian>
+        <Polish>Zespół ogniowy (MOUT) (Desert)</Polish>
+        <Portuguese>Equipe de fogo (MOUT) (Desert)</Portuguese>
+        <Russian>Огневая группа (MOUT) (Desert)</Russian>
+        <German>Feuerteam (MOUT) (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_SNIPERS">
+        <Original>Sniper Team</Original>
+        <English>Sniper Team</English>
+        <Czech>Odstřelovačský tým</Czech>
+        <French>Équipe de snipers</French>
+        <Spanish>Equipo de francotiradores</Spanish>
+        <Italian>Squadra di cecchini</Italian>
+        <Polish>Dwójka snajperska</Polish>
+        <Portuguese>Equipe de franco-atiradores</Portuguese>
+        <Russian>Снайперская группа</Russian>
+        <German>Sniper-Team</German>
+      </Key>
+      <Key ID="STR_ACR_SNIPERS_DES">
+        <Original>Sniper Team (Desert)</Original>
+        <English>Sniper Team (Desert)</English>
+        <Czech>Odstřelovačský tým (pouštní)</Czech>
+        <French>Équipe de snipers (Desert)</French>
+        <Spanish>Equipo de francotiradores (Desert)</Spanish>
+        <Italian>Squadra di cecchini (Desert)</Italian>
+        <Polish>Dwójka snajperska (Desert)</Polish>
+        <Portuguese>Equipe de franco-atiradores (Desert)</Portuguese>
+        <Russian>Снайперская группа (Desert)</Russian>
+        <German>Sniper-Team (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_MECH_VZ95">
+        <Original>Mechanized Rifle Squad (vz.95)</Original>
+        <English>Mechanized Rifle Squad (vz.95)</English>
+        <Czech>Motostřelecké družstvo (vz.95)</Czech>
+        <French>Escouade de fusiliers mécanisée (vz.95)</French>
+        <Spanish>Pelotón de fusiles mecanizados (vz.95)</Spanish>
+        <Italian>Squadra di fucilieri motorizzata (vz.95)</Italian>
+        <Polish>Zmechanizowana drużyna piechoty (vz.95)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros mecanizado (vz.95)</Portuguese>
+        <Russian>Механизированное стрелковое отделение (vz.95)</Russian>
+        <German>Mechanisierter Gewehrtrupp (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_MECH_DES">
+        <Original>Mechanized Rifle Squad (Desert)</Original>
+        <English>Mechanized Rifle Squad (Desert)</English>
+        <Czech>Motostřelecké družstvo (pouštní)</Czech>
+        <French>Escouade de fusiliers mécanisée (Desert)</French>
+        <Spanish>Pelotón de fusiles mecanizados (Desert)</Spanish>
+        <Italian>Squadra di fucilieri motorizzata (Desert)</Italian>
+        <Polish>Zmechanizowana drużyna piechoty (Desert)</Polish>
+        <Portuguese>Grupo de combate de fuzileiros mecanizado (Desert)</Portuguese>
+        <Russian>Механизированное стрелковое отделение (Desert)</Russian>
+        <German>Mechanisierter Gewehrtrupp (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_MOT_VZ95">
+        <Original>Motorized Team (vz.95)</Original>
+        <English>Motorized Team (vz.95)</English>
+        <Czech>Motorizovaný tým (vz.95)</Czech>
+        <French>Équipe motorisée (vz.95)</French>
+        <Spanish>Equipo motorizado (vz.95)</Spanish>
+        <Italian>Squadra motorizzata (vz.95)</Italian>
+        <Polish>Zmotoryzowany zespół ogniowy (vz.95)</Polish>
+        <Portuguese>Equipe motorizada (vz.95)</Portuguese>
+        <Russian>Моторизованная группа (vz.95)</Russian>
+        <German>Motorisiertes Team (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_MOT_DES">
+        <Original>Motorized Team (Desert)</Original>
+        <English>Motorized Team (Desert)</English>
+        <Czech>Motorizovaný tým (pouštní)</Czech>
+        <French>Équipe motorisée (Desert)</French>
+        <Spanish>Equipo motorizado (Desert)</Spanish>
+        <Italian>Squadra motorizzata (Desert)</Italian>
+        <Polish>Zmotoryzowany zespół ogniowy (Desert)</Polish>
+        <Portuguese>Equipe motorizada (Desert)</Portuguese>
+        <Russian>Моторизованная группа (Desert)</Russian>
+        <German>Motorisiertes Team (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_BACKPACK">
+        <Original>Carryall Backpack [ACR] (vz. 95)</Original>
+        <English>Carryall Backpack [ACR] (vz. 95)</English>
+        <Czech>Torna [AČR] (vz. 95)</Czech>
+        <French>Carryall Backpack [ACR] (vz. 95)</French>
+        <Spanish>Bolsa de viaje [ACR] (vz. 95)</Spanish>
+        <Italian>Zaino portatutto [ACR] (vz. 95)</Italian>
+        <Polish>Plecak [ACR] (vz. 95)</Polish>
+        <Portuguese>Mochila [ACR] (vz. 95)</Portuguese>
+        <Russian>Вещевой мешок [ACR] (vz. 95)</Russian>
+        <German>Großer Rucksack [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_KITBAG">
+        <Original>Kitbag [ACR] (vz. 95)</Original>
+        <English>Kitbag [ACR] (vz. 95)</English>
+        <Czech>Batoh [AČR] (vz. 95)</Czech>
+        <French>Paquetage de terrain [ACR] (vz. 95)</French>
+        <Spanish>Petate [ACR] (vz. 95)</Spanish>
+        <Italian>Borsa kit [ACR] (vz. 95)</Italian>
+        <Polish>Torba [ACR] (vz. 95)</Polish>
+        <Portuguese>Bornal [ACR] (vz. 95)</Portuguese>
+        <Russian>Вещмешок [ACR] (vz. 95)</Russian>
+        <German>Seesack [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_KITBAG_A2">
+        <Original>Scout Pack [ACR] (vz. 95)</Original>
+        <English>Scout Pack [ACR] (vz. 95)</English>
+        <Czech>Malý batoh [AČR] (vz. 95)</Czech>
+      </Key>
+      <Key ID="STR_ACR_BACKPACK_A2">
+        <Original>Paratrooper Backpack [ACR] (vz. 95)</Original>
+        <English>Paratrooper Backpack [ACR] (vz. 95)</English>
+        <Czech>Výsadkářský batoh [AČR] (vz. 95)</Czech>
+      </Key>
+      <Key ID="STR_ACR_GEAR">
+        <Original>[ACR] Gear</Original>
+        <English>[ACR] Gear</English>
+        <Czech>[AČR] Vybavení</Czech>
+      </Key>
+      <Key ID="STR_ACR_WEAPONS">
+        <Original>[ACR] Weapons</Original>
+        <English>[ACR] Weapons</English>
+        <Czech>[AČR] Zbraně</Czech>
+      </Key>
+      <Key ID="STR_ACR_VEST_IA1">
+        <Original>GA Carrier Lite [ACR] (vz. 95)</Original>
+        <English>GA Carrier Lite [ACR] (vz. 95)</English>
+        <Czech>GA nosič plátů - lehký [AČR] (vz. 95)</Czech>
+        <French>Gilet léger AV [ACR] (vz. 95)</French>
+        <Spanish>Cartuchera de FAA ligera [ACR] (vz. 95)</Spanish>
+        <Italian>Gilet leggero aviazione [ACR] (vz. 95)</Italian>
+        <Polish>Kabura GA [ACR] (vz. 95)</Polish>
+        <Portuguese>Transportador leve de GA [ACR] (vz. 95)</Portuguese>
+        <Russian>GA облегченный жилет [ACR] (vz. 95)</Russian>
+        <German>Leichter Boden-Luft-Tragegurt [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST">
+        <Original>GA Carrier Rig [ACR] (vz. 95)</Original>
+        <English>GA Carrier Rig [ACR] (vz. 95)</English>
+        <Czech>GA nosič plátů [AČR] (vz. 95)</Czech>
+        <French>Gilet modulable léger [ACR] AV (vz. 95)</French>
+        <Spanish>Cartuchera de FAA [ACR] (vz. 95)</Spanish>
+        <Italian>Gilet Rig aviazione [ACR] (vz. 95)</Italian>
+        <Polish>Kamizelka GA [ACR] (vz. 95)</Polish>
+        <Portuguese>Suporte de transportador de GA [ACR] (vz. 95)</Portuguese>
+        <Russian>GA жилет [ACR] (vz. 95)</Russian>
+        <German>Boden-Luft-Tragegurt [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2">
+        <Original>Carrier Lite [ACR] (vz. 95)</Original>
+        <English>Carrier Lite [ACR] (vz. 95)</English>
+        <Czech>Lehká taktická vesta [AČR] (vz. 95)</Czech>
+        <French>Gilet léger [ACR] (vz. 95)</French>
+        <Spanish>Cartuchera ligera [ACR] (vz. 95)</Spanish>
+        <Italian>Gilet leggero [ACR] (vz. 95)</Italian>
+        <Polish>Kamizelka Lite [ACR] (vz. 95)</Polish>
+        <Portuguese>Transportador leve [ACR] (vz. 95)</Portuguese>
+        <Russian>Легкий жилет [ACR] (vz. 95)</Russian>
+        <German>Leichter Tragegurt [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2_H">
+        <Original>Carrier Rig [ACR] (vz. 95)</Original>
+        <English>Carrier Rig [ACR] (vz. 95)</English>
+        <Czech>Nosič plátů [AČR] (vz. 95)</Czech>
+        <French>Gilet modulable léger [ACR] (vz. 95)</French>
+        <Spanish>Cartuchera [ACR] (vz. 95)</Spanish>
+        <Italian>Gilet [ACR] (vz. 95)</Italian>
+        <Polish>Kamizelka Platecarrier [ACR] (vz. 95)</Polish>
+        <Portuguese>Traje transportador [ACR] (vz. 95)</Portuguese>
+        <Russian>Разгрузочный жилет [ACR] (vz. 95)</Russian>
+        <German>Tragegurt [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_CAP_HEADPHONES">
+        <Original>Rangemaster Cap [ACR] (vz. 95)</Original>
+        <English>Rangemaster Cap [ACR] (vz. 95)</English>
+        <Czech>Čepice vedoucího střelby [AČR] (vz. 95)</Czech>
+        <French>Képi d'intendant [ACR] (vz. 95)</French>
+        <Spanish>Gorra de responsable de galería de tiro [ACR] (vz. 95)</Spanish>
+        <Italian>Cappello responsabile poligono [ACR] (vz. 95)</Italian>
+        <Polish>Czapka instruktora [ACR] (vz. 95)</Polish>
+        <Portuguese>Boné do líder de combate a distância [ACR] (vz. 95)</Portuguese>
+        <Russian>Кепка инструктора [ACR] (vz. 95)</Russian>
+        <German>Schießplatzverwalter-Mütze [ACR] (vz. 95)</German>
+      </Key>
+      <Key ID="STR_ACR_CAP_HEADPHONES_DES">
+        <Original>Rangemaster Cap [ACR] (Desert)</Original>
+        <English>Rangemaster Cap [ACR] (Desert)</English>
+        <Czech>Čepice vedoucího střelby [AČR] (pouštní)</Czech>
+        <French>Képi d'intendant [ACR] (Desert)</French>
+        <Spanish>Gorra de responsable de galería de tiro [ACR] (Desert)</Spanish>
+        <Italian>Cappello responsabile poligono [ACR] (Desert)</Italian>
+        <Polish>Czapka instruktora [ACR] (Desert)</Polish>
+        <Portuguese>Boné do líder de combate a distância [ACR] (Desert)</Portuguese>
+        <Russian>Кепка инструктора [ACR] (Desert)</Russian>
+        <German>Schießplatzverwalter-Mütze [ACR] (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2_rgr">
+        <Original>Carrier Lite [ACR] (Green)</Original>
+        <English>Carrier Lite [ACR] (Green)</English>
+        <Czech>Lehká taktická vesta [AČR] (zelená)</Czech>
+        <French>Gilet léger [ACR] (Green)</French>
+        <Spanish>Cartuchera ligera [ACR] (Green)</Spanish>
+        <Italian>Gilet leggero [ACR] (Green)</Italian>
+        <Polish>Kamizelka Lite [ACR] (Green)</Polish>
+        <Portuguese>Transportador leve [ACR] (Green)</Portuguese>
+        <Russian>Легкий жилет [ACR] (Green)</Russian>
+        <German>Leichter Tragegurt [ACR] (Green)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2_rgr_H">
+        <Original>Carrier Rig [ACR] (Green)</Original>
+        <English>Carrier Rig [ACR] (Green)</English>
+        <Czech>Nosič plátů [AČR] (zelený)</Czech>
+        <French>Gilet modulable léger [ACR] (Green)</French>
+        <Spanish>Cartuchera [ACR] (Green)</Spanish>
+        <Italian>Gilet [ACR] (Green)</Italian>
+        <Polish>Kamizelka Platecarrier [ACR] (Green)</Polish>
+        <Portuguese>Traje transportador [ACR] (Green)</Portuguese>
+        <Russian>Разгрузочный жилет [ACR] (Green)</Russian>
+        <German>Tragegurt [ACR] (Green)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2_khk">
+        <Original>Carrier Lite [ACR] (Khaki)</Original>
+        <English>Carrier Lite [ACR] (Khaki)</English>
+        <Czech>Lehká taktická vesta [AČR] (khaki)</Czech>
+        <French>Gilet léger [ACR] (Khaki)</French>
+        <Spanish>Cartuchera ligera [ACR] (Khaki)</Spanish>
+        <Italian>Gilet leggero [ACR] (Khaki)</Italian>
+        <Polish>Kamizelka Lite [ACR] (Khaki)</Polish>
+        <Portuguese>Transportador leve [ACR] (Khaki)</Portuguese>
+        <Russian>Легкий жилет [ACR] (Khaki)</Russian>
+        <German>Leichter Tragegurt [ACR] (Khaki)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST2_khk_H">
+        <Original>Carrier Rig [ACR] (Khaki)</Original>
+        <English>Carrier Rig [ACR] (Khaki)</English>
+        <Czech>Nosič plátů [AČR] (khaki)</Czech>
+        <French>Gilet modulable léger [ACR] (Khaki)</French>
+        <Spanish>Cartuchera [ACR] (Khaki)</Spanish>
+        <Italian>Gilet [ACR] (Khaki)</Italian>
+        <Polish>Kamizelka Platecarrier [ACR] (Khaki)</Polish>
+        <Portuguese>Traje transportador [ACR] (Khaki)</Portuguese>
+        <Russian>Разгрузочный жилет [ACR] (Khaki)</Russian>
+        <German>Tragegurt [ACR] (Khaki)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST3_rgr">
+        <Original>Carrier Special Rig [ACR] (Green)</Original>
+        <English>Carrier Special Rig [ACR] (Green)</English>
+        <Czech>Nosič plátů speciální [AČR] (zelený)</Czech>
+        <French>Gilet modulable spécial [ACR] (vert)</French>
+        <Spanish>Equipo especial de portaaviones [ACR] (verde)</Spanish>
+        <Italian>Gilet speciale Rig [ACR] (verde)</Italian>
+        <Polish>Kamizelka specjalna [ACR] (zielone)</Polish>
+        <Portuguese>Suporte especial de transportador [ACR] (verde)</Portuguese>
+        <Russian>Специальный жилет [ACR] (зеленый)</Russian>
+        <German>Spezialtragegurt [ACR] (grün)</German>
+      </Key>
+      <Key ID="STR_ACR_VEST3_khk">
+        <Original>Carrier Special Rig [ACR] (Khaki)</Original>
+        <English>Carrier Special Rig [ACR] (Khaki)</English>
+        <Czech>Nosič plátů speciální [AČR] (khaki)</Czech>
+        <French>Gilet modulable spécial [ACR] (khaki)</French>
+        <Spanish>Equipo especial de portaaviones [ACR] (khaki)</Spanish>
+        <Italian>Gilet speciale Rig [ACR] (khaki)</Italian>
+        <Polish>Kamizelka specjalna [ACR] (khaki)</Polish>
+        <Portuguese>Suporte especial de transportador [ACR] (khaki)</Portuguese>
+        <Russian>Специальный жилет [ACR] (khaki)</Russian>
+        <German>Spezialtragegurt [ACR] (khaki)</German>
+      </Key>
+      <Key ID="STR_ACR_MICH2000">
+        <Original>Helmet [ACR]</Original>
+        <English>Helmet [ACR]</English>
+        <Czech>Přilba [AČR]</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_HEADSET">
+        <Original>Helmet [ACR] (Headset)</Original>
+        <English>Helmet [ACR] (Headset)</English>
+        <Czech>Přilba [AČR] (sluchátka)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES">
+        <Original>Helmet [ACR] (WOCOVER/Goggles)</Original>
+        <English>Helmet [ACR] (WOCOVER/Goggles)</English>
+        <Czech>Přilba [AČR] (bez potahu/brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000WOCOVER_GOGGLES_DES">
+        <Original>Helmet [ACR] (Des/WOCOVER/Goggles)</Original>
+        <English>Helmet [ACR] (Des/WOCOVER/Goggles)</English>
+        <Czech>Přilba [AČR] (poušť/bez potahu/brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000WOCOVER">
+        <Original>Helmet [ACR] (WOCOVER)</Original>
+        <English>Helmet [ACR] (WOCOVER)</English>
+        <Czech>Přilba [AČR] (bez potahu)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000WOCOVER_DES">
+        <Original>Helmet [ACR] (Desert/WOCOVER)</Original>
+        <English>Helmet [ACR] (Desert/WOCOVER)</English>
+        <Czech>Přilba [AČR] (pouštní/bez potahu)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_Des">
+        <Original>Helmet [ACR] (Desert)</Original>
+        <English>Helmet [ACR] (Desert)</English>
+        <Czech>Přilba [AČR] (pouštní)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_HEADSET_Des">
+        <Original>Helmet [ACR] (Desert/HS/Goggles)</Original>
+        <English>Helmet [ACR] (Desert/HS/Goggles)</English>
+        <Czech>Přilba [AČR] (pouštní/sluchátka/brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_GOGGLES">
+        <Original>Helmet [ACR] (Goggles)</Original>
+        <English>Helmet [ACR] (Goggles)</English>
+        <Czech>Přilba [AČR] (brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_HS_GOGGLES">
+        <Original>Helmet [ACR] (HS/Goggles)</Original>
+        <English>Helmet [ACR] (HS/Goggles)</English>
+        <Czech>Přilba [AČR] (sluchátka/brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_MICH2000_GOGGLES_Des">
+        <Original>Helmet [ACR] (Desert/Goggles)</Original>
+        <English>Helmet [ACR] (Desert/Goggles)</English>
+        <Czech>Přilba [AČR] (pouštní/brýle)</Czech>
+      </Key>
+      <Key ID="STR_ACR_ECH_rgr">
+        <Original>ECH [ACR]</Original>
+        <English>ECH [ACR]</English>
+        <Czech>Přilba ECH [AČR]</Czech>
+        <French>Casque ECH [ACR]</French>
+        <Spanish>ECH [ACR]</Spanish>
+        <Italian>Elmetto ECH [ACR]</Italian>
+        <Polish>ECH [ACR]</Polish>
+        <Portuguese>ECH [ACR]</Portuguese>
+        <Russian>ECH [ACR]</Russian>
+        <German>ECH [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_Beret_red">
+        <Original>Beret [ACR]</Original>
+        <English>Beret [ACR]</English>
+        <Czech>Baret [AČR]</Czech>
+        <French>Béret [ACR]</French>
+        <Spanish>Boina [ACR]</Spanish>
+        <Italian>Basco [ACR]</Italian>
+        <Polish>Beret [ACR]</Polish>
+        <Portuguese>Boina [ACR]</Portuguese>
+        <Russian>Берет [ACR]</Russian>
+        <German>Barett [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_BOONIEHAT">
+        <Original>Booniehat [ACR]</Original>
+        <English>Booniehat [ACR]</English>
+        <Czech>Klobouk [AČR]</Czech>
+        <French>Chapeau de brousse [ACR]</French>
+        <Spanish>Gorro militar [ACR]</Spanish>
+        <Italian>Boonie hat [ACR]</Italian>
+        <Polish>Booniehat [ACR]</Polish>
+        <Portuguese>Chapéu tático [ACR]</Portuguese>
+        <Russian>Панама [ACR]</Russian>
+        <German>Buschhut [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_BOONIEHAT_DES">
+        <Original>Booniehat [ACR] (Desert)</Original>
+        <English>Booniehat [ACR] (Desert)</English>
+        <Czech>Klobouk [AČR] (pouštní)</Czech>
+        <French>Chapeau de brousse [ACR] (Desert)</French>
+        <Spanish>Gorro militar [ACR] (Desert)</Spanish>
+        <Italian>Boonie hat [ACR] (Desert)</Italian>
+        <Polish>Booniehat [ACR] (Desert)</Polish>
+        <Portuguese>Chapéu tático [ACR] (Desert)</Portuguese>
+        <Russian>Панама [ACR] (Desert)</Russian>
+        <German>Buschhut [ACR] (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_CAP">
+        <Original>Cap [ACR]</Original>
+        <English>Cap [ACR]</English>
+        <Czech>Čepice [AČR]</Czech>
+        <French>Casquette [ACR]</French>
+        <Spanish>Gorra [ACR]</Spanish>
+        <Italian>Cappello [ACR]</Italian>
+        <Polish>Czapka [ACR]</Polish>
+        <Portuguese>Boné [ACR]</Portuguese>
+        <Russian>Кепка [ACR]</Russian>
+        <German>Mütze [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_CAP_DES">
+        <Original>Cap [ACR] (Coyote)</Original>
+        <English>Cap [ACR] (Coyote)</English>
+        <Czech>Čepice [AČR] (žlutohnědá)</Czech>
+        <French>Casquette [ACR] (Coyote)</French>
+        <Spanish>Gorra [ACR] (Coyote)</Spanish>
+        <Italian>Cappello [ACR] (Coyote)</Italian>
+        <Polish>Czapka [ACR] (Coyote)</Polish>
+        <Portuguese>Boné [ACR] (Coyote)</Portuguese>
+        <Russian>Кепка [ACR] (Coyote)</Russian>
+        <German>Mütze [ACR] (Tan)</German>
+      </Key>
+      <Key ID="STR_ACR_BOONIEHAT_FOLD">
+        <Original>Booniehat [ACR] (fold)</Original>
+        <English>Booniehat [ACR] (fold)</English>
+        <Czech>Klobouk [AČR] (sklopený)</Czech>
+        <French>Chapeau de brousse [ACR] (fold)</French>
+        <Spanish>Gorro militar [ACR] (fold)</Spanish>
+        <Italian>Boonie hat [ACR] (fold)</Italian>
+        <Polish>Booniehat [ACR] (fold)</Polish>
+        <Portuguese>Chapéu tático [ACR] (fold)</Portuguese>
+        <Russian>Панама [ACR] (fold)</Russian>
+        <German>Buschhut [ACR] (fold)</German>
+      </Key>
+      <Key ID="STR_ACR_BOONIEHAT_DES_FOLD">
+        <Original>Booniehat [ACR] (Desert/fold)</Original>
+        <English>Booniehat [ACR] (Desert/fold)</English>
+        <Czech>Klobouk [AČR] (pouštní/sklopený)</Czech>
+        <French>Chapeau de brousse [ACR] (Desert/fold)</French>
+        <Spanish>Gorro militar [ACR] (Desert/fold)</Spanish>
+        <Italian>Boonie hat [ACR] (Desert/fold)</Italian>
+        <Polish>Booniehat [ACR] (Desert/fold)</Polish>
+        <Portuguese>Chapéu tático [ACR] (fold)</Portuguese>
+        <Russian>Панама [ACR] (Desert/fold)</Russian>
+        <German>Buschhut [ACR] (Desert/fold)</German>
+      </Key>
+      <Key ID="STR_ACR_PAKOL_GREY">
+        <Original>Pakol [ACR]</Original>
+        <English>Pakol [ACR]</English>
+        <Czech>Pakol [AČR]</Czech>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM">
+        <Original>Combat Fatigues [ACR] (vz.95)</Original>
+        <English>Combat Fatigues [ACR] (vz.95)</English>
+        <Czech>Uniforma [AČR] (vz.95)</Czech>
+        <French>Treillis [ACR] (vz.95)</French>
+        <Spanish>Traje de combate [ACR] (vz.95)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95)</Russian>
+        <German>Kampfanzug [ACR] (vz.95)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_tshirt">
+        <Original>Combat Fatigues [ACR] (vz.95) (Tshirt)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (Tshirt)</English>
+        <Czech>Uniforma [AČR] (vz.95) (triko)</Czech>
+        <French>Treillis [ACR] (vz.95) (Tshirt)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (Tshirt)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (Tshirt)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (Tshirt)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (Tshirt)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (Tshirt)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (Tshirt)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_vest">
+        <Original>Combat Fatigues [ACR] (vz.95) (Rolled-up)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (Rolled-up)</English>
+        <Czech>Uniforma [AČR] (vz.95) (rukávy)</Czech>
+        <French>Treillis [ACR] (vz.95) (Rolled-up)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (Rolled-up)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (Rolled-up)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (Rolled-up)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (Rolled-up)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (Rolled-up)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (Rolled-up)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_MOUT">
+        <Original>Combat Fatigues [ACR] (vz.95) (MOUT)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (MOUT)</English>
+        <Czech>Uniforma [AČR] (vz.95) (MOUT)</Czech>
+        <French>Treillis [ACR] (vz.95) (MOUT)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (MOUT)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (MOUT)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (MOUT)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (MOUT)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (MOUT)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (MOUT)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_MOUT_vest">
+        <Original>Combat Fatigues [ACR] (vz.95) (MOUT) (Rolled-up)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (MOUT) (Rolled-up)</English>
+        <Czech>Uniforma [AČR] (vz.95) (MOUT) (rukávy)</Czech>
+        <French>Treillis [ACR] (vz.95) (MOUT) (Rolled-up)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (MOUT) (Rolled-up)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (MOUT) (Rolled-up)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (MOUT) (Rolled-up)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (MOUT) (Rolled-up)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (MOUT) (Rolled-up)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (MOUT) (Rolled-up)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_MOUT_DES">
+        <Original>Combat Fatigues [ACR] (Desert) (MOUT)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (MOUT)</English>
+        <Czech>Uniforma [AČR] (pouštní) (MOUT)</Czech>
+        <French>Treillis [ACR] (Desert) (MOUT)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (MOUT)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (MOUT)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (MOUT)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (MOUT)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (MOUT)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (MOUT)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_MOUT_DES_vest">
+        <Original>Combat Fatigues [ACR](Desert) (MOUT) (Rolled-up)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (MOUT)(Rolled-up)</English>
+        <Czech>Uniforma [AČR] (pouštní) (MOUT) (rukávy)</Czech>
+        <French>Treillis [ACR] (Desert) (MOUT) (Rolled-up)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (MOUT) (Rolled-up)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (MOUT) (Rolled-up)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (MOUT) (Rolled-up)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (MOUT) (Rolled-up)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (MOUT) (Rolled-up)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (MOUT) (Rolled-up)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_DESERT">
+        <Original>Combat Fatigues [ACR] (Desert)</Original>
+        <English>Combat Fatigues [ACR] (Desert)</English>
+        <Czech>Uniforma [AČR] (pouštní)</Czech>
+        <French>Treillis [ACR] (Desert)</French>
+        <Spanish>Traje de combate [ACR] (Desert)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert)</Russian>
+        <German>Kampfanzug [ACR] (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_DESERT_tshirt">
+        <Original>Combat Fatigues [ACR] (Desert) (Tshirt)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (Tshirt)</English>
+        <Czech>Uniforma [AČR] (pouštní) (triko)</Czech>
+        <French>Treillis [ACR] (Desert) (Tshirt)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (Tshirt)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (Tshirt)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (Tshirt)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (Tshirt)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (Tshirt)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (Tshirt)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_DESERT_vest">
+        <Original>Combat Fatigues [ACR] (Desert) (Rolled-up)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (Rolled-up)</English>
+        <Czech>Uniforma [AČR] (pouštní) (rukávy)</Czech>
+        <French>Treillis [ACR] (Desert) (Rolled-up)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (Rolled-up)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (Rolled-up)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (Rolled-up)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (Rolled-up)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (Rolled-up)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (Rolled-up)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_PILOT">
+        <Original>Pilot Coveralls [ACR]</Original>
+        <English>Pilot Coveralls [ACR]</English>
+        <Czech>Pilotní kombinéza [AČR]</Czech>
+        <French>Combinaison de pilote [ACR]</French>
+        <Spanish>Mono de piloto [ACR]</Spanish>
+        <Italian>Tuta da pilota [ACR]</Italian>
+        <Polish>Mundur pilota [ACR]</Polish>
+        <Portuguese>Macacão de piloto [ACR]</Portuguese>
+        <Russian>Летный комбинезон [ACR]</Russian>
+        <German>Pilotenoverall [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_PILOT_DES">
+        <Original>Pilot Coveralls [ACR] (Desert)</Original>
+        <English>Pilot Coveralls [ACR] (Desert)</English>
+        <Czech>Pilotní kombinéza [AČR] (pouštní)</Czech>
+        <French>Combinaison de pilote [ACR] (Desert)</French>
+        <Spanish>Mono de piloto [ACR] (Desert)</Spanish>
+        <Italian>Tuta da pilota [ACR] (Desert)</Italian>
+        <Polish>Mundur pilota [ACR] (Desert)</Polish>
+        <Portuguese>Macacão de piloto [ACR] (Desert)</Portuguese>
+        <Russian>Летный комбинезон [ACR] (Desert)</Russian>
+        <German>Pilotenoverall [ACR] (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_OFFICER">
+        <Original>Combat Fatigues [ACR] (vz.95) (Officer)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (Officer)</English>
+        <Czech>Uniforma [AČR] (vz.95) (důstojnická)</Czech>
+        <French>Treillis [ACR] (vz.95) (Officer)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (Officer)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (Officer)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (Officer)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (Officer)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (Officer)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (Officer)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_OFFICER_DES">
+        <Original>Combat Fatigues [ACR] (Desert) (Officer)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (Officer)</English>
+        <Czech>Uniforma [AČR] (pouštní) (důstojnická)</Czech>
+        <French>Treillis [ACR] (Desert) (Officer)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (Officer)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (Officer)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (Officer)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (Officer)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (Officer)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (Officer)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_SWEATER">
+        <Original>Combat Fatigues [ACR] (vz.95) (Sweater)</Original>
+        <English>Combat Fatigues [ACR] (vz.95) (Sweater)</English>
+        <Czech>Uniforma [AČR] (vz.95) (svetr)</Czech>
+        <French>Treillis [ACR] (vz.95) (Sweater)</French>
+        <Spanish>Traje de combate [ACR] (vz.95) (Sweater)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (vz.95) (Sweater)</Italian>
+        <Polish>Mundur bojowy [ACR] (vz.95) (Sweater)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (vz.95) (Sweater)</Portuguese>
+        <Russian>Полевая форма [ACR] (vz.95) (Sweater)</Russian>
+        <German>Kampfanzug [ACR] (vz.95) (Sweater)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_SWEATER_DES">
+        <Original>Combat Fatigues [ACR] (Desert) (Sweater)</Original>
+        <English>Combat Fatigues [ACR] (Desert) (Sweater)</English>
+        <Czech>Uniforma [AČR] (pouštní) (svetr)</Czech>
+        <French>Treillis [ACR] (Desert) (Sweater)</French>
+        <Spanish>Traje de combate [ACR] (Desert) (Sweater)</Spanish>
+        <Italian>Uniforme da combattimento [ACR] (Desert) (Sweater)</Italian>
+        <Polish>Mundur bojowy [ACR] (Desert) (Sweater)</Polish>
+        <Portuguese>Uniforme de combate [ACR] (Desert) (Sweater)</Portuguese>
+        <Russian>Полевая форма [ACR] (Desert) (Sweater)</Russian>
+        <German>Kampfanzug [ACR] (Desert) (Sweater)</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_GHILLIE">
+        <Original>Ghillie Suit [ACR]</Original>
+        <English>Ghillie Suit [ACR]</English>
+        <Czech>Hejkal [AČR]</Czech>
+        <French>Ghillie Suit [ACR]</French>
+        <Spanish>Traje de camuflaje [ACR]</Spanish>
+        <Italian>Mimetica da cecchino [ACR]</Italian>
+        <Polish>Ghillie [ACR]</Polish>
+        <Portuguese>Traje ghillie [ACR]</Portuguese>
+        <Russian>Маскировочный костюм [ACR]</Russian>
+        <German>Ghillie-Anzug [ACR]</German>
+      </Key>
+      <Key ID="STR_ACR_UNIFORM_GHILLIE_DES">
+        <Original>Ghillie Suit [ACR] (Desert)</Original>
+        <English>Ghillie Suit [ACR] (Desert)</English>
+        <Czech>Hejkal [AČR] (pouštní)</Czech>
+        <French>Ghillie Suit [ACR] (Desert)</French>
+        <Spanish>Traje de camuflaje [ACR] (Desert)</Spanish>
+        <Italian>Mimetica da cecchino [ACR] (Desert)</Italian>
+        <Polish>Ghillie [ACR] (Desert)</Polish>
+        <Portuguese>Traje ghillie [ACR] (Desert)</Portuguese>
+        <Russian>Маскировочный костюм [ACR] (Desert)</Russian>
+        <German>Ghillie-Anzug [ACR] (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_FLAG">
+        <Original>[ACR] Flag</Original>
+        <English>[ACR] Flag</English>
+        <Czech>[AČR] Vlajka</Czech>
+      </Key>
+      <Key ID="STR_ACR_MEDIC">
+        <Original>[ACR] Medic</Original>
+        <English>[ACR] Medic</English>
+        <Czech>[AČR] Medik</Czech>
+      </Key>
+      <Key ID="STR_ACR_LOGO1">
+        <Original>[ACR] Label</Original>
+        <English>[ACR] Label</English>
+        <Czech>[AČR] Nápis</Czech>
+      </Key>
+      <Key ID="STR_ACR_LOGO2">
+        <Original>[ACR] Patch</Original>
+        <English>[ACR] Patch</English>
+        <Czech>[AČR] Nášivka</Czech>
+      </Key>
+      <Key ID="STR_ACR_LOGO3">
+        <Original>[ACR] Patch (Red)</Original>
+        <English>[ACR] Patch (Red)</English>
+        <Czech>[AČR] Nášivka (červená)</Czech>
+      </Key>
+      <Key ID="STR_ACR_KULOMET_F">
+        <Original>Recon - Machinegunner</Original>
+        <English>Recon - Machinegunner</English>
+        <Czech>Průzkumník - kulometčík</Czech>
+      </Key>
+      <Key ID="STR_ACR_SNIPER_DES">
+        <Original>Sniper (Desert)</Original>
+        <English>Sniper (Desert)</English>
+        <Czech>Odstřelovač (pouštní)</Czech>
+        <French>Sniper (Desert)</French>
+        <Spanish>Francotirador (Desert)</Spanish>
+        <Italian>Cecchino (Desert)</Italian>
+        <Polish>Snajper (Desert)</Polish>
+        <Portuguese>Atirador de elite (Desert)</Portuguese>
+        <Russian>Снайпер (Desert)</Russian>
+        <German>Sniper (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_SPOTTER_DES">
+        <Original>Spotter (Desert)</Original>
+        <English>Spotter (Desert)</English>
+        <Czech>Pozorovatel (pouštní)</Czech>
+        <French>Repéreur (Desert)</French>
+        <Spanish>Observador (Desert)</Spanish>
+        <Italian>Osservatore (Desert)</Italian>
+        <Polish>Obserwator (Desert)</Polish>
+        <Portuguese>Observador (Desert)</Portuguese>
+        <Russian>Корректировщик (Desert)</Russian>
+        <German>Spotter (Desert)</German>
+      </Key>
+      <Key ID="STR_ACR_KAMAZ_COVERED">
+        <Original>Kamaz Transport (Covered)</Original>
+        <English>Kamaz Transport (Covered)</English>
+        <Czech>Kamaz Valník (krytý)</Czech>
+      </Key>
+      <Key ID="STR_ACR_KAMAZ_TRANSPORT">
+        <Original>Kamaz Transport</Original>
+        <English>Kamaz Transport</English>
+        <Czech>Kamaz Valník</Czech>
+      </Key>
+      <Key ID="STR_ACR_KAMAZ_BOX">
+        <Original>Kamaz Repair</Original>
+        <English>Kamaz Repair</English>
+        <Czech>Kamaz Opravárenský</Czech>
+      </Key>
+      <Key ID="STR_ACR_KAMAZ_FUEL">
+        <Original>Kamaz Fuel</Original>
+        <English>Kamaz Fuel</English>
+        <Czech>Kamaz Cisterna</Czech>
+      </Key>
+      <Key ID="STR_ACR_KAMAZ_MED">
+        <Original>Kamaz Medical</Original>
+        <English>Kamaz Medical</English>
+        <Czech>Kamaz Zdravotnický</Czech>
+      </Key>
+      <Key ID="STR_ACR_ALCA_CAS">
+        <Original>L159 ALCA (CAS)</Original>
+        <English>L159 ALCA (CAS)</English>
+        <Czech>L159 ALCA (CAS)</Czech>
+      </Key>
+      <Key ID="STR_ACR_ALCA_AA">
+        <Original>L159 ALCA (AA)</Original>
+        <English>L159 ALCA (AA)</English>
+        <Czech>L159 ALCA (AA)</Czech>
+      </Key>
+      <Key ID="STR_ACR_ALBATROS_CAS">
+        <Original>L39 ALBATROS (CAS)</Original>
+        <English>L39 ALBATROS (CAS)</English>
+        <Czech>L39 ALBATROS (CAS)</Czech>
+      </Key>
+      <Key ID="STR_ACR_ALBATROS_AA">
+        <Original>L39 ALBATROS (AA)</Original>
+        <English>L39 ALBATROS (AA)</English>
+        <Czech>L39 ALBATROS (AA)</Czech>
+      </Key>
+      <Key ID="STR_ACR_A_NEG">
+        <Original>[ACR] Blood (A Neg)</Original>
+        <English>[ACR] Blood (A Neg)</English>
+        <Czech>[AČR] Krev (A Neg)</Czech>
+      </Key>
+      <Key ID="STR_ACR_A_POS">
+        <Original>[ACR] Blood (A Pos)</Original>
+        <English>[ACR] Blood (A Pos)</English>
+        <Czech>[AČR] Krev (A Pos)</Czech>
+      </Key>
+      <Key ID="STR_ACR_B_POS">
+        <Original>[ACR] Blood (B Pos)</Original>
+        <English>[ACR] Blood (B Pos)</English>
+        <Czech>[AČR] Krev (B Pos)</Czech>
+      </Key>
+      <Key ID="STR_ACR_B_NEG">
+        <Original>[ACR] Blood (B Neg)</Original>
+        <English>[ACR] Blood (B Neg)</English>
+        <Czech>[AČR] Krev (B Neg)</Czech>
+      </Key>
+      <Key ID="STR_ACR_AB_NEG">
+        <Original>[ACR] Blood (AB Neg)</Original>
+        <English>[ACR] Blood (AB Neg)</English>
+        <Czech>[AČR] Krev (AB Neg)</Czech>
+      </Key>
+      <Key ID="STR_ACR_AB_POS">
+        <Original>[ACR] Blood (AB Pos)</Original>
+        <English>[ACR] Blood (AB Pos)</English>
+        <Czech>[AČR] Krev (AB Pos)</Czech>
+      </Key>
+      <Key ID="STR_ACR_O_NEG">
+        <Original>[ACR] Blood (O Neg)</Original>
+        <English>[ACR] Blood (O Neg)</English>
+        <Czech>[AČR] Krev (O Neg)</Czech>
+      </Key>
+      <Key ID="STR_ACR_O_POS">
+        <Original>[ACR] Blood (O Pos)</Original>
+        <English>[ACR] Blood (O Pos)</English>
+        <Czech>[AČR] Krev (O Pos)</Czech>
+      </Key>
+      <Key ID="str_a3_v_platecarrieria1_khkl0">
+        <Original>GA Carrier Lite (Khaki)</Original>
+        <English>GA Carrier Lite (Khaki)</English>
+        <Czech>GA nosič plátů - lehký (khaki)</Czech>
+        <French>Gilet léger AV (kaki)</French>
+        <Spanish>Cartuchera de FAA ligera (caqui)</Spanish>
+        <Italian>Gilet leggero aviazione (kaki)</Italian>
+        <Polish>Kabura GA (khaki)</Polish>
+        <Portuguese>Transportador leve de GA (cáqui)</Portuguese>
+        <Russian>GA облегченный жилет (хаки)</Russian>
+        <German>Leichter Boden-Luft-Tragegurt (Khaki)</German>
+      </Key>
+      <Key ID="str_a3_v_platecarrieria2_khkl0">
+        <Original>GA Carrier Rig (Khaki)</Original>
+        <English>GA Carrier Rig (Khaki)</English>
+        <Czech>GA nosič plátů (khaki)</Czech>
+        <French>Gilet modulable léger AV (kaki)</French>
+        <Spanish>Cartuchera de FAA (caqui)</Spanish>
+        <Italian>Gilet Rig aviazione (kaki)</Italian>
+        <Polish>Kamizelka GA (khaki)</Polish>
+        <Portuguese>Suporte de transportador de GA (cáqui)</Portuguese>
+        <Russian>GA жилет (хаки)</Russian>
+        <German>Boden-Luft-Tragegurt (Khaki)</German>
+      </Key>
+      <Key ID="STR_ACR_DINGO_MG">
+        <Original>Dingo 2 CZ (MG)</Original>
+        <English>Dingo 2 CZ (MG)</English>
+        <Czech>Dingo 2 CZ (MG)</Czech>
+      </Key>
+      <Key ID="STR_ACR_DINGO_MG_DES">
+        <Original>Dingo 2 CZ (MG) (Desert)</Original>
+        <English>Dingo 2 CZ (MG) (Desert)</English>
+        <Czech>Dingo 2 CZ (MG) (pouštní)</Czech>
+      </Key>
+      <Key ID="STR_ACR_DINGO_GL">
+        <Original>Dingo 2 CZ (GL)</Original>
+        <English>Dingo 2 CZ (GL)</English>
+        <Czech>Dingo 2 CZ (GL)</Czech>
+      </Key>
+      <Key ID="STR_ACR_DINGO_GL_DES">
+        <Original>Dingo 2 CZ (GL) (Desert)</Original>
+        <English>Dingo 2 CZ (GL) (Desert)</English>
+        <Czech>Dingo 2 CZ (GL) (pouštní)</Czech>
+      </Key>
+      <Key ID="STR_ACR_BMP2_DES">
+        <Original>BMP-2 (Desert)</Original>
+        <English>BMP-2 (Desert)</English>
+        <Czech>BMP-2 (pouštní)</Czech>
+      </Key>
+      <Key ID="str_acr_a3_landrover_special">
+        <Original>Military Offroad Special</Original>
+        <English>Military Offroad Special</English>
+        <Czech>Vojenský off-road speciál</Czech>
+        <French>Véhicule tout terrain militaire FS</French>
+        <Spanish>Todoterreno militar especial</Spanish>
+        <Italian>Fuoristrada speciale</Italian>
+        <Polish>Wojskowa terenówka - specjalna</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (спец.)</Russian>
+        <German>Militär-Geländefahrzeug Spezial</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_special_des">
+        <Original>Military Offroad Special (Desert)</Original>
+        <English>Military Offroad Special (Desert)</English>
+        <Czech>Vojenský off-road speciál (pouštní)</Czech>
+        <French>Véhicule tout terrain militaire FS (Desert)</French>
+        <Spanish>Todoterreno militar especial (Desert)</Spanish>
+        <Italian>Fuoristrada speciale (Desert)</Italian>
+        <Polish>Wojskowa terenówka - specjalna (Desert)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (спец.) (Desert)</Russian>
+        <German>Militär-Geländefahrzeug Spezial (Desert)</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_mg">
+        <Original>Military Offroad (M2)</Original>
+        <English>Military Offroad (M2)</English>
+        <Czech>Vojenský off-road (M2)</Czech>
+        <French>Véhicule tout terrain militaire (M2)</French>
+        <Spanish>Todoterreno militar (M2)</Spanish>
+        <Italian>Fuoristrada (M2)</Italian>
+        <Polish>Wojskowa terenówka (M2)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (M2)</Russian>
+        <German>Militär-Geländefahrzeug (M2)</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_mg_des">
+        <Original>Military Offroad (M2) (Desert)</Original>
+        <English>Military Offroad (M2) (Desert)</English>
+        <Czech>Vojenský off-road (M2) (pouštní)</Czech>
+        <French>Véhicule tout terrain militaire (M2) (Desert)</French>
+        <Spanish>Todoterreno militar (M2) (Desert)</Spanish>
+        <Italian>Fuoristrada (M2) (Desert)</Italian>
+        <Polish>Wojskowa terenówka (M2) (Desert)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (M2) (Desert)</Russian>
+        <German>Militär-Geländefahrzeug (M2) (Desert)</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover">
+        <Original>Military Offroad</Original>
+        <English>Military Offroad</English>
+        <Czech>Vojenský off-road</Czech>
+        <French>Véhicule tout terrain militaire </French>
+        <Spanish>Todoterreno militar</Spanish>
+        <Italian>Fuoristrada </Italian>
+        <Polish>Wojskowa terenówka </Polish>
+        <Russian>Ленд Ровер Дефендер 110</Russian>
+        <German>Militär-Geländefahrzeug</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_des">
+        <Original>Military Offroad (Desert)</Original>
+        <English>Military Offroad (Desert)</English>
+        <Czech>Vojenský off-road (pouštní)</Czech>
+        <French>Véhicule tout terrain militaire (Desert)</French>
+        <Spanish>Todoterreno militar (Desert)</Spanish>
+        <Italian>Fuoristrada (Desert)</Italian>
+        <Polish>Wojskowa terenówka (Desert)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (Desert)</Russian>
+        <German>Militär-Geländefahrzeug (Desert)</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_ambulance">
+        <Original>Military Offroad (Ambulance)</Original>
+        <English>Military Offroad (Ambulance)</English>
+        <Czech>Vojenský off-road (Ambulance)</Czech>
+        <French>Véhicule tout terrain militaire (Ambulance)</French>
+        <Spanish>Todoterreno militar (Ambulance)</Spanish>
+        <Italian>Fuoristrada (Ambulance)</Italian>
+        <Polish>Wojskowa terenówka (Ambulance)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (Ambulance)</Russian>
+        <German>Militär-Geländefahrzeug (Ambulance)</German>
+      </Key>
+      <Key ID="str_acr_a3_landrover_ambulance_des">
+        <Original>Military Offroad (Ambulance) (Desert)</Original>
+        <English>Military Offroad (Ambulance) (Desert)</English>
+        <Czech>Vojenský off-road (Ambulance) (pouštní)</Czech>
+        <French>Véhicule tout terrain militaire (Ambulance) (Desert)</French>
+        <Spanish>Todoterreno militar (Ambulance) (Desert)</Spanish>
+        <Italian>Fuoristrada (Ambulance) (Desert)</Italian>
+        <Polish>Wojskowa terenówk (Ambulance) (Desert)</Polish>
+        <Russian>Ленд Ровер Дефендер 110 (Ambulance) (Desert)</Russian>
+        <German>Militär-Geländefahrzeug (Ambulance) (Desert)</German>
+      </Key>
+      <Key ID="str_acr_a3_brdm2">
+        <Original>BRDM-2 (Desert)</Original>
+        <English>BRDM-2 (Desert)</English>
+        <Czech>BRDM-2 (pouštní)</Czech>
+      </Key>
+      <Key ID="STR_V_ACR_A3_BN2013_VZ95_DES_DISPLAYNAME">
+        <Original>NPP-2006 (desert)</Original>
+        <English>NPP-2006 (desert)</English>
+        <Czech>NPP-2006 (pouštní)</Czech>
+        <French>NPP-2006 (desert)</French>
+        <Spanish>NPP-2006 (desert)</Spanish>
+        <Italian>NPP-2006 (desert)</Italian>
+        <Polish>NPP-2006 (desert)</Polish>
+        <Portuguese>NPP-2006 (desert)</Portuguese>
+        <Russian>NPP-2006 (desert)</Russian>
+        <German>NPP-2006 (desert)</German>
+      </Key>
+      <Key ID="STR_V_ACR_A3_BN2013_VZ95_BLACK_DISPLAYNAME">
+        <Original>NPP-2006 (Black)</Original>
+        <English>NPP-2006 (Black)</English>
+        <Czech>NPP-2006 (Black)</Czech>
+        <French>NPP-2006 (Black)</French>
+        <Spanish>NPP-2006 (Black)</Spanish>
+        <Italian>NPP-2006 (Black)</Italian>
+        <Polish>NPP-2006 (Black)</Polish>
+        <Portuguese>NPP-2006 (Black)</Portuguese>
+        <Russian>NPP-2006 (Black)</Russian>
+        <German>NPP-2006 (Black)</German>
+      </Key>
+      <Key ID="STR_V_ACR_A3_BN2013_VZ95_DISPLAYNAME">
+        <Original>NPP-2006</Original>
+        <English>NPP-2006</English>
+        <Czech>NPP-2006</Czech>
+        <French>NPP-2006</French>
+        <Spanish>NPP-2006</Spanish>
+        <Italian>NPP-2006</Italian>
+        <Polish>NPP-2006</Polish>
+        <Portuguese>NPP-2006</Portuguese>
+        <Russian>NPP-2006</Russian>
+        <German>NPP-2006</German>
+      </Key>
+    </Container>
+  </Package>
 </Project>

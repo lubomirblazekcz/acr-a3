@@ -44,7 +44,7 @@ class cfgWeapons
         scope = 2;
         model = "\acr_a3\acr_a3_characters\vesta_ACR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
-        displayName = "Balistický nosič BN-2013"; //TODO
+        displayName = "$STR_V_ACR_A3_BN2013_VZ95_DISPLAYNAME";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\ACR_Vesta.paa"};
         author = "$STR_ACR"; dlc = "ACR_A3";
@@ -89,7 +89,7 @@ class cfgWeapons
         scope = 2;
         model = "\acr_a3\acr_a3_characters\vesta_ACR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
-        displayName = "Balistický nosič BN-2013 (BLACK)"; //TODO
+        displayName = "$STR_V_ACR_A3_BN2013_VZ95_BLACK_DISPLAYNAME";
         hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip1_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_BLACK.paa","acr_a3\acr_a3_characters\data\equip4_co_BLACK.paa"};
         author = "$STR_ACR"; dlc = "ACR_A3";
@@ -134,7 +134,7 @@ class cfgWeapons
         scope = 2;
         model = "\acr_a3\acr_a3_characters\vesta_ACR";
         picture = "\acr_a3\acr_a3_characters\data\UI\ikona_ACR_Vesta.paa";
-        displayName = "Balistický nosič BN-2013 (DES)"; //TODO
+        displayName = "$STR_V_ACR_A3_BN2013_VZ95_DES_DISPLAYNAME";
         hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
         hiddenSelectionsTextures[] = {"\acr_a3\acr_a3_characters\data\acr_dst_soldier2_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip1_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip2_des_co.paa","acr_a3\acr_a3_characters\data\equip3_co_DESERT.paa","acr_a3\acr_a3_characters\data\equip4_co_DESERT.paa"};
         author = "$STR_ACR"; dlc = "ACR_A3";
