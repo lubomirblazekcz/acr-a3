@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class acr_a3_tfar
-	{
+class CfgPatches {
+	class acr_a3_tfar {
         units[] = { };
         weapons[] = { };
         requiredVersion = 0.100000;
