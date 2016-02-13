@@ -7,7 +7,7 @@ class CfgPatches {
 	};
 };
 
-class cfgVehicles {
+class CfgVehicles {
 	class I_Heli_Transport_02_F;
 	class ACR_Mohawk_FG: I_Heli_Transport_02_F {
 		author = "$STR_ACR";

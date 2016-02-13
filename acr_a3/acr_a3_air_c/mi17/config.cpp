@@ -6,7 +6,7 @@ class CfgPatches {
 		requiredAddons[] = {"CUP_AirVehicles_Mi8"};
 	};
 };
-class cfgVehicles {
+class CfgVehicles {
     class CUP_B_Mi8_USA;
     class CUP_B_Mi171Sh_ACR;
     class CUP_B_Mi171Sh_Unarmed_ACR;

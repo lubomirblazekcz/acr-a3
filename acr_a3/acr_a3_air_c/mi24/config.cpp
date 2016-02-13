@@ -8,8 +8,7 @@ class CfgPatches {
 };
 class cfgVehicles {
      class CUP_B_Mi35_CZ;
-     class ACR_A3_Mi_24v: CUP_B_Mi35_CZ
-    {
+     class ACR_A3_Mi_24v: CUP_B_Mi35_CZ {
         accuracy = 0.5;
         author = "$STR_ACR";
         dlc = "ACR_A3";
@@ -21,8 +20,7 @@ class cfgVehicles {
         faction = "ACR_A3";
         vehicleclass = "Air";
     };
-     class ACR_A3_Mi_24v_des: ACR_A3_Mi_24v //desert
-    {
+     class ACR_A3_Mi_24v_des: ACR_A3_Mi_24v {
         accuracy = 0.5;
         author = "$STR_ACR";
         dlc = "ACR_A3";
@@ -39,8 +37,7 @@ class cfgVehicles {
             "\acr_a3\acr_a3_air\mi24\16_cz_desert_002_co.paa"
         };
     };
-     class ACR_A3_Mi_24v_ram: ACR_A3_Mi_24v_des //ram
-    {
+     class ACR_A3_Mi_24v_ram: ACR_A3_Mi_24v_des {
         accuracy = 0.5;
         author = "$STR_ACR";
         dlc = "ACR_A3";
@@ -57,8 +54,7 @@ class cfgVehicles {
             "\acr_a3\acr_a3_air\mi24\17_cz_experimantalram_002_co.paa"
         };
     };
-    class ACR_A3_Mi_24p: ACR_A3_Mi_24v
-    {
+    class ACR_A3_Mi_24p: ACR_A3_Mi_24v {
         accuracy = 0.5;
         author = "$STR_ACR";
         displayName = "Mi-24P";
@@ -70,8 +66,7 @@ class cfgVehicles {
         faction = "ACR_A3";
         vehicleclass = "Air";
     };
-    class ACR_A3_Mi_24p_des: ACR_A3_Mi_24p //desert
-    {
+    class ACR_A3_Mi_24p_des: ACR_A3_Mi_24p {
         accuracy = 0.5;
         author = "$STR_ACR";
         displayName = "Mi-24P (Desert)";
@@ -83,8 +78,7 @@ class cfgVehicles {
         faction = "ACR_A3";
         vehicleclass = "Air";
     };
-    class ACR_A3_Mi_24p_ram: ACR_A3_Mi_24p_des //ram
-    {
+    class ACR_A3_Mi_24p_ram: ACR_A3_Mi_24p_des {
         accuracy = 0.5;
         author = "$STR_ACR";
         displayName = "Mi-24P (Ram)";
